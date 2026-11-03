@@ -1,8 +1,16 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { createAvatarLoader, type RenderAssets } from "./assets";
-import { createEmojiLoader, type EmojiSet } from "./emoji";
+import {
+  avatarDirectory,
+  createAvatarLoader,
+  type AvatarImage,
+  type AvatarLoader,
+  type RenderAssets,
+} from "./assets";
+import { BUNDLED_FONTS } from "./bundled";
+import { createEmojiLoader, type EmojiLoader } from "./emoji";
 import { FontSet, type FontFace } from "./fonts";
 
 const packageRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -11,68 +19,80 @@ export const PACKAGE_PATHS = {
   root: packageRoot,
   fonts: join(packageRoot, "fonts"),
   emoji: join(packageRoot, "fixtures", "emoji"),
+  fullEmoji: join(packageRoot, "assets", "emoji"),
   avatars: join(packageRoot, "fixtures", "avatars"),
   samples: join(packageRoot, "samples"),
   golden: join(packageRoot, "fixtures", "golden"),
 };
 
-const FACES: Array<Omit<FontFace, "data"> & { file: string }> = [
-  { family: "Inter", weight: 400, file: "Inter-Regular.ttf" },
-  { family: "Inter", weight: 500, file: "Inter-Medium.ttf" },
-  { family: "Inter", weight: 600, file: "Inter-SemiBold.ttf" },
-  { family: "Inter", weight: 700, file: "Inter-Bold.ttf" },
-  { family: "Roboto", weight: 400, file: "Roboto-Regular.ttf" },
-  { family: "Roboto", weight: 500, file: "Roboto-Medium.ttf" },
-  { family: "Roboto", weight: 700, file: "Roboto-Bold.ttf" },
-];
-
-export function loadBundledFonts(): FontSet {
-  return new FontSet(
-    FACES.map(({ family, weight, file }) => ({
+export function loadBundledFonts(dir = PACKAGE_PATHS.fonts, extra: FontFace[] = []): FontSet {
+  return new FontSet([
+    ...BUNDLED_FONTS.map(({ family, weight, file }) => ({
       family,
       weight,
-      data: new Uint8Array(readFileSync(join(PACKAGE_PATHS.fonts, file))),
+      data: new Uint8Array(readFileSync(join(dir, file))),
     })),
-  );
+    ...extra,
+  ]);
 }
 
-function readDir(dir: string, ext: string): string[] {
+const readOptional = async (path: string): Promise<Uint8Array | undefined> => {
   try {
-    return readdirSync(dir).filter((f) => f.endsWith(ext));
+    return new Uint8Array(await readFile(path));
   } catch {
-    return [];
+    return undefined;
   }
+};
+
+export function createNodeEmojiLoader(dir = PACKAGE_PATHS.emoji): EmojiLoader {
+  return createEmojiLoader({
+    read: async (set, file) => {
+      const bytes = await readOptional(join(dir, set, file));
+      return bytes ? new TextDecoder().decode(bytes) : undefined;
+    },
+  });
 }
 
-export function loadBundledEmoji() {
-  const sets: Partial<Record<EmojiSet, Record<string, string>>> = {};
-  for (const set of ["noto", "twemoji"] as const) {
-    const dir = join(PACKAGE_PATHS.emoji, set);
-    const table: Record<string, string> = {};
-    for (const file of readDir(dir, ".svg")) table[file] = readFileSync(join(dir, file), "utf8");
-    sets[set] = table;
+export async function sharpToPng(image: AvatarImage): Promise<Uint8Array> {
+  const specifier = "sharp";
+  let sharp: (input: Uint8Array) => { png(): { toBuffer(): Promise<Uint8Array> } };
+  try {
+    sharp = ((await import(/* @vite-ignore */ specifier)) as { default: typeof sharp }).default;
+  } catch {
+    throw new Error("converting WebP avatars in Node needs the optional `sharp` package");
   }
-  return createEmojiLoader(sets);
+  return new Uint8Array(await sharp(image.data).png().toBuffer());
 }
 
-export function loadFixtureAvatars(dir = PACKAGE_PATHS.avatars) {
-  const files: Record<string, Uint8Array> = {};
-  for (const file of readDir(dir, ".png")) {
-    files[file.replace(/\.png$/, "")] = new Uint8Array(readFileSync(join(dir, file)));
-  }
-  for (const file of readDir(dir, ".webp")) {
-    files[file.replace(/\.webp$/, "")] = new Uint8Array(readFileSync(join(dir, file)));
-  }
-  return createAvatarLoader(files);
+export function createNodeAvatarLoader(dir = PACKAGE_PATHS.avatars): AvatarLoader {
+  return createAvatarLoader({
+    pool: avatarDirectory((file) => readOptional(join(dir, file))),
+    toPng: sharpToPng,
+  });
 }
+
+export type NodeAssetOptions = {
+  fontsDir?: string;
+  extraFonts?: FontFace[];
+  emojiDir?: string;
+  avatarsDir?: string;
+};
+
+export function createNodeAssets(options: NodeAssetOptions = {}): RenderAssets {
+  return {
+    fonts: loadBundledFonts(options.fontsDir, options.extraFonts),
+    emoji: createNodeEmojiLoader(options.emojiDir),
+    avatars: createNodeAvatarLoader(options.avatarsDir),
+  };
+}
+
+export const fullEmojiAvailable = (): boolean =>
+  existsSync(join(PACKAGE_PATHS.fullEmoji, "noto")) &&
+  existsSync(join(PACKAGE_PATHS.fullEmoji, "twemoji"));
 
 let cached: RenderAssets | undefined;
 
 export function loadNodeAssets(): RenderAssets {
-  cached ??= {
-    fonts: loadBundledFonts(),
-    emoji: loadBundledEmoji(),
-    avatars: loadFixtureAvatars(),
-  };
+  cached ??= createNodeAssets();
   return cached;
 }

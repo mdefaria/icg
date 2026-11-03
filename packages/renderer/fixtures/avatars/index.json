@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "size": 256,
+  "format": "mixed",
+  "entries": [
+    {
+      "id": "a-01",
+      "file": "a-01.png",
+      "category": "face",
+      "tags": [
+        "placeholder"
+      ],
+      "bytes": 38391
+    },
+    {
+      "id": "a-02",
+      "file": "a-02.png",
+      "category": "face",
+      "tags": [
+        "placeholder"
+      ],
+      "bytes": 26661
+    },
+    {
+      "id": "a-03",
+      "file": "a-03.png",
+      "category": "face",
+      "tags": [
+        "placeholder"
+      ],
+      "bytes": 24992
+    },
+    {
+      "id": "a-04",
+      "file": "a-04.png",
+      "category": "face",
+      "tags": [
+        "placeholder"
+      ],
+      "bytes": 27052
+    },
+    {
+      "id": "a-05",
+      "file": "a-05.jpg",
+      "category": "face",
+      "tags": [
+        "placeholder"
+      ],
+      "bytes": 5187
+    },
+    {
+      "id": "a-06",
+      "file": "a-06.webp",
+      "category": "face",
+      "tags": [
+        "placeholder"
+      ],
+      "bytes": 1860
+    }
+  ]
+}

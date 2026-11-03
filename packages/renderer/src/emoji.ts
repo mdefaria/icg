@@ -54,7 +54,7 @@ export function emojiFileName(set: EmojiSet, codepoints: number[]): string {
   if (set === "noto") {
     return `emoji_u${codepoints
       .filter((cp) => cp !== VS16)
-      .map(hex)
+      .map((cp) => hex(cp).padStart(4, "0"))
       .join("_")}.svg`;
   }
   const hasZwj = codepoints.includes(ZWJ);
@@ -75,27 +75,100 @@ export function emojiFallbacks(codepoints: number[]): number[][] {
   return out;
 }
 
+export type EmojiFiles = Partial<Record<EmojiSet, Record<string, string>>>;
+
+export type EmojiSource =
+  | { files: EmojiFiles }
+  | { baseUrl: string; fetch?: typeof fetch }
+  | { read: (set: EmojiSet, file: string) => Promise<string | undefined> };
+
 export interface EmojiLoader {
   svg(set: EmojiSet, codepoints: number[]): string | undefined;
+  prepare(set: EmojiSet, sequences: number[][]): Promise<void>;
+  missingEmoji(): string[];
+  noteMissing(cluster: string): void;
 }
 
-export function createEmojiLoader(
-  files: Partial<Record<EmojiSet, Record<string, string>>>,
-): EmojiLoader {
+export const SVG_ROOT =
+  /^\s*(<\?xml[^>]*>\s*)?(<!--[\s\S]*?-->\s*)*(<!DOCTYPE[^>[]*(\[[\s\S]*?\])?\s*>\s*)?(<!--[\s\S]*?-->\s*)*<svg[\s>/]/i;
+
+export function createEmojiLoader(source: EmojiSource): EmojiLoader {
+  const loaded = new Map<string, string | null>();
+  const pending = new Map<string, Promise<void>>();
+  const missing = new Set<string>();
+  const key = (set: EmojiSet, file: string) => `${set}/${file}`;
+
+  if ("files" in source) {
+    for (const [set, table] of Object.entries(source.files) as Array<
+      [EmojiSet, Record<string, string>]
+    >) {
+      for (const [file, svg] of Object.entries(table)) loaded.set(key(set, file), svg);
+    }
+  }
+
+  const read = async (set: EmojiSet, file: string): Promise<string | undefined> => {
+    if ("read" in source) return source.read(set, file);
+    if ("baseUrl" in source) {
+      const doFetch = source.fetch ?? fetch;
+      const res = await doFetch(`${source.baseUrl.replace(/\/$/, "")}/${set}/${file}`);
+      return res.ok ? res.text() : undefined;
+    }
+    return undefined;
+  };
+
+  const load = (set: EmojiSet, file: string): Promise<void> => {
+    const k = key(set, file);
+    if (loaded.has(k)) return Promise.resolve();
+    let p = pending.get(k);
+    if (!p) {
+      p = read(set, file)
+        .catch(() => undefined)
+        .then((svg) => {
+          loaded.set(k, svg !== undefined && SVG_ROOT.test(svg) ? svg : null);
+          pending.delete(k);
+        });
+      pending.set(k, p);
+    }
+    return p;
+  };
+
+  const lookup = (set: EmojiSet, codepoints: number[]): string | undefined => {
+    for (const candidate of emojiFallbacks(codepoints)) {
+      const hit = loaded.get(key(set, emojiFileName(set, candidate)));
+      if (hit) return hit;
+    }
+    return undefined;
+  };
+
   return {
-    svg(set, codepoints) {
-      const table = files[set];
-      if (!table) return undefined;
-      for (const candidate of emojiFallbacks(codepoints)) {
-        const hit = table[emojiFileName(set, candidate)];
-        if (hit) return hit;
+    svg: lookup,
+    async prepare(set, sequences) {
+      for (const seq of sequences) {
+        for (const candidate of emojiFallbacks(seq)) {
+          await load(set, emojiFileName(set, candidate));
+          if (loaded.get(key(set, emojiFileName(set, candidate)))) break;
+        }
       }
-      return undefined;
+    },
+    missingEmoji: () => [...missing],
+    noteMissing: (cluster) => {
+      missing.add(cluster);
     },
   };
 }
 
 export const emojiSetFor = (platform: string): EmojiSet => (platform === "x" ? "twemoji" : "noto");
+
+export const otherEmojiSet = (set: EmojiSet): EmojiSet => (set === "noto" ? "twemoji" : "noto");
+
+export function emojiSequences(texts: string[]): Array<{ cluster: string; codepoints: number[] }> {
+  const seen = new Map<string, number[]>();
+  for (const text of texts) {
+    for (const seg of segmentEmoji(text))
+      if (seg.kind === "emoji") seen.set(seg.cluster, seg.codepoints);
+  }
+  return [...seen].map(([cluster, codepoints]) => ({ cluster, codepoints }));
+}
 
 export function emojiDataUrl(svg: string): string {
   const bytes = new TextEncoder().encode(svg);

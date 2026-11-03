@@ -1,10 +1,10 @@
 import type { Author } from "@icg/shared";
 import { formatCount } from "../format";
-import { t } from "../strings";
 import { ICONS, icon, n } from "../svg";
 import {
   avatarEl,
   card,
+  finish,
   inlineLabel,
   paragraph,
   type CardBody,
@@ -19,16 +19,29 @@ const RADIUS = 14;
 const X_BLUE = "#1D9BF0";
 
 function palette(dark: boolean): Palette {
-  return {
-    bg: dark ? "#000000" : "#FFFFFF",
-    text: dark ? "#E7E9EA" : "#0F1419",
-    secondary: dark ? "#71767B" : "#536471",
-    chipBg: dark ? "#202327" : "#EFF3F4",
-    chipText: dark ? "#E7E9EA" : "#0F1419",
-    divider: dark ? "#333639" : "#CFD9DE",
-    avatarBg: dark ? "#333639" : "#CFD9DE",
-    avatarFg: "#FFFFFF",
-  };
+  return dark
+    ? {
+        bg: "#000000",
+        border: "#2F3336",
+        text: "#E7E9EA",
+        secondary: "#71767B",
+        chipBg: "#202327",
+        chipText: "#E7E9EA",
+        divider: "#333639",
+        avatarBg: "#CFD9DE",
+        avatarFg: "#FFFFFF",
+      }
+    : {
+        bg: "#FFFFFF",
+        border: "#EFF3F4",
+        text: "#0F1419",
+        secondary: "#536471",
+        chipBg: "#EFF3F4",
+        chipText: "#0F1419",
+        divider: "#CFD9DE",
+        avatarBg: "#CFD9DE",
+        avatarFg: "#FFFFFF",
+      };
 }
 
 type RowInput = {
@@ -36,7 +49,6 @@ type RowInput = {
   text: string;
   likes: number;
   timeAgo: string;
-  pinned: boolean;
   x: number;
   y: number;
   replies: number;
@@ -55,15 +67,9 @@ function row(ctx: CardCtx, p: Palette, r: RowInput): { svg: string; height: numb
   const ar = avatarSize / 2;
   const cx = r.x + avatarSize + 12;
   const maxWidth = X_WIDTH - PAD - cx;
-  let y = r.y;
+  const y = r.y;
 
-  if (r.pinned) {
-    out.push(icon(ICONS.pin, cx - 24, y, 14, p.secondary));
-    out.push(ctx.text(cx, y + 12, t("pinned", ctx.locale), 700, 13, p.secondary));
-    y += 20;
-  }
-
-  out.push(avatarEl(ctx, r.author.avatar, r.x + ar, y + ar, ar, p));
+  out.push(avatarEl(ctx, r.author.avatar, r.x + ar, y + ar, ar, p, r.author.username));
 
   const nameBase = y + 15;
   const nameSize = 15;
@@ -99,11 +105,16 @@ function row(ctx: CardCtx, p: Palette, r: RowInput): { svg: string; height: numb
     fill: p.text,
   });
   out.push(para.svg);
+  let bottom = y + 20 + para.height;
+  if (ctx.options.seeTranslation) {
+    out.push(ctx.text(cx, bottom + 16, ctx.copy.seeTranslation, 400, 14, X_BLUE));
+    bottom += 22;
+  }
 
-  const actionTop = y + 20 + para.height + 10;
+  const actionTop = bottom + 10;
   const iconSize = 18;
   const base = actionTop + 14;
-  const style = { platform: "x" as const, language: ctx.locale };
+  const style = { platform: "x" as const, language: ctx.language };
   const slots: Array<[string, number]> = [
     [ICONS.xReply, r.replies],
     [ICONS.xRepost, r.reposts],
@@ -112,27 +123,30 @@ function row(ctx: CardCtx, p: Palette, r: RowInput): { svg: string; height: numb
   ];
   const items = slots.map(([path, count]) => {
     const label = count > 0 ? formatCount(count, style) : "";
-    const labelWidth = label ? ctx.measure(label, 400, 13) + 4 : 0;
+    const labelWidth = label ? ctx.measure(label, 400, 13) + 3 : 0;
     return { path, label, width: iconSize + labelWidth };
   });
-  const minGap = 6;
-  const itemsWidth = items.reduce((sum, it) => sum + it.width, 0) + minGap * (items.length - 1);
-  const showBookmark = itemsWidth <= maxWidth - (iconSize * 2 + 14) - 12;
-  const rightCluster = showBookmark ? iconSize * 2 + 14 : iconSize;
-  const usable = maxWidth - rightCluster - 12;
-  const gap = Math.max(
-    minGap,
-    (usable - itemsWidth + minGap * (items.length - 1)) / (items.length - 1),
-  );
+  const minGap = 4;
+  const bookmarkGap = 10;
+  const itemsWidth = items.reduce((sum, it) => sum + it.width, 0);
+  const showBookmark = itemsWidth + minGap * items.length + iconSize * 2 + bookmarkGap <= maxWidth;
+  const rightCluster = showBookmark ? iconSize * 2 + bookmarkGap : iconSize;
+  const gap = Math.max(minGap, (maxWidth - rightCluster - itemsWidth) / items.length);
   let ax = cx;
   for (const it of items) {
     out.push(icon(it.path, ax, actionTop, iconSize, p.secondary));
-    if (it.label) out.push(ctx.text(ax + iconSize + 4, base, it.label, 400, 13, p.secondary));
+    if (it.label) out.push(ctx.text(ax + iconSize + 3, base, it.label, 400, 13, p.secondary));
     ax += it.width + gap;
   }
   if (showBookmark)
     out.push(
-      icon(ICONS.xBookmark, X_WIDTH - PAD - iconSize * 2 - 14, actionTop, iconSize, p.secondary),
+      icon(
+        ICONS.xBookmark,
+        X_WIDTH - PAD - iconSize * 2 - bookmarkGap,
+        actionTop,
+        iconSize,
+        p.secondary,
+      ),
     );
   out.push(icon(ICONS.xShare, X_WIDTH - PAD - iconSize, actionTop, iconSize, p.secondary));
 
@@ -145,16 +159,25 @@ function row(ctx: CardCtx, p: Palette, r: RowInput): { svg: string; height: numb
   return { svg: out.join(""), height };
 }
 
-function derived(likes: number): { replies: number; reposts: number; views: number } {
+type Counts = {
+  replies?: number | undefined;
+  reposts?: number | undefined;
+  views?: number | undefined;
+};
+
+export function xCounts(
+  likes: number,
+  given: Counts = {},
+): { replies: number; reposts: number; views: number } {
   return {
-    replies: Math.round(likes * 0.08),
-    reposts: Math.round(likes * 0.12),
-    views: Math.round(likes * 38 + 1200),
+    replies: given.replies ?? Math.round(likes * 0.08),
+    reposts: given.reposts ?? Math.round(likes * 0.12),
+    views: given.views ?? Math.round(likes * 38 + 1200),
   };
 }
 
 export function buildX(ctx: CardCtx): CardBody {
-  const p = palette(ctx.template.theme === "dark");
+  const p = palette(ctx.dark);
   const c = ctx.comment;
   const parts: string[] = [];
   const isThread = ctx.template.variant === "creator-reply" && !!c.reply;
@@ -164,10 +187,9 @@ export function buildX(ctx: CardCtx): CardBody {
     text: c.text,
     likes: c.likes,
     timeAgo: c.timeAgo,
-    pinned: c.pinned,
     x: PAD,
     y,
-    ...derived(c.likes),
+    ...xCounts(c.likes, c),
     threadLine: isThread,
   });
   parts.push(main.svg);
@@ -180,10 +202,9 @@ export function buildX(ctx: CardCtx): CardBody {
       text: c.reply.text,
       likes: c.reply.likes,
       timeAgo: c.reply.timeAgo,
-      pinned: false,
       x: PAD,
       y,
-      ...derived(c.reply.likes),
+      ...xCounts(c.reply.likes),
       threadLine: false,
     });
     parts.push(reply.svg);
@@ -191,9 +212,5 @@ export function buildX(ctx: CardCtx): CardBody {
   }
 
   const height = y + PAD_Y + 2;
-  return {
-    body: card(X_WIDTH, height, RADIUS, p, parts.join(""), ctx.defs),
-    width: X_WIDTH,
-    height,
-  };
+  return finish(ctx, card(ctx, X_WIDTH, height, RADIUS, p, parts.join("")), X_WIDTH, height);
 }

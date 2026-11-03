@@ -3,6 +3,7 @@ import {
   createEmojiLoader,
   emojiFallbacks,
   emojiFileName,
+  emojiSequences,
   isEmojiCluster,
   segmentEmoji,
 } from "./emoji";
@@ -45,6 +46,8 @@ describe("emojiFileName", () => {
       "emoji_u2764_200d_1f525.svg",
     );
     expect(emojiFileName("noto", [0x1f44d, 0x1f3fd])).toBe("emoji_u1f44d_1f3fd.svg");
+    expect(emojiFileName("noto", [0x23, 0xfe0f, 0x20e3])).toBe("emoji_u0023_20e3.svg");
+    expect(emojiFileName("noto", [0xa9, 0xfe0f])).toBe("emoji_u00a9.svg");
   });
 
   it("maps to Twemoji names, keeping FE0F only inside ZWJ sequences", () => {
@@ -70,9 +73,47 @@ describe("emojiFallbacks", () => {
 
 describe("createEmojiLoader", () => {
   it("falls back to the base emoji when the exact sequence is missing", () => {
-    const loader = createEmojiLoader({ noto: { "emoji_u1f44d.svg": "<svg/>" } });
+    const loader = createEmojiLoader({ files: { noto: { "emoji_u1f44d.svg": "<svg/>" } } });
     expect(loader.svg("noto", [0x1f44d, 0x1f3fd])).toBe("<svg/>");
     expect(loader.svg("noto", [0x1f602])).toBeUndefined();
     expect(loader.svg("twemoji", [0x1f44d])).toBeUndefined();
+  });
+
+  it("fetches from a base URL once per file and rejects non-SVG bodies", async () => {
+    const requested: string[] = [];
+    const fake = (async (url: string) => {
+      requested.push(url);
+      if (url.endsWith("/twemoji/1f602.svg")) return new Response("<svg xmlns='x'/>");
+      if (url.endsWith("/twemoji/1f480.svg")) return new Response("<html>404 page</html>");
+      return new Response("", { status: 404 });
+    }) as typeof fetch;
+    const loader = createEmojiLoader({ baseUrl: "https://cdn.example/emoji/", fetch: fake });
+    await loader.prepare("twemoji", [[0x1f602], [0x1f480], [0x1f44d, 0x1f3fd]]);
+    await loader.prepare("twemoji", [[0x1f602]]);
+    expect(loader.svg("twemoji", [0x1f602])).toBe("<svg xmlns='x'/>");
+    expect(loader.svg("twemoji", [0x1f480])).toBeUndefined();
+    expect(requested).toEqual([
+      "https://cdn.example/emoji/twemoji/1f602.svg",
+      "https://cdn.example/emoji/twemoji/1f480.svg",
+      "https://cdn.example/emoji/twemoji/1f44d-1f3fd.svg",
+      "https://cdn.example/emoji/twemoji/1f44d.svg",
+    ]);
+  });
+
+  it("reads through a host-supplied reader and records missing emoji", async () => {
+    const loader = createEmojiLoader({
+      read: async (set, file) =>
+        set === "noto" && file === "emoji_u1f525.svg" ? "<svg/>" : undefined,
+    });
+    await loader.prepare("noto", [[0x1f525], [0x1f996]]);
+    expect(loader.svg("noto", [0x1f525])).toBe("<svg/>");
+    loader.noteMissing("🦖");
+    expect(loader.missingEmoji()).toEqual(["🦖"]);
+  });
+});
+
+describe("emojiSequences", () => {
+  it("collects distinct clusters across texts", () => {
+    expect(emojiSequences(["a 😂😂", "b 👍🏽", "😂"]).map((s) => s.cluster)).toEqual(["😂", "👍🏽"]);
   });
 });

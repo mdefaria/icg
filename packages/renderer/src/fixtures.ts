@@ -82,6 +82,7 @@ const EN: Array<Omit<Comment, "id" | "origin" | "reply">> = [
     timeAgo: "5h",
     pinned: false,
     likedByCreator: false,
+    replies: 23,
   },
   {
     author: authors.kat,
@@ -98,6 +99,9 @@ const EN: Array<Omit<Comment, "id" | "origin" | "reply">> = [
     timeAgo: "3d",
     pinned: false,
     likedByCreator: false,
+    replies: 1_840,
+    reposts: 12_000,
+    views: 4_200_000,
   },
   {
     author: authors.noa,
@@ -125,6 +129,7 @@ const ES: Array<Omit<Comment, "id" | "origin" | "reply">> = [
     timeAgo: "7 h",
     pinned: false,
     likedByCreator: false,
+    replies: 12,
   },
   {
     author: authors.lena,

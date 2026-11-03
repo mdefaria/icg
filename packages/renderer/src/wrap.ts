@@ -22,6 +22,24 @@ export type WrapOptions = {
   ellipsis?: string;
 };
 
+const IDEOGRAPHIC =
+  /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\u3000-\u303F\uFF00-\uFFEF]/u;
+
+function splitIdeographs(word: string): string[] {
+  if (!IDEOGRAPHIC.test(word)) return [word];
+  const out: string[] = [];
+  let latin = "";
+  for (const ch of word) {
+    if (IDEOGRAPHIC.test(ch)) {
+      if (latin) out.push(latin);
+      latin = "";
+      out.push(ch);
+    } else latin += ch;
+  }
+  if (latin) out.push(latin);
+  return out;
+}
+
 export function tokenize(text: string): Token[] {
   const tokens: Token[] = [];
   for (const seg of segmentEmoji(text)) {
@@ -33,7 +51,7 @@ export function tokenize(text: string): Token[] {
       if (part === "") continue;
       if (part === "\n") tokens.push({ kind: "newline" });
       else if (/^[ \t]+$/.test(part)) tokens.push({ kind: "space", text: part });
-      else tokens.push({ kind: "word", text: part });
+      else for (const word of splitIdeographs(part)) tokens.push({ kind: "word", text: word });
     }
   }
   return tokens;
@@ -119,8 +137,10 @@ function layout(pieces: Piece[], opts: WrapOptions): Line {
   return { runs, width: x };
 }
 
+const graphemes = new Intl.Segmenter(undefined, { granularity: "grapheme" });
+
 function splitLongWord(word: string, opts: WrapOptions): string[] {
-  const chars = Array.from(word);
+  const chars = Array.from(graphemes.segment(word), (s) => s.segment);
   const parts: string[] = [];
   let current = "";
   for (const ch of chars) {
