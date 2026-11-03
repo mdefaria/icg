@@ -1,0 +1,29 @@
+{
+  "id": "com.icg.spike.uxpwasmprobe",
+  "name": "ICG WASM Probe",
+  "version": "0.0.1",
+  "main": "index.html",
+  "manifestVersion": 5,
+  "host": [{ "app": "premierepro", "minVersion": "25.6.0" }],
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "probe",
+      "label": { "default": "WASM Probe" },
+      "minimumSize": { "width": 320, "height": 240 },
+      "maximumSize": { "width": 2000, "height": 2000 },
+      "preferredDockedSize": { "width": 480, "height": 520 },
+      "preferredFloatingSize": { "width": 720, "height": 600 }
+    }
+  ],
+  "requiredPermissions": { "localFileSystem": "plugin" },
+  "icons": [
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/icon.png",
+      "scale": [1, 2],
+      "theme": ["darkest", "dark", "medium", "lightest", "light"]
+    }
+  ]
+}
