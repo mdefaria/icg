@@ -117,6 +117,19 @@ Cloud sessions write the code; spikes marked (local) need you to run them in Pre
 - S7 Commerce round trip: Stripe test product, Worker webhook, signed Key, email, Activation + Device record in D1.
 - S8 Informational: resvg-wasm inside Premiere UXP, one day hard stop. (local)
 
+Follow-ups from the spikes (tickets, in priority order):
+
+- F1 Licensing: Premiere's CEP Chromium has no Ed25519 in WebCrypto. Add a pure-JS Ed25519 verifier (`@noble/ed25519`) behind the same `verifyActivationToken` signature, or move the token to ES256, before C5. Source: `apps/api/SPIKE.md`.
+- F2 Avatars: replace insightface `buffalo_l` (non-commercial model pack) with YuNet + SFace (Apache-2.0) in `curate.py` before the 3,000-image run. Source: `packages/avatars/SPIKE.md`.
+- F3 Premiere: owner checklist decides which `overwriteClip` time form to hardcode per version and whether QE `addTracks` appends or prepends. Production must write Overlays beside the project, not in the temp folder (Premiere links by path). Source: `apps/premiere/SPIKE.md`.
+- F4 Renderer: text widths are estimated without shaping in the Premiere spike; C3 uses `@icg/renderer`'s measurement everywhere. Per-Platform fidelity gaps and like-count rules per language are itemised in `packages/renderer/SPIKE.md`.
+- F5 Resolve: `AppendToTimeline` behaviour on an occupied range and `recordFrame` numbering with drop-frame start timecodes are unverified; the adapter always picks an empty track so the design holds either way. Source: `apps/resolve/SPIKE.md`.
+- F6 Installers: choose Windows signing (Azure Trusted Signing eligibility for a new UK company vs SSL.com OV + eSigner); run the CEP negative test (delete `META-INF/signatures.xml`, panel must vanish). Source: `installers/README.md`.
+- F7 Tooling: `apps/api` pins `@cloudflare/vitest-pool-workers` 0.12 because the repo is on vitest 3; bump vitest to 4 repo-wide when convenient.
+- F8 UXP port scoping: run `spikes/uxp-wasm-probe` in Premiere 26 on mac and win; PASS means the 2028 port needs no native addon.
+
+Contract additions made after the spikes (additive): `OverlaySpec.language?` for UI copy and number formatting; `Comment.replies?`, `reposts?`, `views?` for X and YouTube action rows.
+
 ### Step 2 - Core (parallel, after S5 fixes the Template contract)
 
 - C1 `packages/engine`: Bank lookup by Platform/language/tone/context, username generator per Platform, likes/time generators, seeded randomness, internal API surface.

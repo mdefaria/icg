@@ -10,4 +10,6 @@ Overlays are rendered from SVG Templates by resvg compiled to WebAssembly, with 
 
 - Overlays are full-Frame PNGs with the Comment composited at its Placement, so no Host needs transform maths.
 - Template work is SVG plus a small layout step in TypeScript (text wrapping, emoji runs); nothing Host-specific.
+- Emoji are inline images, not font glyphs: resvg-wasm 2.6 renders every colour-emoji font format (CBDT, COLRv0, COLRv1) as `.notdef`, so text is segmented into emoji runs and each emoji is embedded as a pre-rasterised Noto (Twemoji for X) image, cached per size bucket. Fonts are static instances; resvg ignores variable-font axes.
+- Measured in Node: about 110 ms for a 1080x1920 Overlay and 350 ms at 4K, so the native escape hatch is not needed.
 - When Premiere moves to UXP (ADR 0005) the renderer is the open problem: UXP cannot rasterise in-panel, so the port needs either confirmed WASM support in UXP or a hybrid C++ addon wrapping the same resvg.

@@ -70,6 +70,7 @@ describe("OverlaySpec", () => {
       placement: { x: 0.5, y: 0.7, scale: 1 },
     });
     expect(spec.frame.height).toBe(1920);
+    expect(spec.language).toBeUndefined();
   });
 });
 

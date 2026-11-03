@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Comment } from "./comment";
-import { Template } from "./platform";
+import { Language, Template } from "./platform";
 
 export const Frame = z.object({
   width: z.number().int().positive(),
@@ -30,6 +30,7 @@ export const OverlaySpec = z.object({
   template: Template,
   frame: Frame,
   placement: Placement,
+  language: Language.optional(),
 });
 export type OverlaySpec = z.infer<typeof OverlaySpec>;
 

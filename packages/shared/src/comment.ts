@@ -32,6 +32,9 @@ export const Comment = z.object({
   timeAgo: z.string().min(1),
   pinned: z.boolean(),
   likedByCreator: z.boolean(),
+  replies: z.number().int().nonnegative().optional(),
+  reposts: z.number().int().nonnegative().optional(),
+  views: z.number().int().nonnegative().optional(),
   reply: Reply.optional(),
 });
 export type Comment = z.infer<typeof Comment>;
