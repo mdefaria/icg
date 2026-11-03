@@ -18,6 +18,7 @@ RAW_DIR = ROOT / "raw"
 CURATED_DIR = ROOT / "curated"
 DEFAULTS_DIR = ROOT / "defaults"
 POOL_DIR = ROOT / "pool"
+MODELS_DIR = ROOT / "models"
 
 # Share of the finished pool per category. Mirrors POOL_COMPOSITION in src/pool.ts.
 # 60% faces, 25% non-face, 15% Platform defaults (procedural, see defaults.py).
@@ -98,3 +99,24 @@ def human_bytes(n: float) -> str:
         if n < 1024 or unit == "GB":
             return f"{n:.1f} {unit}"
     return f"{n:.1f} GB"
+
+
+def read_checksums(models_dir: Path) -> dict[str, str]:
+    """Parse models/CHECKSUMS (`<sha256>  <file>` per line, `#` comments)."""
+    path = models_dir / "CHECKSUMS"
+    out: dict[str, str] = {}
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#"):
+                digest, name = line.split(None, 1)
+                out[name.strip()] = digest.lower()
+    return out
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
