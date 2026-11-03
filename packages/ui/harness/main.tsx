@@ -73,7 +73,7 @@ async function loadAssets(): Promise<RenderAssets> {
   }
   return {
     fonts: new FontSet(faces),
-    emoji: createEmojiLoader({ noto, twemoji }),
+    emoji: createEmojiLoader({ files: { noto, twemoji } }),
     avatars: createAvatarLoader(avatars),
   };
 }
