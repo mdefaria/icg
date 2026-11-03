@@ -1,0 +1,10 @@
+#!/bin/bash
+# CEP loads system extensions as the logged-in user, so every file must be
+# world-readable and directories traversable. Ownership root:admin matches
+# what Adobe's own installers leave in this folder.
+set -euo pipefail
+target="/Library/Application Support/Adobe/CEP/extensions/com.icg.premiere"
+[ -d "$target" ] || exit 0
+chown -R root:admin "$target"
+chmod -R u=rwX,go=rX "$target"
+exit 0

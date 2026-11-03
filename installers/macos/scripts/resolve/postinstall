@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+target="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Workflow Integration Plugins/com.icg.resolve"
+[ -d "$target" ] || exit 0
+chown -R root:admin "$target"
+chmod -R u=rwX,go=rX "$target"
+# WorkflowIntegration.node is a native module Resolve dlopens; keep it executable.
+find "$target" -type f -name '*.node' -exec chmod a+x {} +
+exit 0

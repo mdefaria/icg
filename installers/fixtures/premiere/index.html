@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ICG installer fixture</title>
+    <style>
+      body {
+        font-family: -apple-system, "Segoe UI", sans-serif;
+        background: #1e1e1e;
+        color: #e6e6e6;
+        padding: 16px;
+      }
+      code {
+        color: #9cdcfe;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>ICG installer fixture</h3>
+    <p>
+      If you can read this inside Premiere Pro <b>without</b> PlayerDebugMode, the signed extension
+      folder installed by the ICG installer loads correctly.
+    </p>
+    <p id="info"></p>
+    <script>
+      document.getElementById("info").textContent =
+        "Loaded at " + new Date().toISOString() + " from " + location.href;
+    </script>
+  </body>
+</html>
