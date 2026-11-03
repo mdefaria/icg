@@ -1,0 +1,7 @@
+{
+  "name": "com.icg.resolve",
+  "version": "0.0.1",
+  "description": "ICG Workflow Integration plugin for DaVinci Resolve Studio",
+  "main": "main.js",
+  "private": true
+}
