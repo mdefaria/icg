@@ -1,0 +1,125 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: var(--icg-bg);
+  color: var(--icg-text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.dark {
+  --icg-bg: #1e1f22;
+  --icg-surface: #2a2b2f;
+  --icg-surface-2: #34363b;
+  --icg-border: #44464c;
+  --icg-text: #e8e8ea;
+  --icg-muted: #a1a3a9;
+  --icg-accent: #4c8dff;
+  --icg-accent-text: #ffffff;
+  --icg-accent-soft: #24385c;
+  --icg-danger: #ff7a70;
+  --icg-danger-soft: #4a2523;
+  --icg-ok: #5fd08a;
+  --icg-skeleton: #3a3c41;
+  --icg-frame: #101113;
+  --icg-guide: rgba(255, 196, 0, 0.18);
+  --icg-guide-border: rgba(255, 196, 0, 0.75);
+}
+
+.light {
+  --icg-bg: #f4f4f5;
+  --icg-surface: #ffffff;
+  --icg-surface-2: #ececee;
+  --icg-border: #d2d3d7;
+  --icg-text: #1c1d20;
+  --icg-muted: #62646b;
+  --icg-accent: #1f6feb;
+  --icg-accent-text: #ffffff;
+  --icg-accent-soft: #dbe7fd;
+  --icg-danger: #c8322a;
+  --icg-danger-soft: #fbe3e1;
+  --icg-ok: #1f8a4c;
+  --icg-skeleton: #e1e2e5;
+  --icg-frame: #4a4c52;
+  --icg-guide: rgba(230, 150, 0, 0.18);
+  --icg-guide-border: rgba(200, 120, 0, 0.85);
+}
+
+.banner {
+  flex: 0 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--icg-border);
+  background: var(--icg-surface);
+}
+
+.tab {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 9px 2px 8px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--icg-muted);
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabActive {
+  color: var(--icg-text);
+  border-bottom-color: var(--icg-accent);
+}
+
+.badge {
+  display: inline-block;
+  min-width: 14px;
+  margin-left: 4px;
+  padding: 0 4px;
+  border-radius: 7px;
+  background: var(--icg-accent-soft);
+  color: var(--icg-text);
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.body {
+  flex: 1 1 auto;
+  padding: 12px;
+  min-width: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  border-top: 1px solid var(--icg-border);
+  color: var(--icg-muted);
+  font-size: 11px;
+}
+
+.linkButton {
+  padding: 2px 0;
+  border: none;
+  background: transparent;
+  color: var(--icg-accent);
+  font: inherit;
+  text-decoration: underline;
+}
