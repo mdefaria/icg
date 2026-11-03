@@ -90,3 +90,47 @@ Host adapter facts (verified against Adobe typings and samples):
 - Price around £10 leaves thin margin per sale after Stripe fees; support must be self-service.
 - Resolve Free users cannot be integrated; messaging must prevent refunds.
 - Trademark: never spell out the acronym, no Platform logos, descriptive use only.
+
+## 6. Work breakdown for parallel sessions
+
+Rule: step 0 runs alone and merges first. Everything after it forks from that commit; each session owns one directory and touches `packages/shared` and `packages/host-sdk` only by agreement.
+
+### Step 0 - Foundation (one session, sequential)
+- pnpm workspace + Turborepo, TypeScript base config, lint/format, CI skeleton (lint, typecheck, test).
+- `packages/shared`: `Comment`, `ManualComment`, `Avatar`, `Template` (platform, theme, variant), `Placement`, `Frame`, `Overlay` request/result, `Bank` entry schema, `Key` payload. Mirrors `CONTEXT.md` names exactly.
+- `packages/host-sdk`: `HostAdapter` interface: `getSequenceInfo()`, `getPlayhead()`, `writeFile()`, `importAndInsert()`, `getPlatformTheme()`, plus a fake adapter for tests.
+- `AGENTS.md` pointing at `CONTEXT.md`, `docs/adr/`, package ownership and the "contracts are frozen" rule.
+
+### Step 1 - Spikes (parallel, each its own session and worktree)
+Cloud sessions write the code; spikes marked (local) need you to run them in Premiere/Resolve on a real machine.
+- S1 CEP shell: panel loads the React UI, renders one Template to a transparent PNG in-panel with resvg-wasm, writes it to disk. (local, mac + win, Premiere 23 and 26)
+- S2 ExtendScript adapter: import, overwrite at playhead on a chosen track, create track, set duration, read frame size. (local)
+- S3 Installer: signed CEP extension folder installed by `.pkg` / `.exe`, loads without PlayerDebugMode, uninstaller. (local)
+- S4 Resolve adapter: Workflow Integration plugin shell, `ImportMedia` + `AppendToTimeline` at playhead, `AddTrack`. (local, Studio 19/20)
+- S5 Renderer fidelity: Templates for TikTok, Instagram, YouTube, X, dark/light, single + creator reply, compared to real screenshots; colour emoji path confirmed.
+- S6 Avatar pipeline: generation prompts and scripts for the local GPU, face detection, embedding dedupe, pack format. (local GPU, 200-image sample)
+- S7 Commerce round trip: Stripe test product, Worker webhook, signed Key, email, Activation + Device record in D1.
+- S8 Informational: resvg-wasm inside Premiere UXP, one day hard stop. (local)
+
+### Step 2 - Core (parallel, after S5 fixes the Template contract)
+- C1 `packages/engine`: Bank lookup by Platform/language/tone/context, username generator per Platform, likes/time generators, seeded randomness, internal API surface.
+- C2 `packages/bank`: EN and ES drafts, ~1,500 each, tagged; preview script that renders random samples.
+- C3 `packages/renderer`: production Templates, text wrapping, emoji runs, font embedding, WASM wrapper, golden-image tests.
+- C4 `packages/ui`: generate, edit, Manual Comment, Avatar picker/upload, Placement canvas with safe zones, batch, Insert button, Activation screen; built against the fake adapter and UXP's CSS subset.
+- C5 `packages/licensing`: Key verification, Activation client, Device fingerprint, offline grace.
+- C6 `apps/web`: shell, service worker cache, Frame presets and 1080p/4K, PNG download.
+
+### Step 3 - Hosts (parallel, after C3 + C4)
+- H1 `apps/premiere`: CEP shell from S1 + adapter from S2 + UI; panel theme sync; update banner.
+- H2 `apps/resolve`: Electron shell from S4 + UI; update banner.
+- H3 `installers/`: production signing, notarisation, both Hosts, CI release job.
+
+### Step 4 - Commerce (parallel with step 3)
+- M1 `apps/api`: checkout session, webhook, Key issue + email, resend-Key, Activation, Device list/remove, version check, Key-gated R2 downloads.
+- M2 `apps/landing`: Astro site, pricing + Stripe Checkout, downloads page, Device page, FAQ/docs, changelog, Terms/Privacy/Refund drafts, Cloudflare Web Analytics.
+- M3 Crash reporting opt-in wiring in both Hosts and the web app.
+
+### Step 5 - Beta and launch (sequential)
+- B1 Beta build, 15 to 20 editors, two weeks, bug triage, testimonials.
+- B2 Launch: price final, Stripe live, DNS, release tags.
+- Post-launch roadmap: pop-in animation, UXP port (due before Dec 2028), MCP, more Platforms and languages.
