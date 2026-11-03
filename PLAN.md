@@ -133,7 +133,7 @@ Contract additions made after the spikes (additive): `OverlaySpec.language?` for
 ### Step 2 - Core (parallel, after S5 fixes the Template contract). Status and handoff in `docs/HANDOFF.md`.
 
 - C1 DONE. `packages/engine`: Bank lookup by Platform/language/tone/context, username generator per Platform, likes/time generators, seeded randomness, internal API surface.
-- C2 `packages/bank`: EN and ES drafts, ~1,500 each, tagged; preview script that renders random samples.
+- C2 DONE. `packages/bank`: EN and ES drafts, ~1,500 each, tagged; preview script that renders random samples.
 - C3 `packages/renderer`: production Templates, text wrapping, emoji runs, font embedding, WASM wrapper, golden-image tests.
 - C4 `packages/ui`: generate, edit, Manual Comment, Avatar picker/upload, Placement canvas with safe zones, batch, Insert button, Activation screen; built against the fake adapter and UXP's CSS subset.
 - C5 DONE. `packages/licensing`: Key verification, Activation client, Device fingerprint, offline grace.
