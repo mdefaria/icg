@@ -1,0 +1,110 @@
+{
+  "language": "es",
+  "entries": [
+    {
+      "id": "reply-es-001",
+      "language": "es",
+      "tone": "hype",
+      "text": "la parte 2 sale el viernes 🔥"
+    },
+    {
+      "id": "reply-es-002",
+      "language": "es",
+      "tone": "hype",
+      "text": "gracias por verlo hasta el final {emoji}"
+    },
+    {
+      "id": "reply-es-003",
+      "language": "es",
+      "tone": "request",
+      "text": "el tutorial ya viene, atentos 👀"
+    },
+    {
+      "id": "reply-es-004",
+      "language": "es",
+      "tone": "funny",
+      "text": "yo tampoco estaba lista 😭"
+    },
+    {
+      "id": "reply-es-005",
+      "language": "es",
+      "tone": "funny",
+      "text": "fueron {n} tomas, no preguntes 💀"
+    },
+    {
+      "id": "reply-es-006",
+      "language": "es",
+      "tone": "relatable",
+      "text": "literal yo todos los días"
+    },
+    {
+      "id": "reply-es-007",
+      "language": "es",
+      "tone": "story",
+      "text": "esto significa mucho, gracias 🥹"
+    },
+    {
+      "id": "reply-es-008",
+      "language": "es",
+      "tone": "question",
+      "text": "¡el link está en mi bio!"
+    },
+    {
+      "id": "reply-es-009",
+      "language": "es",
+      "tone": "question",
+      "text": "todo grabado con el celu, en serio"
+    },
+    { "id": "reply-es-010", "language": "es", "tone": "hype", "text": "son los mejores ❤️" },
+    {
+      "id": "reply-es-011",
+      "language": "es",
+      "tone": "request",
+      "text": "dicho y hecho, lo grabo esta semana"
+    },
+    {
+      "id": "reply-es-012",
+      "language": "es",
+      "tone": "funny",
+      "text": "las tomas falsas son peores 😂"
+    },
+    {
+      "id": "reply-es-013",
+      "language": "es",
+      "tone": "critical",
+      "text": "tienes razón, el audio lo arreglo para el próximo 🙏"
+    },
+    {
+      "id": "reply-es-014",
+      "language": "es",
+      "tone": "product",
+      "text": "está en el link de mi perfil ✨",
+      "platforms": ["tiktok", "instagram"]
+    },
+    {
+      "id": "reply-es-015",
+      "language": "es",
+      "tone": "question",
+      "text": "la versión completa está en mi canal",
+      "platforms": ["youtube"]
+    },
+    {
+      "id": "reply-es-016",
+      "language": "es",
+      "tone": "hype",
+      "text": "{n} días más y verán por qué 👀"
+    },
+    {
+      "id": "reply-es-017",
+      "language": "es",
+      "tone": "story",
+      "text": "leo todos los comentarios, lo prometo"
+    },
+    {
+      "id": "reply-es-018",
+      "language": "es",
+      "tone": "relatable",
+      "text": "qué alivio no ser la única 😅"
+    }
+  ]
+}
