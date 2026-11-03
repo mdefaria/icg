@@ -5,24 +5,25 @@ import {
   KEY_VERSION,
   type KeyPayload,
 } from "@icg/shared";
+import {
+  ACTIVATION_TOKEN_TTL_SECONDS,
+  base64UrlDecode,
+  base64UrlEncode,
+  generateKey,
+  importPrivateKey,
+  importPublicKey,
+  parseKey,
+  signKeyPayload,
+  verifyActivationToken,
+  verifyKeyPayload,
+  type ActivationToken,
+} from "@icg/licensing";
 import { env, fetchMock, SELF } from "cloudflare:test";
 import { afterEach, beforeAll, describe, expect, it } from "vitest";
 import { z } from "zod";
 import { issueKeys, type KeyRow } from "./db";
 import { nowSeconds } from "./env";
-import { generateKey, parseKey } from "./key";
 import { signStripePayload } from "./stripe";
-import {
-  ACTIVATION_TOKEN_TTL_SECONDS,
-  base64UrlDecode,
-  base64UrlEncode,
-  importPrivateKey,
-  importPublicKey,
-  signKeyPayload,
-  verifyActivationToken,
-  verifyKeyPayload,
-  type ActivationToken,
-} from "./token";
 
 const API = "https://api.icg.test";
 const KEY_PATTERN = /ICG1(?:-[0-9A-Z]{5}){4}/g;
@@ -303,6 +304,9 @@ describe("POST /activate", () => {
     const verified = await verifyActivationToken(result.token, publicJwk);
     expect(verified.ok).toBe(true);
     if (!verified.ok) throw new Error("unreachable");
+    expect(
+      await verifyActivationToken(result.token, publicJwk, undefined, { ed25519: "noble" }),
+    ).toEqual(verified);
     expect(verified.payload.key).toMatchObject({ v: KEY_VERSION, id, devices: DEVICES_PER_KEY });
     expect(verified.payload.device).toBe("studio-mac");
     expect(verified.payload.exp - verified.payload.iat).toBe(ACTIVATION_TOKEN_TTL_SECONDS);

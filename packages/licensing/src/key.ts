@@ -25,7 +25,7 @@ export function encodeBase32(bytes: Uint8Array, chars: number): string {
   return out;
 }
 
-export function decodeBase32(text: string, byteLength: number): Uint8Array | null {
+export function decodeBase32(text: string, byteLength: number): Uint8Array<ArrayBuffer> | null {
   const out = new Uint8Array(byteLength);
   let buffer = 0;
   let bits = 0;
@@ -45,7 +45,7 @@ export function decodeBase32(text: string, byteLength: number): Uint8Array | nul
   return index === byteLength ? out : null;
 }
 
-async function checksum(idBytes: Uint8Array): Promise<string> {
+async function checksum(idBytes: Uint8Array<ArrayBuffer>): Promise<string> {
   const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", idBytes));
   return encodeBase32(digest, CHECK_CHARS);
 }
