@@ -1,0 +1,11 @@
+# Pipeline outputs. The packed pool is distributed with Host builds, not through git (see SPIKE.md).
+raw/
+raw-dry-run/
+curated/
+curated-dry-run/
+defaults/
+defaults-dry-run/
+pool/
+pool-dry-run/
+.venv/
+__pycache__/
