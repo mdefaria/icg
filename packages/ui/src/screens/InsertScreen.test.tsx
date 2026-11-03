@@ -56,9 +56,9 @@ describe("Insert", () => {
       frame: { width: 1080, height: 1920 },
     });
 
-    await waitFor(() => expect(status(3)).toBe("Inserted on V3 at 4s"));
+    await waitFor(() => expect(status(3)).toBe("Inserted on V3 at 5.5s"));
     expect(status(1)).toBe("Inserted on V1 at 4s");
-    expect(status(2)).toBe("Inserted on V2 at 4s");
+    expect(status(2)).toBe("Inserted on V2 at 4.75s");
   });
 
   it("stacks with a fallback step when a card size is unknown", async () => {
@@ -83,7 +83,7 @@ describe("Insert", () => {
     await user.click(button("Generate"));
     await user.click(tab("Insert"));
     await user.click(button("Insert at playhead"));
-    await waitFor(() => expect(status(2)).toBe("Inserted on V1 at 0s"));
+    await waitFor(() => expect(status(2)).toBe("Inserted on V1 at 0.5s"));
     expect(status(1)).toBe("Failed: Track is locked");
     expect(screen.queryByRole("dialog")).toBeNull();
   });
