@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  productbuild Distribution for the ICG installer. build-pkg.sh substitutes
+  @VERSION@ before use. Two selectable choices, pre-selected by whether the
+  Host application is present on the target volume; the common package
+  (uninstaller) is always installed.
+-->
+<installer-gui-script minSpecVersion="2">
+  <title>ICG @VERSION@</title>
+  <organization>com.icg</organization>
+  <options customize="always" require-scripts="false" rootVolumeOnly="true" hostArchitectures="x86_64,arm64"/>
+  <domains enable_localSystem="true"/>
+  <welcome file="welcome.html" mime-type="text/html"/>
+  <conclusion file="conclusion.html" mime-type="text/html"/>
+
+  <installation-check script="installationCheck()"/>
+  <script><![CDATA[
+    function premiereInstalled() {
+      for (var year = 2022; year <= 2035; year++) {
+        var app = '/Applications/Adobe Premiere Pro ' + year + '/Adobe Premiere Pro ' + year + '.app';
+        if (system.files.fileExistsAtPath(app)) { return true; }
+      }
+      return system.files.fileExistsAtPath('/Applications/Adobe Premiere Pro (Beta)/Adobe Premiere Pro (Beta).app');
+    }
+    function resolveInstalled() {
+      return system.files.fileExistsAtPath('/Applications/DaVinci Resolve/DaVinci Resolve.app');
+    }
+    function installationCheck() {
+      if (system.compareVersions(system.version.ProductVersion, '12.0') < 0) {
+        my.result.title = 'macOS 12 or newer required';
+        my.result.message = 'ICG supports macOS 12 Monterey and newer.';
+        my.result.type = 'Fatal';
+        return false;
+      }
+      if (!premiereInstalled() && !resolveInstalled()) {
+        my.result.title = 'No supported Host found';
+        my.result.message = 'Neither Adobe Premiere Pro nor DaVinci Resolve was found in /Applications. You can still install and the panel will appear once a Host is installed.';
+        my.result.type = 'Warn';
+        return false;
+      }
+      return true;
+    }
+  ]]></script>
+
+  <choices-outline>
+    <line choice="premiere"/>
+    <line choice="resolve"/>
+    <line choice="common"/>
+  </choices-outline>
+
+  <choice id="premiere" title="Premiere Pro panel"
+          description="Installs the ICG panel for Adobe Premiere Pro 23 and newer (Window > Extensions > ICG)."
+          selected="premiereInstalled() || !resolveInstalled()" start_selected="premiereInstalled() || !resolveInstalled()">
+    <pkg-ref id="com.icg.premiere.pkg"/>
+  </choice>
+  <choice id="resolve" title="DaVinci Resolve Studio plugin"
+          description="Installs the ICG Workflow Integration plugin for DaVinci Resolve Studio 19 and newer (Workspace > Workflow Integrations > ICG). Resolve Free cannot load plugins."
+          selected="resolveInstalled() || !premiereInstalled()" start_selected="resolveInstalled() || !premiereInstalled()">
+    <pkg-ref id="com.icg.resolve.pkg"/>
+  </choice>
+  <choice id="common" title="Uninstaller" visible="false" enabled="false" selected="true" start_selected="true">
+    <pkg-ref id="com.icg.common.pkg"/>
+  </choice>
+
+  <pkg-ref id="com.icg.premiere.pkg" version="@VERSION@" onConclusion="none">icg-premiere.pkg</pkg-ref>
+  <pkg-ref id="com.icg.resolve.pkg" version="@VERSION@" onConclusion="none">icg-resolve.pkg</pkg-ref>
+  <pkg-ref id="com.icg.common.pkg" version="@VERSION@" onConclusion="none">icg-common.pkg</pkg-ref>
+</installer-gui-script>

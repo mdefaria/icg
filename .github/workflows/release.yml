@@ -1,0 +1,215 @@
+name: release
+# Builds the Premiere CEP panel and the Resolve plugin, signs the CEP
+# extension (ZXPSignCmd), then produces a notarised macOS .pkg and a signed
+# Windows .exe. Secrets and variables are referenced by name only; see
+# installers/README.md for what each one holds.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      skip_signing:
+        description: "Build unsigned installers (no certificates needed)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+env:
+  NODE_VERSION: 22
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - id: v
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF_TYPE" == "tag" ]]; then
+            echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+          else
+            echo "version=0.0.0-dev.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+          fi
+
+  macos:
+    needs: version
+    runs-on: macos-latest
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
+      SKIP_SIGNING: ${{ inputs.skip_signing == true }}
+      KEYCHAIN_PATH: ${{ runner.temp }}/icg-signing.keychain-db
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Build Host apps
+        run: pnpm --filter "./apps/premiere" --filter "./apps/resolve" run --if-present build
+
+      - name: Fetch ZXPSignCmd
+        env:
+          ZXPSIGNCMD_URL: ${{ vars.ZXPSIGNCMD_URL_MACOS }}
+          ZXPSIGNCMD_SHA256: ${{ vars.ZXPSIGNCMD_SHA256_MACOS }}
+        run: |
+          test -n "$ZXPSIGNCMD_URL" || { echo "repository variable ZXPSIGNCMD_URL_MACOS is not set"; exit 1; }
+          path="$(bash installers/common/fetch-zxpsigncmd.sh "$ZXPSIGNCMD_URL" "$ZXPSIGNCMD_SHA256")"
+          echo "ZXPSIGNCMD=$path" >> "$GITHUB_ENV"
+
+      - name: Import Developer ID certificates
+        if: env.SKIP_SIGNING != 'true'
+        env:
+          APPLE_DEVELOPER_ID_APPLICATION_P12: ${{ secrets.APPLE_DEVELOPER_ID_APPLICATION_P12 }}
+          APPLE_DEVELOPER_ID_INSTALLER_P12: ${{ secrets.APPLE_DEVELOPER_ID_INSTALLER_P12 }}
+          APPLE_CERTS_PASSWORD: ${{ secrets.APPLE_CERTS_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          set -euo pipefail
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          for name in APPLICATION INSTALLER; do
+            var="APPLE_DEVELOPER_ID_${name}_P12"
+            printf '%s' "${!var}" | base64 --decode > "$RUNNER_TEMP/$name.p12"
+            security import "$RUNNER_TEMP/$name.p12" -P "$APPLE_CERTS_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+            rm -f "$RUNNER_TEMP/$name.p12"
+          done
+          security set-key-partition-list -S apple-tool:,apple:,codesign:,productsign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security list-keychains -d user -s "$KEYCHAIN_PATH" login.keychain-db
+          security find-identity -v "$KEYCHAIN_PATH"
+
+      - name: Sign CEP extension
+        env:
+          CEP_SIGNING_CERT_P12_B64: ${{ secrets.CEP_SIGNING_CERT_P12 }}
+          CEP_SIGNING_CERT_PASSWORD: ${{ secrets.CEP_SIGNING_CERT_PASSWORD }}
+          APPLE_DEVELOPER_ID_APPLICATION: ${{ secrets.APPLE_DEVELOPER_ID_APPLICATION }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [[ "$SKIP_SIGNING" == "true" ]]; then
+            args+=(--self-signed-dev)
+          else
+            printf '%s' "$CEP_SIGNING_CERT_P12_B64" | base64 --decode > "$RUNNER_TEMP/cep.p12"
+            args+=(--cert "$RUNNER_TEMP/cep.p12" --codesign-identity "$APPLE_DEVELOPER_ID_APPLICATION")
+          fi
+          bash installers/common/sign-cep.sh "${args[@]}"
+          rm -f "$RUNNER_TEMP/cep.p12"
+
+      - name: Build, sign, notarise .pkg
+        env:
+          APPLE_DEVELOPER_ID_APPLICATION: ${{ secrets.APPLE_DEVELOPER_ID_APPLICATION }}
+          APPLE_DEVELOPER_ID_INSTALLER: ${{ secrets.APPLE_DEVELOPER_ID_INSTALLER }}
+          APP_STORE_CONNECT_KEY_P8_B64: ${{ secrets.APP_STORE_CONNECT_KEY_P8 }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          if [[ "$SKIP_SIGNING" == "true" ]]; then
+            bash installers/macos/build-pkg.sh --version "$VERSION" --skip-sign
+          else
+            printf '%s' "$APP_STORE_CONNECT_KEY_P8_B64" | base64 --decode > "$RUNNER_TEMP/AuthKey.p8"
+            export APP_STORE_CONNECT_KEY_P8_PATH="$RUNNER_TEMP/AuthKey.p8"
+            bash installers/macos/build-pkg.sh --version "$VERSION"
+            rm -f "$RUNNER_TEMP/AuthKey.p8"
+          fi
+
+      - name: Remove signing keychain
+        if: always()
+        run: security delete-keychain "$KEYCHAIN_PATH" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ICG-${{ env.VERSION }}-macos
+          path: |
+            installers/build/macos/*.pkg
+            installers/build/macos/*.notary-log.json
+            installers/build/cep/*.zxp
+          if-no-files-found: error
+
+  windows:
+    needs: version
+    runs-on: windows-latest
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
+      SKIP_SIGNING: ${{ inputs.skip_signing == true }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Build Host apps
+        shell: bash
+        run: pnpm --filter "./apps/premiere" --filter "./apps/resolve" run --if-present build
+
+      - name: Fetch ZXPSignCmd
+        shell: bash
+        env:
+          ZXPSIGNCMD_URL: ${{ vars.ZXPSIGNCMD_URL_WINDOWS }}
+          ZXPSIGNCMD_SHA256: ${{ vars.ZXPSIGNCMD_SHA256_WINDOWS }}
+        run: |
+          test -n "$ZXPSIGNCMD_URL" || { echo "repository variable ZXPSIGNCMD_URL_WINDOWS is not set"; exit 1; }
+          path="$(bash installers/common/fetch-zxpsigncmd.sh "$ZXPSIGNCMD_URL" "$ZXPSIGNCMD_SHA256")"
+          echo "ZXPSIGNCMD=$path" >> "$GITHUB_ENV"
+
+      - name: Sign CEP extension
+        shell: bash
+        env:
+          CEP_SIGNING_CERT_P12_B64: ${{ secrets.CEP_SIGNING_CERT_P12 }}
+          CEP_SIGNING_CERT_PASSWORD: ${{ secrets.CEP_SIGNING_CERT_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [[ "$SKIP_SIGNING" == "true" ]]; then
+            bash installers/common/sign-cep.sh --self-signed-dev
+          else
+            printf '%s' "$CEP_SIGNING_CERT_P12_B64" | base64 --decode > "$RUNNER_TEMP/cep.p12"
+            bash installers/common/sign-cep.sh --cert "$RUNNER_TEMP/cep.p12"
+            rm -f "$RUNNER_TEMP/cep.p12"
+          fi
+
+      - name: Build and sign .exe
+        shell: pwsh
+        env:
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          AZURE_TRUSTED_SIGNING_ENDPOINT: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
+          AZURE_TRUSTED_SIGNING_ACCOUNT: ${{ secrets.AZURE_TRUSTED_SIGNING_ACCOUNT }}
+          AZURE_TRUSTED_SIGNING_PROFILE: ${{ secrets.AZURE_TRUSTED_SIGNING_PROFILE }}
+        run: |
+          $mode = if ($env:SKIP_SIGNING -eq 'true') { 'None' } else { 'TrustedSigning' }
+          ./installers/windows/build.ps1 -Version $env:VERSION -SignMode $mode
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ICG-${{ env.VERSION }}-windows
+          path: |
+            installers/build/windows/*.exe
+            installers/build/cep/*.zxp
+          if-no-files-found: error
+
+  publish:
+    if: github.ref_type == 'tag'
+    needs: [version, macos, windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Checksums
+        run: cd dist && sha256sum ./*.pkg ./*.exe > SHA256SUMS.txt
+      - uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          files: |
+            dist/*.pkg
+            dist/*.exe
+            dist/SHA256SUMS.txt

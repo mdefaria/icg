@@ -1,0 +1,7 @@
+build/
+tools/
+*.p12
+*.pfx
+*.p8
+*.cer
+metadata.json
