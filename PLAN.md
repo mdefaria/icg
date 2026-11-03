@@ -119,8 +119,8 @@ Cloud sessions write the code; spikes marked (local) need you to run them in Pre
 
 Follow-ups from the spikes (tickets, in priority order):
 
-- F1 Licensing: Premiere's CEP Chromium has no Ed25519 in WebCrypto. Add a pure-JS Ed25519 verifier (`@noble/ed25519`) behind the same `verifyActivationToken` signature, or move the token to ES256, before C5. Source: `apps/api/SPIKE.md`.
-- F2 Avatars: replace insightface `buffalo_l` (non-commercial model pack) with YuNet + SFace (Apache-2.0) in `curate.py` before the 3,000-image run. Source: `packages/avatars/SPIKE.md`.
+- F1 DONE (C5). Licensing: Premiere's CEP Chromium has no Ed25519 in WebCrypto. Add a pure-JS Ed25519 verifier (`@noble/ed25519`) behind the same `verifyActivationToken` signature, or move the token to ES256, before C5. Source: `apps/api/SPIKE.md`.
+- F2 DONE. Avatars: replaced insightface `buffalo_l` (non-commercial model pack) with YuNet + SFace (Apache-2.0) in `curate.py` before the 3,000-image run. Source: `packages/avatars/SPIKE.md`.
 - F3 Premiere: owner checklist decides which `overwriteClip` time form to hardcode per version and whether QE `addTracks` appends or prepends. Production must write Overlays beside the project, not in the temp folder (Premiere links by path). Source: `apps/premiere/SPIKE.md`.
 - F4 Renderer: text widths are estimated without shaping in the Premiere spike; C3 uses `@icg/renderer`'s measurement everywhere. Per-Platform fidelity gaps and like-count rules per language are itemised in `packages/renderer/SPIKE.md`.
 - F5 Resolve: `AppendToTimeline` behaviour on an occupied range and `recordFrame` numbering with drop-frame start timecodes are unverified; the adapter always picks an empty track so the design holds either way. Source: `apps/resolve/SPIKE.md`.
@@ -130,13 +130,13 @@ Follow-ups from the spikes (tickets, in priority order):
 
 Contract additions made after the spikes (additive): `OverlaySpec.language?` for UI copy and number formatting; `Comment.replies?`, `reposts?`, `views?` for X and YouTube action rows.
 
-### Step 2 - Core (parallel, after S5 fixes the Template contract)
+### Step 2 - Core (parallel, after S5 fixes the Template contract). Status and handoff in `docs/HANDOFF.md`.
 
-- C1 `packages/engine`: Bank lookup by Platform/language/tone/context, username generator per Platform, likes/time generators, seeded randomness, internal API surface.
+- C1 DONE. `packages/engine`: Bank lookup by Platform/language/tone/context, username generator per Platform, likes/time generators, seeded randomness, internal API surface.
 - C2 `packages/bank`: EN and ES drafts, ~1,500 each, tagged; preview script that renders random samples.
 - C3 `packages/renderer`: production Templates, text wrapping, emoji runs, font embedding, WASM wrapper, golden-image tests.
 - C4 `packages/ui`: generate, edit, Manual Comment, Avatar picker/upload, Placement canvas with safe zones, batch, Insert button, Activation screen; built against the fake adapter and UXP's CSS subset.
-- C5 `packages/licensing`: Key verification, Activation client, Device fingerprint, offline grace.
+- C5 DONE. `packages/licensing`: Key verification, Activation client, Device fingerprint, offline grace.
 - C6 `apps/web`: shell, service worker cache, Frame presets and 1080p/4K, PNG download.
 
 ### Step 3 - Hosts (parallel, after C3 + C4)
