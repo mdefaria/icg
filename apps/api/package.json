@@ -1,0 +1,25 @@
+{
+  "name": "@icg/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "lint": "eslint src scripts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "keypair": "node scripts/generate-keypair.ts"
+  },
+  "dependencies": {
+    "@icg/shared": "workspace:*",
+    "hono": "^4.13.16",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "0.12.21",
+    "@cloudflare/workers-types": "4.20260310.1",
+    "vitest": "^3.2.4",
+    "wrangler": "4.72.0"
+  }
+}

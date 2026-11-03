@@ -1,0 +1,23 @@
+name = "icg-api"
+main = "src/index.ts"
+compatibility_date = "2026-03-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "icg"
+database_id = "replace-with-the-id-that-wrangler-d1-create-prints"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "icg-downloads"
+
+[vars]
+SITE_URL = "http://localhost:4321"
+EMAIL_FROM = "ICG <keys@example.com>"
+STRIPE_PRICE_ID = "price_replace_me"
+SIGNING_PUBLIC_KEY_JWK = '{"kty":"OKP","crv":"Ed25519","x":"replace-with-the-public-key-from-pnpm-keypair"}'
+
+# Secrets live in `wrangler secret put` (prod) or .dev.vars (local), never here:
+# STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, RESEND_API_KEY, SIGNING_PRIVATE_KEY_JWK
