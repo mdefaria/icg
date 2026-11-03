@@ -1,0 +1,153 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  font-size: 13px;
+  background: #1b1b1b;
+  color: #e6e6e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9a9a9a;
+  margin: 18px 0 8px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: #27303a;
+  border: 1px solid #3b4a5a;
+}
+
+.banner.warn {
+  background: #3a2f1c;
+  border-color: #7a5b1f;
+}
+
+.banner.error {
+  background: #3a1f1f;
+  border-color: #7a2a2a;
+}
+
+.banner.ok {
+  background: #1f3a2a;
+  border-color: #2a7a4a;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row > * {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background: #333;
+  color: #eee;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.primary {
+  background: #e84e1b;
+  border-color: #e84e1b;
+  color: #fff;
+}
+
+code,
+pre {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 11px;
+}
+
+pre {
+  margin: 0;
+  padding: 8px;
+  background: #111;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+dl > div {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 0;
+}
+
+dt {
+  width: 110px;
+  color: #9a9a9a;
+}
+
+dd {
+  margin: 0;
+}
+
+.preview {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.preview img {
+  width: 180px;
+  height: 320px;
+  background: repeating-conic-gradient(#2a2a2a 0 25%, #202020 0 50%) 0 0 / 16px 16px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.muted {
+  color: #9a9a9a;
+}
+
+a {
+  color: #6db3f2;
+}

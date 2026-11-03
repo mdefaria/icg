@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlackmagicDesign>
+    <Plugin>
+        <Id>com.icg.resolve</Id>
+        <Name>ICG</Name>
+        <Version>0.0.1</Version>
+        <Description>Social-media comment Overlays at the playhead</Description>
+        <FilePath>main.js</FilePath>
+    </Plugin>
+</BlackmagicDesign>
