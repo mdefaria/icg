@@ -1,4 +1,3 @@
-/// <reference types="vitest/config" />
 import { copyFileSync, cpSync } from "node:fs";
 import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
@@ -45,9 +44,5 @@ export default defineConfig({
         entryFileNames: "assets/panel.js",
       },
     },
-  },
-  test: {
-    environment: "node",
-    include: ["src/**/*.test.ts"],
   },
 });
