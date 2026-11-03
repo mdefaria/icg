@@ -1,145 +1,92 @@
-# ICG - Social Comment Overlay Plugin for Premiere Pro and DaVinci Resolve
+# ICG - Social Comment Overlays for Premiere Pro, DaVinci Resolve Studio and the web
 
-Status: draft plan, pre-grill. Items marked **[decide]** are open questions to settle before building.
+Status: settled after grilling (Nov 2026). Vocabulary in `CONTEXT.md`, decisions in `docs/adr/`.
 
-## 1. Product summary
+## 1. Product
 
-A paid tool that generates believable TikTok / Instagram style comments (avatar + username + text + likes/metadata), lets the user edit them, pick where they sit on the frame, and drops them onto the timeline from inside Premiere Pro or DaVinci Resolve Studio. Sold through a landing page with payment, license key and gated downloads. Installs without touching a terminal.
+ICG generates believable TikTok, Instagram, YouTube and X comments (Avatar, username, text, likes, time, flags), lets the user edit every part or write a Manual Comment, choose a Placement on the Frame, and Insert the resulting Overlay on the Host timeline at the playhead. Sold once, works offline after one Activation. Buyers: solo short-film and ad creators, freelance editors, small agencies.
 
-Everything the user asked for is feasible. Two platform facts (verified Nov 2026) shape the architecture:
+Positioning: a storytelling, skit and mockup tool. Terms make the user responsible for compliance with fake-review and advertising law (UK DMCC Act 2024, EU, FTC). The Bank keeps ad-flavoured entries neutral (questions, jokes), never endorsements.
 
-1. **Premiere Pro**: UXP plugins are generally available since v25.6 (Dec 2025). CEP still works but is on a migration timeline. New work should be UXP. UXP panels are not a browser: React is the supported UI stack, Angular will not run there.
-2. **DaVinci Resolve**: the free edition dropped scripting support entirely in 21.1. Workflow Integration plugins and the scripting API are Studio-only. Free users can only be served with "export PNG, drag it in".
+## 2. Settled decisions
 
-## 2. Architecture: one engine, thin hosts
+| Area | Decision |
+|---|---|
+| Generation | No AI at runtime. Curated Bank + procedural usernames, likes, timestamps. Build-time AI allowed for drafting the Bank and producing Avatars. (ADR 0001) |
+| Hosts at launch | Premiere Pro (UXP, min 26.2), DaVinci Resolve Studio (Workflow Integration plugin, min 19), web app. All at once. macOS and Windows. Resolve Free is not supported (no plugin loading since 21.1); landing page says so and points to the web app. |
+| UI | One shared React + TypeScript UI in all three Hosts. (ADR 0002) |
+| Rendering | SVG Templates rendered by resvg, packaged as WASM (web), native Node module (Resolve/Electron) and hybrid C++ addon (Premiere). One-day WASM-in-UXP probe first; if it works, the addon is dropped. (ADR 0003) |
+| Output | Static full-Frame transparent PNG at the sequence's frame size (Frame presets + 1080p/4K only in the web app). One Comment per Overlay; batch = N Overlays staggered in time and Placement. Animation is a future feature. |
+| Insert | Lowest empty video track above the playhead for the whole duration, new track if none. Default 3 s, configurable. Overwrite into empty space only, never ripple. |
+| Placement | Drag on a Frame preview, 9-point snap, scale slider, per-Platform safe-zone guides. Last Placement remembered globally per Platform. |
+| Platforms | TikTok, Instagram, YouTube, X. Dark and light. Single and creator-reply variants. Facebook/Threads later. |
+| Languages | Comments in English and Spanish. Manual Comment is language-neutral. UI in English. |
+| Bank | Nine tones (hype, funny, question, critical, relatable, emoji-only, request, story reaction, neutral product question) and context tags (short film, ad, tutorial, vlog, music). ~1,500 entries per language at launch, drafted by Claude, curated by the owner as data files in the repo with a sample-render preview script. |
+| Avatars | ~3,000 synthetic images bundled in every Host build (~60 MB): 60% faces across age/gender/ethnicity, 25% non-face (pets, cars, anime, landscapes), 15% Platform defaults. Generated once on the owner's local GPU, auto-curated (face detection, embedding dedupe) plus a visual pass. Manual Comments accept any user image. |
+| Fonts | Open substitutes (Inter, Roboto). Noto Color Emoji by default, Twemoji for the X Template. |
+| Offline | Everything offline after Activation, including the web app (service worker cache). Network only for Activation, non-blocking version check, opt-in crash reports. No hot content updates; new Bank/Templates ship as a new version behind the update banner. |
+| Commerce | Stripe Checkout + Stripe Tax, UK business, EU OSS handled by the owner. One-time price around £10 (to be reviewed). 14-day refund. Quantity field; one Key per Seat; 3 Devices per Key, web app counts as a Device. Keyless: Key by email, resend-Key form, Key-gated downloads, self-service Device management page. (ADR 0004) |
+| Backend | One Cloudflare Worker (TypeScript), D1, R2, transactional email. |
+| Landing | Astro static site on Cloudflare Pages: demo video, features, pricing, FAQ/docs, changelog, Terms/Privacy/Refund, testimonials from a two-week beta (15 to 20 editors, free Key). Cloudflare Web Analytics. Brand: "ICG" / "somethingicg", never spelled out. |
+| Distribution | Premiere: `.ccx` double-click via Creative Cloud. Resolve: signed `.pkg` (notarised) and signed `.exe`. Web app: nothing. |
+| Future | Pop-in animation, runtime AI as an optional online feature, local MCP server (engine exposes an internal API from day one), more Platforms and languages, content packs. |
+| Telemetry | Opt-in crash reports only, off by default. |
+| Support | Email + FAQ. |
 
-```
-                 +--------------------+
-                 |  Landing (Angular) |  marketing, reviews, checkout, downloads
-                 +---------+----------+
-                           |
-+------------+   +---------v----------+   +---------------------+
-| Premiere   |   |   API (.NET)       |   | Render service      |
-| UXP panel  +--->  auth/licensing    +--->  HTML/CSS template  |
-| (React)    |   |  LLM proxy         |   |  -> PNG with alpha  |
-+------------+   |  avatar pool       |   |  (Satori/resvg or   |
-                 |  payments webhooks |   |   headless Chromium)|
-+------------+   |  downloads/updates |   +---------------------+
-| Resolve WI |   +---------+----------+
-| plugin     +------------>|
-| (Electron, |             |
-|  React)    |   +---------v----------+
-+------------+   |  Web app (React)   |  fallback for Resolve Free, CapCut, FCP, anyone
-                 |  app.<domain>      |  same UI as the panels, downloads the PNG
-                 +--------------------+
-```
-
-Principles:
-
-- **One UI codebase** (`packages/generator-ui`, React + TypeScript) mounted in three shells: Premiere UXP, Resolve Workflow Integration (Electron), and the web app. Only the "insert into timeline" adapter differs per host.
-- **Render once, server-side.** The final PNG is produced by one renderer so the output is pixel-identical in every host and the preview is the same image the user gets. Panels never need html-to-image hacks (which do not work in UXP anyway).
-- **Keys stay on the server.** LLM and image providers are called from the .NET API behind the license check. Plugins never hold secrets, which also makes licensing enforceable.
-- **Full-frame PNG export.** The comment is composited at the chosen position onto a transparent canvas of the chosen frame preset (9:16, 4:5, 1:1, 16:9). The host just drops the clip over the footage; no per-host transform math, works identically in the web fallback. Advanced users can switch to a tight crop.
-
-Stack note: Angular is kept for the landing page and .NET for the API as per project preference. The panel UI has to be React because of UXP. **[decide]** Accept React for the shared panel UI, or keep Angular in an Electron desktop app and make the Premiere panel a thin remote control over localhost (worse in-host UX, two UIs to maintain). Recommendation: React.
-
-## 3. Feature breakdown
-
-### 3.1 Generation
-- Inputs: platform (TikTok / Instagram), theme (dark / light), language, tone (funny, supportive, hater, question, emoji-heavy...), optional video topic / transcript snippet, count.
-- Output per comment: username, display name, avatar, text, like count, time ago, flags (verified, pinned, "Creator" reply, liked by creator, reply arrow, translated label).
-- LLM: Claude via the API for usernames + comments. Prompted with platform conventions per language. Offline/cheap fallback: a bundled template bank for when the user is out of credits or offline.
-- Avatars: pre-generate a large pool of synthetic faces once (no real people), store on CDN, serve random picks with "shuffle". Cheaper and faster than per-request image generation, avoids consent problems. Also non-face options (pets, landscapes, logos, letter avatars) since many real accounts look like that. **[decide]** also offer on-demand AI avatar generation as a premium action.
-- Edit everything: avatar (shuffle, upload own, crop), username, display name, text, numbers, flags, theme.
-
-### 3.2 Templates
-- Pixel-accurate replicas of the current TikTok and Instagram comment rows (and the "comment reply" variant), dark and light. Versioned so UI changes on the platforms can ship as template updates without a plugin update.
-- Fonts: platform fonts are proprietary. Ship open metric-compatible substitutes (Inter / SF alternative). Flag in marketing as "inspired by".
-- Later: animated variants (pop-in, like-count tick) exported as PNG sequence or ProRes 4444. Static PNG first.
-
-### 3.3 Positioning
-- Canvas preview of the chosen frame preset with platform-accurate safe zones (TikTok right rail, caption area, IG bottom bar) overlaid.
-- 9-point snap grid plus free drag, scale slider, optional stack of several comments with spacing.
-- Position is stored per project so the next comment lands in the same spot.
-
-### 3.4 Host integration
-- **Premiere (UXP)**: import PNG into the project bin, insert on the first empty video track above the playhead, default duration 3 s (setting), overwrite vs insert setting. Verify in spike that the UXP Premiere API exposes import + track insert at a time.
-- **Resolve Studio (Workflow Integration)**: `MediaPool.ImportMedia` + `AppendToTimeline` with `recordFrame` at playhead and chosen `trackIndex`. Detect Studio vs Free on startup and show the web fallback message on Free.
-- **Web app**: download PNG, drag into any NLE.
-- Credits/usage shown in the panel, link to account page.
-
-### 3.5 Commercial
-- Landing page (Angular SSR): hero demo video, feature sections, pricing, reviews, FAQ, changelog, docs. Reviews: hand-collected testimonials at launch, structured data for SEO, later an embedded reviews widget.
-- Payments: merchant of record (Lemon Squeezy or Paddle) so VAT/sales tax is handled and license keys come built in. Stripe only if a MoR is not acceptable. **[decide]**
-- Flow: pay -> email with license key + link -> account page with downloads (Premiere `.ccx`, Resolve installer, web app) -> activate in panel with key (device limit, e.g. 2).
-- **[decide]** pricing model. Generation has a per-call cost (LLM + storage), so pure one-time unlimited is risky. Options: subscription; one-time license + monthly AI credits; one-time with template-bank generation free and AI generation as credits.
-
-### 3.6 Installation (non-technical users)
-- Premiere: `.ccx` file, double-click installs via the Creative Cloud desktop app. Optionally also list on Adobe Exchange for discovery.
-- Resolve: signed `.pkg` (macOS, notarized) and `.exe` (Windows, Inno Setup) that copies the plugin into the Workflow Integration Plugins folder. Needs Apple Developer and a Windows code-signing certificate, otherwise users see scary warnings.
-- Updates: panel checks the API for a newer version and shows a banner with a one-click download. Templates update silently from the server.
-- Linux Resolve: out of scope initially.
-
-## 4. Repository layout (monorepo)
+## 3. Architecture
 
 ```
 apps/
-  api/              .NET 10 Web API: auth, licensing, generation proxy, payments webhooks, downloads
-  landing/          Angular SSR marketing site + account/downloads page
-  web/              React web app shell for packages/generator-ui
-  premiere-uxp/     UXP plugin shell (manifest, host adapter), builds .ccx
-  resolve-plugin/   Workflow Integration plugin shell (Electron), host adapter
+  landing/          Astro static site (Cloudflare Pages)
+  web/              web app shell: React UI + resvg WASM + service worker
+  premiere/         UXP plugin: React UI + hybrid addon (or WASM) + Premiere adapter -> .ccx
+  resolve/          Workflow Integration plugin (Electron): React UI + resvg native + Resolve adapter
+  api/              Cloudflare Worker: Stripe webhook, Keys, Activation, Devices, version, downloads
 packages/
-  generator-ui/     shared React UI: generation, editing, positioning, insert button
-  templates/        comment templates (HTML/CSS + data contract), versioned
-  renderer/         template -> PNG (Node), used by the API render endpoint
-  host-sdk/         TS interface every host adapter implements (importAndInsert, getPlayhead, getFrameSize)
-  shared/           DTOs/types shared by API clients and UI
+  ui/               shared React generator UI (UXP CSS subset)
+  engine/           generation: Bank lookup, username/likes/time generators, internal API (future MCP)
+  renderer/         SVG Templates, font/emoji embedding, resvg wrappers for wasm/node/addon
+  bank/             Bank data files per Platform and language + preview script
+  avatars/          Avatar pool build pipeline (generate, curate, pack)
+  host-sdk/         Host adapter interface: getSequenceInfo, writeFile, importAndInsert, getPlayhead
+  licensing/        Key format, signature verification, Activation client
+native/
+  premiere-addon/   C++ shim over resvg C API, CI builds for mac arm64/x64, win x64
 installers/
-  macos/  windows/  scripts and signing config
-docs/
-  PLAN.md, ADRs, spikes/ findings
+  macos/ windows/   Resolve installer scripts, signing and notarisation
+docs/adr/
 ```
 
-## 5. Phases
+Host adapter facts (verified against Adobe typings and samples):
+- Premiere: `project.importFiles`, `SequenceEditor.createOverwriteItemAction` at `sequence.getPlayerPosition()` inside `project.lockedAccess` + `executeTransaction`; out point via `createSetOutPointAction`; `sequence.getFrameSize()` / `getSettings().getVideoFrameRate()`; files written with `fs.writeFile` to `plugin-temp:/`.
+- Resolve: `MediaPool.ImportMedia`, `AppendToTimeline` with `recordFrame` and `trackIndex`, `Timeline.AddTrack` when needed.
 
-**Phase 0 - Spikes (1 to 2 weeks).** De-risk before building.
-1. UXP Premiere: hello-world panel that imports a PNG and inserts it at the playhead on a chosen track. Confirm API coverage and `.ccx` install flow.
-2. Resolve Studio: Workflow Integration panel doing the same via `AppendToTimeline` with `recordFrame`.
-3. Renderer: TikTok + IG dark/light rows rendered to PNG with alpha, compared side by side with real screenshots. Choose Satori/resvg vs headless Chromium.
-4. Avatars: generate a 200-face sample, judge believability and variety, estimate pool cost.
-5. Payments: create a test product in Lemon Squeezy and Paddle, check license key API and webhooks from .NET.
+## 4. Phases
 
-**Phase 1 - Core product as web app.** API, renderer, templates, generation, editing, positioning, license gating. Sellable on its own to Resolve Free / CapCut / FCP users.
+**Phase 0 - Spikes (2 weeks)**
+1. WASM resvg inside Premiere UXP, mac + win, one day hard stop.
+2. Hybrid addon hello-world: SVG in, PNG out, loaded by the UXP panel, mac + win (skipped if 1 passes).
+3. Premiere adapter: import, overwrite at playhead on chosen track, set duration, read frame size.
+4. Resolve adapter: same via Workflow Integration plugin on Studio 19/20.
+5. Renderer fidelity: all four Platforms, dark/light, against real screenshots; colour emoji path confirmed.
+6. Avatar pipeline: 200-image sample from the local GPU, curation script.
+7. Stripe test product, webhook to Worker, Key issue + email, Activation round trip.
 
-**Phase 2 - Premiere UXP panel.** Shell + host adapter + `.ccx` packaging.
+**Phase 1 - Core**: engine, renderer, Templates, Bank v1 (EN/ES), Avatar pool, shared UI (generate, edit, Manual Comment, Placement), licensing client. Web app shipping first as the integration target.
 
-**Phase 3 - Resolve Studio plugin.** Shell + host adapter + installers + signing/notarization.
+**Phase 2 - Hosts**: Premiere plugin + `.ccx`; Resolve plugin + installers, signing, notarisation.
 
-**Phase 4 - Commercial.** Landing page, checkout, license keys, account/download page, update checks, telemetry (opt-in), support email, docs.
+**Phase 3 - Commerce**: Worker endpoints, Device page, downloads, landing page, legal pages, update banner, crash reporting opt-in.
 
-**Phase 5 - Launch and iterate.** Collect reviews, template updates, animated comments, more platforms (YouTube, X) as new templates.
+**Phase 4 - Beta**: 15 to 20 editors, two weeks, installer and fidelity feedback, testimonials.
 
-## 6. Risks and open questions for the grill
+**Phase 5 - Launch**, then animation, MCP, more Platforms/languages.
 
-- **[decide]** Pricing model (see 3.5) and target price point.
-- **[decide]** Product name and branding. Avoid "Tok"/"Insta" in the name to stay clear of trademarks. Does "icg" stand for something to keep?
-- **[decide]** React for the shared UI vs Angular-in-Electron with thin panels.
-- **[decide]** Merchant of record vs Stripe.
-- **[decide]** Avatars: pool only, or pool + on-demand generation.
-- **[decide]** Platforms at launch: macOS + Windows both? Premiere and Resolve on day one, or Premiere first?
-- **[decide]** Languages for generated comments at launch.
-- **[decide]** Offline behaviour: template bank only, or no offline mode.
-- **[decide]** Telemetry and crash reporting.
-- Legal: UI replicas of TikTok/Instagram, no logos, synthetic faces only, ToS clause that users are responsible for disclosure where required.
-- Resolve Free users cannot be integrated. Messaging on the landing page must be clear to avoid refunds.
-- CEP is still in use by many editors on older Premiere versions. Minimum supported Premiere version = 25.6. **[decide]** whether a CEP build for older versions is worth it (probably not).
-- Platform UI drift: TikTok/IG change their comment UI a few times a year; templates must be hot-updatable.
-- Code signing costs: Apple Developer program, Windows OV/EV certificate.
-- Hosting costs for the API and renderer; render endpoint must be cheap (prefer Satori/resvg over Chromium).
+## 5. Risks
 
-## 7. Sources checked
-
-- Adobe Developer Blog, "UXP Arrives in Premiere" (Dec 2025): UXP GA in Premiere 25.6.
-- Adobe partner update on UXP migration timeline for extensibility partners.
-- Puget Systems (Sep 2026): DaVinci Resolve Free 21.1 removes scripting support.
+- Hybrid addon API is young; re-test on every Premiere release. Addon stays one function to limit blast radius.
+- Platform UI drift: Templates need refreshing a few times a year; each refresh is a version.
+- Bank repetition at agency volumes; track Bank size as a KPI.
+- Price around £10 leaves thin margin per sale after Stripe fees; support must be self-service.
+- Resolve Free users cannot be integrated; messaging must prevent refunds.
+- Trademark: never spell out the acronym, no Platform logos, descriptive use only.
