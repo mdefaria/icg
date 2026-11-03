@@ -1,0 +1,1077 @@
+[
+  { "id": "es-story-0001", "language": "es", "tone": "story", "text": "NO me esperaba ese final" },
+  { "id": "es-story-0002", "language": "es", "tone": "story", "text": "ese giro del final 😳" },
+  { "id": "es-story-0003", "language": "es", "tone": "story", "text": "el final me destrozó" },
+  {
+    "id": "es-story-0004",
+    "language": "es",
+    "tone": "story",
+    "text": "el final... necesito un minuto"
+  },
+  {
+    "id": "es-story-0005",
+    "language": "es",
+    "tone": "story",
+    "text": "la última frase me pegó durísimo"
+  },
+  {
+    "id": "es-story-0006",
+    "language": "es",
+    "tone": "story",
+    "text": "la última escena me rompió"
+  },
+  {
+    "id": "es-story-0007",
+    "language": "es",
+    "tone": "story",
+    "text": "¿por qué lloré con el final?"
+  },
+  {
+    "id": "es-story-0008",
+    "language": "es",
+    "tone": "story",
+    "text": "no estaba lista para ese final"
+  },
+  {
+    "id": "es-story-0009",
+    "language": "es",
+    "tone": "story",
+    "text": "vi el final 3 veces y sigo procesando"
+  },
+  {
+    "id": "es-story-0010",
+    "language": "es",
+    "tone": "story",
+    "text": "el final te obliga a verlo otra vez desde el principio"
+  },
+  { "id": "es-story-0011", "language": "es", "tone": "story", "text": "el final lo cambia todo" },
+  {
+    "id": "es-story-0012",
+    "language": "es",
+    "tone": "story",
+    "text": "espera, ¿él estuvo muerto todo el tiempo??"
+  },
+  {
+    "id": "es-story-0013",
+    "language": "es",
+    "tone": "story",
+    "text": "¿o sea que la madre lo sabía desde el principio??"
+  },
+  {
+    "id": "es-story-0014",
+    "language": "es",
+    "tone": "story",
+    "text": "la cara del padre cuando se dio cuenta 😭"
+  },
+  {
+    "id": "es-story-0015",
+    "language": "es",
+    "tone": "story",
+    "text": "cómo lo miró ella antes de irse 💔"
+  },
+  {
+    "id": "es-story-0016",
+    "language": "es",
+    "tone": "story",
+    "text": "lo que no dijo él gritaba más que cualquier diálogo"
+  },
+  {
+    "id": "es-story-0017",
+    "language": "es",
+    "tone": "story",
+    "text": "ese silencio dijo más que cualquier palabra"
+  },
+  {
+    "id": "es-story-0018",
+    "language": "es",
+    "tone": "story",
+    "text": "la mirada del 0:48 lo dice todo"
+  },
+  {
+    "id": "es-story-0019",
+    "language": "es",
+    "tone": "story",
+    "text": "el hermano pequeño se robó la historia"
+  },
+  {
+    "id": "es-story-0020",
+    "language": "es",
+    "tone": "story",
+    "text": "la frase de la abuela al final 😭😭"
+  },
+  {
+    "id": "es-story-0021",
+    "language": "es",
+    "tone": "story",
+    "text": "\"nunca me lo preguntaste\" me destruyó"
+  },
+  {
+    "id": "es-story-0022",
+    "language": "es",
+    "tone": "story",
+    "text": "\"me quedé por ti\" me va a perseguir toda la semana"
+  },
+  {
+    "id": "es-story-0023",
+    "language": "es",
+    "tone": "story",
+    "text": "en la escena de la llamada contuve la respiración"
+  },
+  {
+    "id": "es-story-0024",
+    "language": "es",
+    "tone": "story",
+    "text": "le estaba gritando a la pantalla que se diera la vuelta"
+  },
+  { "id": "es-story-0025", "language": "es", "tone": "story", "text": "SABÍA que ella mentía" },
+  {
+    "id": "es-story-0026",
+    "language": "es",
+    "tone": "story",
+    "text": "lo vi venir desde la primera escena"
+  },
+  {
+    "id": "es-story-0027",
+    "language": "es",
+    "tone": "story",
+    "text": "adiviné el giro y aun así me dolió"
+  },
+  {
+    "id": "es-story-0028",
+    "language": "es",
+    "tone": "story",
+    "text": "tenía una teoría y era totalmente errónea 😭"
+  },
+  {
+    "id": "es-story-0029",
+    "language": "es",
+    "tone": "story",
+    "text": "mi teoría: la chica de la ventana es la misma del principio"
+  },
+  {
+    "id": "es-story-0030",
+    "language": "es",
+    "tone": "story",
+    "text": "mi teoría es que todo es un sueño"
+  },
+  {
+    "id": "es-story-0031",
+    "language": "es",
+    "tone": "story",
+    "text": "¿nadie más piensa que el vecino está detrás de todo?"
+  },
+  {
+    "id": "es-story-0032",
+    "language": "es",
+    "tone": "story",
+    "text": "el vecino esconde algo seguro"
+  },
+  {
+    "id": "es-story-0033",
+    "language": "es",
+    "tone": "story",
+    "text": "la puerta roja simboliza algo, seguro"
+  },
+  {
+    "id": "es-story-0034",
+    "language": "es",
+    "tone": "story",
+    "text": "¿nadie se fijó que el reloj marca la misma hora en todas las escenas??"
+  },
+  {
+    "id": "es-story-0035",
+    "language": "es",
+    "tone": "story",
+    "text": "la pista estaba en los primeros 5 segundos y no la vi"
+  },
+  {
+    "id": "es-story-0036",
+    "language": "es",
+    "tone": "story",
+    "text": "lo volví a ver y la foto de la pared cambia 👀"
+  },
+  {
+    "id": "es-story-0037",
+    "language": "es",
+    "tone": "story",
+    "text": "el foreshadowing de esto es genial"
+  },
+  {
+    "id": "es-story-0038",
+    "language": "es",
+    "tone": "story",
+    "text": "todas las pistas estaban ahí desde el principio"
+  },
+  {
+    "id": "es-story-0039",
+    "language": "es",
+    "tone": "story",
+    "text": "los detalles que solo pillas la segunda vez 🤯"
+  },
+  {
+    "id": "es-story-0040",
+    "language": "es",
+    "tone": "story",
+    "text": "esa referencia al principio fue buenísima"
+  },
+  { "id": "es-story-0041", "language": "es", "tone": "story", "text": "terminó donde empezó" },
+  {
+    "id": "es-story-0042",
+    "language": "es",
+    "tone": "story",
+    "text": "momento círculo completo 😭"
+  },
+  {
+    "id": "es-story-0043",
+    "language": "es",
+    "tone": "story",
+    "text": "me encanta que no lo explique todo"
+  },
+  {
+    "id": "es-story-0044",
+    "language": "es",
+    "tone": "story",
+    "text": "el final abierto me está volviendo loca"
+  },
+  {
+    "id": "es-story-0045",
+    "language": "es",
+    "tone": "story",
+    "text": "necesito saber qué había en la caja"
+  },
+  { "id": "es-story-0046", "language": "es", "tone": "story", "text": "¿QUÉ HABÍA EN LA CAJA?" },
+  { "id": "es-story-0047", "language": "es", "tone": "story", "text": "¿qué decía la carta??" },
+  {
+    "id": "es-story-0048",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} necesito saber qué pasa después de esto"
+  },
+  {
+    "id": "es-story-0049",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} dime que terminan juntos por favor"
+  },
+  {
+    "id": "es-story-0050",
+    "language": "es",
+    "tone": "story",
+    "text": "más les vale terminar juntos"
+  },
+  { "id": "es-story-0051", "language": "es", "tone": "story", "text": "justicia para el perro" },
+  {
+    "id": "es-story-0052",
+    "language": "es",
+    "tone": "story",
+    "text": "justicia para la hermana pequeña la verdad"
+  },
+  {
+    "id": "es-story-0053",
+    "language": "es",
+    "tone": "story",
+    "text": "el villano tenía razón y lo odio"
+  },
+  {
+    "id": "es-story-0054",
+    "language": "es",
+    "tone": "story",
+    "text": "¿¿el villano tenía razón?? 😳"
+  },
+  {
+    "id": "es-story-0055",
+    "language": "es",
+    "tone": "story",
+    "text": "yo estoy del lado del villano"
+  },
+  {
+    "id": "es-story-0056",
+    "language": "es",
+    "tone": "story",
+    "text": "¿está mal que entienda al villano?"
+  },
+  {
+    "id": "es-story-0057",
+    "language": "es",
+    "tone": "story",
+    "text": "la protagonista tomó la peor decisión posible"
+  },
+  {
+    "id": "es-story-0058",
+    "language": "es",
+    "tone": "story",
+    "text": "¿por qué abre esa puerta? 😭"
+  },
+  { "id": "es-story-0059", "language": "es", "tone": "story", "text": "NO ENTRES AHÍ" },
+  {
+    "id": "es-story-0060",
+    "language": "es",
+    "tone": "story",
+    "text": "ignoró todas las reglas de las pelis de terror en 30 segundos"
+  },
+  {
+    "id": "es-story-0061",
+    "language": "es",
+    "tone": "story",
+    "text": "la tensión era insoportable"
+  },
+  { "id": "es-story-0062", "language": "es", "tone": "story", "text": "el corazón me iba a mil" },
+  {
+    "id": "es-story-0063",
+    "language": "es",
+    "tone": "story",
+    "text": "se me olvidó respirar en esa escena"
+  },
+  {
+    "id": "es-story-0064",
+    "language": "es",
+    "tone": "story",
+    "text": "esa construcción de tensión es buenísima"
+  },
+  {
+    "id": "es-story-0065",
+    "language": "es",
+    "tone": "story",
+    "text": "el ritmo lento valió totalmente la pena"
+  },
+  {
+    "id": "es-story-0066",
+    "language": "es",
+    "tone": "story",
+    "text": "me tuvo enganchada hasta el último segundo"
+  },
+  {
+    "id": "es-story-0067",
+    "language": "es",
+    "tone": "story",
+    "text": "pasó de tierno a terrorífico en nada"
+  },
+  {
+    "id": "es-story-0068",
+    "language": "es",
+    "tone": "story",
+    "text": "empezó como comedia y terminó en tragedia"
+  },
+  {
+    "id": "es-story-0069",
+    "language": "es",
+    "tone": "story",
+    "text": "pasé de reírme a llorar en menos de un minuto"
+  },
+  { "id": "es-story-0070", "language": "es", "tone": "story", "text": "latigazo emocional 😭" },
+  {
+    "id": "es-story-0071",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} esta historia merece una serie entera"
+  },
+  {
+    "id": "es-story-0072",
+    "language": "es",
+    "tone": "story",
+    "text": "esto podría ser una peli tranquilamente"
+  },
+  {
+    "id": "es-story-0073",
+    "language": "es",
+    "tone": "story",
+    "text": "que alguien convierta esto en largometraje"
+  },
+  {
+    "id": "es-story-0074",
+    "language": "es",
+    "tone": "story",
+    "text": "más emocionante que muchas películas"
+  },
+  { "id": "es-story-0075", "language": "es", "tone": "story", "text": "el guion es increíble" },
+  {
+    "id": "es-story-0076",
+    "language": "es",
+    "tone": "story",
+    "text": "quien escribió esto sabe exactamente lo que hace"
+  },
+  {
+    "id": "es-story-0077",
+    "language": "es",
+    "tone": "story",
+    "text": "los diálogos se sienten muy reales"
+  },
+  {
+    "id": "es-story-0078",
+    "language": "es",
+    "tone": "story",
+    "text": "los personajes parecen personas reales"
+  },
+  {
+    "id": "es-story-0079",
+    "language": "es",
+    "tone": "story",
+    "text": "ya estoy encariñada con los personajes"
+  },
+  {
+    "id": "es-story-0080",
+    "language": "es",
+    "tone": "story",
+    "text": "daría la vida por el personaje secundario"
+  },
+  {
+    "id": "es-story-0081",
+    "language": "es",
+    "tone": "story",
+    "text": "el secundario tuvo el mejor arco"
+  },
+  {
+    "id": "es-story-0082",
+    "language": "es",
+    "tone": "story",
+    "text": "el crecimiento del personaje en 2 minutos es una locura"
+  },
+  { "id": "es-story-0083", "language": "es", "tone": "story", "text": "por fin se defendió 😭👏" },
+  {
+    "id": "es-story-0084",
+    "language": "es",
+    "tone": "story",
+    "text": "ella se merecía algo mejor desde el principio"
+  },
+  { "id": "es-story-0085", "language": "es", "tone": "story", "text": "él no la merecía" },
+  {
+    "id": "es-story-0086",
+    "language": "es",
+    "tone": "story",
+    "text": "los dos se merecían algo mejor"
+  },
+  {
+    "id": "es-story-0087",
+    "language": "es",
+    "tone": "story",
+    "text": "la mejor amiga es la verdadera heroína"
+  },
+  {
+    "id": "es-story-0088",
+    "language": "es",
+    "tone": "story",
+    "text": "la madre es la verdadera protagonista de esta historia"
+  },
+  {
+    "id": "es-story-0089",
+    "language": "es",
+    "tone": "story",
+    "text": "el padre se redimió al final"
+  },
+  {
+    "id": "es-story-0090",
+    "language": "es",
+    "tone": "story",
+    "text": "la escena de la disculpa me pudo"
+  },
+  {
+    "id": "es-story-0091",
+    "language": "es",
+    "tone": "story",
+    "text": "el reencuentro del final 🥹"
+  },
+  {
+    "id": "es-story-0092",
+    "language": "es",
+    "tone": "story",
+    "text": "el abrazo del final 😭😭😭"
+  },
+  {
+    "id": "es-story-0093",
+    "language": "es",
+    "tone": "story",
+    "text": "cuando cogió el teléfono ya lo sabía"
+  },
+  {
+    "id": "es-story-0094",
+    "language": "es",
+    "tone": "story",
+    "text": "cuando atendió el teléfono supe que algo iba mal"
+  },
+  {
+    "id": "es-story-0095",
+    "language": "es",
+    "tone": "story",
+    "text": "cuando paró la música supe que algo pasaba"
+  },
+  {
+    "id": "es-story-0096",
+    "language": "es",
+    "tone": "story",
+    "text": "el cambio de música antes del giro 👀"
+  },
+  {
+    "id": "es-story-0097",
+    "language": "es",
+    "tone": "story",
+    "text": "cortar el sonido justo antes de la revelación fue muy inteligente"
+  },
+  {
+    "id": "es-story-0098",
+    "language": "es",
+    "tone": "story",
+    "text": "el uso del silencio es perfecto"
+  },
+  {
+    "id": "es-story-0099",
+    "language": "es",
+    "tone": "story",
+    "text": "el flashback lo explicó todo"
+  },
+  { "id": "es-story-0100", "language": "es", "tone": "story", "text": "el flashback fue lo mejor" },
+  {
+    "id": "es-story-0101",
+    "language": "es",
+    "tone": "story",
+    "text": "¿o sea que la primera escena era en realidad la última??"
+  },
+  {
+    "id": "es-story-0102",
+    "language": "es",
+    "tone": "story",
+    "text": "espera, ¿la historia va al revés?"
+  },
+  {
+    "id": "es-story-0103",
+    "language": "es",
+    "tone": "story",
+    "text": "la línea temporal es confusa pero de las buenas"
+  },
+  {
+    "id": "es-story-0104",
+    "language": "es",
+    "tone": "story",
+    "text": "esto necesita parte 2 para explicar el final"
+  },
+  {
+    "id": "es-story-0105",
+    "language": "es",
+    "tone": "story",
+    "text": "la parte 1 estuvo bien pero esto es otro nivel"
+  },
+  {
+    "id": "es-story-0106",
+    "language": "es",
+    "tone": "story",
+    "text": "el mejor capítulo de la serie hasta ahora"
+  },
+  {
+    "id": "es-story-0107",
+    "language": "es",
+    "tone": "story",
+    "text": "esta serie cada vez está mejor"
+  },
+  {
+    "id": "es-story-0108",
+    "language": "es",
+    "tone": "story",
+    "text": "sigo esta serie desde el capítulo 1 y este final lo compensó todo"
+  },
+  { "id": "es-story-0109", "language": "es", "tone": "story", "text": "la trama se complica 👀" },
+  {
+    "id": "es-story-0110",
+    "language": "es",
+    "tone": "story",
+    "text": "el giro de trama del siglo"
+  },
+  { "id": "es-story-0111", "language": "es", "tone": "story", "text": "el giro me dejó loca" },
+  {
+    "id": "es-story-0112",
+    "language": "es",
+    "tone": "story",
+    "text": "en shock. totalmente en shock"
+  },
+  { "id": "es-story-0113", "language": "es", "tone": "story", "text": "quedé traumada gracias" },
+  {
+    "id": "es-story-0114",
+    "language": "es",
+    "tone": "story",
+    "text": "mi corazón no aguanta esto"
+  },
+  {
+    "id": "es-story-0115",
+    "language": "es",
+    "tone": "story",
+    "text": "no estoy bien después de ver esto"
+  },
+  {
+    "id": "es-story-0116",
+    "language": "es",
+    "tone": "story",
+    "text": "llorar con un video de {n} minutos es demasiado"
+  },
+  {
+    "id": "es-story-0117",
+    "language": "es",
+    "tone": "story",
+    "text": "esto me hizo llamar a mi madre"
+  },
+  {
+    "id": "es-story-0118",
+    "language": "es",
+    "tone": "story",
+    "text": "esto me dio ganas de abrazar a mi papá"
+  },
+  {
+    "id": "es-story-0119",
+    "language": "es",
+    "tone": "story",
+    "text": "por esto hay que decirle a la gente que la quieres"
+  },
+  {
+    "id": "es-story-0120",
+    "language": "es",
+    "tone": "story",
+    "text": "el mensaje es muy importante"
+  },
+  { "id": "es-story-0121", "language": "es", "tone": "story", "text": "el mensaje me caló hondo" },
+  { "id": "es-story-0122", "language": "es", "tone": "story", "text": "qué mensaje tan potente" },
+  {
+    "id": "es-story-0123",
+    "language": "es",
+    "tone": "story",
+    "text": "esta historia se me va a quedar mucho tiempo"
+  },
+  {
+    "id": "es-story-0124",
+    "language": "es",
+    "tone": "story",
+    "text": "voy a estar pensando en esto todo el día"
+  },
+  {
+    "id": "es-story-0125",
+    "language": "es",
+    "tone": "story",
+    "text": "no he dejado de pensar en esto desde ayer"
+  },
+  {
+    "id": "es-story-0126",
+    "language": "es",
+    "tone": "story",
+    "text": "qué bonita forma de contar la historia"
+  },
+  { "id": "es-story-0127", "language": "es", "tone": "story", "text": "narrativa en estado puro" },
+  {
+    "id": "es-story-0128",
+    "language": "es",
+    "tone": "story",
+    "text": "contar historias así es un arte"
+  },
+  { "id": "es-story-0129", "language": "es", "tone": "story", "text": "la narración es buenísima" },
+  {
+    "id": "es-story-0130",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} cómo cuentas las historias, no hay nadie igual"
+  },
+  {
+    "id": "es-story-0131",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} no puedes terminarlo así"
+  },
+  {
+    "id": "es-story-0132",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} ¿cómo nos haces esto?"
+  },
+  {
+    "id": "es-story-0133",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} necesito respuestas"
+  },
+  {
+    "id": "es-story-0134",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} te lo ruego, dime qué pasa después"
+  },
+  {
+    "id": "es-story-0135",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} esta historia se me va a quedar en la cabeza para siempre"
+  },
+  {
+    "id": "es-story-0136",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} cada capítulo escribes mejor"
+  },
+  {
+    "id": "es-story-0137",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} el giro fue malvado y me encantó"
+  },
+  {
+    "id": "es-story-0138",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} entonces ¿fue un sueño o no??"
+  },
+  {
+    "id": "es-story-0139",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} me rompiste el corazón con este"
+  },
+  {
+    "id": "es-story-0140",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} justicia para el hermano por favor"
+  },
+  {
+    "id": "es-story-0141",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} dime que el perro sobrevive"
+  },
+  {
+    "id": "es-story-0142",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} el cliffhanger es cruel"
+  },
+  {
+    "id": "es-story-0143",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} wey ¿cómo lo dejas ahí?"
+  },
+  {
+    "id": "es-story-0144",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} che no me podés dejar así"
+  },
+  {
+    "id": "es-story-0145",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} tío, no me hagas esto"
+  },
+  {
+    "id": "es-story-0146",
+    "language": "es",
+    "tone": "story",
+    "text": "{creator} parce, ¿y entonces qué pasó?"
+  },
+  {
+    "id": "es-story-0147",
+    "language": "es",
+    "tone": "story",
+    "text": "¿¿cliffhanger?? ¿en serio?"
+  },
+  {
+    "id": "es-story-0148",
+    "language": "es",
+    "tone": "story",
+    "text": "dejarlo ahí debería ser ilegal"
+  },
+  {
+    "id": "es-story-0149",
+    "language": "es",
+    "tone": "story",
+    "text": "no puedes dejarnos con ese final así"
+  },
+  {
+    "id": "es-story-0150",
+    "language": "es",
+    "tone": "story",
+    "text": "voy a esperar la parte 2 todos los días"
+  },
+  {
+    "id": "es-story-0151",
+    "language": "es",
+    "tone": "story",
+    "text": "qué original contar la historia con mensajes de texto"
+  },
+  {
+    "id": "es-story-0152",
+    "language": "es",
+    "tone": "story",
+    "text": "contar toda la historia con audios de voz es genial"
+  },
+  { "id": "es-story-0153", "language": "es", "tone": "story", "text": "storytime pero de cine" },
+  {
+    "id": "es-story-0154",
+    "language": "es",
+    "tone": "story",
+    "text": "storytime: a mi prima le pasó lo mismo"
+  },
+  {
+    "id": "es-story-0155",
+    "language": "es",
+    "tone": "story",
+    "text": "eso es muy parecido a lo que me pasó a mí 😳"
+  },
+  {
+    "id": "es-story-0156",
+    "language": "es",
+    "tone": "story",
+    "text": "esto le pasó a mi familia y se siente exactamente así"
+  },
+  {
+    "id": "es-story-0157",
+    "language": "es",
+    "tone": "story",
+    "text": "espera, ¿es una historia real??"
+  },
+  {
+    "id": "es-story-0158",
+    "language": "es",
+    "tone": "story",
+    "text": "¿está basado en algo real? se siente muy real"
+  },
+  {
+    "id": "es-story-0159",
+    "language": "es",
+    "tone": "story",
+    "text": "si es una historia real lloro todavía más"
+  },
+  {
+    "id": "es-story-0160",
+    "language": "es",
+    "tone": "story",
+    "text": "la historia detrás de esto es una locura"
+  },
+  {
+    "id": "es-story-0161",
+    "language": "es",
+    "tone": "story",
+    "text": "la historia de fondo aporta un montón"
+  },
+  {
+    "id": "es-story-0162",
+    "language": "es",
+    "tone": "story",
+    "text": "sabiendo la historia de fondo pega aún más fuerte"
+  },
+  {
+    "id": "es-story-0163",
+    "language": "es",
+    "tone": "story",
+    "text": "me encanta que los zapatos vuelvan a salir al final"
+  },
+  {
+    "id": "es-story-0164",
+    "language": "es",
+    "tone": "story",
+    "text": "el collar por fin tiene sentido"
+  },
+  {
+    "id": "es-story-0165",
+    "language": "es",
+    "tone": "story",
+    "text": "¡¡el paraguas de la primera escena!!! 😭"
+  },
+  {
+    "id": "es-story-0166",
+    "language": "es",
+    "tone": "story",
+    "text": "lo de la taza de café fue un detalle precioso"
+  },
+  {
+    "id": "es-story-0167",
+    "language": "es",
+    "tone": "story",
+    "text": "la nota en la nevera al final 😭"
+  },
+  {
+    "id": "es-story-0168",
+    "language": "es",
+    "tone": "story",
+    "text": "la foto de la mesita cuenta toda la historia"
+  },
+  {
+    "id": "es-story-0169",
+    "language": "es",
+    "tone": "story",
+    "text": "la silla vacía en la mesa 💔"
+  },
+  {
+    "id": "es-story-0170",
+    "language": "es",
+    "tone": "story",
+    "text": "la escena de la ventana es muy simbólica"
+  },
+  {
+    "id": "es-story-0171",
+    "language": "es",
+    "tone": "story",
+    "text": "la lluvia del final fue perfecta"
+  },
+  {
+    "id": "es-story-0172",
+    "language": "es",
+    "tone": "story",
+    "text": "la escena del coche es la mejor"
+  },
+  {
+    "id": "es-story-0173",
+    "language": "es",
+    "tone": "story",
+    "text": "ese último plano de la calle vacía 😶"
+  },
+  {
+    "id": "es-story-0174",
+    "language": "es",
+    "tone": "story",
+    "text": "la voz en off del final lo cerró todo"
+  },
+  {
+    "id": "es-story-0175",
+    "language": "es",
+    "tone": "story",
+    "text": "ahora entiendo el título 😭"
+  },
+  {
+    "id": "es-story-0176",
+    "language": "es",
+    "tone": "story",
+    "text": "el título al final me puso la piel de gallina"
+  },
+  {
+    "id": "es-story-0177",
+    "language": "es",
+    "tone": "story",
+    "text": "no entendí el título hasta el último segundo"
+  },
+  {
+    "id": "es-story-0178",
+    "language": "es",
+    "tone": "story",
+    "text": "la historia es sencilla pero pega fuerte"
+  },
+  {
+    "id": "es-story-0179",
+    "language": "es",
+    "tone": "story",
+    "text": "sin diálogos y contó mejor historia que muchas pelis"
+  },
+  {
+    "id": "es-story-0180",
+    "language": "es",
+    "tone": "story",
+    "text": "contar una historia entera en menos de un minuto tiene mérito"
+  },
+  {
+    "id": "es-story-0181",
+    "language": "es",
+    "tone": "story",
+    "text": "una peli entera en 60 segundos"
+  },
+  {
+    "id": "es-story-0182",
+    "language": "es",
+    "tone": "story",
+    "text": "el giro me hizo replantearme cada escena"
+  },
+  {
+    "id": "es-story-0183",
+    "language": "es",
+    "tone": "story",
+    "text": "era predecible pero igual me encantó"
+  },
+  {
+    "id": "es-story-0184",
+    "language": "es",
+    "tone": "story",
+    "text": "vi venir el giro pero la ejecución fue perfecta"
+  },
+  { "id": "es-story-0185", "language": "es", "tone": "story", "text": "¿y quién le escribía???" },
+  {
+    "id": "es-story-0186",
+    "language": "es",
+    "tone": "story",
+    "text": "¿de quién era la voz del final??"
+  },
+  { "id": "es-story-0187", "language": "es", "tone": "story", "text": "¿quién iba en el coche???" },
+  { "id": "es-story-0188", "language": "es", "tone": "story", "text": "¿quién dejó las flores??" },
+  {
+    "id": "es-story-0189",
+    "language": "es",
+    "tone": "story",
+    "text": "¿el desconocido era su padre?? necesito saberlo"
+  },
+  {
+    "id": "es-story-0190",
+    "language": "es",
+    "tone": "story",
+    "text": "el desconocido era él del futuro, ¿no??"
+  },
+  {
+    "id": "es-story-0191",
+    "language": "es",
+    "tone": "story",
+    "text": "creo que el niño es el viejo. cámbienme de opinión"
+  },
+  {
+    "id": "es-story-0192",
+    "language": "es",
+    "tone": "story",
+    "text": "era el fantasma desde el principio, ¿verdad?"
+  },
+  { "id": "es-story-0193", "language": "es", "tone": "story", "text": "esta historia tiene capas" },
+  {
+    "id": "es-story-0194",
+    "language": "es",
+    "tone": "story",
+    "text": "cada vez que lo vuelvo a ver descubro algo nuevo"
+  },
+  {
+    "id": "es-story-0195",
+    "language": "es",
+    "tone": "story",
+    "text": "lo volví a ver con la teoría en mente y cuadra perfecto"
+  },
+  {
+    "id": "es-story-0196",
+    "language": "es",
+    "tone": "story",
+    "text": "la segunda vez es una historia completamente distinta"
+  },
+  { "id": "es-story-0197", "language": "es", "tone": "story", "text": "uf, qué historia" },
+  {
+    "id": "es-story-0198",
+    "language": "es",
+    "tone": "story",
+    "text": "qué historia más bonita 🥹"
+  },
+  {
+    "id": "es-story-0199",
+    "language": "es",
+    "tone": "story",
+    "text": "qué historia tan triste 💔"
+  },
+  { "id": "es-story-0200", "language": "es", "tone": "story", "text": "no me esperaba llorar hoy" },
+  {
+    "id": "es-story-0201",
+    "language": "es",
+    "tone": "story",
+    "text": "me dejó con el corazón en la mano"
+  },
+  {
+    "id": "es-story-0202",
+    "language": "es",
+    "tone": "story",
+    "text": "che qué final, me dejó re mal"
+  },
+  {
+    "id": "es-story-0203",
+    "language": "es",
+    "tone": "story",
+    "text": "uy parce ese final me dejó frío"
+  },
+  {
+    "id": "es-story-0204",
+    "language": "es",
+    "tone": "story",
+    "text": "no manches con ese final wey"
+  },
+  { "id": "es-story-0205", "language": "es", "tone": "story", "text": "hostia el final, tío" }
+]

@@ -1,0 +1,1005 @@
+[
+  { "id": "es-funny-0001", "language": "es", "tone": "funny", "text": "JAJAJAJAJA" },
+  { "id": "es-funny-0002", "language": "es", "tone": "funny", "text": "jajajajajaja no puedo" },
+  { "id": "es-funny-0003", "language": "es", "tone": "funny", "text": "jajaja" },
+  { "id": "es-funny-0004", "language": "es", "tone": "funny", "text": "JAJSJSJAJSJ" },
+  { "id": "es-funny-0005", "language": "es", "tone": "funny", "text": "jsjsjsjs" },
+  { "id": "es-funny-0006", "language": "es", "tone": "funny", "text": "jajsjsjs me muero" },
+  { "id": "es-funny-0007", "language": "es", "tone": "funny", "text": "me muero 💀" },
+  { "id": "es-funny-0008", "language": "es", "tone": "funny", "text": "me MUERO" },
+  { "id": "es-funny-0009", "language": "es", "tone": "funny", "text": "me morí" },
+  { "id": "es-funny-0010", "language": "es", "tone": "funny", "text": "me morí de risa" },
+  { "id": "es-funny-0011", "language": "es", "tone": "funny", "text": "morí 💀💀" },
+  { "id": "es-funny-0012", "language": "es", "tone": "funny", "text": "estoy llorando de la risa" },
+  { "id": "es-funny-0013", "language": "es", "tone": "funny", "text": "lloro 😭😭" },
+  { "id": "es-funny-0014", "language": "es", "tone": "funny", "text": "llorando jajaja" },
+  { "id": "es-funny-0015", "language": "es", "tone": "funny", "text": "no puedo más 😂" },
+  { "id": "es-funny-0016", "language": "es", "tone": "funny", "text": "no puedo respirar" },
+  { "id": "es-funny-0017", "language": "es", "tone": "funny", "text": "me meé de la risa" },
+  { "id": "es-funny-0018", "language": "es", "tone": "funny", "text": "casi me ahogo con el agua" },
+  { "id": "es-funny-0019", "language": "es", "tone": "funny", "text": "escupí el café jajaja" },
+  { "id": "es-funny-0020", "language": "es", "tone": "funny", "text": "me atraganté de la risa" },
+  {
+    "id": "es-funny-0021",
+    "language": "es",
+    "tone": "funny",
+    "text": "me dio un ataque de risa en el metro"
+  },
+  {
+    "id": "es-funny-0022",
+    "language": "es",
+    "tone": "funny",
+    "text": "me reí tan fuerte que mi perro me miró raro"
+  },
+  {
+    "id": "es-funny-0023",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi madre me preguntó de qué me reía y no supe explicarle"
+  },
+  {
+    "id": "es-funny-0024",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi mamá entró al cuarto y yo llorando de risa a las 3am"
+  },
+  {
+    "id": "es-funny-0025",
+    "language": "es",
+    "tone": "funny",
+    "text": "mis vecinos pensarán que estoy loca"
+  },
+  { "id": "es-funny-0026", "language": "es", "tone": "funny", "text": "me reí como foca" },
+  { "id": "es-funny-0027", "language": "es", "tone": "funny", "text": "me reí como hiena" },
+  {
+    "id": "es-funny-0028",
+    "language": "es",
+    "tone": "funny",
+    "text": "me estoy riendo sola en el bus"
+  },
+  { "id": "es-funny-0029", "language": "es", "tone": "funny", "text": "no debí ver esto en clase" },
+  {
+    "id": "es-funny-0030",
+    "language": "es",
+    "tone": "funny",
+    "text": "ver esto en el trabajo fue un error"
+  },
+  {
+    "id": "es-funny-0031",
+    "language": "es",
+    "tone": "funny",
+    "text": "por qué me hace tanta gracia"
+  },
+  {
+    "id": "es-funny-0032",
+    "language": "es",
+    "tone": "funny",
+    "text": "por qué me dio tanta risa esto"
+  },
+  {
+    "id": "es-funny-0033",
+    "language": "es",
+    "tone": "funny",
+    "text": "no sé por qué me reí tanto"
+  },
+  {
+    "id": "es-funny-0034",
+    "language": "es",
+    "tone": "funny",
+    "text": "esto no debería darme tanta risa"
+  },
+  {
+    "id": "es-funny-0035",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} la cara del final 😭😭"
+  },
+  { "id": "es-funny-0036", "language": "es", "tone": "funny", "text": "esa cara jajajaja" },
+  { "id": "es-funny-0037", "language": "es", "tone": "funny", "text": "la cara de póker" },
+  { "id": "es-funny-0038", "language": "es", "tone": "funny", "text": "la mirada de reojo 💀" },
+  {
+    "id": "es-funny-0039",
+    "language": "es",
+    "tone": "funny",
+    "text": "la seguridad con la que lo dijo {creator} 😭"
+  },
+  { "id": "es-funny-0040", "language": "es", "tone": "funny", "text": "la confianza que tiene 😭" },
+  { "id": "es-funny-0041", "language": "es", "tone": "funny", "text": "la audacia" },
+  { "id": "es-funny-0042", "language": "es", "tone": "funny", "text": "el descaro jajaja" },
+  {
+    "id": "es-funny-0043",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo dijo con toda la seguridad del mundo"
+  },
+  { "id": "es-funny-0044", "language": "es", "tone": "funny", "text": "lo dijo sin pestañear 😭" },
+  { "id": "es-funny-0045", "language": "es", "tone": "funny", "text": "ella sabía lo que hacía" },
+  {
+    "id": "es-funny-0046",
+    "language": "es",
+    "tone": "funny",
+    "text": "él pensó que lo iba a lograr 💀"
+  },
+  {
+    "id": "es-funny-0047",
+    "language": "es",
+    "tone": "funny",
+    "text": "pensó que nadie lo vio jaja"
+  },
+  {
+    "id": "es-funny-0048",
+    "language": "es",
+    "tone": "funny",
+    "text": "el perro al fondo es el verdadero protagonista"
+  },
+  { "id": "es-funny-0049", "language": "es", "tone": "funny", "text": "el gato juzgándolo todo" },
+  {
+    "id": "es-funny-0050",
+    "language": "es",
+    "tone": "funny",
+    "text": "la cara del gato lo dice todo"
+  },
+  {
+    "id": "es-funny-0051",
+    "language": "es",
+    "tone": "funny",
+    "text": "el gato está tramando algo"
+  },
+  {
+    "id": "es-funny-0052",
+    "language": "es",
+    "tone": "funny",
+    "text": "el perro ya no puede más 😭"
+  },
+  { "id": "es-funny-0053", "language": "es", "tone": "funny", "text": "la abuela al final ganó" },
+  {
+    "id": "es-funny-0054",
+    "language": "es",
+    "tone": "funny",
+    "text": "la abuela es la mejor parte"
+  },
+  {
+    "id": "es-funny-0055",
+    "language": "es",
+    "tone": "funny",
+    "text": "el abuelo bailando es lo más"
+  },
+  {
+    "id": "es-funny-0056",
+    "language": "es",
+    "tone": "funny",
+    "text": "el señor del fondo no entiende nada 😂"
+  },
+  {
+    "id": "es-funny-0057",
+    "language": "es",
+    "tone": "funny",
+    "text": "el del fondo se lleva el premio"
+  },
+  {
+    "id": "es-funny-0058",
+    "language": "es",
+    "tone": "funny",
+    "text": "el extra del fondo está más nervioso que yo",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-funny-0059",
+    "language": "es",
+    "tone": "funny",
+    "text": "el actor aguantándose la risa al final 😭",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-funny-0060",
+    "language": "es",
+    "tone": "funny",
+    "text": "seguro que el equipo se rió en esta toma",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-funny-0061",
+    "language": "es",
+    "tone": "funny",
+    "text": "las tomas falsas deben ser buenísimas",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-funny-0062",
+    "language": "es",
+    "tone": "funny",
+    "text": "el micro saliendo en el plano jajaja",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-funny-0063",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo después del paso 1: fácil. yo en el paso 2: 💀",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0064",
+    "language": "es",
+    "tone": "funny",
+    "text": "\"es muy fácil\" dijo. no era fácil",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0065",
+    "language": "es",
+    "tone": "funny",
+    "text": "el mío no se parece en nada pero bueno",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0066",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo hice igualito y me quedó como escena del crimen",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0067",
+    "language": "es",
+    "tone": "funny",
+    "text": "en el paso 3 me perdí y no volví",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0068",
+    "language": "es",
+    "tone": "funny",
+    "text": "\"rapidito\" dice el señor jajaja",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0069",
+    "language": "es",
+    "tone": "funny",
+    "text": "\"solo haces esto\" sí claro, solo eso jaja",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-funny-0070",
+    "language": "es",
+    "tone": "funny",
+    "text": "el anuncio que por fin me hizo ver un anuncio",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0071",
+    "language": "es",
+    "tone": "funny",
+    "text": "la edición del anuncio es mejor que el producto jajaja",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0072",
+    "language": "es",
+    "tone": "funny",
+    "text": "quien escribió este anuncio está fatal y lo respeto",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0073",
+    "language": "es",
+    "tone": "funny",
+    "text": "este anuncio es más entretenido que la serie que estaba viendo",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0074",
+    "language": "es",
+    "tone": "funny",
+    "text": "se me olvidó que era un anuncio a la mitad",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0075",
+    "language": "es",
+    "tone": "funny",
+    "text": "el bailarín del fondo del anuncio dando el 200% sin motivo",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0076",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi lado tóxico cree que puedo hacer este anuncio en casa",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-funny-0077",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo cantando esto en la ducha como si fuera mi concierto",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-funny-0078",
+    "language": "es",
+    "tone": "funny",
+    "text": "mis vecinos cuando intento cantar esto: 😐",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-funny-0079",
+    "language": "es",
+    "tone": "funny",
+    "text": "la cara del batería es todo",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-funny-0080",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo intentando llegar a esa nota en el coche",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-funny-0081",
+    "language": "es",
+    "tone": "funny",
+    "text": "canté tan fuerte que el vecino tocó la puerta",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-funny-0082",
+    "language": "es",
+    "tone": "funny",
+    "text": "el concierto de la ducha hoy va a estar épico",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-funny-0083",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} la forma en que narras tu vida como documental 😭",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-funny-0084",
+    "language": "es",
+    "tone": "funny",
+    "text": "\"voy un momento al súper\" y volvió 3 horas después",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-funny-0085",
+    "language": "es",
+    "tone": "funny",
+    "text": "el gato diciendo \"en mi vlog no\"",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-funny-0086",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} cómo le gritaste a la paloma jajaja",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-funny-0087",
+    "language": "es",
+    "tone": "funny",
+    "text": "la rutina de mañana más caótica que he visto",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-funny-0088",
+    "language": "es",
+    "tone": "funny",
+    "text": "el efecto de sonido me mató"
+  },
+  {
+    "id": "es-funny-0089",
+    "language": "es",
+    "tone": "funny",
+    "text": "quien puso ese efecto de sonido merece un aumento"
+  },
+  {
+    "id": "es-funny-0090",
+    "language": "es",
+    "tone": "funny",
+    "text": "el zoom dramático jajajaja"
+  },
+  { "id": "es-funny-0091", "language": "es", "tone": "funny", "text": "el zoom 💀" },
+  {
+    "id": "es-funny-0092",
+    "language": "es",
+    "tone": "funny",
+    "text": "la música dramática en el peor momento"
+  },
+  {
+    "id": "es-funny-0093",
+    "language": "es",
+    "tone": "funny",
+    "text": "los subtítulos están haciendo demasiado"
+  },
+  {
+    "id": "es-funny-0094",
+    "language": "es",
+    "tone": "funny",
+    "text": "la descripción es más graciosa que el video"
+  },
+  {
+    "id": "es-funny-0095",
+    "language": "es",
+    "tone": "funny",
+    "text": "los comentarios son mejores que el video"
+  },
+  {
+    "id": "es-funny-0096",
+    "language": "es",
+    "tone": "funny",
+    "text": "vine por el video y me quedé por los comentarios"
+  },
+  {
+    "id": "es-funny-0097",
+    "language": "es",
+    "tone": "funny",
+    "text": "vine a los comentarios a ver si alguien más lo vio"
+  },
+  {
+    "id": "es-funny-0098",
+    "language": "es",
+    "tone": "funny",
+    "text": "quién más lo regresó para verlo otra vez"
+  },
+  {
+    "id": "es-funny-0099",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo fingiendo que entendí algo"
+  },
+  {
+    "id": "es-funny-0100",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo a las 3am viendo esto por cuarta vez"
+  },
+  {
+    "id": "es-funny-0101",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo intentando actuar normal después de esto"
+  },
+  {
+    "id": "es-funny-0102",
+    "language": "es",
+    "tone": "funny",
+    "text": "literal mi papá en cada asado"
+  },
+  {
+    "id": "es-funny-0103",
+    "language": "es",
+    "tone": "funny",
+    "text": "literal mi madre al teléfono con el banco"
+  },
+  {
+    "id": "es-funny-0104",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi tío en todas las navidades"
+  },
+  {
+    "id": "es-funny-0105",
+    "language": "es",
+    "tone": "funny",
+    "text": "esto es lo más de tío que he visto"
+  },
+  {
+    "id": "es-funny-0106",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi hermano hace exactamente esto"
+  },
+  { "id": "es-funny-0107", "language": "es", "tone": "funny", "text": "mi hermana es así jajaja" },
+  {
+    "id": "es-funny-0108",
+    "language": "es",
+    "tone": "funny",
+    "text": "etiqueto a mi amiga porque es ella"
+  },
+  {
+    "id": "es-funny-0109",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} estás fatal jajaja"
+  },
+  {
+    "id": "es-funny-0110",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} quién te hizo daño 😭"
+  },
+  {
+    "id": "es-funny-0111",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} no cambies nunca jajaja"
+  },
+  {
+    "id": "es-funny-0112",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} estás loco y me encanta"
+  },
+  {
+    "id": "es-funny-0113",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} estás re loca jajaja te amo"
+  },
+  {
+    "id": "es-funny-0114",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} sos un payaso (con cariño) 😂"
+  },
+  {
+    "id": "es-funny-0115",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} wey no puedo contigo"
+  },
+  {
+    "id": "es-funny-0116",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} parce usted está loco jajaja"
+  },
+  {
+    "id": "es-funny-0117",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} tío eres lo peor jajaja"
+  },
+  { "id": "es-funny-0118", "language": "es", "tone": "funny", "text": "{creator} esto es muy tú" },
+  {
+    "id": "es-funny-0119",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} me tienes llorando"
+  },
+  {
+    "id": "es-funny-0120",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} el final me destruyó jajaja"
+  },
+  {
+    "id": "es-funny-0121",
+    "language": "es",
+    "tone": "funny",
+    "text": "nadie:\nabsolutamente nadie:\neste señor:"
+  },
+  {
+    "id": "es-funny-0122",
+    "language": "es",
+    "tone": "funny",
+    "text": "\"solo uno más\" — él, hace 4 horas"
+  },
+  {
+    "id": "es-funny-0123",
+    "language": "es",
+    "tone": "funny",
+    "text": "mis dos neuronas viendo esto"
+  },
+  {
+    "id": "es-funny-0124",
+    "language": "es",
+    "tone": "funny",
+    "text": "mis dos neuronas peleándose"
+  },
+  {
+    "id": "es-funny-0125",
+    "language": "es",
+    "tone": "funny",
+    "text": "se me fue la única neurona que tenía"
+  },
+  {
+    "id": "es-funny-0126",
+    "language": "es",
+    "tone": "funny",
+    "text": "perdí neuronas viendo esto y lo volvería a hacer"
+  },
+  {
+    "id": "es-funny-0127",
+    "language": "es",
+    "tone": "funny",
+    "text": "el comportamiento humano en su máxima expresión"
+  },
+  {
+    "id": "es-funny-0128",
+    "language": "es",
+    "tone": "funny",
+    "text": "por esto los aliens no nos visitan"
+  },
+  {
+    "id": "es-funny-0129",
+    "language": "es",
+    "tone": "funny",
+    "text": "la simulación tiene fallos"
+  },
+  {
+    "id": "es-funny-0130",
+    "language": "es",
+    "tone": "funny",
+    "text": "la evolución llegó a su punto máximo aquí"
+  },
+  { "id": "es-funny-0131", "language": "es", "tone": "funny", "text": "el baile prohibido" },
+  { "id": "es-funny-0132", "language": "es", "tone": "funny", "text": "el caos 😭" },
+  { "id": "es-funny-0133", "language": "es", "tone": "funny", "text": "caos. puro caos." },
+  { "id": "es-funny-0134", "language": "es", "tone": "funny", "text": "qué acabo de ver" },
+  {
+    "id": "es-funny-0135",
+    "language": "es",
+    "tone": "funny",
+    "text": "qué acabo de presenciar jajaja"
+  },
+  {
+    "id": "es-funny-0136",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo vi 20 veces y sigo sin entender qué pasó"
+  },
+  {
+    "id": "es-funny-0137",
+    "language": "es",
+    "tone": "funny",
+    "text": "cómo escaló esto tan rápido"
+  },
+  { "id": "es-funny-0138", "language": "es", "tone": "funny", "text": "de 0 a 100 en un segundo" },
+  {
+    "id": "es-funny-0139",
+    "language": "es",
+    "tone": "funny",
+    "text": "el giro de trama que nadie pidió"
+  },
+  {
+    "id": "es-funny-0140",
+    "language": "es",
+    "tone": "funny",
+    "text": "no me lo esperaba para nada 💀"
+  },
+  {
+    "id": "es-funny-0141",
+    "language": "es",
+    "tone": "funny",
+    "text": "no estaba preparada para ese final"
+  },
+  {
+    "id": "es-funny-0142",
+    "language": "es",
+    "tone": "funny",
+    "text": "nadie estaba preparado para eso"
+  },
+  { "id": "es-funny-0143", "language": "es", "tone": "funny", "text": "odio lo mucho que me reí" },
+  {
+    "id": "es-funny-0144",
+    "language": "es",
+    "tone": "funny",
+    "text": "me da vergüenza lo que me reí"
+  },
+  {
+    "id": "es-funny-0145",
+    "language": "es",
+    "tone": "funny",
+    "text": "esto es tan tonto que me encanta"
+  },
+  {
+    "id": "es-funny-0146",
+    "language": "es",
+    "tone": "funny",
+    "text": "la cosa más tonta que he visto y estoy llorando"
+  },
+  {
+    "id": "es-funny-0147",
+    "language": "es",
+    "tone": "funny",
+    "text": "presupuesto: 0€. risas: infinitas"
+  },
+  {
+    "id": "es-funny-0148",
+    "language": "es",
+    "tone": "funny",
+    "text": "efectos especiales de Hollywood (es un calcetín)"
+  },
+  {
+    "id": "es-funny-0149",
+    "language": "es",
+    "tone": "funny",
+    "text": "actuación digna de un premio"
+  },
+  { "id": "es-funny-0150", "language": "es", "tone": "funny", "text": "oscar a la mejor cara" },
+  {
+    "id": "es-funny-0151",
+    "language": "es",
+    "tone": "funny",
+    "text": "denle un premio a ese gesto"
+  },
+  {
+    "id": "es-funny-0152",
+    "language": "es",
+    "tone": "funny",
+    "text": "el protagonismo que tiene 😭"
+  },
+  {
+    "id": "es-funny-0153",
+    "language": "es",
+    "tone": "funny",
+    "text": "voy a hacer esto en el trabajo mañana"
+  },
+  {
+    "id": "es-funny-0154",
+    "language": "es",
+    "tone": "funny",
+    "text": "se lo voy a hacer a mi jefe"
+  },
+  {
+    "id": "es-funny-0155",
+    "language": "es",
+    "tone": "funny",
+    "text": "esto ya es parte de mi personalidad"
+  },
+  {
+    "id": "es-funny-0156",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} te voy a robar el chiste"
+  },
+  {
+    "id": "es-funny-0157",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo voy a decir en todos lados ahora"
+  },
+  {
+    "id": "es-funny-0158",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi psicóloga se va a enterar de ti {creator}"
+  },
+  {
+    "id": "es-funny-0159",
+    "language": "es",
+    "tone": "funny",
+    "text": "voy a pensar en esto a las 3am durante semanas"
+  },
+  {
+    "id": "es-funny-0160",
+    "language": "es",
+    "tone": "funny",
+    "text": "vive en mi cabeza sin pagar alquiler"
+  },
+  { "id": "es-funny-0161", "language": "es", "tone": "funny", "text": "pausa en el 0:13 💀" },
+  {
+    "id": "es-funny-0162",
+    "language": "es",
+    "tone": "funny",
+    "text": "pausen en el segundo 4 jajaja"
+  },
+  {
+    "id": "es-funny-0163",
+    "language": "es",
+    "tone": "funny",
+    "text": "el fotograma del segundo 9 es mi nueva foto de perfil"
+  },
+  {
+    "id": "es-funny-0164",
+    "language": "es",
+    "tone": "funny",
+    "text": "la miniatura mintió y me alegro",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-funny-0165",
+    "language": "es",
+    "tone": "funny",
+    "text": "solo la miniatura ya me hizo reír",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-funny-0166",
+    "language": "es",
+    "tone": "funny",
+    "text": "este audio va a estar en todas partes mañana",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-funny-0167",
+    "language": "es",
+    "tone": "funny",
+    "text": "que empiecen los dúos de esto",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-funny-0168",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo más gracioso de mi timeline y no hay competencia",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-funny-0169",
+    "language": "es",
+    "tone": "funny",
+    "text": "me reí en voz alta en el tren y ahora todos me miran raro",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-funny-0170",
+    "language": "es",
+    "tone": "funny",
+    "text": "no puedo creer que esté riéndome de esto a las 4am en vez de dormir, gracias eh",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-funny-0171",
+    "language": "es",
+    "tone": "funny",
+    "text": "este tuit me tiene llorando",
+    "platforms": ["x"]
+  },
+  { "id": "es-funny-0172", "language": "es", "tone": "funny", "text": "{creator} PARAAA 😭😭" },
+  { "id": "es-funny-0173", "language": "es", "tone": "funny", "text": "para por favor jajaja" },
+  { "id": "es-funny-0174", "language": "es", "tone": "funny", "text": "noooo jajajaja" },
+  { "id": "es-funny-0175", "language": "es", "tone": "funny", "text": "no por qué 💀" },
+  { "id": "es-funny-0176", "language": "es", "tone": "funny", "text": "el susto 😭" },
+  { "id": "es-funny-0177", "language": "es", "tone": "funny", "text": "salté del susto" },
+  {
+    "id": "es-funny-0178",
+    "language": "es",
+    "tone": "funny",
+    "text": "se me cayó el móvil en la cara por esto"
+  },
+  {
+    "id": "es-funny-0179",
+    "language": "es",
+    "tone": "funny",
+    "text": "se me cayó el celular del susto"
+  },
+  {
+    "id": "es-funny-0180",
+    "language": "es",
+    "tone": "funny",
+    "text": "me duelen los abdominales de reírme"
+  },
+  { "id": "es-funny-0181", "language": "es", "tone": "funny", "text": "abdominales gratis" },
+  { "id": "es-funny-0182", "language": "es", "tone": "funny", "text": "necesitaba reírme así hoy" },
+  {
+    "id": "es-funny-0183",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo necesitaba después de esta semana"
+  },
+  {
+    "id": "es-funny-0184",
+    "language": "es",
+    "tone": "funny",
+    "text": "gracias {creator}, mi día era horrible y esto lo arregló"
+  },
+  { "id": "es-funny-0185", "language": "es", "tone": "funny", "text": "qué risa por dios" },
+  { "id": "es-funny-0186", "language": "es", "tone": "funny", "text": "qué risa me dio" },
+  { "id": "es-funny-0187", "language": "es", "tone": "funny", "text": "me dio muchísima risa" },
+  { "id": "es-funny-0188", "language": "es", "tone": "funny", "text": "qué gracioso" },
+  { "id": "es-funny-0189", "language": "es", "tone": "funny", "text": "graciosísimo 😂" },
+  {
+    "id": "es-funny-0190",
+    "language": "es",
+    "tone": "funny",
+    "text": "lo más gracioso que vi hoy"
+  },
+  {
+    "id": "es-funny-0191",
+    "language": "es",
+    "tone": "funny",
+    "text": "se lo enseñé a mi familia y están llorando"
+  },
+  {
+    "id": "es-funny-0192",
+    "language": "es",
+    "tone": "funny",
+    "text": "se lo mandé a mi madre y me contestó \"?\""
+  },
+  {
+    "id": "es-funny-0193",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi padre no se rió pero vi que sonrió"
+  },
+  {
+    "id": "es-funny-0194",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi abuela se rió y eso dice mucho"
+  },
+  {
+    "id": "es-funny-0195",
+    "language": "es",
+    "tone": "funny",
+    "text": "mi perro le ladró a la pantalla 😭"
+  },
+  { "id": "es-funny-0196", "language": "es", "tone": "funny", "text": "qué preciso jajaja" },
+  { "id": "es-funny-0197", "language": "es", "tone": "funny", "text": "demasiado real jajaja" },
+  { "id": "es-funny-0198", "language": "es", "tone": "funny", "text": "dolorosamente preciso 😭" },
+  { "id": "es-funny-0199", "language": "es", "tone": "funny", "text": "esto es un documental" },
+  {
+    "id": "es-funny-0200",
+    "language": "es",
+    "tone": "funny",
+    "text": "esto es un documental sobre mi familia"
+  },
+  { "id": "es-funny-0201", "language": "es", "tone": "funny", "text": "yo intentando aparcar" },
+  {
+    "id": "es-funny-0202",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo intentando estacionar en paralelo"
+  },
+  { "id": "es-funny-0203", "language": "es", "tone": "funny", "text": "yo intentando ser adulta" },
+  {
+    "id": "es-funny-0204",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo a dieta viendo un pastel"
+  },
+  {
+    "id": "es-funny-0205",
+    "language": "es",
+    "tone": "funny",
+    "text": "yo fingiendo trabajar cuando pasa el jefe"
+  },
+  {
+    "id": "es-funny-0206",
+    "language": "es",
+    "tone": "funny",
+    "text": "literal yo en todos los trabajos en grupo"
+  },
+  { "id": "es-funny-0207", "language": "es", "tone": "funny", "text": "JAJAJA el final" },
+  { "id": "es-funny-0208", "language": "es", "tone": "funny", "text": "ajajajajaj" },
+  { "id": "es-funny-0209", "language": "es", "tone": "funny", "text": "jajajaj qué es esto" },
+  { "id": "es-funny-0210", "language": "es", "tone": "funny", "text": "JAJAJAJ LLORO" },
+  { "id": "es-funny-0211", "language": "es", "tone": "funny", "text": "noo jajaja qué hizo" },
+  { "id": "es-funny-0212", "language": "es", "tone": "funny", "text": "nooo la cara 😂😂" },
+  { "id": "es-funny-0213", "language": "es", "tone": "funny", "text": "jajajaja amo" },
+  { "id": "es-funny-0214", "language": "es", "tone": "funny", "text": "amo jajaja" },
+  { "id": "es-funny-0215", "language": "es", "tone": "funny", "text": "qué pedo con esto jajaja" },
+  {
+    "id": "es-funny-0216",
+    "language": "es",
+    "tone": "funny",
+    "text": "no manches jajaja me muero"
+  },
+  { "id": "es-funny-0217", "language": "es", "tone": "funny", "text": "ay no wey jajaja" },
+  { "id": "es-funny-0218", "language": "es", "tone": "funny", "text": "nmms 😂😂" },
+  { "id": "es-funny-0219", "language": "es", "tone": "funny", "text": "jajaja qué boludo" },
+  { "id": "es-funny-0220", "language": "es", "tone": "funny", "text": "che no puedo jajaja" },
+  { "id": "es-funny-0221", "language": "es", "tone": "funny", "text": "re tarado jajaja lo amo" },
+  { "id": "es-funny-0222", "language": "es", "tone": "funny", "text": "me cagué de risa 😂" },
+  { "id": "es-funny-0223", "language": "es", "tone": "funny", "text": "me partí de risa" },
+  { "id": "es-funny-0224", "language": "es", "tone": "funny", "text": "me parto jajaja" },
+  { "id": "es-funny-0225", "language": "es", "tone": "funny", "text": "me estoy partiendo" },
+  { "id": "es-funny-0226", "language": "es", "tone": "funny", "text": "qué cachondeo" },
+  { "id": "es-funny-0227", "language": "es", "tone": "funny", "text": "vaya tela jajaja" },
+  { "id": "es-funny-0228", "language": "es", "tone": "funny", "text": "qué risa tío" },
+  {
+    "id": "es-funny-0229",
+    "language": "es",
+    "tone": "funny",
+    "text": "{creator} me tienes muerta jajaja"
+  },
+  { "id": "es-funny-0230", "language": "es", "tone": "funny", "text": "jajaja parce qué es esto" },
+  { "id": "es-funny-0231", "language": "es", "tone": "funny", "text": "uy no, qué oso 😂" },
+  { "id": "es-funny-0232", "language": "es", "tone": "funny", "text": "qué oso jajaja" },
+  { "id": "es-funny-0233", "language": "es", "tone": "funny", "text": "qué pena ajena jajaja" },
+  {
+    "id": "es-funny-0234",
+    "language": "es",
+    "tone": "funny",
+    "text": "la pena ajena que me dio 😭"
+  },
+  { "id": "es-funny-0235", "language": "es", "tone": "funny", "text": "cringe pero me reí" }
+]

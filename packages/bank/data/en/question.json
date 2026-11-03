@@ -1,0 +1,1207 @@
+[
+  { "id": "en-question-0001", "language": "en", "tone": "question", "text": "what song is this?" },
+  { "id": "en-question-0002", "language": "en", "tone": "question", "text": "song name???" },
+  {
+    "id": "en-question-0003",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the song called"
+  },
+  {
+    "id": "en-question-0004",
+    "language": "en",
+    "tone": "question",
+    "text": "anyone know the song??"
+  },
+  {
+    "id": "en-question-0005",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the name of the sound"
+  },
+  {
+    "id": "en-question-0006",
+    "language": "en",
+    "tone": "question",
+    "text": "what camera do you use?"
+  },
+  {
+    "id": "en-question-0007",
+    "language": "en",
+    "tone": "question",
+    "text": "what camera is this shot on"
+  },
+  { "id": "en-question-0008", "language": "en", "tone": "question", "text": "what lens is this" },
+  {
+    "id": "en-question-0009",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you film this?"
+  },
+  {
+    "id": "en-question-0010",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you get this shot"
+  },
+  {
+    "id": "en-question-0011",
+    "language": "en",
+    "tone": "question",
+    "text": "was this shot on a phone??"
+  },
+  {
+    "id": "en-question-0012",
+    "language": "en",
+    "tone": "question",
+    "text": "is this real or edited?"
+  },
+  { "id": "en-question-0013", "language": "en", "tone": "question", "text": "wait is this real" },
+  { "id": "en-question-0014", "language": "en", "tone": "question", "text": "is this AI or real" },
+  {
+    "id": "en-question-0015",
+    "language": "en",
+    "tone": "question",
+    "text": "is this fake? genuinely asking"
+  },
+  {
+    "id": "en-question-0016",
+    "language": "en",
+    "tone": "question",
+    "text": "how is this even possible"
+  },
+  { "id": "en-question-0017", "language": "en", "tone": "question", "text": "how did you do that" },
+  {
+    "id": "en-question-0018",
+    "language": "en",
+    "tone": "question",
+    "text": "how long did this take you?"
+  },
+  {
+    "id": "en-question-0019",
+    "language": "en",
+    "tone": "question",
+    "text": "how long did this take to edit"
+  },
+  {
+    "id": "en-question-0020",
+    "language": "en",
+    "tone": "question",
+    "text": "how many takes did this take lol"
+  },
+  {
+    "id": "en-question-0021",
+    "language": "en",
+    "tone": "question",
+    "text": "how many tries did that take 😭"
+  },
+  {
+    "id": "en-question-0022",
+    "language": "en",
+    "tone": "question",
+    "text": "what app do you edit with?"
+  },
+  {
+    "id": "en-question-0023",
+    "language": "en",
+    "tone": "question",
+    "text": "what editing software do you use"
+  },
+  { "id": "en-question-0024", "language": "en", "tone": "question", "text": "where is this?" },
+  {
+    "id": "en-question-0025",
+    "language": "en",
+    "tone": "question",
+    "text": "where was this filmed"
+  },
+  {
+    "id": "en-question-0026",
+    "language": "en",
+    "tone": "question",
+    "text": "where is this place?? i need to go"
+  },
+  { "id": "en-question-0027", "language": "en", "tone": "question", "text": "what city is this" },
+  { "id": "en-question-0028", "language": "en", "tone": "question", "text": "is this in europe?" },
+  {
+    "id": "en-question-0029",
+    "language": "en",
+    "tone": "question",
+    "text": "what country is this"
+  },
+  {
+    "id": "en-question-0030",
+    "language": "en",
+    "tone": "question",
+    "text": "where can i watch the full thing"
+  },
+  {
+    "id": "en-question-0031",
+    "language": "en",
+    "tone": "question",
+    "text": "is there a full version?"
+  },
+  {
+    "id": "en-question-0032",
+    "language": "en",
+    "tone": "question",
+    "text": "where's the full video"
+  },
+  {
+    "id": "en-question-0033",
+    "language": "en",
+    "tone": "question",
+    "text": "is there a longer version of this"
+  },
+  { "id": "en-question-0034", "language": "en", "tone": "question", "text": "what is this called" },
+  {
+    "id": "en-question-0035",
+    "language": "en",
+    "tone": "question",
+    "text": "wait what just happened"
+  },
+  {
+    "id": "en-question-0036",
+    "language": "en",
+    "tone": "question",
+    "text": "what happened at the end??"
+  },
+  {
+    "id": "en-question-0037",
+    "language": "en",
+    "tone": "question",
+    "text": "did i miss something?"
+  },
+  {
+    "id": "en-question-0038",
+    "language": "en",
+    "tone": "question",
+    "text": "can someone explain the ending"
+  },
+  {
+    "id": "en-question-0039",
+    "language": "en",
+    "tone": "question",
+    "text": "can someone explain what's going on"
+  },
+  {
+    "id": "en-question-0040",
+    "language": "en",
+    "tone": "question",
+    "text": "am i the only one who doesn't get it?"
+  },
+  {
+    "id": "en-question-0041",
+    "language": "en",
+    "tone": "question",
+    "text": "i don't get it, can someone explain"
+  },
+  { "id": "en-question-0042", "language": "en", "tone": "question", "text": "what does that mean" },
+  {
+    "id": "en-question-0043",
+    "language": "en",
+    "tone": "question",
+    "text": "what did he say at 0:12"
+  },
+  {
+    "id": "en-question-0044",
+    "language": "en",
+    "tone": "question",
+    "text": "what did she whisper at the end"
+  },
+  {
+    "id": "en-question-0045",
+    "language": "en",
+    "tone": "question",
+    "text": "what is the guy in the back doing"
+  },
+  {
+    "id": "en-question-0046",
+    "language": "en",
+    "tone": "question",
+    "text": "who is the guy at the end"
+  },
+  {
+    "id": "en-question-0047",
+    "language": "en",
+    "tone": "question",
+    "text": "who's the girl in the red jacket"
+  },
+  { "id": "en-question-0048", "language": "en", "tone": "question", "text": "is that your dog?" },
+  {
+    "id": "en-question-0049",
+    "language": "en",
+    "tone": "question",
+    "text": "what's your dog's name??"
+  },
+  {
+    "id": "en-question-0050",
+    "language": "en",
+    "tone": "question",
+    "text": "what breed is that dog"
+  },
+  { "id": "en-question-0051", "language": "en", "tone": "question", "text": "is the cat okay lol" },
+  { "id": "en-question-0052", "language": "en", "tone": "question", "text": "how old is your cat" },
+  { "id": "en-question-0053", "language": "en", "tone": "question", "text": "how tall are you" },
+  {
+    "id": "en-question-0054",
+    "language": "en",
+    "tone": "question",
+    "text": "how old are you if you don't mind me asking"
+  },
+  {
+    "id": "en-question-0055",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} are you a professional?"
+  },
+  {
+    "id": "en-question-0056",
+    "language": "en",
+    "tone": "question",
+    "text": "do you do this for a living?"
+  },
+  { "id": "en-question-0057", "language": "en", "tone": "question", "text": "is this your job?" },
+  {
+    "id": "en-question-0058",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you learn to do this"
+  },
+  {
+    "id": "en-question-0059",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} how long have you been doing this"
+  },
+  {
+    "id": "en-question-0060",
+    "language": "en",
+    "tone": "question",
+    "text": "where did you learn this"
+  },
+  {
+    "id": "en-question-0061",
+    "language": "en",
+    "tone": "question",
+    "text": "self taught or did you study this?"
+  },
+  {
+    "id": "en-question-0062",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} did you study film?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0063",
+    "language": "en",
+    "tone": "question",
+    "text": "who wrote this?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0064",
+    "language": "en",
+    "tone": "question",
+    "text": "how long was the shoot?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0065",
+    "language": "en",
+    "tone": "question",
+    "text": "what was the budget for this?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0066",
+    "language": "en",
+    "tone": "question",
+    "text": "was this shot in one take??",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0067",
+    "language": "en",
+    "tone": "question",
+    "text": "is this part of a bigger project?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0068",
+    "language": "en",
+    "tone": "question",
+    "text": "is this based on a true story?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0069",
+    "language": "en",
+    "tone": "question",
+    "text": "who composed the score?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0070",
+    "language": "en",
+    "tone": "question",
+    "text": "who's the actor? he's so good",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0071",
+    "language": "en",
+    "tone": "question",
+    "text": "what festival is this going to?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0072",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you light that night scene?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0073",
+    "language": "en",
+    "tone": "question",
+    "text": "did you use a gimbal for the opening?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0074",
+    "language": "en",
+    "tone": "question",
+    "text": "is the full short online anywhere?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0075",
+    "language": "en",
+    "tone": "question",
+    "text": "where can i stream the full film",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0076",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the aspect ratio on this? looks so cinematic",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0077",
+    "language": "en",
+    "tone": "question",
+    "text": "what LUT did you use?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0078",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you grade this?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-question-0079",
+    "language": "en",
+    "tone": "question",
+    "text": "does this work on mac too?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0080",
+    "language": "en",
+    "tone": "question",
+    "text": "does this work on windows?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0081",
+    "language": "en",
+    "tone": "question",
+    "text": "what version are you using?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0082",
+    "language": "en",
+    "tone": "question",
+    "text": "will this work on older versions?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0083",
+    "language": "en",
+    "tone": "question",
+    "text": "what if i don't have that option in my menu?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0084",
+    "language": "en",
+    "tone": "question",
+    "text": "mine doesn't have that button, what do i do?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0085",
+    "language": "en",
+    "tone": "question",
+    "text": "what shortcut did you use at 0:23?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0086",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you get that menu to pop up?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0087",
+    "language": "en",
+    "tone": "question",
+    "text": "can you do this without the plugin?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0088",
+    "language": "en",
+    "tone": "question",
+    "text": "is there a free way to do this?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0089",
+    "language": "en",
+    "tone": "question",
+    "text": "what setting is that in step 2?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0090",
+    "language": "en",
+    "tone": "question",
+    "text": "can you go slower on the second part?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0091",
+    "language": "en",
+    "tone": "question",
+    "text": "can this be done on a phone?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0092",
+    "language": "en",
+    "tone": "question",
+    "text": "how long does this take for a beginner?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0093",
+    "language": "en",
+    "tone": "question",
+    "text": "wait how did you skip from step 3 to 4??",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0094",
+    "language": "en",
+    "tone": "question",
+    "text": "what if it's still not working after that?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0095",
+    "language": "en",
+    "tone": "question",
+    "text": "is this beginner friendly?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0096",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the shortcut for that on windows?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0097",
+    "language": "en",
+    "tone": "question",
+    "text": "is this still accurate with the latest update?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-question-0098",
+    "language": "en",
+    "tone": "question",
+    "text": "where are you right now??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0099",
+    "language": "en",
+    "tone": "question",
+    "text": "what city do you live in?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0100",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} what's your morning routine?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0101",
+    "language": "en",
+    "tone": "question",
+    "text": "how do you have so much energy in the morning",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0102",
+    "language": "en",
+    "tone": "question",
+    "text": "where's that cafe??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0103",
+    "language": "en",
+    "tone": "question",
+    "text": "is that a new apartment?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0104",
+    "language": "en",
+    "tone": "question",
+    "text": "what are you eating?? looks so good",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0105",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the name of the restaurant?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0106",
+    "language": "en",
+    "tone": "question",
+    "text": "how do you film yourself so smoothly?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0107",
+    "language": "en",
+    "tone": "question",
+    "text": "what time do you wake up??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0108",
+    "language": "en",
+    "tone": "question",
+    "text": "did you move??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0109",
+    "language": "en",
+    "tone": "question",
+    "text": "how do you stay so organized?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0110",
+    "language": "en",
+    "tone": "question",
+    "text": "what's in the cup?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-question-0111",
+    "language": "en",
+    "tone": "question",
+    "text": "what key is this in?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0112",
+    "language": "en",
+    "tone": "question",
+    "text": "are the chords posted anywhere?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0113",
+    "language": "en",
+    "tone": "question",
+    "text": "is this out on streaming?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0114",
+    "language": "en",
+    "tone": "question",
+    "text": "when does the full song drop??",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0115",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the name of this song?? i need it",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0116",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} did you write this yourself?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0117",
+    "language": "en",
+    "tone": "question",
+    "text": "what guitar is that?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0118",
+    "language": "en",
+    "tone": "question",
+    "text": "is that a real piano or a keyboard?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0119",
+    "language": "en",
+    "tone": "question",
+    "text": "who's singing?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0120",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the bpm on this?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0121",
+    "language": "en",
+    "tone": "question",
+    "text": "is this an original?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0122",
+    "language": "en",
+    "tone": "question",
+    "text": "how did you get that vocal effect?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0123",
+    "language": "en",
+    "tone": "question",
+    "text": "what mic are you using?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0124",
+    "language": "en",
+    "tone": "question",
+    "text": "is there an instrumental version?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-question-0125",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the director's name on this ad?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0126",
+    "language": "en",
+    "tone": "question",
+    "text": "who made this ad?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0127",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the music in this ad?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0128",
+    "language": "en",
+    "tone": "question",
+    "text": "where was this ad filmed?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0129",
+    "language": "en",
+    "tone": "question",
+    "text": "how did they do that transition in the ad?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0130",
+    "language": "en",
+    "tone": "question",
+    "text": "is this an ad? i genuinely can't tell",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0131",
+    "language": "en",
+    "tone": "question",
+    "text": "wait is this an ad or a short film",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-question-0132",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} drop your camera setup pls"
+  },
+  {
+    "id": "en-question-0133",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} how many hours went into this one"
+  },
+  {
+    "id": "en-question-0134",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} what's the song??"
+  },
+  {
+    "id": "en-question-0135",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} where in the world is this"
+  },
+  {
+    "id": "en-question-0136",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} are you gonna post the full version?"
+  },
+  {
+    "id": "en-question-0137",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} do you edit your own videos?"
+  },
+  {
+    "id": "en-question-0138",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} how did you come up with this idea"
+  },
+  {
+    "id": "en-question-0139",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} when's the next one coming out?"
+  },
+  {
+    "id": "en-question-0140",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} is this real??"
+  },
+  {
+    "id": "en-question-0141",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} what app is that?"
+  },
+  {
+    "id": "en-question-0142",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} where do you get your ideas from?"
+  },
+  {
+    "id": "en-question-0143",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} how are you so good at this"
+  },
+  { "id": "en-question-0144", "language": "en", "tone": "question", "text": "how??" },
+  { "id": "en-question-0145", "language": "en", "tone": "question", "text": "why?" },
+  { "id": "en-question-0146", "language": "en", "tone": "question", "text": "but why" },
+  { "id": "en-question-0147", "language": "en", "tone": "question", "text": "why tho" },
+  { "id": "en-question-0148", "language": "en", "tone": "question", "text": "wait what?" },
+  { "id": "en-question-0149", "language": "en", "tone": "question", "text": "what?? 😳" },
+  { "id": "en-question-0150", "language": "en", "tone": "question", "text": "huh?" },
+  { "id": "en-question-0151", "language": "en", "tone": "question", "text": "excuse me what" },
+  { "id": "en-question-0152", "language": "en", "tone": "question", "text": "am i dreaming or" },
+  {
+    "id": "en-question-0153",
+    "language": "en",
+    "tone": "question",
+    "text": "can we talk about the ending??"
+  },
+  {
+    "id": "en-question-0154",
+    "language": "en",
+    "tone": "question",
+    "text": "is anyone else watching this on repeat?"
+  },
+  {
+    "id": "en-question-0155",
+    "language": "en",
+    "tone": "question",
+    "text": "does anyone else hear that sound in the background?"
+  },
+  {
+    "id": "en-question-0156",
+    "language": "en",
+    "tone": "question",
+    "text": "why does this have so few views??"
+  },
+  {
+    "id": "en-question-0157",
+    "language": "en",
+    "tone": "question",
+    "text": "why is nobody talking about this"
+  },
+  {
+    "id": "en-question-0158",
+    "language": "en",
+    "tone": "question",
+    "text": "how is this not trending"
+  },
+  {
+    "id": "en-question-0159",
+    "language": "en",
+    "tone": "question",
+    "text": "who else is still watching this years later?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-question-0160",
+    "language": "en",
+    "tone": "question",
+    "text": "anyone here after the trend?"
+  },
+  {
+    "id": "en-question-0161",
+    "language": "en",
+    "tone": "question",
+    "text": "who's here from the other video?"
+  },
+  {
+    "id": "en-question-0162",
+    "language": "en",
+    "tone": "question",
+    "text": "who's here from the duet?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-question-0163",
+    "language": "en",
+    "tone": "question",
+    "text": "who came here from the stitch?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-question-0164",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the filter called?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-question-0165",
+    "language": "en",
+    "tone": "question",
+    "text": "anyone know which effect this is?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-question-0166",
+    "language": "en",
+    "tone": "question",
+    "text": "who's watching this at 3am",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-question-0167",
+    "language": "en",
+    "tone": "question",
+    "text": "anyone else here from the recommended page?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-question-0168",
+    "language": "en",
+    "tone": "question",
+    "text": "did the algorithm bring anyone else here?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-question-0169",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the time stamp for the best part?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-question-0170",
+    "language": "en",
+    "tone": "question",
+    "text": "is this the original or a repost?",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-question-0171",
+    "language": "en",
+    "tone": "question",
+    "text": "wait is this from today??",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-question-0172",
+    "language": "en",
+    "tone": "question",
+    "text": "source?",
+    "platforms": ["x"]
+  },
+  { "id": "en-question-0173", "language": "en", "tone": "question", "text": "is this a trend?" },
+  { "id": "en-question-0174", "language": "en", "tone": "question", "text": "what trend is this" },
+  { "id": "en-question-0175", "language": "en", "tone": "question", "text": "is there a part 2?" },
+  { "id": "en-question-0176", "language": "en", "tone": "question", "text": "part 2 when?" },
+  {
+    "id": "en-question-0177",
+    "language": "en",
+    "tone": "question",
+    "text": "when's the next video?"
+  },
+  {
+    "id": "en-question-0178",
+    "language": "en",
+    "tone": "question",
+    "text": "when are you posting again"
+  },
+  {
+    "id": "en-question-0179",
+    "language": "en",
+    "tone": "question",
+    "text": "how often do you post?"
+  },
+  {
+    "id": "en-question-0180",
+    "language": "en",
+    "tone": "question",
+    "text": "do you have a second account?"
+  },
+  {
+    "id": "en-question-0181",
+    "language": "en",
+    "tone": "question",
+    "text": "is there a behind the scenes?"
+  },
+  { "id": "en-question-0182", "language": "en", "tone": "question", "text": "are there bloopers?" },
+  {
+    "id": "en-question-0183",
+    "language": "en",
+    "tone": "question",
+    "text": "can we see the before and after?"
+  },
+  {
+    "id": "en-question-0184",
+    "language": "en",
+    "tone": "question",
+    "text": "how much did this cost to make?"
+  },
+  {
+    "id": "en-question-0185",
+    "language": "en",
+    "tone": "question",
+    "text": "what was the hardest part?"
+  },
+  {
+    "id": "en-question-0186",
+    "language": "en",
+    "tone": "question",
+    "text": "what would you do differently next time?"
+  },
+  {
+    "id": "en-question-0187",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} any tips for beginners?"
+  },
+  {
+    "id": "en-question-0188",
+    "language": "en",
+    "tone": "question",
+    "text": "how do i get started with this?"
+  },
+  {
+    "id": "en-question-0189",
+    "language": "en",
+    "tone": "question",
+    "text": "what would you recommend for someone starting out?"
+  },
+  {
+    "id": "en-question-0190",
+    "language": "en",
+    "tone": "question",
+    "text": "is this hard to learn?"
+  },
+  {
+    "id": "en-question-0191",
+    "language": "en",
+    "tone": "question",
+    "text": "is it too late to start at 30?"
+  },
+  {
+    "id": "en-question-0192",
+    "language": "en",
+    "tone": "question",
+    "text": "do you need expensive gear for this?"
+  },
+  {
+    "id": "en-question-0193",
+    "language": "en",
+    "tone": "question",
+    "text": "does this take a lot of practice?"
+  },
+  {
+    "id": "en-question-0194",
+    "language": "en",
+    "tone": "question",
+    "text": "how many hours a day do you practice?"
+  },
+  {
+    "id": "en-question-0195",
+    "language": "en",
+    "tone": "question",
+    "text": "{creator} what's your secret?"
+  },
+  { "id": "en-question-0196", "language": "en", "tone": "question", "text": "what's the trick?" },
+  {
+    "id": "en-question-0197",
+    "language": "en",
+    "tone": "question",
+    "text": "is there a trick to it or is it just talent"
+  },
+  {
+    "id": "en-question-0198",
+    "language": "en",
+    "tone": "question",
+    "text": "are you left handed?"
+  },
+  {
+    "id": "en-question-0199",
+    "language": "en",
+    "tone": "question",
+    "text": "are you using a tripod?"
+  },
+  {
+    "id": "en-question-0200",
+    "language": "en",
+    "tone": "question",
+    "text": "is it slowed down or real time?"
+  },
+  { "id": "en-question-0201", "language": "en", "tone": "question", "text": "is this sped up?" },
+  {
+    "id": "en-question-0202",
+    "language": "en",
+    "tone": "question",
+    "text": "is this in slow motion?"
+  },
+  {
+    "id": "en-question-0203",
+    "language": "en",
+    "tone": "question",
+    "text": "wait is that the same person?"
+  },
+  { "id": "en-question-0204", "language": "en", "tone": "question", "text": "is that your mom??" },
+  {
+    "id": "en-question-0205",
+    "language": "en",
+    "tone": "question",
+    "text": "is that your brother?"
+  },
+  {
+    "id": "en-question-0206",
+    "language": "en",
+    "tone": "question",
+    "text": "is that your partner? you two are cute"
+  },
+  {
+    "id": "en-question-0207",
+    "language": "en",
+    "tone": "question",
+    "text": "are you guys twins??"
+  },
+  {
+    "id": "en-question-0208",
+    "language": "en",
+    "tone": "question",
+    "text": "how many people worked on this?"
+  },
+  {
+    "id": "en-question-0209",
+    "language": "en",
+    "tone": "question",
+    "text": "was this planned or improvised?"
+  },
+  { "id": "en-question-0210", "language": "en", "tone": "question", "text": "was that scripted?" },
+  {
+    "id": "en-question-0211",
+    "language": "en",
+    "tone": "question",
+    "text": "did that really happen?"
+  },
+  { "id": "en-question-0212", "language": "en", "tone": "question", "text": "did that hurt?? 😬" },
+  { "id": "en-question-0213", "language": "en", "tone": "question", "text": "are you okay??" },
+  { "id": "en-question-0214", "language": "en", "tone": "question", "text": "is he okay lmao" },
+  {
+    "id": "en-question-0215",
+    "language": "en",
+    "tone": "question",
+    "text": "what time of day did you shoot this?"
+  },
+  {
+    "id": "en-question-0216",
+    "language": "en",
+    "tone": "question",
+    "text": "is that the sunset or a filter?"
+  },
+  {
+    "id": "en-question-0217",
+    "language": "en",
+    "tone": "question",
+    "text": "what's the weather like there?"
+  },
+  {
+    "id": "en-question-0218",
+    "language": "en",
+    "tone": "question",
+    "text": "is it always that sunny there?"
+  }
+]

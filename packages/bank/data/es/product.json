@@ -1,0 +1,521 @@
+[
+  { "id": "es-product-0001", "language": "es", "tone": "product", "text": "¿de dónde es?" },
+  { "id": "es-product-0002", "language": "es", "tone": "product", "text": "¿de dónde es esto??" },
+  { "id": "es-product-0003", "language": "es", "tone": "product", "text": "precio?" },
+  { "id": "es-product-0004", "language": "es", "tone": "product", "text": "¿cuánto cuesta?" },
+  { "id": "es-product-0005", "language": "es", "tone": "product", "text": "¿cuánto sale?" },
+  { "id": "es-product-0006", "language": "es", "tone": "product", "text": "¿cuánto vale esto??" },
+  { "id": "es-product-0007", "language": "es", "tone": "product", "text": "¿cuánto está?" },
+  { "id": "es-product-0008", "language": "es", "tone": "product", "text": "¿es caro?" },
+  { "id": "es-product-0009", "language": "es", "tone": "product", "text": "¿viene en negro?" },
+  {
+    "id": "es-product-0010",
+    "language": "es",
+    "tone": "product",
+    "text": "¿hay en otros colores?"
+  },
+  { "id": "es-product-0011", "language": "es", "tone": "product", "text": "¿qué colores hay?" },
+  { "id": "es-product-0012", "language": "es", "tone": "product", "text": "¿lo hay en blanco?" },
+  {
+    "id": "es-product-0013",
+    "language": "es",
+    "tone": "product",
+    "text": "¿viene en talla grande?"
+  },
+  { "id": "es-product-0014", "language": "es", "tone": "product", "text": "¿qué talla es?" },
+  {
+    "id": "es-product-0015",
+    "language": "es",
+    "tone": "product",
+    "text": "¿hay talla más pequeña?"
+  },
+  { "id": "es-product-0016", "language": "es", "tone": "product", "text": "¿de qué material es?" },
+  { "id": "es-product-0017", "language": "es", "tone": "product", "text": "¿es impermeable?" },
+  { "id": "es-product-0018", "language": "es", "tone": "product", "text": "¿pesa mucho?" },
+  {
+    "id": "es-product-0019",
+    "language": "es",
+    "tone": "product",
+    "text": "¿qué tan grande es en realidad?"
+  },
+  {
+    "id": "es-product-0020",
+    "language": "es",
+    "tone": "product",
+    "text": "¿es tan grande como parece?"
+  },
+  {
+    "id": "es-product-0021",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de verdad es tan pequeño?"
+  },
+  { "id": "es-product-0022", "language": "es", "tone": "product", "text": "¿se puede plegar?" },
+  {
+    "id": "es-product-0023",
+    "language": "es",
+    "tone": "product",
+    "text": "¿cuánto dura la batería?"
+  },
+  { "id": "es-product-0024", "language": "es", "tone": "product", "text": "¿lleva pilas?" },
+  { "id": "es-product-0025", "language": "es", "tone": "product", "text": "¿viene con cargador?" },
+  { "id": "es-product-0026", "language": "es", "tone": "product", "text": "¿es inalámbrico?" },
+  { "id": "es-product-0027", "language": "es", "tone": "product", "text": "¿hace mucho ruido?" },
+  { "id": "es-product-0028", "language": "es", "tone": "product", "text": "¿es fácil de limpiar?" },
+  {
+    "id": "es-product-0029",
+    "language": "es",
+    "tone": "product",
+    "text": "¿se puede meter al lavavajillas?"
+  },
+  { "id": "es-product-0030", "language": "es", "tone": "product", "text": "¿es vegano?" },
+  { "id": "es-product-0031", "language": "es", "tone": "product", "text": "¿a qué huele?" },
+  { "id": "es-product-0032", "language": "es", "tone": "product", "text": "¿de qué sabor es?" },
+  { "id": "es-product-0033", "language": "es", "tone": "product", "text": "¿a qué sabe?" },
+  { "id": "es-product-0034", "language": "es", "tone": "product", "text": "¿pica?" },
+  { "id": "es-product-0035", "language": "es", "tone": "product", "text": "¿es dulce o salado?" },
+  { "id": "es-product-0036", "language": "es", "tone": "product", "text": "¿qué lleva?" },
+  {
+    "id": "es-product-0037",
+    "language": "es",
+    "tone": "product",
+    "text": "¿hacen envíos internacionales?"
+  },
+  { "id": "es-product-0038", "language": "es", "tone": "product", "text": "¿envían a México?" },
+  { "id": "es-product-0039", "language": "es", "tone": "product", "text": "¿llega a Argentina?" },
+  { "id": "es-product-0040", "language": "es", "tone": "product", "text": "¿envían a España?" },
+  {
+    "id": "es-product-0041",
+    "language": "es",
+    "tone": "product",
+    "text": "¿hacen envíos a Colombia?"
+  },
+  {
+    "id": "es-product-0042",
+    "language": "es",
+    "tone": "product",
+    "text": "¿está disponible en Latinoamérica?"
+  },
+  {
+    "id": "es-product-0043",
+    "language": "es",
+    "tone": "product",
+    "text": "¿se vende en tiendas o solo online?"
+  },
+  { "id": "es-product-0044", "language": "es", "tone": "product", "text": "¿dónde lo consigo?" },
+  {
+    "id": "es-product-0045",
+    "language": "es",
+    "tone": "product",
+    "text": "¿dónde se puede encontrar?"
+  },
+  { "id": "es-product-0046", "language": "es", "tone": "product", "text": "¿es nuevo?" },
+  { "id": "es-product-0047", "language": "es", "tone": "product", "text": "¿cuándo salió esto?" },
+  { "id": "es-product-0048", "language": "es", "tone": "product", "text": "¿es edición limitada?" },
+  { "id": "es-product-0049", "language": "es", "tone": "product", "text": "¿todavía hay?" },
+  { "id": "es-product-0050", "language": "es", "tone": "product", "text": "¿ya se agotó?" },
+  { "id": "es-product-0051", "language": "es", "tone": "product", "text": "¿qué es esta cosa?" },
+  { "id": "es-product-0052", "language": "es", "tone": "product", "text": "¿qué es eso? jajaja" },
+  {
+    "id": "es-product-0053",
+    "language": "es",
+    "tone": "product",
+    "text": "¿qué hace exactamente?"
+  },
+  {
+    "id": "es-product-0054",
+    "language": "es",
+    "tone": "product",
+    "text": "a ver, ¿qué hace en realidad?"
+  },
+  {
+    "id": "es-product-0055",
+    "language": "es",
+    "tone": "product",
+    "text": "sigo sin saber qué es pero me intriga"
+  },
+  { "id": "es-product-0056", "language": "es", "tone": "product", "text": "¿cómo funciona?" },
+  { "id": "es-product-0057", "language": "es", "tone": "product", "text": "¿cómo se usa?" },
+  { "id": "es-product-0058", "language": "es", "tone": "product", "text": "¿trae instrucciones?" },
+  {
+    "id": "es-product-0059",
+    "language": "es",
+    "tone": "product",
+    "text": "¿es difícil de montar?"
+  },
+  { "id": "es-product-0060", "language": "es", "tone": "product", "text": "¿tiene app?" },
+  {
+    "id": "es-product-0061",
+    "language": "es",
+    "tone": "product",
+    "text": "¿qué diferencia hay con el anterior?"
+  },
+  {
+    "id": "es-product-0062",
+    "language": "es",
+    "tone": "product",
+    "text": "¿cuál es la diferencia entre las dos versiones?"
+  },
+  {
+    "id": "es-product-0063",
+    "language": "es",
+    "tone": "product",
+    "text": "¿cuál es el color del video?"
+  },
+  {
+    "id": "es-product-0064",
+    "language": "es",
+    "tone": "product",
+    "text": "¿el del video es el grande o el pequeño?"
+  },
+  {
+    "id": "es-product-0065",
+    "language": "es",
+    "tone": "product",
+    "text": "¿ese es el color real o es el filtro?"
+  },
+  {
+    "id": "es-product-0066",
+    "language": "es",
+    "tone": "product",
+    "text": "¿el color es así en persona?"
+  },
+  { "id": "es-product-0067", "language": "es", "tone": "product", "text": "¿viene en rosa? 👀" },
+  {
+    "id": "es-product-0068",
+    "language": "es",
+    "tone": "product",
+    "text": "¿viene en verde? pregunto por una amiga"
+  },
+  {
+    "id": "es-product-0069",
+    "language": "es",
+    "tone": "product",
+    "text": "pregunto por un amigo: ¿cuánto cuesta?"
+  },
+  {
+    "id": "es-product-0070",
+    "language": "es",
+    "tone": "product",
+    "text": "pregunto por mi madre, ¿de dónde es?"
+  },
+  {
+    "id": "es-product-0071",
+    "language": "es",
+    "tone": "product",
+    "text": "mi cartera tiembla. ¿precio?"
+  },
+  {
+    "id": "es-product-0072",
+    "language": "es",
+    "tone": "product",
+    "text": "mi billetera se asustó jajaja ¿cuánto sale?"
+  },
+  {
+    "id": "es-product-0073",
+    "language": "es",
+    "tone": "product",
+    "text": "no lo necesito pero ¿cuánto cuesta?"
+  },
+  {
+    "id": "es-product-0074",
+    "language": "es",
+    "tone": "product",
+    "text": "ni sé qué es pero ¿de dónde es?"
+  },
+  {
+    "id": "es-product-0075",
+    "language": "es",
+    "tone": "product",
+    "text": "la edición del anuncio está mejor que lo que venden jajaja",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0076",
+    "language": "es",
+    "tone": "product",
+    "text": "vale pero ¿qué venden en este anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0077",
+    "language": "es",
+    "tone": "product",
+    "text": "lo vi 3 veces y sigo sin saber qué es",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0078",
+    "language": "es",
+    "tone": "product",
+    "text": "buen anuncio, ¿cómo se llama el producto?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0079",
+    "language": "es",
+    "tone": "product",
+    "text": "¿el producto es tan bonito como el anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0080",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de verdad se ve así o es la iluminación?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0081",
+    "language": "es",
+    "tone": "product",
+    "text": "¿quién hizo la música del anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0082",
+    "language": "es",
+    "tone": "product",
+    "text": "se me pegó la cancioncita del anuncio",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0083",
+    "language": "es",
+    "tone": "product",
+    "text": "este anuncio relaja muchísimo, ¿de qué era?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0084",
+    "language": "es",
+    "tone": "product",
+    "text": "el outfit de la modelo me distrae del producto jaja",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0085",
+    "language": "es",
+    "tone": "product",
+    "text": "el producto bien pero el perro del anuncio es la estrella",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0086",
+    "language": "es",
+    "tone": "product",
+    "text": "¿el perro viene incluido? pregunto en serio",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0087",
+    "language": "es",
+    "tone": "product",
+    "text": "el plano en cámara lenta del líquido está haciendo mucho",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0088",
+    "language": "es",
+    "tone": "product",
+    "text": "nadie abre una caja con tanta elegancia",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0089",
+    "language": "es",
+    "tone": "product",
+    "text": "la música del unboxing es muy dramática para una caja",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-product-0090",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿dónde lo encuentro?"
+  },
+  {
+    "id": "es-product-0091",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿cuánto te costó?"
+  },
+  {
+    "id": "es-product-0092",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿hay en negro o no?"
+  },
+  {
+    "id": "es-product-0093",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿cómo se llama?"
+  },
+  {
+    "id": "es-product-0094",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿es el mismo del video anterior?"
+  },
+  {
+    "id": "es-product-0095",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿de dónde es la taza?"
+  },
+  {
+    "id": "es-product-0096",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿de dónde es la chaqueta?"
+  },
+  {
+    "id": "es-product-0097",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿de dónde es tu sudadera?"
+  },
+  {
+    "id": "es-product-0098",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} ¿dónde conseguiste la lámpara?"
+  },
+  {
+    "id": "es-product-0099",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} che ¿de dónde es la campera?"
+  },
+  {
+    "id": "es-product-0100",
+    "language": "es",
+    "tone": "product",
+    "text": "{creator} wey ¿dónde venden eso?"
+  },
+  {
+    "id": "es-product-0101",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de dónde son esas zapatillas?"
+  },
+  {
+    "id": "es-product-0102",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de qué marca es la camiseta?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-product-0103",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de dónde es la lámpara?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-product-0104",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de dónde es tu escritorio?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-product-0105",
+    "language": "es",
+    "tone": "product",
+    "text": "¿dónde compraste la alfombra??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-product-0106",
+    "language": "es",
+    "tone": "product",
+    "text": "¿qué batidora usas?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-product-0107",
+    "language": "es",
+    "tone": "product",
+    "text": "¿de dónde es esa taza? qué bonita",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-product-0108",
+    "language": "es",
+    "tone": "product",
+    "text": "¿y la remera de dónde es?",
+    "contexts": ["vlog"]
+  },
+  { "id": "es-product-0109", "language": "es", "tone": "product", "text": "¿link?" },
+  { "id": "es-product-0110", "language": "es", "tone": "product", "text": "¿hay link?" },
+  { "id": "es-product-0111", "language": "es", "tone": "product", "text": "¿tienen página web?" },
+  { "id": "es-product-0112", "language": "es", "tone": "product", "text": "¿cuál es la web?" },
+  { "id": "es-product-0113", "language": "es", "tone": "product", "text": "¿tiene garantía?" },
+  { "id": "es-product-0114", "language": "es", "tone": "product", "text": "¿viene con funda?" },
+  {
+    "id": "es-product-0115",
+    "language": "es",
+    "tone": "product",
+    "text": "¿es igual al del año pasado?"
+  },
+  { "id": "es-product-0116", "language": "es", "tone": "product", "text": "¿viene en set?" },
+  { "id": "es-product-0117", "language": "es", "tone": "product", "text": "¿es talla única?" },
+  {
+    "id": "es-product-0118",
+    "language": "es",
+    "tone": "product",
+    "text": "¿es para niños o adultos?"
+  },
+  {
+    "id": "es-product-0119",
+    "language": "es",
+    "tone": "product",
+    "text": "¿cuánto tarda en llegar?"
+  },
+  { "id": "es-product-0120", "language": "es", "tone": "product", "text": "¿es hecho a mano?" },
+  { "id": "es-product-0121", "language": "es", "tone": "product", "text": "¿es madera de verdad?" },
+  {
+    "id": "es-product-0122",
+    "language": "es",
+    "tone": "product",
+    "text": "¿es de plástico o metal?"
+  },
+  { "id": "es-product-0123", "language": "es", "tone": "product", "text": "¿es resistente?" },
+  { "id": "es-product-0124", "language": "es", "tone": "product", "text": "¿se raya fácil?" },
+  { "id": "es-product-0125", "language": "es", "tone": "product", "text": "¿cuántos vienen?" },
+  { "id": "es-product-0126", "language": "es", "tone": "product", "text": "¿es recargable?" },
+  { "id": "es-product-0127", "language": "es", "tone": "product", "text": "che ¿cuánto sale eso?" },
+  {
+    "id": "es-product-0128",
+    "language": "es",
+    "tone": "product",
+    "text": "¿cuánto cuesta en pesos?"
+  },
+  {
+    "id": "es-product-0129",
+    "language": "es",
+    "tone": "product",
+    "text": "¿cuánto sale en euros?"
+  },
+  {
+    "id": "es-product-0130",
+    "language": "es",
+    "tone": "product",
+    "text": "wey ¿y eso cuánto cuesta?"
+  },
+  {
+    "id": "es-product-0131",
+    "language": "es",
+    "tone": "product",
+    "text": "parce ¿eso dónde lo venden?"
+  },
+  {
+    "id": "es-product-0132",
+    "language": "es",
+    "tone": "product",
+    "text": "tío ¿eso dónde se pilla?"
+  }
+]

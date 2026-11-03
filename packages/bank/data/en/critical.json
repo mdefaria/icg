@@ -1,0 +1,997 @@
+[
+  {
+    "id": "en-critical-0001",
+    "language": "en",
+    "tone": "critical",
+    "text": "the audio is way too quiet"
+  },
+  {
+    "id": "en-critical-0002",
+    "language": "en",
+    "tone": "critical",
+    "text": "can barely hear you over the music"
+  },
+  {
+    "id": "en-critical-0003",
+    "language": "en",
+    "tone": "critical",
+    "text": "music is too loud, can't hear the dialogue"
+  },
+  {
+    "id": "en-critical-0004",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} turn the music down a bit next time"
+  },
+  {
+    "id": "en-critical-0005",
+    "language": "en",
+    "tone": "critical",
+    "text": "the audio is out of sync"
+  },
+  {
+    "id": "en-critical-0006",
+    "language": "en",
+    "tone": "critical",
+    "text": "is it just me or is the audio a bit off"
+  },
+  {
+    "id": "en-critical-0007",
+    "language": "en",
+    "tone": "critical",
+    "text": "the volume jumps around a lot"
+  },
+  {
+    "id": "en-critical-0008",
+    "language": "en",
+    "tone": "critical",
+    "text": "the mic is peaking at 0:20"
+  },
+  {
+    "id": "en-critical-0009",
+    "language": "en",
+    "tone": "critical",
+    "text": "lots of background noise in this one"
+  },
+  {
+    "id": "en-critical-0010",
+    "language": "en",
+    "tone": "critical",
+    "text": "the colors look a bit washed out"
+  },
+  {
+    "id": "en-critical-0011",
+    "language": "en",
+    "tone": "critical",
+    "text": "it's a bit too dark, couldn't see much"
+  },
+  {
+    "id": "en-critical-0012",
+    "language": "en",
+    "tone": "critical",
+    "text": "the lighting is a bit harsh on the face"
+  },
+  {
+    "id": "en-critical-0013",
+    "language": "en",
+    "tone": "critical",
+    "text": "too much contrast imo"
+  },
+  {
+    "id": "en-critical-0014",
+    "language": "en",
+    "tone": "critical",
+    "text": "the grade is a little too orange for me"
+  },
+  {
+    "id": "en-critical-0015",
+    "language": "en",
+    "tone": "critical",
+    "text": "it's a bit blurry on my end"
+  },
+  {
+    "id": "en-critical-0016",
+    "language": "en",
+    "tone": "critical",
+    "text": "the focus keeps hunting"
+  },
+  {
+    "id": "en-critical-0017",
+    "language": "en",
+    "tone": "critical",
+    "text": "the camera shake is giving me motion sickness"
+  },
+  { "id": "en-critical-0018", "language": "en", "tone": "critical", "text": "too shaky for me" },
+  {
+    "id": "en-critical-0019",
+    "language": "en",
+    "tone": "critical",
+    "text": "the cuts are too fast, couldn't follow"
+  },
+  { "id": "en-critical-0020", "language": "en", "tone": "critical", "text": "too many jump cuts" },
+  {
+    "id": "en-critical-0021",
+    "language": "en",
+    "tone": "critical",
+    "text": "the pacing drags in the middle"
+  },
+  {
+    "id": "en-critical-0022",
+    "language": "en",
+    "tone": "critical",
+    "text": "the middle part could be shorter"
+  },
+  {
+    "id": "en-critical-0023",
+    "language": "en",
+    "tone": "critical",
+    "text": "this could've been 30 seconds shorter"
+  },
+  {
+    "id": "en-critical-0024",
+    "language": "en",
+    "tone": "critical",
+    "text": "it was a bit too long tbh"
+  },
+  {
+    "id": "en-critical-0025",
+    "language": "en",
+    "tone": "critical",
+    "text": "the intro is too long"
+  },
+  {
+    "id": "en-critical-0026",
+    "language": "en",
+    "tone": "critical",
+    "text": "skip to 0:45, you're welcome"
+  },
+  {
+    "id": "en-critical-0027",
+    "language": "en",
+    "tone": "critical",
+    "text": "the ending felt rushed"
+  },
+  {
+    "id": "en-critical-0028",
+    "language": "en",
+    "tone": "critical",
+    "text": "the ending came out of nowhere"
+  },
+  {
+    "id": "en-critical-0029",
+    "language": "en",
+    "tone": "critical",
+    "text": "felt like it ended too soon"
+  },
+  {
+    "id": "en-critical-0030",
+    "language": "en",
+    "tone": "critical",
+    "text": "the ending didn't really land for me"
+  },
+  {
+    "id": "en-critical-0031",
+    "language": "en",
+    "tone": "critical",
+    "text": "the twist was kind of obvious"
+  },
+  {
+    "id": "en-critical-0032",
+    "language": "en",
+    "tone": "critical",
+    "text": "saw the twist coming from a mile away"
+  },
+  {
+    "id": "en-critical-0033",
+    "language": "en",
+    "tone": "critical",
+    "text": "i don't get the hype tbh"
+  },
+  {
+    "id": "en-critical-0034",
+    "language": "en",
+    "tone": "critical",
+    "text": "not your best one honestly"
+  },
+  {
+    "id": "en-critical-0035",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} the last one was better"
+  },
+  {
+    "id": "en-critical-0036",
+    "language": "en",
+    "tone": "critical",
+    "text": "i liked the older videos more"
+  },
+  {
+    "id": "en-critical-0037",
+    "language": "en",
+    "tone": "critical",
+    "text": "idk this one didn't hit for me"
+  },
+  { "id": "en-critical-0038", "language": "en", "tone": "critical", "text": "it's okay i guess" },
+  {
+    "id": "en-critical-0039",
+    "language": "en",
+    "tone": "critical",
+    "text": "it's alright, nothing special"
+  },
+  { "id": "en-critical-0040", "language": "en", "tone": "critical", "text": "mid" },
+  { "id": "en-critical-0041", "language": "en", "tone": "critical", "text": "kinda mid ngl" },
+  { "id": "en-critical-0042", "language": "en", "tone": "critical", "text": "mid at best" },
+  { "id": "en-critical-0043", "language": "en", "tone": "critical", "text": "lowkey overrated" },
+  { "id": "en-critical-0044", "language": "en", "tone": "critical", "text": "this is overrated" },
+  { "id": "en-critical-0045", "language": "en", "tone": "critical", "text": "a bit cringe ngl" },
+  {
+    "id": "en-critical-0046",
+    "language": "en",
+    "tone": "critical",
+    "text": "the acting is a bit stiff",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0047",
+    "language": "en",
+    "tone": "critical",
+    "text": "the dialogue felt a little forced",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0048",
+    "language": "en",
+    "tone": "critical",
+    "text": "the story was hard to follow",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0049",
+    "language": "en",
+    "tone": "critical",
+    "text": "cool visuals but the story didn't go anywhere",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0050",
+    "language": "en",
+    "tone": "critical",
+    "text": "the music is doing all the heavy lifting here",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0051",
+    "language": "en",
+    "tone": "critical",
+    "text": "beautiful shots but i felt nothing",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0052",
+    "language": "en",
+    "tone": "critical",
+    "text": "the sound mix needs work, dialogue gets buried",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0053",
+    "language": "en",
+    "tone": "critical",
+    "text": "the score overpowers the scene at 1:10",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0054",
+    "language": "en",
+    "tone": "critical",
+    "text": "the night scenes are too dark to see anything",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0055",
+    "language": "en",
+    "tone": "critical",
+    "text": "would've liked more time with the main character",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0056",
+    "language": "en",
+    "tone": "critical",
+    "text": "the voice over felt unnecessary",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0057",
+    "language": "en",
+    "tone": "critical",
+    "text": "the actors are good but the script lets them down",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-critical-0058",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} you skipped a step there",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0059",
+    "language": "en",
+    "tone": "critical",
+    "text": "you went way too fast in the middle",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0060",
+    "language": "en",
+    "tone": "critical",
+    "text": "didn't work for me, the menu is different now",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0061",
+    "language": "en",
+    "tone": "critical",
+    "text": "this is outdated, the option moved",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0062",
+    "language": "en",
+    "tone": "critical",
+    "text": "you never explained the second step",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0063",
+    "language": "en",
+    "tone": "critical",
+    "text": "please slow down, i had to pause like 20 times",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0064",
+    "language": "en",
+    "tone": "critical",
+    "text": "kinda confusing for beginners",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0065",
+    "language": "en",
+    "tone": "critical",
+    "text": "would be better with captions on the steps",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0066",
+    "language": "en",
+    "tone": "critical",
+    "text": "title says easy, it was not easy",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0067",
+    "language": "en",
+    "tone": "critical",
+    "text": "this only works on the paid version btw",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0068",
+    "language": "en",
+    "tone": "critical",
+    "text": "you could just use the shortcut instead",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-critical-0069",
+    "language": "en",
+    "tone": "critical",
+    "text": "the vocals are a bit off in the chorus",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0070",
+    "language": "en",
+    "tone": "critical",
+    "text": "autotune is a little heavy here",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0071",
+    "language": "en",
+    "tone": "critical",
+    "text": "the mix is muddy",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0072",
+    "language": "en",
+    "tone": "critical",
+    "text": "the beat is great but the lyrics are meh",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0073",
+    "language": "en",
+    "tone": "critical",
+    "text": "the bridge feels unfinished",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0074",
+    "language": "en",
+    "tone": "critical",
+    "text": "the original was better tbh",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0075",
+    "language": "en",
+    "tone": "critical",
+    "text": "sounds like every other song this year",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0076",
+    "language": "en",
+    "tone": "critical",
+    "text": "the bass is way too loud on headphones",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-critical-0077",
+    "language": "en",
+    "tone": "critical",
+    "text": "this ad is way too long",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0078",
+    "language": "en",
+    "tone": "critical",
+    "text": "too many ads lately",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0079",
+    "language": "en",
+    "tone": "critical",
+    "text": "i've seen this ad 40 times today",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0080",
+    "language": "en",
+    "tone": "critical",
+    "text": "the ad is fine but why is it so loud",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0081",
+    "language": "en",
+    "tone": "critical",
+    "text": "cool ad but i still don't know what it's for",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0082",
+    "language": "en",
+    "tone": "critical",
+    "text": "i watched the whole ad and still don't get it",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0083",
+    "language": "en",
+    "tone": "critical",
+    "text": "nice editing, but this is the third time i've seen it this hour",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-critical-0084",
+    "language": "en",
+    "tone": "critical",
+    "text": "the vlogs used to be more chill",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-critical-0085",
+    "language": "en",
+    "tone": "critical",
+    "text": "too much talking, not enough of the actual trip",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-critical-0086",
+    "language": "en",
+    "tone": "critical",
+    "text": "you didn't even show the place 😭",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-critical-0087",
+    "language": "en",
+    "tone": "critical",
+    "text": "the vlog felt kind of rushed this time",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-critical-0088",
+    "language": "en",
+    "tone": "critical",
+    "text": "miss the longer vlogs honestly",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-critical-0089",
+    "language": "en",
+    "tone": "critical",
+    "text": "clickbait title tbh",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-critical-0090",
+    "language": "en",
+    "tone": "critical",
+    "text": "the thumbnail is misleading",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-critical-0091",
+    "language": "en",
+    "tone": "critical",
+    "text": "that was a lot of sponsor time for a 5 minute video",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-critical-0092",
+    "language": "en",
+    "tone": "critical",
+    "text": "the first 2 minutes could be skipped entirely",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-critical-0093",
+    "language": "en",
+    "tone": "critical",
+    "text": "this got recommended to me and i'm not sure why",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-critical-0094",
+    "language": "en",
+    "tone": "critical",
+    "text": "this is a repost",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-critical-0095",
+    "language": "en",
+    "tone": "critical",
+    "text": "the captions cover the whole video",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-critical-0096",
+    "language": "en",
+    "tone": "critical",
+    "text": "the text on screen disappears before i can read it",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-critical-0097",
+    "language": "en",
+    "tone": "critical",
+    "text": "ok but who is this for",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-critical-0098",
+    "language": "en",
+    "tone": "critical",
+    "text": "this is not the take you think it is",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-critical-0099",
+    "language": "en",
+    "tone": "critical",
+    "text": "this is not as deep as the caption thinks it is",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-critical-0100",
+    "language": "en",
+    "tone": "critical",
+    "text": "everyone in the replies acting like this is groundbreaking is wild",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-critical-0101",
+    "language": "en",
+    "tone": "critical",
+    "text": "we've seen this exact video 100 times already",
+    "platforms": ["x"]
+  },
+  {
+    "id": "en-critical-0102",
+    "language": "en",
+    "tone": "critical",
+    "text": "respectfully, no",
+    "platforms": ["x"]
+  },
+  { "id": "en-critical-0103", "language": "en", "tone": "critical", "text": "counterpoint: no" },
+  { "id": "en-critical-0104", "language": "en", "tone": "critical", "text": "hard disagree" },
+  {
+    "id": "en-critical-0105",
+    "language": "en",
+    "tone": "critical",
+    "text": "i disagree with this one"
+  },
+  {
+    "id": "en-critical-0106",
+    "language": "en",
+    "tone": "critical",
+    "text": "not really true though"
+  },
+  {
+    "id": "en-critical-0107",
+    "language": "en",
+    "tone": "critical",
+    "text": "that's not how it works lol"
+  },
+  {
+    "id": "en-critical-0108",
+    "language": "en",
+    "tone": "critical",
+    "text": "that's not really accurate"
+  },
+  {
+    "id": "en-critical-0109",
+    "language": "en",
+    "tone": "critical",
+    "text": "this is kind of misleading"
+  },
+  {
+    "id": "en-critical-0110",
+    "language": "en",
+    "tone": "critical",
+    "text": "pretty sure this is staged"
+  },
+  {
+    "id": "en-critical-0111",
+    "language": "en",
+    "tone": "critical",
+    "text": "this is so obviously staged"
+  },
+  {
+    "id": "en-critical-0112",
+    "language": "en",
+    "tone": "critical",
+    "text": "the fake reaction 😐"
+  },
+  { "id": "en-critical-0113", "language": "en", "tone": "critical", "text": "this feels scripted" },
+  {
+    "id": "en-critical-0114",
+    "language": "en",
+    "tone": "critical",
+    "text": "feels a bit try-hard"
+  },
+  {
+    "id": "en-critical-0115",
+    "language": "en",
+    "tone": "critical",
+    "text": "trying a little too hard here"
+  },
+  {
+    "id": "en-critical-0116",
+    "language": "en",
+    "tone": "critical",
+    "text": "the trend is dead already"
+  },
+  {
+    "id": "en-critical-0117",
+    "language": "en",
+    "tone": "critical",
+    "text": "this trend needs to stop"
+  },
+  {
+    "id": "en-critical-0118",
+    "language": "en",
+    "tone": "critical",
+    "text": "we've seen this so many times"
+  },
+  {
+    "id": "en-critical-0119",
+    "language": "en",
+    "tone": "critical",
+    "text": "so many people already did this"
+  },
+  {
+    "id": "en-critical-0120",
+    "language": "en",
+    "tone": "critical",
+    "text": "nothing new here tbh"
+  },
+  {
+    "id": "en-critical-0121",
+    "language": "en",
+    "tone": "critical",
+    "text": "same video as last week?"
+  },
+  {
+    "id": "en-critical-0122",
+    "language": "en",
+    "tone": "critical",
+    "text": "didn't you post this already?"
+  },
+  {
+    "id": "en-critical-0123",
+    "language": "en",
+    "tone": "critical",
+    "text": "why is everyone posting the same thing"
+  },
+  {
+    "id": "en-critical-0124",
+    "language": "en",
+    "tone": "critical",
+    "text": "the caption is doing too much"
+  },
+  {
+    "id": "en-critical-0125",
+    "language": "en",
+    "tone": "critical",
+    "text": "the filter is way too strong"
+  },
+  {
+    "id": "en-critical-0126",
+    "language": "en",
+    "tone": "critical",
+    "text": "too much filter, can't see anything"
+  },
+  {
+    "id": "en-critical-0127",
+    "language": "en",
+    "tone": "critical",
+    "text": "the subtitles are full of typos"
+  },
+  {
+    "id": "en-critical-0128",
+    "language": "en",
+    "tone": "critical",
+    "text": "the subtitles are off by like a second"
+  },
+  {
+    "id": "en-critical-0129",
+    "language": "en",
+    "tone": "critical",
+    "text": "the text is too small to read on a phone"
+  },
+  {
+    "id": "en-critical-0130",
+    "language": "en",
+    "tone": "critical",
+    "text": "the font is impossible to read"
+  },
+  {
+    "id": "en-critical-0131",
+    "language": "en",
+    "tone": "critical",
+    "text": "the transitions are a bit much"
+  },
+  {
+    "id": "en-critical-0132",
+    "language": "en",
+    "tone": "critical",
+    "text": "the sound effects are kinda annoying"
+  },
+  {
+    "id": "en-critical-0133",
+    "language": "en",
+    "tone": "critical",
+    "text": "the music choice doesn't fit"
+  },
+  {
+    "id": "en-critical-0134",
+    "language": "en",
+    "tone": "critical",
+    "text": "wrong song for this imo"
+  },
+  {
+    "id": "en-critical-0135",
+    "language": "en",
+    "tone": "critical",
+    "text": "the zoom in was unnecessary"
+  },
+  {
+    "id": "en-critical-0136",
+    "language": "en",
+    "tone": "critical",
+    "text": "why is it vertical but filmed horizontal"
+  },
+  {
+    "id": "en-critical-0137",
+    "language": "en",
+    "tone": "critical",
+    "text": "the aspect ratio is all wrong"
+  },
+  {
+    "id": "en-critical-0138",
+    "language": "en",
+    "tone": "critical",
+    "text": "it's cropped weird on my phone"
+  },
+  {
+    "id": "en-critical-0139",
+    "language": "en",
+    "tone": "critical",
+    "text": "the watermark is so distracting"
+  },
+  {
+    "id": "en-critical-0140",
+    "language": "en",
+    "tone": "critical",
+    "text": "the quality dropped a lot compared to before"
+  },
+  {
+    "id": "en-critical-0141",
+    "language": "en",
+    "tone": "critical",
+    "text": "it looks a bit low budget"
+  },
+  {
+    "id": "en-critical-0142",
+    "language": "en",
+    "tone": "critical",
+    "text": "the effort's there, the execution isn't yet"
+  },
+  {
+    "id": "en-critical-0143",
+    "language": "en",
+    "tone": "critical",
+    "text": "good idea, just needs more polish"
+  },
+  {
+    "id": "en-critical-0144",
+    "language": "en",
+    "tone": "critical",
+    "text": "great concept, not great execution"
+  },
+  {
+    "id": "en-critical-0145",
+    "language": "en",
+    "tone": "critical",
+    "text": "love the idea but it needs work"
+  },
+  {
+    "id": "en-critical-0146",
+    "language": "en",
+    "tone": "critical",
+    "text": "not bad, just needs better audio"
+  },
+  {
+    "id": "en-critical-0147",
+    "language": "en",
+    "tone": "critical",
+    "text": "good start {creator} but the editing needs work"
+  },
+  {
+    "id": "en-critical-0148",
+    "language": "en",
+    "tone": "critical",
+    "text": "you've got potential {creator}, keep at it"
+  },
+  {
+    "id": "en-critical-0149",
+    "language": "en",
+    "tone": "critical",
+    "text": "almost there, the sound is the main issue"
+  },
+  {
+    "id": "en-critical-0150",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} love you but this one wasn't it"
+  },
+  {
+    "id": "en-critical-0151",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} the audio was rough on this one"
+  },
+  {
+    "id": "en-critical-0152",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} why is the music so loud in this"
+  },
+  {
+    "id": "en-critical-0153",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} you were rushing a bit here"
+  },
+  {
+    "id": "en-critical-0154",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} not your best but still watching"
+  },
+  {
+    "id": "en-critical-0155",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} please fix the sound next time 🙏"
+  },
+  {
+    "id": "en-critical-0156",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} you used to post better stuff ngl"
+  },
+  {
+    "id": "en-critical-0157",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} be honest, was this sponsored"
+  },
+  {
+    "id": "en-critical-0158",
+    "language": "en",
+    "tone": "critical",
+    "text": "{creator} this one felt a bit lazy"
+  },
+  { "id": "en-critical-0159", "language": "en", "tone": "critical", "text": "ehh" },
+  { "id": "en-critical-0160", "language": "en", "tone": "critical", "text": "meh" },
+  { "id": "en-critical-0161", "language": "en", "tone": "critical", "text": "nah" },
+  { "id": "en-critical-0162", "language": "en", "tone": "critical", "text": "mehh not for me" },
+  {
+    "id": "en-critical-0163",
+    "language": "en",
+    "tone": "critical",
+    "text": "not for me but i see the appeal"
+  },
+  { "id": "en-critical-0164", "language": "en", "tone": "critical", "text": "i don't get it" },
+  {
+    "id": "en-critical-0165",
+    "language": "en",
+    "tone": "critical",
+    "text": "i really don't understand the point of this"
+  },
+  {
+    "id": "en-critical-0166",
+    "language": "en",
+    "tone": "critical",
+    "text": "what was the point of this"
+  },
+  {
+    "id": "en-critical-0167",
+    "language": "en",
+    "tone": "critical",
+    "text": "so what happened? nothing?"
+  },
+  {
+    "id": "en-critical-0168",
+    "language": "en",
+    "tone": "critical",
+    "text": "waited the whole video for nothing"
+  },
+  { "id": "en-critical-0169", "language": "en", "tone": "critical", "text": "was expecting more" },
+  {
+    "id": "en-critical-0170",
+    "language": "en",
+    "tone": "critical",
+    "text": "expected more honestly"
+  },
+  { "id": "en-critical-0171", "language": "en", "tone": "critical", "text": "disappointed tbh" },
+  { "id": "en-critical-0172", "language": "en", "tone": "critical", "text": "lowkey disappointed" },
+  {
+    "id": "en-critical-0173",
+    "language": "en",
+    "tone": "critical",
+    "text": "the hype was too much for this"
+  }
+]

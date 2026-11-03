@@ -1,0 +1,916 @@
+[
+  { "id": "en-hype-0001", "language": "en", "tone": "hype", "text": "this is insane" },
+  { "id": "en-hype-0002", "language": "en", "tone": "hype", "text": "INSANE" },
+  { "id": "en-hype-0003", "language": "en", "tone": "hype", "text": "bro what 🔥🔥🔥" },
+  {
+    "id": "en-hype-0004",
+    "language": "en",
+    "tone": "hype",
+    "text": "ok this is actually incredible"
+  },
+  { "id": "en-hype-0005", "language": "en", "tone": "hype", "text": "no because this is so good" },
+  { "id": "en-hype-0006", "language": "en", "tone": "hype", "text": "how is this not viral yet" },
+  { "id": "en-hype-0007", "language": "en", "tone": "hype", "text": "THE WAY I GASPED" },
+  {
+    "id": "en-hype-0008",
+    "language": "en",
+    "tone": "hype",
+    "text": "this deserves millions of views"
+  },
+  { "id": "en-hype-0009", "language": "en", "tone": "hype", "text": "peak content" },
+  { "id": "en-hype-0010", "language": "en", "tone": "hype", "text": "absolute cinema" },
+  { "id": "en-hype-0011", "language": "en", "tone": "hype", "text": "fire" },
+  { "id": "en-hype-0012", "language": "en", "tone": "hype", "text": "🔥🔥🔥 this goes hard" },
+  { "id": "en-hype-0013", "language": "en", "tone": "hype", "text": "this went HARD" },
+  {
+    "id": "en-hype-0014",
+    "language": "en",
+    "tone": "hype",
+    "text": "not me watching this 5 times in a row"
+  },
+  {
+    "id": "en-hype-0015",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} the talent is unreal"
+  },
+  { "id": "en-hype-0016", "language": "en", "tone": "hype", "text": "{creator} never misses" },
+  { "id": "en-hype-0017", "language": "en", "tone": "hype", "text": "{creator} you did it again" },
+  {
+    "id": "en-hype-0018",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} keeps raising the bar fr"
+  },
+  {
+    "id": "en-hype-0019",
+    "language": "en",
+    "tone": "hype",
+    "text": "this is the best thing on my fyp today",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-hype-0020",
+    "language": "en",
+    "tone": "hype",
+    "text": "my fyp finally doing something right",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-hype-0021",
+    "language": "en",
+    "tone": "hype",
+    "text": "the algorithm blessed me today"
+  },
+  { "id": "en-hype-0022", "language": "en", "tone": "hype", "text": "w video" },
+  { "id": "en-hype-0023", "language": "en", "tone": "hype", "text": "massive W" },
+  { "id": "en-hype-0024", "language": "en", "tone": "hype", "text": "W content as always" },
+  { "id": "en-hype-0025", "language": "en", "tone": "hype", "text": "underrated af" },
+  { "id": "en-hype-0026", "language": "en", "tone": "hype", "text": "criminally underrated" },
+  {
+    "id": "en-hype-0027",
+    "language": "en",
+    "tone": "hype",
+    "text": "why does this only have {n}k views"
+  },
+  {
+    "id": "en-hype-0028",
+    "language": "en",
+    "tone": "hype",
+    "text": "how does this have so few likes, im so confused"
+  },
+  { "id": "en-hype-0029", "language": "en", "tone": "hype", "text": "masterpiece. no notes." },
+  { "id": "en-hype-0030", "language": "en", "tone": "hype", "text": "no notes" },
+  { "id": "en-hype-0031", "language": "en", "tone": "hype", "text": "zero notes, just applause" },
+  { "id": "en-hype-0032", "language": "en", "tone": "hype", "text": "chef's kiss 🤌" },
+  {
+    "id": "en-hype-0033",
+    "language": "en",
+    "tone": "hype",
+    "text": "the quality??? on a phone???"
+  },
+  {
+    "id": "en-hype-0034",
+    "language": "en",
+    "tone": "hype",
+    "text": "this looks like a whole streaming series"
+  },
+  {
+    "id": "en-hype-0035",
+    "language": "en",
+    "tone": "hype",
+    "text": "production value through the roof"
+  },
+  {
+    "id": "en-hype-0036",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} who gave you permission to be this good"
+  },
+  {
+    "id": "en-hype-0037",
+    "language": "en",
+    "tone": "hype",
+    "text": "genuinely one of the best things i've seen this year"
+  },
+  {
+    "id": "en-hype-0038",
+    "language": "en",
+    "tone": "hype",
+    "text": "easily top 3 videos this month"
+  },
+  { "id": "en-hype-0039", "language": "en", "tone": "hype", "text": "saving this immediately" },
+  {
+    "id": "en-hype-0040",
+    "language": "en",
+    "tone": "hype",
+    "text": "saved. sent to the group chat. watched again."
+  },
+  {
+    "id": "en-hype-0041",
+    "language": "en",
+    "tone": "hype",
+    "text": "sending this to everyone i know"
+  },
+  {
+    "id": "en-hype-0042",
+    "language": "en",
+    "tone": "hype",
+    "text": "my group chat is gonna lose it"
+  },
+  { "id": "en-hype-0043", "language": "en", "tone": "hype", "text": "legendary" },
+  { "id": "en-hype-0044", "language": "en", "tone": "hype", "text": "LEGENDARY STUFF" },
+  { "id": "en-hype-0045", "language": "en", "tone": "hype", "text": "iconic honestly" },
+  { "id": "en-hype-0046", "language": "en", "tone": "hype", "text": "this is art" },
+  {
+    "id": "en-hype-0047",
+    "language": "en",
+    "tone": "hype",
+    "text": "this is ART and i will not be taking questions"
+  },
+  { "id": "en-hype-0048", "language": "en", "tone": "hype", "text": "ok i'm obsessed" },
+  {
+    "id": "en-hype-0049",
+    "language": "en",
+    "tone": "hype",
+    "text": "obsessed is an understatement"
+  },
+  { "id": "en-hype-0050", "language": "en", "tone": "hype", "text": "I'M SCREAMINGGG" },
+  {
+    "id": "en-hype-0051",
+    "language": "en",
+    "tone": "hype",
+    "text": "screaming crying throwing up (positive)"
+  },
+  { "id": "en-hype-0052", "language": "en", "tone": "hype", "text": "{creator} this is so clean" },
+  { "id": "en-hype-0053", "language": "en", "tone": "hype", "text": "so clean omg" },
+  {
+    "id": "en-hype-0054",
+    "language": "en",
+    "tone": "hype",
+    "text": "clean edit, clean everything"
+  },
+  { "id": "en-hype-0055", "language": "en", "tone": "hype", "text": "the transitions are SMOOTH" },
+  {
+    "id": "en-hype-0056",
+    "language": "en",
+    "tone": "hype",
+    "text": "that transition at the end 🤯"
+  },
+  { "id": "en-hype-0057", "language": "en", "tone": "hype", "text": "ok that cut was perfect" },
+  {
+    "id": "en-hype-0058",
+    "language": "en",
+    "tone": "hype",
+    "text": "the timing on this is perfect"
+  },
+  { "id": "en-hype-0059", "language": "en", "tone": "hype", "text": "the pacing is immaculate" },
+  { "id": "en-hype-0060", "language": "en", "tone": "hype", "text": "immaculate vibes" },
+  { "id": "en-hype-0061", "language": "en", "tone": "hype", "text": "vibes are immaculate fr" },
+  {
+    "id": "en-hype-0062",
+    "language": "en",
+    "tone": "hype",
+    "text": "goosebumps. actual goosebumps."
+  },
+  { "id": "en-hype-0063", "language": "en", "tone": "hype", "text": "i have chills" },
+  { "id": "en-hype-0064", "language": "en", "tone": "hype", "text": "chills down my spine ngl" },
+  {
+    "id": "en-hype-0065",
+    "language": "en",
+    "tone": "hype",
+    "text": "the color grading is gorgeous",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0066",
+    "language": "en",
+    "tone": "hype",
+    "text": "the cinematography on this is unreal",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0067",
+    "language": "en",
+    "tone": "hype",
+    "text": "every shot looks like a painting",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0068",
+    "language": "en",
+    "tone": "hype",
+    "text": "this could be in a festival tbh",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0069",
+    "language": "en",
+    "tone": "hype",
+    "text": "this short film is better than half the movies i paid to see",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0070",
+    "language": "en",
+    "tone": "hype",
+    "text": "the lighting in this scene is just stunning",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0071",
+    "language": "en",
+    "tone": "hype",
+    "text": "the score + the visuals = perfection",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0072",
+    "language": "en",
+    "tone": "hype",
+    "text": "those actors were incredible",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0073",
+    "language": "en",
+    "tone": "hype",
+    "text": "the sound design on this is crazy",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0074",
+    "language": "en",
+    "tone": "hype",
+    "text": "whoever directed this needs a feature film deal",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0075",
+    "language": "en",
+    "tone": "hype",
+    "text": "the last shot gave me chills",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-hype-0076",
+    "language": "en",
+    "tone": "hype",
+    "text": "this beat is crazy",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0077",
+    "language": "en",
+    "tone": "hype",
+    "text": "the drop at 0:30 🔥🔥",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0078",
+    "language": "en",
+    "tone": "hype",
+    "text": "this song has been on repeat all day",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0079",
+    "language": "en",
+    "tone": "hype",
+    "text": "the vocals... wow",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0080",
+    "language": "en",
+    "tone": "hype",
+    "text": "need this on streaming NOW",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0081",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} your voice is unreal",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0082",
+    "language": "en",
+    "tone": "hype",
+    "text": "that harmony gave me goosebumps",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0083",
+    "language": "en",
+    "tone": "hype",
+    "text": "this melody lives in my head rent free",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0084",
+    "language": "en",
+    "tone": "hype",
+    "text": "the bass on this one 😮‍💨",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0085",
+    "language": "en",
+    "tone": "hype",
+    "text": "song of the summer, calling it now",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0086",
+    "language": "en",
+    "tone": "hype",
+    "text": "this riff is so good",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0087",
+    "language": "en",
+    "tone": "hype",
+    "text": "been humming this for three days straight",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-hype-0088",
+    "language": "en",
+    "tone": "hype",
+    "text": "best tutorial on this topic, no contest",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0089",
+    "language": "en",
+    "tone": "hype",
+    "text": "learned more in 60 seconds than in a whole semester",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0090",
+    "language": "en",
+    "tone": "hype",
+    "text": "finally someone who explains it properly",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0091",
+    "language": "en",
+    "tone": "hype",
+    "text": "clearest explanation i've ever seen",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0092",
+    "language": "en",
+    "tone": "hype",
+    "text": "this tutorial is so well made",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0093",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} you explain things so well omg",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0094",
+    "language": "en",
+    "tone": "hype",
+    "text": "saving this for later, super helpful",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0095",
+    "language": "en",
+    "tone": "hype",
+    "text": "the step by step is perfect",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-hype-0096",
+    "language": "en",
+    "tone": "hype",
+    "text": "vlogs like this are why i'm still on this app",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-hype-0097",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} your vlogs are my comfort content",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-hype-0098",
+    "language": "en",
+    "tone": "hype",
+    "text": "this vlog was so cozy",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-hype-0099",
+    "language": "en",
+    "tone": "hype",
+    "text": "love these day in the life videos so much",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-hype-0100",
+    "language": "en",
+    "tone": "hype",
+    "text": "the editing on your vlogs keeps getting better",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-hype-0101",
+    "language": "en",
+    "tone": "hype",
+    "text": "this ad is actually so well made",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-hype-0102",
+    "language": "en",
+    "tone": "hype",
+    "text": "first ad i didn't skip",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-hype-0103",
+    "language": "en",
+    "tone": "hype",
+    "text": "didn't skip this ad and i'm not mad about it",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-hype-0104",
+    "language": "en",
+    "tone": "hype",
+    "text": "whoever made this ad deserves a raise",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-hype-0105",
+    "language": "en",
+    "tone": "hype",
+    "text": "the creative team on this ad cooked",
+    "contexts": ["ad"]
+  },
+  { "id": "en-hype-0106", "language": "en", "tone": "hype", "text": "{creator} you cooked" },
+  { "id": "en-hype-0107", "language": "en", "tone": "hype", "text": "he cooked" },
+  { "id": "en-hype-0108", "language": "en", "tone": "hype", "text": "she cooked" },
+  { "id": "en-hype-0109", "language": "en", "tone": "hype", "text": "they COOKED" },
+  { "id": "en-hype-0110", "language": "en", "tone": "hype", "text": "let them cook 🔥" },
+  { "id": "en-hype-0111", "language": "en", "tone": "hype", "text": "cooked and served" },
+  { "id": "en-hype-0112", "language": "en", "tone": "hype", "text": "ate and left no crumbs" },
+  { "id": "en-hype-0113", "language": "en", "tone": "hype", "text": "ate that" },
+  { "id": "en-hype-0114", "language": "en", "tone": "hype", "text": "mother" },
+  { "id": "en-hype-0115", "language": "en", "tone": "hype", "text": "slay" },
+  { "id": "en-hype-0116", "language": "en", "tone": "hype", "text": "SLAYED" },
+  { "id": "en-hype-0117", "language": "en", "tone": "hype", "text": "it's giving main character" },
+  {
+    "id": "en-hype-0118",
+    "language": "en",
+    "tone": "hype",
+    "text": "it's giving everything it needs to give"
+  },
+  { "id": "en-hype-0119", "language": "en", "tone": "hype", "text": "the aura on this" },
+  { "id": "en-hype-0120", "language": "en", "tone": "hype", "text": "aura +1000" },
+  { "id": "en-hype-0121", "language": "en", "tone": "hype", "text": "the energy is unmatched" },
+  { "id": "en-hype-0122", "language": "en", "tone": "hype", "text": "top tier" },
+  { "id": "en-hype-0123", "language": "en", "tone": "hype", "text": "S tier content" },
+  { "id": "en-hype-0124", "language": "en", "tone": "hype", "text": "elite" },
+  { "id": "en-hype-0125", "language": "en", "tone": "hype", "text": "simply elite" },
+  { "id": "en-hype-0126", "language": "en", "tone": "hype", "text": "this is elite level" },
+  { "id": "en-hype-0127", "language": "en", "tone": "hype", "text": "banger" },
+  { "id": "en-hype-0128", "language": "en", "tone": "hype", "text": "absolute banger" },
+  { "id": "en-hype-0129", "language": "en", "tone": "hype", "text": "certified banger" },
+  { "id": "en-hype-0130", "language": "en", "tone": "hype", "text": "BANGER ALERT 🚨" },
+  { "id": "en-hype-0131", "language": "en", "tone": "hype", "text": "this is a 10/10" },
+  { "id": "en-hype-0132", "language": "en", "tone": "hype", "text": "11/10 easily" },
+  { "id": "en-hype-0133", "language": "en", "tone": "hype", "text": "1000/10 would watch again" },
+  { "id": "en-hype-0134", "language": "en", "tone": "hype", "text": "replayed it immediately" },
+  {
+    "id": "en-hype-0135",
+    "language": "en",
+    "tone": "hype",
+    "text": "i've watched this way too many times"
+  },
+  { "id": "en-hype-0136", "language": "en", "tone": "hype", "text": "can't stop watching this" },
+  { "id": "en-hype-0137", "language": "en", "tone": "hype", "text": "on my 7th rewatch" },
+  { "id": "en-hype-0138", "language": "en", "tone": "hype", "text": "that was beautiful" },
+  { "id": "en-hype-0139", "language": "en", "tone": "hype", "text": "so beautiful i'm tearing up" },
+  { "id": "en-hype-0140", "language": "en", "tone": "hype", "text": "this made my whole day" },
+  { "id": "en-hype-0141", "language": "en", "tone": "hype", "text": "this made my week honestly" },
+  {
+    "id": "en-hype-0142",
+    "language": "en",
+    "tone": "hype",
+    "text": "best video on the internet rn"
+  },
+  {
+    "id": "en-hype-0143",
+    "language": "en",
+    "tone": "hype",
+    "text": "this is what the internet was made for"
+  },
+  { "id": "en-hype-0144", "language": "en", "tone": "hype", "text": "the internet needed this" },
+  {
+    "id": "en-hype-0145",
+    "language": "en",
+    "tone": "hype",
+    "text": "we don't deserve this content"
+  },
+  { "id": "en-hype-0146", "language": "en", "tone": "hype", "text": "we are not worthy 🙇" },
+  { "id": "en-hype-0147", "language": "en", "tone": "hype", "text": "unmatched" },
+  { "id": "en-hype-0148", "language": "en", "tone": "hype", "text": "untouchable" },
+  {
+    "id": "en-hype-0149",
+    "language": "en",
+    "tone": "hype",
+    "text": "no one does it like you {creator}"
+  },
+  {
+    "id": "en-hype-0150",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} is on another level"
+  },
+  {
+    "id": "en-hype-0151",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} carrying this app on their back"
+  },
+  {
+    "id": "en-hype-0152",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} please never stop posting"
+  },
+  { "id": "en-hype-0153", "language": "en", "tone": "hype", "text": "{creator} the GOAT" },
+  { "id": "en-hype-0154", "language": "en", "tone": "hype", "text": "goat" },
+  {
+    "id": "en-hype-0155",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} the goat has spoken 🐐"
+  },
+  { "id": "en-hype-0156", "language": "en", "tone": "hype", "text": "GOATED" },
+  { "id": "en-hype-0157", "language": "en", "tone": "hype", "text": "goated edit" },
+  { "id": "en-hype-0158", "language": "en", "tone": "hype", "text": "lowkey the best one yet" },
+  { "id": "en-hype-0159", "language": "en", "tone": "hype", "text": "highkey obsessed with this" },
+  {
+    "id": "en-hype-0160",
+    "language": "en",
+    "tone": "hype",
+    "text": "not to be dramatic but this is perfect"
+  },
+  {
+    "id": "en-hype-0161",
+    "language": "en",
+    "tone": "hype",
+    "text": "i'm not even exaggerating this is perfect"
+  },
+  {
+    "id": "en-hype-0162",
+    "language": "en",
+    "tone": "hype",
+    "text": "the attention to detail here"
+  },
+  {
+    "id": "en-hype-0163",
+    "language": "en",
+    "tone": "hype",
+    "text": "look at the detail on this omg"
+  },
+  {
+    "id": "en-hype-0164",
+    "language": "en",
+    "tone": "hype",
+    "text": "you can tell how much work went into this"
+  },
+  { "id": "en-hype-0165", "language": "en", "tone": "hype", "text": "the effort shows" },
+  {
+    "id": "en-hype-0166",
+    "language": "en",
+    "tone": "hype",
+    "text": "the effort in this deserves recognition"
+  },
+  {
+    "id": "en-hype-0167",
+    "language": "en",
+    "tone": "hype",
+    "text": "the hours that went into this... respect"
+  },
+  { "id": "en-hype-0168", "language": "en", "tone": "hype", "text": "respect" },
+  { "id": "en-hype-0169", "language": "en", "tone": "hype", "text": "huge respect" },
+  { "id": "en-hype-0170", "language": "en", "tone": "hype", "text": "mad respect" },
+  {
+    "id": "en-hype-0171",
+    "language": "en",
+    "tone": "hype",
+    "text": "massive respect to {creator} and everyone involved"
+  },
+  { "id": "en-hype-0172", "language": "en", "tone": "hype", "text": "proper good this" },
+  { "id": "en-hype-0173", "language": "en", "tone": "hype", "text": "this is brilliant" },
+  {
+    "id": "en-hype-0174",
+    "language": "en",
+    "tone": "hype",
+    "text": "absolutely brilliant {creator} mate"
+  },
+  { "id": "en-hype-0175", "language": "en", "tone": "hype", "text": "bloody brilliant" },
+  { "id": "en-hype-0176", "language": "en", "tone": "hype", "text": "that's mint" },
+  { "id": "en-hype-0177", "language": "en", "tone": "hype", "text": "proper class" },
+  { "id": "en-hype-0178", "language": "en", "tone": "hype", "text": "quality stuff" },
+  { "id": "en-hype-0179", "language": "en", "tone": "hype", "text": "top notch" },
+  { "id": "en-hype-0180", "language": "en", "tone": "hype", "text": "spot on" },
+  { "id": "en-hype-0181", "language": "en", "tone": "hype", "text": "cracking video" },
+  { "id": "en-hype-0182", "language": "en", "tone": "hype", "text": "well chuffed i found this" },
+  { "id": "en-hype-0183", "language": "en", "tone": "hype", "text": "this slaps" },
+  { "id": "en-hype-0184", "language": "en", "tone": "hype", "text": "slaps hard" },
+  { "id": "en-hype-0185", "language": "en", "tone": "hype", "text": "yo this slaps fr" },
+  { "id": "en-hype-0186", "language": "en", "tone": "hype", "text": "deadass fire" },
+  { "id": "en-hype-0187", "language": "en", "tone": "hype", "text": "no cap this is amazing" },
+  { "id": "en-hype-0188", "language": "en", "tone": "hype", "text": "this is hard no cap" },
+  { "id": "en-hype-0189", "language": "en", "tone": "hype", "text": "bussin" },
+  { "id": "en-hype-0190", "language": "en", "tone": "hype", "text": "lit 🔥" },
+  { "id": "en-hype-0191", "language": "en", "tone": "hype", "text": "it's lit" },
+  { "id": "en-hype-0192", "language": "en", "tone": "hype", "text": "so dope" },
+  { "id": "en-hype-0193", "language": "en", "tone": "hype", "text": "dope af" },
+  { "id": "en-hype-0194", "language": "en", "tone": "hype", "text": "SICK" },
+  { "id": "en-hype-0195", "language": "en", "tone": "hype", "text": "yooooo" },
+  { "id": "en-hype-0196", "language": "en", "tone": "hype", "text": "YOOOO WHAT" },
+  { "id": "en-hype-0197", "language": "en", "tone": "hype", "text": "wait this is so good???" },
+  { "id": "en-hype-0198", "language": "en", "tone": "hype", "text": "WAIT." },
+  { "id": "en-hype-0199", "language": "en", "tone": "hype", "text": "okay wow" },
+  { "id": "en-hype-0200", "language": "en", "tone": "hype", "text": "wow" },
+  { "id": "en-hype-0201", "language": "en", "tone": "hype", "text": "wow just wow" },
+  { "id": "en-hype-0202", "language": "en", "tone": "hype", "text": "speechless" },
+  { "id": "en-hype-0203", "language": "en", "tone": "hype", "text": "i have no words" },
+  { "id": "en-hype-0204", "language": "en", "tone": "hype", "text": "i'm literally speechless rn" },
+  { "id": "en-hype-0205", "language": "en", "tone": "hype", "text": "my jaw is on the floor" },
+  { "id": "en-hype-0206", "language": "en", "tone": "hype", "text": "jaw dropped" },
+  { "id": "en-hype-0207", "language": "en", "tone": "hype", "text": "mind blown 🤯" },
+  { "id": "en-hype-0208", "language": "en", "tone": "hype", "text": "how did you even do this" },
+  {
+    "id": "en-hype-0209",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} i need to know how you did this, it's insane"
+  },
+  { "id": "en-hype-0210", "language": "en", "tone": "hype", "text": "this is next level" },
+  {
+    "id": "en-hype-0211",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} you're so talented it's actually unfair"
+  },
+  { "id": "en-hype-0212", "language": "en", "tone": "hype", "text": "the skill gap is real" },
+  {
+    "id": "en-hype-0213",
+    "language": "en",
+    "tone": "hype",
+    "text": "leaving a comment so the algorithm pushes this"
+  },
+  {
+    "id": "en-hype-0214",
+    "language": "en",
+    "tone": "hype",
+    "text": "commenting for the algorithm 📈"
+  },
+  { "id": "en-hype-0215", "language": "en", "tone": "hype", "text": "engagement for the king" },
+  { "id": "en-hype-0216", "language": "en", "tone": "hype", "text": "everyone needs to see this" },
+  {
+    "id": "en-hype-0217",
+    "language": "en",
+    "tone": "hype",
+    "text": "blowing up tomorrow, screenshot this"
+  },
+  {
+    "id": "en-hype-0218",
+    "language": "en",
+    "tone": "hype",
+    "text": "you're gonna blow up {creator}, mark my words"
+  },
+  {
+    "id": "en-hype-0219",
+    "language": "en",
+    "tone": "hype",
+    "text": "can't believe i found this before it blew up"
+  },
+  { "id": "en-hype-0220", "language": "en", "tone": "hype", "text": "early gang where we at" },
+  {
+    "id": "en-hype-0221",
+    "language": "en",
+    "tone": "hype",
+    "text": "here before it hits a million"
+  },
+  {
+    "id": "en-hype-0222",
+    "language": "en",
+    "tone": "hype",
+    "text": "been here since day one and it keeps getting better"
+  },
+  {
+    "id": "en-hype-0223",
+    "language": "en",
+    "tone": "hype",
+    "text": "the glow up of this channel is insane"
+  },
+  {
+    "id": "en-hype-0224",
+    "language": "en",
+    "tone": "hype",
+    "text": "this channel deserves way more subs",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-hype-0225",
+    "language": "en",
+    "tone": "hype",
+    "text": "how is this channel not at a million subs",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-hype-0226",
+    "language": "en",
+    "tone": "hype",
+    "text": "subscribed after 10 seconds",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-hype-0227",
+    "language": "en",
+    "tone": "hype",
+    "text": "instant subscribe",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-hype-0228",
+    "language": "en",
+    "tone": "hype",
+    "text": "the best youtuber nobody's talking about",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "en-hype-0229",
+    "language": "en",
+    "tone": "hype",
+    "text": "followed {creator} instantly"
+  },
+  {
+    "id": "en-hype-0230",
+    "language": "en",
+    "tone": "hype",
+    "text": "followed. don't let me down {creator}"
+  },
+  { "id": "en-hype-0231", "language": "en", "tone": "hype", "text": "new favourite account" },
+  {
+    "id": "en-hype-0232",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} is my new favorite creator"
+  },
+  {
+    "id": "en-hype-0233",
+    "language": "en",
+    "tone": "hype",
+    "text": "okay {creator} i'm a fan now"
+  },
+  { "id": "en-hype-0234", "language": "en", "tone": "hype", "text": "{creator} fan for life" },
+  {
+    "id": "en-hype-0235",
+    "language": "en",
+    "tone": "hype",
+    "text": "this is why i follow you {creator}"
+  },
+  { "id": "en-hype-0236", "language": "en", "tone": "hype", "text": "this account is a gold mine" },
+  {
+    "id": "en-hype-0237",
+    "language": "en",
+    "tone": "hype",
+    "text": "everything {creator} posts is gold"
+  },
+  {
+    "id": "en-hype-0238",
+    "language": "en",
+    "tone": "hype",
+    "text": "Not a single bad video on this account"
+  },
+  {
+    "id": "en-hype-0239",
+    "language": "en",
+    "tone": "hype",
+    "text": "the consistency is insane {creator}"
+  },
+  {
+    "id": "en-hype-0240",
+    "language": "en",
+    "tone": "hype",
+    "text": "{emoji}{emoji}{emoji} so good"
+  },
+  { "id": "en-hype-0241", "language": "en", "tone": "hype", "text": "this is so good {emoji}" },
+  { "id": "en-hype-0242", "language": "en", "tone": "hype", "text": "perfection {emoji}" },
+  { "id": "en-hype-0243", "language": "en", "tone": "hype", "text": "i love this so much" },
+  { "id": "en-hype-0244", "language": "en", "tone": "hype", "text": "i LOVE this" },
+  { "id": "en-hype-0245", "language": "en", "tone": "hype", "text": "LOVE LOVE LOVE" },
+  { "id": "en-hype-0246", "language": "en", "tone": "hype", "text": "love everything about this" },
+  { "id": "en-hype-0247", "language": "en", "tone": "hype", "text": "this is everything ❤️" },
+  { "id": "en-hype-0248", "language": "en", "tone": "hype", "text": "it's perfect ❤️❤️" },
+  { "id": "en-hype-0249", "language": "en", "tone": "hype", "text": "so good 😭😭😭" },
+  { "id": "en-hype-0250", "language": "en", "tone": "hype", "text": "crying this is so good 😭" },
+  { "id": "en-hype-0251", "language": "en", "tone": "hype", "text": "i'm crying it's so good" },
+  { "id": "en-hype-0252", "language": "en", "tone": "hype", "text": "the best" },
+  { "id": "en-hype-0253", "language": "en", "tone": "hype", "text": "the absolute best" },
+  { "id": "en-hype-0254", "language": "en", "tone": "hype", "text": "this is SO well done" },
+  { "id": "en-hype-0255", "language": "en", "tone": "hype", "text": "very well done" },
+  { "id": "en-hype-0256", "language": "en", "tone": "hype", "text": "so well made" },
+  { "id": "en-hype-0257", "language": "en", "tone": "hype", "text": "brilliantly done" },
+  { "id": "en-hype-0258", "language": "en", "tone": "hype", "text": "nailed it" },
+  { "id": "en-hype-0259", "language": "en", "tone": "hype", "text": "{creator} you nailed it" },
+  { "id": "en-hype-0260", "language": "en", "tone": "hype", "text": "NAILED IT 👏👏👏" },
+  { "id": "en-hype-0261", "language": "en", "tone": "hype", "text": "👏👏👏 bravo" },
+  { "id": "en-hype-0262", "language": "en", "tone": "hype", "text": "bravo" },
+  { "id": "en-hype-0263", "language": "en", "tone": "hype", "text": "standing ovation" },
+  {
+    "id": "en-hype-0264",
+    "language": "en",
+    "tone": "hype",
+    "text": "standing ovation from my couch"
+  },
+  { "id": "en-hype-0265", "language": "en", "tone": "hype", "text": "encore" },
+  { "id": "en-hype-0266", "language": "en", "tone": "hype", "text": "again again again" },
+  { "id": "en-hype-0267", "language": "en", "tone": "hype", "text": "ok this one's my favorite" },
+  { "id": "en-hype-0268", "language": "en", "tone": "hype", "text": "my favorite one so far" },
+  { "id": "en-hype-0269", "language": "en", "tone": "hype", "text": "best one yet 🔥" },
+  {
+    "id": "en-hype-0270",
+    "language": "en",
+    "tone": "hype",
+    "text": "this is your best work {creator}"
+  },
+  {
+    "id": "en-hype-0271",
+    "language": "en",
+    "tone": "hype",
+    "text": "{creator} you outdid yourself"
+  },
+  {
+    "id": "en-hype-0272",
+    "language": "en",
+    "tone": "hype",
+    "text": "outdid yourself this time fr"
+  },
+  {
+    "id": "en-hype-0273",
+    "language": "en",
+    "tone": "hype",
+    "text": "quality keeps going up every post"
+  },
+  { "id": "en-hype-0274", "language": "en", "tone": "hype", "text": "hall of fame material" },
+  { "id": "en-hype-0275", "language": "en", "tone": "hype", "text": "put this in a museum" },
+  { "id": "en-hype-0276", "language": "en", "tone": "hype", "text": "frame this" },
+  { "id": "en-hype-0277", "language": "en", "tone": "hype", "text": "this belongs in a gallery" },
+  {
+    "id": "en-hype-0278",
+    "language": "en",
+    "tone": "hype",
+    "text": "oscar worthy honestly",
+    "contexts": ["short-film"]
+  },
+  { "id": "en-hype-0279", "language": "en", "tone": "hype", "text": "give this an award already" },
+  {
+    "id": "en-hype-0280",
+    "language": "en",
+    "tone": "hype",
+    "text": "somebody give this person an award"
+  }
+]

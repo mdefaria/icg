@@ -1,0 +1,819 @@
+[
+  { "id": "es-hype-0001", "language": "es", "tone": "hype", "text": "qué pasada" },
+  { "id": "es-hype-0002", "language": "es", "tone": "hype", "text": "QUÉ PASADAAA" },
+  { "id": "es-hype-0003", "language": "es", "tone": "hype", "text": "esto es una pasada tío" },
+  { "id": "es-hype-0004", "language": "es", "tone": "hype", "text": "madre mía qué nivel" },
+  { "id": "es-hype-0005", "language": "es", "tone": "hype", "text": "flipando con esto" },
+  { "id": "es-hype-0006", "language": "es", "tone": "hype", "text": "estoy flipando" },
+  { "id": "es-hype-0007", "language": "es", "tone": "hype", "text": "flipo en colores" },
+  { "id": "es-hype-0008", "language": "es", "tone": "hype", "text": "me ha flipado muchísimo" },
+  { "id": "es-hype-0009", "language": "es", "tone": "hype", "text": "esto mola mazo" },
+  { "id": "es-hype-0010", "language": "es", "tone": "hype", "text": "mola muchísimo" },
+  { "id": "es-hype-0011", "language": "es", "tone": "hype", "text": "cómo mola esto" },
+  { "id": "es-hype-0012", "language": "es", "tone": "hype", "text": "brutal" },
+  { "id": "es-hype-0013", "language": "es", "tone": "hype", "text": "BRUTAL 🔥🔥" },
+  { "id": "es-hype-0014", "language": "es", "tone": "hype", "text": "brutal tío, brutal" },
+  { "id": "es-hype-0015", "language": "es", "tone": "hype", "text": "es que es buenísimo" },
+  { "id": "es-hype-0016", "language": "es", "tone": "hype", "text": "buenísimo" },
+  { "id": "es-hype-0017", "language": "es", "tone": "hype", "text": "esto es arte" },
+  { "id": "es-hype-0018", "language": "es", "tone": "hype", "text": "esto es ARTE y punto" },
+  { "id": "es-hype-0019", "language": "es", "tone": "hype", "text": "qué maravilla" },
+  {
+    "id": "es-hype-0020",
+    "language": "es",
+    "tone": "hype",
+    "text": "una maravilla de principio a fin"
+  },
+  { "id": "es-hype-0021", "language": "es", "tone": "hype", "text": "me encanta" },
+  { "id": "es-hype-0022", "language": "es", "tone": "hype", "text": "me encantaaa 😍" },
+  { "id": "es-hype-0023", "language": "es", "tone": "hype", "text": "me ENCANTA todo" },
+  { "id": "es-hype-0024", "language": "es", "tone": "hype", "text": "lo amé" },
+  { "id": "es-hype-0025", "language": "es", "tone": "hype", "text": "lo amo demasiado" },
+  { "id": "es-hype-0026", "language": "es", "tone": "hype", "text": "amé todo de este video" },
+  {
+    "id": "es-hype-0027",
+    "language": "es",
+    "tone": "hype",
+    "text": "no puedo con lo bueno que está esto"
+  },
+  { "id": "es-hype-0028", "language": "es", "tone": "hype", "text": "qué chulada" },
+  { "id": "es-hype-0029", "language": "es", "tone": "hype", "text": "qué chulo ha quedado" },
+  {
+    "id": "es-hype-0030",
+    "language": "es",
+    "tone": "hype",
+    "text": "de lo mejor que he visto este año"
+  },
+  {
+    "id": "es-hype-0031",
+    "language": "es",
+    "tone": "hype",
+    "text": "lo mejor que he visto hoy sin duda"
+  },
+  {
+    "id": "es-hype-0032",
+    "language": "es",
+    "tone": "hype",
+    "text": "el mejor video de mi fyp hoy",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-hype-0033",
+    "language": "es",
+    "tone": "hype",
+    "text": "el algoritmo por fin hizo algo bien"
+  },
+  {
+    "id": "es-hype-0034",
+    "language": "es",
+    "tone": "hype",
+    "text": "gracias algoritmo por traerme aquí"
+  },
+  {
+    "id": "es-hype-0035",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} qué talento por dios"
+  },
+  { "id": "es-hype-0036", "language": "es", "tone": "hype", "text": "cuánto talento junto" },
+  {
+    "id": "es-hype-0037",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} el talento que tienes no es normal"
+  },
+  {
+    "id": "es-hype-0038",
+    "language": "es",
+    "tone": "hype",
+    "text": "no es normal lo bien que lo haces"
+  },
+  { "id": "es-hype-0039", "language": "es", "tone": "hype", "text": "{creator} eres un crack" },
+  { "id": "es-hype-0040", "language": "es", "tone": "hype", "text": "eres una crack" },
+  { "id": "es-hype-0041", "language": "es", "tone": "hype", "text": "crack total" },
+  { "id": "es-hype-0042", "language": "es", "tone": "hype", "text": "CRACK" },
+  { "id": "es-hype-0043", "language": "es", "tone": "hype", "text": "máquina" },
+  {
+    "id": "es-hype-0044",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} eres una máquina tío"
+  },
+  { "id": "es-hype-0045", "language": "es", "tone": "hype", "text": "fenómeno" },
+  { "id": "es-hype-0046", "language": "es", "tone": "hype", "text": "eres un fenómeno" },
+  { "id": "es-hype-0047", "language": "es", "tone": "hype", "text": "un genio" },
+  { "id": "es-hype-0048", "language": "es", "tone": "hype", "text": "genio absoluto" },
+  { "id": "es-hype-0049", "language": "es", "tone": "hype", "text": "qué genio" },
+  { "id": "es-hype-0050", "language": "es", "tone": "hype", "text": "qué chido está esto" },
+  { "id": "es-hype-0051", "language": "es", "tone": "hype", "text": "bien chido 🔥" },
+  { "id": "es-hype-0052", "language": "es", "tone": "hype", "text": "está bien chido wey" },
+  { "id": "es-hype-0053", "language": "es", "tone": "hype", "text": "no manches qué bonito" },
+  { "id": "es-hype-0054", "language": "es", "tone": "hype", "text": "no manches, está buenísimo" },
+  { "id": "es-hype-0055", "language": "es", "tone": "hype", "text": "no mames qué nivel" },
+  { "id": "es-hype-0056", "language": "es", "tone": "hype", "text": "está de poca madre" },
+  { "id": "es-hype-0057", "language": "es", "tone": "hype", "text": "de poca madre 🔥🔥" },
+  { "id": "es-hype-0058", "language": "es", "tone": "hype", "text": "qué padre está" },
+  { "id": "es-hype-0059", "language": "es", "tone": "hype", "text": "está bien padre esto" },
+  { "id": "es-hype-0060", "language": "es", "tone": "hype", "text": "qué bárbaro" },
+  { "id": "es-hype-0061", "language": "es", "tone": "hype", "text": "qué bárbaro che 👏" },
+  { "id": "es-hype-0062", "language": "es", "tone": "hype", "text": "re bueno esto" },
+  { "id": "es-hype-0063", "language": "es", "tone": "hype", "text": "re lindo, me encantó" },
+  { "id": "es-hype-0064", "language": "es", "tone": "hype", "text": "está re bueno boludo 😂" },
+  { "id": "es-hype-0065", "language": "es", "tone": "hype", "text": "che qué bueno que está esto" },
+  { "id": "es-hype-0066", "language": "es", "tone": "hype", "text": "una locura total" },
+  { "id": "es-hype-0067", "language": "es", "tone": "hype", "text": "una locura lo que hiciste" },
+  { "id": "es-hype-0068", "language": "es", "tone": "hype", "text": "es una locura cómo editás" },
+  { "id": "es-hype-0069", "language": "es", "tone": "hype", "text": "{creator} sos un genio" },
+  { "id": "es-hype-0070", "language": "es", "tone": "hype", "text": "sos lo más" },
+  { "id": "es-hype-0071", "language": "es", "tone": "hype", "text": "sos un crack, posteá más" },
+  { "id": "es-hype-0072", "language": "es", "tone": "hype", "text": "qué chimba parce 🔥" },
+  { "id": "es-hype-0073", "language": "es", "tone": "hype", "text": "qué chimba de video" },
+  { "id": "es-hype-0074", "language": "es", "tone": "hype", "text": "está muy bacano" },
+  { "id": "es-hype-0075", "language": "es", "tone": "hype", "text": "bacanísimo" },
+  { "id": "es-hype-0076", "language": "es", "tone": "hype", "text": "super bacano parce" },
+  { "id": "es-hype-0077", "language": "es", "tone": "hype", "text": "uff qué nivel parcero" },
+  { "id": "es-hype-0078", "language": "es", "tone": "hype", "text": "esto está muy berraco" },
+  { "id": "es-hype-0079", "language": "es", "tone": "hype", "text": "qué belleza" },
+  { "id": "es-hype-0080", "language": "es", "tone": "hype", "text": "qué belleza de video 😍" },
+  { "id": "es-hype-0081", "language": "es", "tone": "hype", "text": "hermoso" },
+  { "id": "es-hype-0082", "language": "es", "tone": "hype", "text": "hermosooo 😭" },
+  { "id": "es-hype-0083", "language": "es", "tone": "hype", "text": "precioso" },
+  { "id": "es-hype-0084", "language": "es", "tone": "hype", "text": "precioso todo" },
+  { "id": "es-hype-0085", "language": "es", "tone": "hype", "text": "divino" },
+  { "id": "es-hype-0086", "language": "es", "tone": "hype", "text": "qué divinura" },
+  { "id": "es-hype-0087", "language": "es", "tone": "hype", "text": "espectacular" },
+  { "id": "es-hype-0088", "language": "es", "tone": "hype", "text": "simplemente espectacular" },
+  { "id": "es-hype-0089", "language": "es", "tone": "hype", "text": "impresionante" },
+  { "id": "es-hype-0090", "language": "es", "tone": "hype", "text": "impresionante de verdad" },
+  { "id": "es-hype-0091", "language": "es", "tone": "hype", "text": "INCREÍBLE" },
+  { "id": "es-hype-0092", "language": "es", "tone": "hype", "text": "increíble trabajo" },
+  { "id": "es-hype-0093", "language": "es", "tone": "hype", "text": "qué increíble 😮" },
+  { "id": "es-hype-0094", "language": "es", "tone": "hype", "text": "alucinante" },
+  { "id": "es-hype-0095", "language": "es", "tone": "hype", "text": "alucinante lo que has hecho" },
+  { "id": "es-hype-0096", "language": "es", "tone": "hype", "text": "me dejó sin palabras" },
+  { "id": "es-hype-0097", "language": "es", "tone": "hype", "text": "me quedé sin palabras" },
+  { "id": "es-hype-0098", "language": "es", "tone": "hype", "text": "no tengo palabras" },
+  { "id": "es-hype-0099", "language": "es", "tone": "hype", "text": "estoy sin palabras 😶" },
+  { "id": "es-hype-0100", "language": "es", "tone": "hype", "text": "se me cayó la mandíbula" },
+  { "id": "es-hype-0101", "language": "es", "tone": "hype", "text": "me voló la cabeza 🤯" },
+  { "id": "es-hype-0102", "language": "es", "tone": "hype", "text": "me explotó la cabeza" },
+  {
+    "id": "es-hype-0103",
+    "language": "es",
+    "tone": "hype",
+    "text": "se me pusieron los pelos de punta"
+  },
+  { "id": "es-hype-0104", "language": "es", "tone": "hype", "text": "piel de gallina 🥹" },
+  { "id": "es-hype-0105", "language": "es", "tone": "hype", "text": "tengo la piel de gallina" },
+  { "id": "es-hype-0106", "language": "es", "tone": "hype", "text": "escalofríos" },
+  { "id": "es-hype-0107", "language": "es", "tone": "hype", "text": "me dio escalofríos el final" },
+  { "id": "es-hype-0108", "language": "es", "tone": "hype", "text": "lloré de lo bonito que es" },
+  {
+    "id": "es-hype-0109",
+    "language": "es",
+    "tone": "hype",
+    "text": "esto merece millones de vistas"
+  },
+  {
+    "id": "es-hype-0110",
+    "language": "es",
+    "tone": "hype",
+    "text": "cómo es que esto no es viral"
+  },
+  {
+    "id": "es-hype-0111",
+    "language": "es",
+    "tone": "hype",
+    "text": "por qué esto tiene tan pocas vistas"
+  },
+  {
+    "id": "es-hype-0112",
+    "language": "es",
+    "tone": "hype",
+    "text": "esto merece más reconocimiento"
+  },
+  { "id": "es-hype-0113", "language": "es", "tone": "hype", "text": "infravalorado" },
+  { "id": "es-hype-0114", "language": "es", "tone": "hype", "text": "súper infravalorado" },
+  {
+    "id": "es-hype-0115",
+    "language": "es",
+    "tone": "hype",
+    "text": "muy infravalorado este canal",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-hype-0116",
+    "language": "es",
+    "tone": "hype",
+    "text": "cómo este canal no tiene un millón de subs",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-hype-0117",
+    "language": "es",
+    "tone": "hype",
+    "text": "me suscribí al segundo",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-hype-0118",
+    "language": "es",
+    "tone": "hype",
+    "text": "suscrito sin pensarlo",
+    "platforms": ["youtube"]
+  },
+  { "id": "es-hype-0119", "language": "es", "tone": "hype", "text": "te sigo desde ya" },
+  {
+    "id": "es-hype-0120",
+    "language": "es",
+    "tone": "hype",
+    "text": "te acabo de seguir {creator}"
+  },
+  { "id": "es-hype-0121", "language": "es", "tone": "hype", "text": "nuevo seguidor 🙋‍♂️" },
+  { "id": "es-hype-0122", "language": "es", "tone": "hype", "text": "nueva fan 🙋‍♀️" },
+  { "id": "es-hype-0123", "language": "es", "tone": "hype", "text": "fan desde hoy" },
+  { "id": "es-hype-0124", "language": "es", "tone": "hype", "text": "ya soy fan" },
+  { "id": "es-hype-0125", "language": "es", "tone": "hype", "text": "fan número uno" },
+  { "id": "es-hype-0126", "language": "es", "tone": "hype", "text": "esta cuenta es oro" },
+  {
+    "id": "es-hype-0127",
+    "language": "es",
+    "tone": "hype",
+    "text": "todo lo que sube {creator} es oro"
+  },
+  {
+    "id": "es-hype-0128",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} no tienes ni un video malo"
+  },
+  { "id": "es-hype-0129", "language": "es", "tone": "hype", "text": "nunca fallas" },
+  { "id": "es-hype-0130", "language": "es", "tone": "hype", "text": "{creator} nunca falla" },
+  {
+    "id": "es-hype-0131",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} lo has vuelto a hacer"
+  },
+  { "id": "es-hype-0132", "language": "es", "tone": "hype", "text": "{creator} eres lo más" },
+  { "id": "es-hype-0133", "language": "es", "tone": "hype", "text": "{creator} qué crack eres" },
+  {
+    "id": "es-hype-0134",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} cada video mejor que el anterior"
+  },
+  { "id": "es-hype-0135", "language": "es", "tone": "hype", "text": "{creator} no pares nunca" },
+  { "id": "es-hype-0136", "language": "es", "tone": "hype", "text": "{creator} sos una genia" },
+  { "id": "es-hype-0137", "language": "es", "tone": "hype", "text": "{creator} sos un capo" },
+  {
+    "id": "es-hype-0138",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} eres un genio, en serio"
+  },
+  {
+    "id": "es-hype-0139",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} te pasaste con este"
+  },
+  { "id": "es-hype-0140", "language": "es", "tone": "hype", "text": "{creator} te luciste" },
+  { "id": "es-hype-0141", "language": "es", "tone": "hype", "text": "{creator} te rifaste wey" },
+  {
+    "id": "es-hype-0142",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} el mejor, sin discusión"
+  },
+  {
+    "id": "es-hype-0143",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} parce usted es un duro"
+  },
+  {
+    "id": "es-hype-0144",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} esto es otro nivel"
+  },
+  {
+    "id": "es-hype-0145",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} qué manera de editar"
+  },
+  { "id": "es-hype-0146", "language": "es", "tone": "hype", "text": "te pasaste" },
+  { "id": "es-hype-0147", "language": "es", "tone": "hype", "text": "te luciste, de verdad" },
+  { "id": "es-hype-0148", "language": "es", "tone": "hype", "text": "te rifaste con este 🔥" },
+  { "id": "es-hype-0149", "language": "es", "tone": "hype", "text": "te la rifaste carnal" },
+  { "id": "es-hype-0150", "language": "es", "tone": "hype", "text": "{creator} la rompiste" },
+  { "id": "es-hype-0151", "language": "es", "tone": "hype", "text": "la rompiste toda" },
+  { "id": "es-hype-0152", "language": "es", "tone": "hype", "text": "rompiste todo 🔥" },
+  { "id": "es-hype-0153", "language": "es", "tone": "hype", "text": "lo petaste" },
+  { "id": "es-hype-0154", "language": "es", "tone": "hype", "text": "{creator} lo has petado" },
+  { "id": "es-hype-0155", "language": "es", "tone": "hype", "text": "esto lo va a petar" },
+  { "id": "es-hype-0156", "language": "es", "tone": "hype", "text": "esto va a ser viral, lo sé" },
+  {
+    "id": "es-hype-0157",
+    "language": "es",
+    "tone": "hype",
+    "text": "apunto que esto se hace viral mañana"
+  },
+  {
+    "id": "es-hype-0158",
+    "language": "es",
+    "tone": "hype",
+    "text": "estuve aquí antes de que se hiciera viral"
+  },
+  { "id": "es-hype-0159", "language": "es", "tone": "hype", "text": "vine antes del millón" },
+  {
+    "id": "es-hype-0160",
+    "language": "es",
+    "tone": "hype",
+    "text": "los de antes del millón, presentes 🙋"
+  },
+  {
+    "id": "es-hype-0161",
+    "language": "es",
+    "tone": "hype",
+    "text": "siempre te he apoyado y cada vez lo haces mejor"
+  },
+  {
+    "id": "es-hype-0162",
+    "language": "es",
+    "tone": "hype",
+    "text": "el crecimiento de esta cuenta es increíble"
+  },
+  {
+    "id": "es-hype-0163",
+    "language": "es",
+    "tone": "hype",
+    "text": "la calidad sube en cada video"
+  },
+  { "id": "es-hype-0164", "language": "es", "tone": "hype", "text": "otro nivel" },
+  { "id": "es-hype-0165", "language": "es", "tone": "hype", "text": "de otro planeta" },
+  { "id": "es-hype-0166", "language": "es", "tone": "hype", "text": "de otro mundo" },
+  { "id": "es-hype-0167", "language": "es", "tone": "hype", "text": "nivelazo" },
+  { "id": "es-hype-0168", "language": "es", "tone": "hype", "text": "nivelón" },
+  {
+    "id": "es-hype-0169",
+    "language": "es",
+    "tone": "hype",
+    "text": "temazo",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0170",
+    "language": "es",
+    "tone": "hype",
+    "text": "TEMAZO 🔥🔥",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0171",
+    "language": "es",
+    "tone": "hype",
+    "text": "qué temazo por favor",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0172",
+    "language": "es",
+    "tone": "hype",
+    "text": "temón",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0173",
+    "language": "es",
+    "tone": "hype",
+    "text": "esto es un hit",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0174",
+    "language": "es",
+    "tone": "hype",
+    "text": "canción del verano, lo digo ya",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0175",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} qué voz tienes por favor",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0176",
+    "language": "es",
+    "tone": "hype",
+    "text": "qué voz más bonita",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0177",
+    "language": "es",
+    "tone": "hype",
+    "text": "tu voz es una caricia",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0178",
+    "language": "es",
+    "tone": "hype",
+    "text": "se me pegó la canción todo el día",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0179",
+    "language": "es",
+    "tone": "hype",
+    "text": "la tengo en bucle",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0180",
+    "language": "es",
+    "tone": "hype",
+    "text": "la tengo en repeat desde ayer",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0181",
+    "language": "es",
+    "tone": "hype",
+    "text": "el beat está brutal",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0182",
+    "language": "es",
+    "tone": "hype",
+    "text": "ese drop 😮‍💨🔥",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0183",
+    "language": "es",
+    "tone": "hype",
+    "text": "la armonía del final me mató",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0184",
+    "language": "es",
+    "tone": "hype",
+    "text": "súbela a todas las plataformas ya",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0185",
+    "language": "es",
+    "tone": "hype",
+    "text": "qué rolón",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0186",
+    "language": "es",
+    "tone": "hype",
+    "text": "está bien perrona la rola",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-hype-0187",
+    "language": "es",
+    "tone": "hype",
+    "text": "qué fotografía más bonita",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0188",
+    "language": "es",
+    "tone": "hype",
+    "text": "la fotografía es de cine",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0189",
+    "language": "es",
+    "tone": "hype",
+    "text": "cada plano parece un cuadro",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0190",
+    "language": "es",
+    "tone": "hype",
+    "text": "el color de este corto es precioso",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0191",
+    "language": "es",
+    "tone": "hype",
+    "text": "este corto merece festivales",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0192",
+    "language": "es",
+    "tone": "hype",
+    "text": "mejor que muchas pelis que he pagado por ver",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0193",
+    "language": "es",
+    "tone": "hype",
+    "text": "la dirección de arte es una pasada",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0194",
+    "language": "es",
+    "tone": "hype",
+    "text": "el último plano me dejó temblando",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0195",
+    "language": "es",
+    "tone": "hype",
+    "text": "los actores están increíbles",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0196",
+    "language": "es",
+    "tone": "hype",
+    "text": "la música y la imagen, perfectas juntas",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0197",
+    "language": "es",
+    "tone": "hype",
+    "text": "el diseño de sonido es otro nivel",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0198",
+    "language": "es",
+    "tone": "hype",
+    "text": "quien dirigió esto necesita hacer un largo ya",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-hype-0199",
+    "language": "es",
+    "tone": "hype",
+    "text": "el mejor tutorial que he visto sobre esto",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0200",
+    "language": "es",
+    "tone": "hype",
+    "text": "por fin alguien que lo explica bien",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0201",
+    "language": "es",
+    "tone": "hype",
+    "text": "aprendí más aquí que en todo el curso",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0202",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} qué bien explicas por dios",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0203",
+    "language": "es",
+    "tone": "hype",
+    "text": "explicas mejor que mis profes",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0204",
+    "language": "es",
+    "tone": "hype",
+    "text": "guardado, súper útil",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0205",
+    "language": "es",
+    "tone": "hype",
+    "text": "clarísimo, gracias",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-hype-0206",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} tus vlogs son mi lugar seguro",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-hype-0207",
+    "language": "es",
+    "tone": "hype",
+    "text": "qué vlog más bonito",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-hype-0208",
+    "language": "es",
+    "tone": "hype",
+    "text": "me encantan tus vlogs, me relajan muchísimo",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-hype-0209",
+    "language": "es",
+    "tone": "hype",
+    "text": "podría ver tus vlogs todo el día",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-hype-0210",
+    "language": "es",
+    "tone": "hype",
+    "text": "la edición de tus vlogs cada vez mejor",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-hype-0211",
+    "language": "es",
+    "tone": "hype",
+    "text": "el primer anuncio que no me salto",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-hype-0212",
+    "language": "es",
+    "tone": "hype",
+    "text": "no salté el anuncio y no me arrepiento",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-hype-0213",
+    "language": "es",
+    "tone": "hype",
+    "text": "quien hizo este anuncio se merece un aumento",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-hype-0214",
+    "language": "es",
+    "tone": "hype",
+    "text": "el equipo creativo de este anuncio se lució",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-hype-0215",
+    "language": "es",
+    "tone": "hype",
+    "text": "qué bien hecho está este anuncio la verdad",
+    "contexts": ["ad"]
+  },
+  { "id": "es-hype-0216", "language": "es", "tone": "hype", "text": "la edición está limpísima" },
+  { "id": "es-hype-0217", "language": "es", "tone": "hype", "text": "qué limpia la edición" },
+  { "id": "es-hype-0218", "language": "es", "tone": "hype", "text": "esas transiciones 🤯" },
+  {
+    "id": "es-hype-0219",
+    "language": "es",
+    "tone": "hype",
+    "text": "la transición del final es una locura"
+  },
+  { "id": "es-hype-0220", "language": "es", "tone": "hype", "text": "el timing es perfecto" },
+  { "id": "es-hype-0221", "language": "es", "tone": "hype", "text": "el ritmo es perfecto" },
+  { "id": "es-hype-0222", "language": "es", "tone": "hype", "text": "calidad de cine" },
+  { "id": "es-hype-0223", "language": "es", "tone": "hype", "text": "esto parece de una serie" },
+  { "id": "es-hype-0224", "language": "es", "tone": "hype", "text": "producción de alto nivel" },
+  { "id": "es-hype-0225", "language": "es", "tone": "hype", "text": "se nota el esfuerzo" },
+  {
+    "id": "es-hype-0226",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} se nota el cariño que le pusiste"
+  },
+  { "id": "es-hype-0227", "language": "es", "tone": "hype", "text": "se nota el trabajo detrás" },
+  {
+    "id": "es-hype-0228",
+    "language": "es",
+    "tone": "hype",
+    "text": "cuántas horas habrá detrás de esto, respeto"
+  },
+  { "id": "es-hype-0229", "language": "es", "tone": "hype", "text": "respeto total" },
+  { "id": "es-hype-0230", "language": "es", "tone": "hype", "text": "todo mi respeto" },
+  { "id": "es-hype-0231", "language": "es", "tone": "hype", "text": "mis respetos 🙇‍♂️" },
+  { "id": "es-hype-0232", "language": "es", "tone": "hype", "text": "chapó" },
+  { "id": "es-hype-0233", "language": "es", "tone": "hype", "text": "chapeau 👏👏" },
+  { "id": "es-hype-0234", "language": "es", "tone": "hype", "text": "olé" },
+  { "id": "es-hype-0235", "language": "es", "tone": "hype", "text": "olé tú {creator}" },
+  { "id": "es-hype-0236", "language": "es", "tone": "hype", "text": "olé olé y olé" },
+  { "id": "es-hype-0237", "language": "es", "tone": "hype", "text": "bravo" },
+  { "id": "es-hype-0238", "language": "es", "tone": "hype", "text": "bravooo 👏👏👏" },
+  { "id": "es-hype-0239", "language": "es", "tone": "hype", "text": "aplausos de pie" },
+  { "id": "es-hype-0240", "language": "es", "tone": "hype", "text": "ovación desde mi sofá" },
+  { "id": "es-hype-0241", "language": "es", "tone": "hype", "text": "10/10 sin dudarlo" },
+  { "id": "es-hype-0242", "language": "es", "tone": "hype", "text": "un 10" },
+  { "id": "es-hype-0243", "language": "es", "tone": "hype", "text": "un 11 de 10" },
+  { "id": "es-hype-0244", "language": "es", "tone": "hype", "text": "mil de 10" },
+  { "id": "es-hype-0245", "language": "es", "tone": "hype", "text": "perfecto" },
+  { "id": "es-hype-0246", "language": "es", "tone": "hype", "text": "perfección pura" },
+  { "id": "es-hype-0247", "language": "es", "tone": "hype", "text": "sin palabras, perfecto" },
+  { "id": "es-hype-0248", "language": "es", "tone": "hype", "text": "sin notas" },
+  { "id": "es-hype-0249", "language": "es", "tone": "hype", "text": "no le cambiaría nada" },
+  { "id": "es-hype-0250", "language": "es", "tone": "hype", "text": "se lo mando a todo el mundo" },
+  {
+    "id": "es-hype-0251",
+    "language": "es",
+    "tone": "hype",
+    "text": "se lo mandé a mi grupo de amigos"
+  },
+  { "id": "es-hype-0252", "language": "es", "tone": "hype", "text": "guardado y compartido" },
+  {
+    "id": "es-hype-0253",
+    "language": "es",
+    "tone": "hype",
+    "text": "lo he visto 5 veces seguidas"
+  },
+  { "id": "es-hype-0254", "language": "es", "tone": "hype", "text": "no puedo parar de verlo" },
+  { "id": "es-hype-0255", "language": "es", "tone": "hype", "text": "lo vi como 10 veces ya" },
+  {
+    "id": "es-hype-0256",
+    "language": "es",
+    "tone": "hype",
+    "text": "{creator} me alegraste el día"
+  },
+  { "id": "es-hype-0257", "language": "es", "tone": "hype", "text": "me alegraste la semana 🥹" },
+  { "id": "es-hype-0258", "language": "es", "tone": "hype", "text": "justo lo que necesitaba hoy" },
+  { "id": "es-hype-0259", "language": "es", "tone": "hype", "text": "contenido de calidad" },
+  { "id": "es-hype-0260", "language": "es", "tone": "hype", "text": "esto es contenido de verdad" },
+  {
+    "id": "es-hype-0261",
+    "language": "es",
+    "tone": "hype",
+    "text": "esto es lo que vengo a ver a esta app"
+  },
+  {
+    "id": "es-hype-0262",
+    "language": "es",
+    "tone": "hype",
+    "text": "por cosas como esta sigo aquí"
+  },
+  { "id": "es-hype-0263", "language": "es", "tone": "hype", "text": "el internet necesitaba esto" },
+  { "id": "es-hype-0264", "language": "es", "tone": "hype", "text": "no merecemos este contenido" },
+  { "id": "es-hype-0265", "language": "es", "tone": "hype", "text": "lo mejor de internet hoy" },
+  { "id": "es-hype-0266", "language": "es", "tone": "hype", "text": "qué buena onda este video" },
+  { "id": "es-hype-0267", "language": "es", "tone": "hype", "text": "puro fuego 🔥" },
+  { "id": "es-hype-0268", "language": "es", "tone": "hype", "text": "fuego 🔥🔥🔥" },
+  { "id": "es-hype-0269", "language": "es", "tone": "hype", "text": "está que arde" },
+  { "id": "es-hype-0270", "language": "es", "tone": "hype", "text": "increíble lo tuyo {emoji}" },
+  { "id": "es-hype-0271", "language": "es", "tone": "hype", "text": "qué nivel {emoji}{emoji}" },
+  {
+    "id": "es-hype-0272",
+    "language": "es",
+    "tone": "hype",
+    "text": "me encanta muchísimo {emoji}"
+  },
+  { "id": "es-hype-0273", "language": "es", "tone": "hype", "text": "amo esto ❤️❤️" },
+  { "id": "es-hype-0274", "language": "es", "tone": "hype", "text": "amor puro ❤️" },
+  { "id": "es-hype-0275", "language": "es", "tone": "hype", "text": "lo máximo" },
+  { "id": "es-hype-0276", "language": "es", "tone": "hype", "text": "lo más grande" },
+  { "id": "es-hype-0277", "language": "es", "tone": "hype", "text": "el puto amo" },
+  { "id": "es-hype-0278", "language": "es", "tone": "hype", "text": "la jefa" },
+  { "id": "es-hype-0279", "language": "es", "tone": "hype", "text": "el jefe final" },
+  { "id": "es-hype-0280", "language": "es", "tone": "hype", "text": "leyenda" },
+  { "id": "es-hype-0281", "language": "es", "tone": "hype", "text": "leyenda absoluta" },
+  { "id": "es-hype-0282", "language": "es", "tone": "hype", "text": "icónico" },
+  { "id": "es-hype-0283", "language": "es", "tone": "hype", "text": "mítico ya" },
+  { "id": "es-hype-0284", "language": "es", "tone": "hype", "text": "historia pura" },
+  { "id": "es-hype-0285", "language": "es", "tone": "hype", "text": "de museo" },
+  { "id": "es-hype-0286", "language": "es", "tone": "hype", "text": "esto va directo a un museo" },
+  { "id": "es-hype-0287", "language": "es", "tone": "hype", "text": "dale un premio ya" },
+  {
+    "id": "es-hype-0288",
+    "language": "es",
+    "tone": "hype",
+    "text": "alguien dele un premio a esta persona"
+  },
+  {
+    "id": "es-hype-0289",
+    "language": "es",
+    "tone": "hype",
+    "text": "oscar ya",
+    "contexts": ["short-film"]
+  }
+]

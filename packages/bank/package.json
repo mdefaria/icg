@@ -1,0 +1,23 @@
+{
+  "name": "@icg/bank",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint src scripts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "tsx scripts/lint-bank.ts && vitest run",
+    "lint:bank": "tsx scripts/lint-bank.ts",
+    "preview": "tsx scripts/preview.ts"
+  },
+  "dependencies": {
+    "@icg/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "tsx": "^4.20.0"
+  }
+}

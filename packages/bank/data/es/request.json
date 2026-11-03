@@ -1,0 +1,913 @@
+[
+  { "id": "es-request-0001", "language": "es", "tone": "request", "text": "parte 2 por favor" },
+  { "id": "es-request-0002", "language": "es", "tone": "request", "text": "PARTE 2 YA 🙏" },
+  { "id": "es-request-0003", "language": "es", "tone": "request", "text": "parte 2 o me muero" },
+  {
+    "id": "es-request-0004",
+    "language": "es",
+    "tone": "request",
+    "text": "necesitamos parte 2 urgente"
+  },
+  {
+    "id": "es-request-0005",
+    "language": "es",
+    "tone": "request",
+    "text": "¿¿parte 2??? te lo ruego"
+  },
+  { "id": "es-request-0006", "language": "es", "tone": "request", "text": "porfa parte 2 😭" },
+  { "id": "es-request-0007", "language": "es", "tone": "request", "text": "parte dos cuándo" },
+  {
+    "id": "es-request-0008",
+    "language": "es",
+    "tone": "request",
+    "text": "necesito la parte 2 como el aire"
+  },
+  {
+    "id": "es-request-0009",
+    "language": "es",
+    "tone": "request",
+    "text": "no me voy hasta que haya parte 2"
+  },
+  {
+    "id": "es-request-0010",
+    "language": "es",
+    "tone": "request",
+    "text": "voy a comentar hasta que subas la parte 2"
+  },
+  {
+    "id": "es-request-0011",
+    "language": "es",
+    "tone": "request",
+    "text": "día 3 pidiendo la parte 2"
+  },
+  {
+    "id": "es-request-0012",
+    "language": "es",
+    "tone": "request",
+    "text": "día 12 pidiendo la parte 2 🙏"
+  },
+  {
+    "id": "es-request-0013",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} pago lo que sea por una parte 2"
+  },
+  { "id": "es-request-0014", "language": "es", "tone": "request", "text": "{creator} PARTE 2 YA" },
+  {
+    "id": "es-request-0015",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} no nos dejes así, ¡parte 2!"
+  },
+  {
+    "id": "es-request-0016",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} necesitamos la historia completa"
+  },
+  {
+    "id": "es-request-0017",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz una serie con esto porfa"
+  },
+  {
+    "id": "es-request-0018",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} súbete un detrás de cámaras"
+  },
+  {
+    "id": "es-request-0019",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} enséñanos las tomas falsas"
+  },
+  {
+    "id": "es-request-0020",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} sube la versión completa"
+  },
+  {
+    "id": "es-request-0021",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} sube la canción completa porfa"
+  },
+  {
+    "id": "es-request-0022",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz un tutorial de esto por favor"
+  },
+  {
+    "id": "es-request-0023",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} enséñanos cómo hiciste esa transición"
+  },
+  {
+    "id": "es-request-0024",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} ¡haz un preguntas y respuestas!"
+  },
+  {
+    "id": "es-request-0025",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz un colab con alguien"
+  },
+  {
+    "id": "es-request-0026",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz un video de tu equipo porfa"
+  },
+  {
+    "id": "es-request-0027",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} enséñanos tu setup de edición"
+  },
+  {
+    "id": "es-request-0028",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} reacciona a tus videos viejos"
+  },
+  {
+    "id": "es-request-0029",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz un día en mi vida"
+  },
+  {
+    "id": "es-request-0030",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz un room tour porfa"
+  },
+  {
+    "id": "es-request-0031",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} más videos con el perro por favor 🐶"
+  },
+  {
+    "id": "es-request-0032",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} más videos con tu mamá"
+  },
+  {
+    "id": "es-request-0033",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} vuelve a poner la intro de antes"
+  },
+  {
+    "id": "es-request-0034",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haz un directo pronto"
+  },
+  {
+    "id": "es-request-0035",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} sube más seguido 😭"
+  },
+  {
+    "id": "es-request-0036",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} sube la versión extendida"
+  },
+  {
+    "id": "es-request-0037",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} contéstame porfa 🥺"
+  },
+  { "id": "es-request-0038", "language": "es", "tone": "request", "text": "{creator} salúdame 🥺" },
+  {
+    "id": "es-request-0039",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} ¿puedes saludar a mi hermana? es tu fan"
+  },
+  {
+    "id": "es-request-0040",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} subí la parte 2 che, no seas malo"
+  },
+  {
+    "id": "es-request-0041",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} hacé un tutorial porfa"
+  },
+  {
+    "id": "es-request-0042",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} wey sube la parte 2 ya"
+  },
+  {
+    "id": "es-request-0043",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} haga la parte 2 parce, no sea así"
+  },
+  {
+    "id": "es-request-0044",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} tío sube la segunda parte ya"
+  },
+  {
+    "id": "es-request-0045",
+    "language": "es",
+    "tone": "request",
+    "text": "esto tiene que ser una serie"
+  },
+  {
+    "id": "es-request-0046",
+    "language": "es",
+    "tone": "request",
+    "text": "haz más de estos por favor"
+  },
+  { "id": "es-request-0047", "language": "es", "tone": "request", "text": "más de esto por favor" },
+  { "id": "es-request-0048", "language": "es", "tone": "request", "text": "MÁS" },
+  { "id": "es-request-0049", "language": "es", "tone": "request", "text": "más más más" },
+  {
+    "id": "es-request-0050",
+    "language": "es",
+    "tone": "request",
+    "text": "queremos más contenido así"
+  },
+  {
+    "id": "es-request-0051",
+    "language": "es",
+    "tone": "request",
+    "text": "sigue subiendo estos {creator}"
+  },
+  {
+    "id": "es-request-0052",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} nunca dejes de hacer esto"
+  },
+  { "id": "es-request-0053", "language": "es", "tone": "request", "text": "haz más videos así" },
+  {
+    "id": "es-request-0054",
+    "language": "es",
+    "tone": "request",
+    "text": "sube más seguido porfa"
+  },
+  {
+    "id": "es-request-0055",
+    "language": "es",
+    "tone": "request",
+    "text": "sube el video entero porfa"
+  },
+  {
+    "id": "es-request-0056",
+    "language": "es",
+    "tone": "request",
+    "text": "video completo por favor"
+  },
+  {
+    "id": "es-request-0057",
+    "language": "es",
+    "tone": "request",
+    "text": "versión completa porfaaa"
+  },
+  {
+    "id": "es-request-0058",
+    "language": "es",
+    "tone": "request",
+    "text": "¿dónde está el video completo?? súbelo"
+  },
+  {
+    "id": "es-request-0059",
+    "language": "es",
+    "tone": "request",
+    "text": "versión extendida por favor"
+  },
+  {
+    "id": "es-request-0060",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes subir una versión más larga?"
+  },
+  {
+    "id": "es-request-0061",
+    "language": "es",
+    "tone": "request",
+    "text": "detrás de cámaras porfa 🙏"
+  },
+  {
+    "id": "es-request-0062",
+    "language": "es",
+    "tone": "request",
+    "text": "tomas falsas por favor 😭"
+  },
+  {
+    "id": "es-request-0063",
+    "language": "es",
+    "tone": "request",
+    "text": "necesitamos las tomas falsas"
+  },
+  {
+    "id": "es-request-0064",
+    "language": "es",
+    "tone": "request",
+    "text": "enséñanos cómo lo hiciste"
+  },
+  {
+    "id": "es-request-0065",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un tutorial de esto porfa"
+  },
+  { "id": "es-request-0066", "language": "es", "tone": "request", "text": "tutorial por favor 🙏" },
+  { "id": "es-request-0067", "language": "es", "tone": "request", "text": "TUTORIAL YA" },
+  {
+    "id": "es-request-0068",
+    "language": "es",
+    "tone": "request",
+    "text": "tutorial de la transición del 0:15 porfa"
+  },
+  {
+    "id": "es-request-0069",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes hacer uno para principiantes?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0070",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes hacer una versión más lenta del tutorial?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0071",
+    "language": "es",
+    "tone": "request",
+    "text": "haz uno para los de mac porfa",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0072",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes hacerlo para la versión de móvil?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0073",
+    "language": "es",
+    "tone": "request",
+    "text": "haz una parte 2 con cosas más avanzadas",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0074",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un curso completo de esto porfa",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0075",
+    "language": "es",
+    "tone": "request",
+    "text": "el siguiente sobre corrección de color porfa",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0076",
+    "language": "es",
+    "tone": "request",
+    "text": "el siguiente sobre audio por favor",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0077",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes compartir el archivo del proyecto?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0078",
+    "language": "es",
+    "tone": "request",
+    "text": "comparte el preset porfa 🙏",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0079",
+    "language": "es",
+    "tone": "request",
+    "text": "¿podrías poner los pasos en la descripción?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0080",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un video de atajos de teclado por favor",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0081",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes explicar otra vez el paso 4? me perdí",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0082",
+    "language": "es",
+    "tone": "request",
+    "text": "próximo tutorial: cómo hacer que se vea cinematográfico",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-request-0083",
+    "language": "es",
+    "tone": "request",
+    "text": "¡saca la canción ya!",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0084",
+    "language": "es",
+    "tone": "request",
+    "text": "súbela a plataformas por favor",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0085",
+    "language": "es",
+    "tone": "request",
+    "text": "necesitamos la versión completa de la canción",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0086",
+    "language": "es",
+    "tone": "request",
+    "text": "suelta el tema ya 😭",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0087",
+    "language": "es",
+    "tone": "request",
+    "text": "haz una versión acústica porfa",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0088",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un cover de un clásico",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0089",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes subir los acordes?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0090",
+    "language": "es",
+    "tone": "request",
+    "text": "tablatura por favor 🙏",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0091",
+    "language": "es",
+    "tone": "request",
+    "text": "haz una versión slowed porfa",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0092",
+    "language": "es",
+    "tone": "request",
+    "text": "versión en vivo por favor",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0093",
+    "language": "es",
+    "tone": "request",
+    "text": "saca un disco entero ya",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0094",
+    "language": "es",
+    "tone": "request",
+    "text": "canta el estribillo otra vez porfaaa",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0095",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un dueto con alguien",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0096",
+    "language": "es",
+    "tone": "request",
+    "text": "sacá el tema ya che",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-request-0097",
+    "language": "es",
+    "tone": "request",
+    "text": "más vlogs por favor",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0098",
+    "language": "es",
+    "tone": "request",
+    "text": "llévanos contigo la próxima vez",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0099",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un vlog de preguntas porfa",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0100",
+    "language": "es",
+    "tone": "request",
+    "text": "más vlogs de cocina por favor",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0101",
+    "language": "es",
+    "tone": "request",
+    "text": "haz tu rutina de noche",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0102",
+    "language": "es",
+    "tone": "request",
+    "text": "graba todo el viaje porfa",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0103",
+    "language": "es",
+    "tone": "request",
+    "text": "enséñanos el piso nuevo",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0104",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un \"lo que como en un día\" porfa",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0105",
+    "language": "es",
+    "tone": "request",
+    "text": "llévanos al súper contigo",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0106",
+    "language": "es",
+    "tone": "request",
+    "text": "más rutinas de mañana porfa",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0107",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un vlog semanal por favor",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0108",
+    "language": "es",
+    "tone": "request",
+    "text": "mostranos el depto nuevo",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-request-0109",
+    "language": "es",
+    "tone": "request",
+    "text": "saca el corto completo por favor",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0110",
+    "language": "es",
+    "tone": "request",
+    "text": "mándalo a festivales por favor",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0111",
+    "language": "es",
+    "tone": "request",
+    "text": "conviértelo en un largometraje",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0112",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un video comentando el corto",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0113",
+    "language": "es",
+    "tone": "request",
+    "text": "enséñanos cómo rodaste la primera escena",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0114",
+    "language": "es",
+    "tone": "request",
+    "text": "haz una secuela porfa",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0115",
+    "language": "es",
+    "tone": "request",
+    "text": "necesitamos una precuela del hermano",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0116",
+    "language": "es",
+    "tone": "request",
+    "text": "un spin-off del personaje secundario por favor",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-request-0117",
+    "language": "es",
+    "tone": "request",
+    "text": "hagan una serie de este anuncio jajaja",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-request-0118",
+    "language": "es",
+    "tone": "request",
+    "text": "hagan más anuncios así por favor",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-request-0119",
+    "language": "es",
+    "tone": "request",
+    "text": "enséñennos cómo grabaron este anuncio",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-request-0120",
+    "language": "es",
+    "tone": "request",
+    "text": "detrás de cámaras del anuncio porfa",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-request-0121",
+    "language": "es",
+    "tone": "request",
+    "text": "hagan dúo con esto",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-request-0122",
+    "language": "es",
+    "tone": "request",
+    "text": "que alguien haga un stitch",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-request-0123",
+    "language": "es",
+    "tone": "request",
+    "text": "que alguien haga dúo con el original",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-request-0124",
+    "language": "es",
+    "tone": "request",
+    "text": "convertid esto en un audio porfa",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-request-0125",
+    "language": "es",
+    "tone": "request",
+    "text": "¿puedes hacer directo esta noche?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-request-0126",
+    "language": "es",
+    "tone": "request",
+    "text": "{creator} fija este comentario 📌"
+  },
+  { "id": "es-request-0127", "language": "es", "tone": "request", "text": "fíjame porfa" },
+  {
+    "id": "es-request-0128",
+    "language": "es",
+    "tone": "request",
+    "text": "fija esto por favor 🙏"
+  },
+  {
+    "id": "es-request-0129",
+    "language": "es",
+    "tone": "request",
+    "text": "dale corazón a mi comentario porfa ❤️"
+  },
+  {
+    "id": "es-request-0130",
+    "language": "es",
+    "tone": "request",
+    "text": "responde a mi comentario por favor"
+  },
+  { "id": "es-request-0131", "language": "es", "tone": "request", "text": "¿me saludas?" },
+  {
+    "id": "es-request-0132",
+    "language": "es",
+    "tone": "request",
+    "text": "salúdame en el próximo video"
+  },
+  { "id": "es-request-0133", "language": "es", "tone": "request", "text": "¿me das un saludo?" },
+  {
+    "id": "es-request-0134",
+    "language": "es",
+    "tone": "request",
+    "text": "saluda a mi ciudad la próxima vez"
+  },
+  { "id": "es-request-0135", "language": "es", "tone": "request", "text": "¡ven a mi ciudad!" },
+  { "id": "es-request-0136", "language": "es", "tone": "request", "text": "ven a Argentina porfa" },
+  { "id": "es-request-0137", "language": "es", "tone": "request", "text": "vení a Uruguay!!" },
+  { "id": "es-request-0138", "language": "es", "tone": "request", "text": "ven a México porfavor" },
+  {
+    "id": "es-request-0139",
+    "language": "es",
+    "tone": "request",
+    "text": "vente a Colombia parce"
+  },
+  { "id": "es-request-0140", "language": "es", "tone": "request", "text": "ven a Sevilla 🙏" },
+  {
+    "id": "es-request-0141",
+    "language": "es",
+    "tone": "request",
+    "text": "haz un meet and greet!!"
+  },
+  { "id": "es-request-0142", "language": "es", "tone": "request", "text": "haz uno sobre gatos" },
+  { "id": "es-request-0143", "language": "es", "tone": "request", "text": "haz uno con tu perro" },
+  {
+    "id": "es-request-0144",
+    "language": "es",
+    "tone": "request",
+    "text": "haz uno con tu papá 😂"
+  },
+  {
+    "id": "es-request-0145",
+    "language": "es",
+    "tone": "request",
+    "text": "haz uno intercambiando los papeles"
+  },
+  {
+    "id": "es-request-0146",
+    "language": "es",
+    "tone": "request",
+    "text": "haz la versión al revés porfa"
+  },
+  {
+    "id": "es-request-0147",
+    "language": "es",
+    "tone": "request",
+    "text": "ahora hazlo con los ojos cerrados jaja"
+  },
+  {
+    "id": "es-request-0148",
+    "language": "es",
+    "tone": "request",
+    "text": "otra vez pero más rápido"
+  },
+  { "id": "es-request-0149", "language": "es", "tone": "request", "text": "ahora hazlo al revés" },
+  {
+    "id": "es-request-0150",
+    "language": "es",
+    "tone": "request",
+    "text": "otra vez pero en cámara lenta"
+  },
+  {
+    "id": "es-request-0151",
+    "language": "es",
+    "tone": "request",
+    "text": "prueba esto con tus amigos"
+  },
+  { "id": "es-request-0152", "language": "es", "tone": "request", "text": "hazlo en público" },
+  {
+    "id": "es-request-0153",
+    "language": "es",
+    "tone": "request",
+    "text": "haz este reto con tu hermana"
+  },
+  {
+    "id": "es-request-0154",
+    "language": "es",
+    "tone": "request",
+    "text": "reacciona a esto porfa"
+  },
+  {
+    "id": "es-request-0155",
+    "language": "es",
+    "tone": "request",
+    "text": "reacciona a los comentarios"
+  },
+  {
+    "id": "es-request-0156",
+    "language": "es",
+    "tone": "request",
+    "text": "contesta los comentarios en un video"
+  },
+  {
+    "id": "es-request-0157",
+    "language": "es",
+    "tone": "request",
+    "text": "lee los comentarios en un video porfa"
+  },
+  {
+    "id": "es-request-0158",
+    "language": "es",
+    "tone": "request",
+    "text": "vamos a subir este comentario para que lo vean"
+  },
+  {
+    "id": "es-request-0159",
+    "language": "es",
+    "tone": "request",
+    "text": "dale like para que hagan la parte 2"
+  },
+  {
+    "id": "es-request-0160",
+    "language": "es",
+    "tone": "request",
+    "text": "denle like para que lo vea 🙏"
+  },
+  {
+    "id": "es-request-0161",
+    "language": "es",
+    "tone": "request",
+    "text": "ayúdenme a que llegue arriba"
+  },
+  { "id": "es-request-0162", "language": "es", "tone": "request", "text": "up" },
+  {
+    "id": "es-request-0163",
+    "language": "es",
+    "tone": "request",
+    "text": "up para que suban la parte 2"
+  },
+  {
+    "id": "es-request-0164",
+    "language": "es",
+    "tone": "request",
+    "text": "👆 esto, queremos parte 2"
+  }
+]
