@@ -1,5 +1,6 @@
 import { KeyPayload } from "@icg/shared";
 import { z } from "zod";
+import { privateKeyMaterial, publicKeyMaterial, verifyEd25519, type Ed25519Mode } from "./ed25519";
 
 export const ACTIVATION_TOKEN_TTL_SECONDS = 10 * 365 * 24 * 60 * 60;
 
@@ -26,7 +27,7 @@ export function base64UrlEncode(bytes: Uint8Array): string {
   return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 }
 
-export function base64UrlDecode(text: string): Uint8Array | null {
+export function base64UrlDecode(text: string): Uint8Array<ArrayBuffer> | null {
   if (!/^[A-Za-z0-9_-]*$/.test(text)) return null;
   const padded = text
     .replace(/-/g, "+")
@@ -40,21 +41,12 @@ export function base64UrlDecode(text: string): Uint8Array | null {
   }
 }
 
-// Runtimes disagree on the JWK "alg" for Ed25519 (Node exports "Ed25519", workerd only accepts
-// "EdDSA" or none), so only the key material crosses the boundary.
-function keyMaterial(jwk: JsonWebKey, withPrivate: boolean): JsonWebKey {
-  const material: JsonWebKey = { kty: "OKP", crv: "Ed25519" };
-  if (jwk.x !== undefined) material.x = jwk.x;
-  if (withPrivate && jwk.d !== undefined) material.d = jwk.d;
-  return material;
-}
-
 export function importPrivateKey(jwk: JsonWebKey): Promise<CryptoKey> {
-  return crypto.subtle.importKey("jwk", keyMaterial(jwk, true), ALGORITHM, false, ["sign"]);
+  return crypto.subtle.importKey("jwk", privateKeyMaterial(jwk), ALGORITHM, false, ["sign"]);
 }
 
 export function importPublicKey(jwk: JsonWebKey): Promise<CryptoKey> {
-  return crypto.subtle.importKey("jwk", keyMaterial(jwk, false), ALGORITHM, true, ["verify"]);
+  return crypto.subtle.importKey("jwk", publicKeyMaterial(jwk), ALGORITHM, true, ["verify"]);
 }
 
 export async function sign(data: string, privateKey: CryptoKey): Promise<string> {
@@ -104,17 +96,23 @@ export async function signActivationToken(
   return `${signingInput}.${await sign(signingInput, privateKey)}`;
 }
 
+export interface VerifyOptions {
+  ed25519?: Ed25519Mode;
+}
+
 export async function verifyActivationToken(
   token: string,
-  publicKey: CryptoKey | JsonWebKey,
+  publicKeyJwk: JsonWebKey,
   now: number = Math.floor(Date.now() / 1000),
+  options: VerifyOptions = {},
 ): Promise<VerifyResult> {
   const parts = token.split(".");
   if (parts.length !== 3) return { ok: false, reason: "malformed" };
   const [headerPart, payloadPart, signaturePart] = parts as [string, string, string];
   const headerBytes = base64UrlDecode(headerPart);
   const payloadBytes = base64UrlDecode(payloadPart);
-  if (!headerBytes || !payloadBytes) return { ok: false, reason: "malformed" };
+  const signature = base64UrlDecode(signaturePart);
+  if (!headerBytes || !payloadBytes || !signature) return { ok: false, reason: "malformed" };
 
   let header: unknown;
   let payload: unknown;
@@ -127,8 +125,11 @@ export async function verifyActivationToken(
   const parsedHeader = z.object({ alg: z.literal(HEADER.alg) }).safeParse(header);
   if (!parsedHeader.success) return { ok: false, reason: "malformed" };
 
-  const key = publicKey instanceof CryptoKey ? publicKey : await importPublicKey(publicKey);
-  if (!(await verify(`${headerPart}.${payloadPart}`, signaturePart, key))) {
+  const signed = encoder.encode(`${headerPart}.${payloadPart}`);
+  if (
+    signature.length !== 64 ||
+    !(await verifyEd25519(signed, signature, publicKeyJwk, options.ed25519))
+  ) {
     return { ok: false, reason: "bad-signature" };
   }
 

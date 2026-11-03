@@ -1,0 +1,20 @@
+{
+  "name": "@icg/licensing",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@icg/shared": "workspace:*",
+    "@noble/ed25519": "2.3.0",
+    "@noble/hashes": "^2.4.0",
+    "zod": "^4.1.12"
+  }
+}

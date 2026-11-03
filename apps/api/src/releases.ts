@@ -1,5 +1,6 @@
+import { type VersionResponse } from "@icg/licensing";
 import { Device } from "@icg/shared";
-import { z } from "zod";
+import type { z } from "zod";
 
 export const Host = Device.shape.host;
 export type Host = z.infer<typeof Host>;
@@ -32,13 +33,6 @@ export const ARTIFACTS: Record<string, { contentType: string }> = {
   "icg-premiere-0.1.0.zip": { contentType: "application/zip" },
   "icg-resolve-0.1.0.zip": { contentType: "application/zip" },
 };
-
-export const VersionResponse = z.object({
-  latest: z.string().min(1),
-  url: z.url(),
-  notes: z.string(),
-});
-export type VersionResponse = z.infer<typeof VersionResponse>;
 
 export function versionFor(host: Host, apiOrigin: string, siteUrl: string): VersionResponse {
   const release = RELEASES[host];

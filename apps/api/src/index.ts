@@ -1,4 +1,13 @@
 import { ActivationRequest, DEVICES_PER_KEY, KEY_VERSION, type Device } from "@icg/shared";
+import {
+  ACTIVATION_TOKEN_TTL_SECONDS,
+  formatKey,
+  generateKey,
+  importPrivateKey,
+  parseKey,
+  signActivationToken,
+  signKeyPayload,
+} from "@icg/licensing";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { z } from "zod";
@@ -18,7 +27,6 @@ import {
 } from "./db";
 import { keysEmail, sendEmail } from "./email";
 import { nowSeconds, type Env } from "./env";
-import { formatKey, generateKey, parseKey } from "./key";
 import { ARTIFACTS, Host, versionFor } from "./releases";
 import {
   CheckoutInput,
@@ -28,12 +36,6 @@ import {
   fetchCheckoutQuantity,
   verifyStripeSignature,
 } from "./stripe";
-import {
-  ACTIVATION_TOKEN_TTL_SECONDS,
-  importPrivateKey,
-  signActivationToken,
-  signKeyPayload,
-} from "./token";
 
 const PURCHASE_EVENTS = new Set([
   "checkout.session.completed",

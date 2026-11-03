@@ -12,6 +12,7 @@
     "keypair": "node scripts/generate-keypair.ts"
   },
   "dependencies": {
+    "@icg/licensing": "workspace:*",
     "@icg/shared": "workspace:*",
     "hono": "^4.13.16",
     "zod": "^4.1.12"
