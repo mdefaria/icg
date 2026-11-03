@@ -1,0 +1,6 @@
+pnpm-lock.yaml
+**/vendor/**
+apps/premiere/jsx/**
+**/dist/**
+**/samples/**
+**/fixtures/**

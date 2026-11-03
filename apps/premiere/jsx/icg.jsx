@@ -229,10 +229,7 @@ var ICG = (function () {
     ok = app.project.importFiles([path], true, bin, false);
     item = findItemByPath(app.project.rootItem, normalizePath(path));
     if (!item) {
-      throw err(
-        "import-failed",
-        "importFiles returned " + ok + " but " + path + " is not in the project",
-      );
+      throw err("import-failed", "importFiles returned " + ok + " but " + path + " is not in the project");
     }
     try {
       item.name = label;
@@ -326,9 +323,7 @@ var ICG = (function () {
         }
       }
       errors.push(
-        forms[i].name +
-          ": " +
-          (added.length ? "clip landed at the wrong time" : "no clip appeared"),
+        forms[i].name + ": " + (added.length ? "clip landed at the wrong time" : "no clip appeared"),
       );
     }
     throw err("overwrite-failed", errors.join("; "));
@@ -337,9 +332,7 @@ var ICG = (function () {
   function setClipEnd(clip, startTicks, durationSeconds, tb, steps) {
     var frames = tb > 0 ? Math.round(durationSeconds / (tb / TICKS_PER_SECOND)) : 0;
     var endTicks =
-      tb > 0
-        ? startTicks + frames * tb
-        : startTicks + Math.round(durationSeconds * TICKS_PER_SECOND);
+      tb > 0 ? startTicks + frames * tb : startTicks + Math.round(durationSeconds * TICKS_PER_SECOND);
     var endTime = new Time();
     endTime.ticks = String(endTicks);
     try {
@@ -415,10 +408,7 @@ var ICG = (function () {
           errors.push("addTracks/7: " + describe(e));
         }
         if (app.project.activeSequence.videoTracks.numTracks > before) {
-          return {
-            method: "addTracks/7",
-            numVideoTracks: app.project.activeSequence.videoTracks.numTracks,
-          };
+          return { method: "addTracks/7", numVideoTracks: app.project.activeSequence.videoTracks.numTracks };
         }
         try {
           qeSeq.addTracks(1);
@@ -426,15 +416,9 @@ var ICG = (function () {
           errors.push("addTracks/1: " + describe(e));
         }
         if (app.project.activeSequence.videoTracks.numTracks > before) {
-          return {
-            method: "addTracks/1",
-            numVideoTracks: app.project.activeSequence.videoTracks.numTracks,
-          };
+          return { method: "addTracks/1", numVideoTracks: app.project.activeSequence.videoTracks.numTracks };
         }
-        throw err(
-          "add-track-failed",
-          errors.length ? errors.join("; ") : "track count did not change",
-        );
+        throw err("add-track-failed", errors.length ? errors.join("; ") : "track count did not change");
       });
     },
 
@@ -483,17 +467,10 @@ var ICG = (function () {
           steps.push("setScaleToFrameSize failed: " + describe(e));
         }
         placed = placedDuration(item, args.durationSeconds);
-        if (
-          placed > args.durationSeconds &&
-          !trackFree(track, start.seconds, start.seconds + placed)
-        ) {
+        if (placed > args.durationSeconds && !trackFree(track, start.seconds, start.seconds + placed)) {
           throw err(
             "track-occupied",
-            "The still would be placed for " +
-              placed +
-              "s and V" +
-              (args.trackIndex + 1) +
-              " is not free for that long",
+            "The still would be placed for " + placed + "s and V" + (args.trackIndex + 1) + " is not free for that long",
           );
         }
         result = overwriteAt(track, item, start, tolerance);
