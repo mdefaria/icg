@@ -1,0 +1,100 @@
+{
+  "language": "en",
+  "entries": [
+    { "id": "reply-en-001", "language": "en", "tone": "hype", "text": "part 2 drops Friday 🔥" },
+    {
+      "id": "reply-en-002",
+      "language": "en",
+      "tone": "hype",
+      "text": "thank you for watching till the end {emoji}"
+    },
+    {
+      "id": "reply-en-003",
+      "language": "en",
+      "tone": "request",
+      "text": "tutorial is in the works, stay tuned 👀"
+    },
+    {
+      "id": "reply-en-004",
+      "language": "en",
+      "tone": "funny",
+      "text": "I was not ready either 😭"
+    },
+    {
+      "id": "reply-en-005",
+      "language": "en",
+      "tone": "funny",
+      "text": "it took {n} takes, don't ask 💀"
+    },
+    {
+      "id": "reply-en-006",
+      "language": "en",
+      "tone": "relatable",
+      "text": "literally me every single day"
+    },
+    {
+      "id": "reply-en-007",
+      "language": "en",
+      "tone": "story",
+      "text": "this means so much, thank you 🥹"
+    },
+    { "id": "reply-en-008", "language": "en", "tone": "question", "text": "link is in my bio!" },
+    {
+      "id": "reply-en-009",
+      "language": "en",
+      "tone": "question",
+      "text": "shot it all on my phone, no joke"
+    },
+    { "id": "reply-en-010", "language": "en", "tone": "hype", "text": "you guys are the best ❤️" },
+    {
+      "id": "reply-en-011",
+      "language": "en",
+      "tone": "request",
+      "text": "say less, filming it this week"
+    },
+    {
+      "id": "reply-en-012",
+      "language": "en",
+      "tone": "funny",
+      "text": "the outtakes are even worse 😂"
+    },
+    {
+      "id": "reply-en-013",
+      "language": "en",
+      "tone": "critical",
+      "text": "fair, I'll fix the audio next time 🙏"
+    },
+    {
+      "id": "reply-en-014",
+      "language": "en",
+      "tone": "product",
+      "text": "it's linked in my storefront ✨",
+      "platforms": ["tiktok", "instagram"]
+    },
+    {
+      "id": "reply-en-015",
+      "language": "en",
+      "tone": "question",
+      "text": "full version is on my channel",
+      "platforms": ["youtube"]
+    },
+    {
+      "id": "reply-en-016",
+      "language": "en",
+      "tone": "hype",
+      "text": "{n} more days and you'll see why 👀"
+    },
+    {
+      "id": "reply-en-017",
+      "language": "en",
+      "tone": "story",
+      "text": "reading every comment, I promise"
+    },
+    {
+      "id": "reply-en-018",
+      "language": "en",
+      "tone": "relatable",
+      "text": "glad I'm not the only one 😅"
+    }
+  ]
+}
