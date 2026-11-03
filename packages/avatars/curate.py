@@ -4,7 +4,8 @@
 Checks, in order, per image:
   blur            Laplacian variance (on the face crop for faces) under threshold
   faces           face category: exactly one face, large enough, confident,
-                  estimated age >= --min-age; other categories: no face at all
+                  not judged a child or teenager by the CLIP age labels;
+                  other categories: no face at all
   nsfw            open ViT classifier (Falconsai/nsfw_image_detection, Apache-2.0)
   duplicate       cosine similarity to an already accepted image of the same
                   category (face embedding for faces, CLIP for the rest)
@@ -12,12 +13,16 @@ Checks, in order, per image:
 
 Backends degrade on purpose so the pipeline can be smoke-tested on a CPU with
 nothing downloaded:
-  --detector insightface   buffalo_l pack (detection, ArcFace embedding, age,
-                           gender). NOTE: the pack is licensed for
-                           non-commercial research only, see SPIKE.md.
-  --detector haar          OpenCV Haar cascade, ships with opencv, weak, no
-                           embedding or attributes. Used by --dry-run.
+  --detector yunet         OpenCV Zoo YuNet detection (MIT) + SFace 128-d face
+                           embedding (Apache-2.0) through cv2.FaceDetectorYN /
+                           cv2.FaceRecognizerSF. Fetch the ONNX files first with
+                           scripts/fetch-models.py. `auto` picks it when present.
+  --detector haar          OpenCV Haar cascade, ships with opencv < 5, weak, no
+                           embedding. The fallback when the models are missing.
   --embed clip | pixels    CLIP ViT-B/32 (MIT) or a 32x32 grey thumbnail.
+  Age bucket and presentation come from CLIP zero-shot labels on the face crop
+  (only with --embed clip). They are approximate: they balance the pool and
+  reject apparent minors, nothing else, and only the coarse bucket is kept.
   --nsfw auto | off
 
 The run is not resumable: it re-reads raw/ from scratch and overwrites the
@@ -45,10 +50,12 @@ from common import (
     GENERATED_CATEGORIES,
     PRESENTATIONS,
     RAW_DIR,
-    age_bucket,
+    MODELS_DIR,
     append_jsonl,
     log,
+    read_checksums,
     read_jsonl,
+    sha256_file,
 )
 
 # --- Face detection backends ---------------------------------------------
@@ -59,67 +66,89 @@ class FaceHit:
     bbox: tuple[int, int, int, int]  # x1, y1, x2, y2 in pixels
     score: float
     embedding: np.ndarray | None = None
-    age: float | None = None
-    presentation: str | None = None  # "masculine" | "feminine"
 
 
 class HaarDetector:
     name = "haar"
-    has_embedding = False
-    has_attributes = False
 
     def __init__(self) -> None:
         import cv2
 
+        if not hasattr(cv2, "CascadeClassifier"):
+            raise RuntimeError("this OpenCV has no CascadeClassifier (OpenCV 5 removed it): use opencv-python-headless<5 or --detector yunet")
         path = Path(cv2.data.haarcascades) / "haarcascade_frontalface_default.xml"
         self.cascade = cv2.CascadeClassifier(str(path))
         self.cv2 = cv2
 
-    def detect(self, rgb: np.ndarray) -> list[FaceHit]:
+    def detect(self, rgb: np.ndarray, embed: bool = False) -> list[FaceHit]:
         gray = self.cv2.cvtColor(rgb, self.cv2.COLOR_RGB2GRAY)
         found = self.cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(40, 40))
         return [FaceHit(bbox=(int(x), int(y), int(x + w), int(y + h)), score=1.0) for (x, y, w, h) in found]
 
 
-class InsightFaceDetector:
-    name = "insightface/buffalo_l"
-    has_embedding = True
-    has_attributes = True
+YUNET_FILE = "face_detection_yunet_2023mar.onnx"
+SFACE_FILE = "face_recognition_sface_2021dec.onnx"
 
-    def __init__(self, device: str) -> None:
-        from insightface.app import FaceAnalysis
+# SFace model card / OpenCV docs: two faces are the same identity at cosine >= 0.363
+# (L2-norm distance <= 1.128). Used as the default --face-dup so two near-identical
+# generated faces collapse to one.
+SFACE_COSINE_SAME_IDENTITY = 0.363
 
-        providers = ["CUDAExecutionProvider", "CPUExecutionProvider"] if device == "cuda" else ["CPUExecutionProvider"]
-        self.app = FaceAnalysis(name="buffalo_l", providers=providers)
-        self.app.prepare(ctx_id=0 if device == "cuda" else -1, det_size=(640, 640))
 
-    def detect(self, rgb: np.ndarray) -> list[FaceHit]:
-        bgr = rgb[:, :, ::-1]
-        hits = []
-        for face in self.app.get(bgr):
-            x1, y1, x2, y2 = (int(v) for v in face.bbox)
-            emb = getattr(face, "normed_embedding", None)
-            sex = getattr(face, "sex", None)  # 'M' / 'F' in insightface >= 0.7
-            if sex is None and getattr(face, "gender", None) is not None:
-                sex = "M" if int(face.gender) == 1 else "F"
-            hits.append(
-                FaceHit(
-                    bbox=(x1, y1, x2, y2),
-                    score=float(face.det_score),
-                    embedding=None if emb is None else np.asarray(emb, dtype=np.float32),
-                    age=None if getattr(face, "age", None) is None else float(face.age),
-                    presentation={"M": "masculine", "F": "feminine"}.get(sex) if sex else None,
-                )
-            )
+def yunet_models_present(models_dir: Path) -> bool:
+    import cv2
+
+    return hasattr(cv2, "FaceDetectorYN") and hasattr(cv2, "FaceRecognizerSF") and all((models_dir / f).exists() for f in (YUNET_FILE, SFACE_FILE))
+
+
+class YuNetSFaceDetector:
+    """OpenCV Zoo YuNet (MIT) detection and SFace (Apache-2.0) embedding, both through cv2 (>= 4.8)."""
+
+    name = "yunet+sface (opencv_zoo)"
+    MAX_SIDE = 640  # YuNet is trained for small inputs; larger images are shrunk for detection only
+
+    def __init__(self, models_dir: Path) -> None:
+        import cv2
+
+        expected = read_checksums(models_dir)
+        for f in (YUNET_FILE, SFACE_FILE):
+            path = models_dir / f
+            if not path.exists():
+                raise FileNotFoundError(f"{path} missing: run scripts/fetch-models.py")
+            if f not in expected or sha256_file(path) != expected[f]:
+                raise RuntimeError(f"{path} does not match models/CHECKSUMS: rerun scripts/fetch-models.py")
+        self.cv2 = cv2
+        # Low floor here; analyse() applies --min-det-score.
+        self.detector = cv2.FaceDetectorYN.create(str(models_dir / YUNET_FILE), "", (320, 320), 0.3, 0.3, 5000)
+        self.recognizer = cv2.FaceRecognizerSF.create(str(models_dir / SFACE_FILE), "")
+
+    def detect(self, rgb: np.ndarray, embed: bool = False) -> list[FaceHit]:
+        cv2 = self.cv2
+        bgr = np.ascontiguousarray(rgb[:, :, ::-1])
+        h, w = bgr.shape[:2]
+        scale = min(1.0, self.MAX_SIDE / max(h, w))
+        small = bgr if scale == 1.0 else cv2.resize(bgr, (max(1, round(w * scale)), max(1, round(h * scale))), interpolation=cv2.INTER_AREA)
+        self.detector.setInputSize((small.shape[1], small.shape[0]))
+        _, rows = self.detector.detect(small)
+        hits: list[FaceHit] = []
+        for row in [] if rows is None else rows:
+            row = row.astype(np.float32).copy()
+            row[:14] /= scale  # box and 5 landmarks back to full-resolution pixels
+            x, y, bw, bh = (float(v) for v in row[:4])
+            emb = None
+            if embed:
+                aligned = self.recognizer.alignCrop(bgr, row.reshape(1, -1))
+                feat = np.asarray(self.recognizer.feature(aligned), dtype=np.float32).ravel()
+                norm = np.linalg.norm(feat)
+                emb = feat / norm if norm > 0 else feat
+            hits.append(FaceHit(bbox=(int(x), int(y), int(x + bw), int(y + bh)), score=float(row[14]), embedding=emb))
         return hits
 
 
 class NoDetector:
     name = "none"
-    has_embedding = False
-    has_attributes = False
 
-    def detect(self, rgb: np.ndarray) -> list[FaceHit]:
+    def detect(self, rgb: np.ndarray, embed: bool = False) -> list[FaceHit]:
         return []
 
 
@@ -156,6 +185,70 @@ class ClipEmbedder:
             feats = self.model.get_image_features(**inputs)[0]
         feats = feats / feats.norm()
         return feats.float().cpu().numpy()
+
+
+AGE_LABELS: dict[str, str] = {
+    "child": "a photo of a child",
+    "teen": "a photo of a teenager",
+    "young-adult": "a photo of a young adult in their twenties",
+    "adult": "a photo of an adult in their thirties or early forties",
+    "middle-aged": "a photo of a middle-aged person in their late forties or fifties",
+    "senior": "a photo of an elderly person over sixty",
+}
+PRESENTATION_LABELS: dict[str, str] = {
+    "masculine": "a photo of a man",
+    "feminine": "a photo of a woman",
+}
+
+
+@dataclass
+class FaceAttributes:
+    minor_prob: float  # probability mass on the child + teen labels
+    age_bucket: str  # best of the adult buckets
+    presentation: str
+
+
+class ClipAttributes:
+    """Approximate coarse age bucket and presentation from CLIP zero-shot labels, on the face crop.
+
+    Not a measurement of anyone: it only balances the pool across cells and
+    rejects apparent minors. Nothing but the coarse bucket reaches curation
+    output; the probabilities are discarded after the decision.
+    """
+
+    name = "clip zero-shot (approximate)"
+
+    def __init__(self, clip: ClipEmbedder) -> None:
+        self.clip = clip
+        torch = clip.torch
+        prompts = list(AGE_LABELS.values()) + list(PRESENTATION_LABELS.values())
+        with torch.no_grad():
+            tokens = clip.processor(text=prompts, return_tensors="pt", padding=True).to(clip.device)
+            text = clip.model.get_text_features(**tokens)
+            text = getattr(text, "pooler_output", text)
+            self.text = text / text.norm(dim=-1, keepdim=True)
+        self.scale = float(clip.model.logit_scale.exp())
+
+    def _probs(self, image: Image.Image, start: int, count: int) -> np.ndarray:
+        torch = self.clip.torch
+        inputs = self.clip.processor(images=image, return_tensors="pt").to(self.clip.device)
+        with torch.no_grad():
+            img = self.clip.model.get_image_features(**inputs)
+            img = getattr(img, "pooler_output", img)
+            img = img / img.norm(dim=-1, keepdim=True)
+            logits = self.scale * img @ self.text[start : start + count].T
+            return logits.softmax(dim=-1)[0].float().cpu().numpy()
+
+    def attributes(self, face_crop: Image.Image) -> FaceAttributes:
+        n_age = len(AGE_LABELS)
+        age = self._probs(face_crop, 0, n_age)
+        pres = self._probs(face_crop, n_age, len(PRESENTATION_LABELS))
+        keys = list(AGE_LABELS)
+        minor = float(age[keys.index("child")] + age[keys.index("teen")])
+        adult_keys = keys[2:]
+        bucket = adult_keys[int(np.argmax(age[2:]))]
+        presentation = list(PRESENTATION_LABELS)[int(np.argmax(pres))]
+        return FaceAttributes(minor, bucket, presentation)
 
 
 class NsfwClassifier:
@@ -202,6 +295,7 @@ def analyse(
     detector: Any,
     embedder: Any,
     nsfw: NsfwClassifier | None,
+    attributes: ClipAttributes | None,
     args: argparse.Namespace,
 ) -> Decision:
     path = raw_dir / record["file"]
@@ -214,7 +308,7 @@ def analyse(
     h, w = rgb.shape[:2]
     curation: dict[str, Any] = {}
 
-    faces = detector.detect(rgb) if (category == "face" or args.reject_faces_in_non_face) else []
+    faces = detector.detect(rgb, embed=category == "face") if (category == "face" or args.reject_faces_in_non_face) else []
 
     if category == "face":
         faces = [f for f in faces if f.score >= args.min_det_score]
@@ -229,19 +323,19 @@ def analyse(
             return Decision(record, False, "face-too-small")
         if rel > args.max_face_ratio:
             return Decision(record, False, "face-too-large")
-        if face.age is not None and face.age < args.min_age:
-            return Decision(record, False, "looks-under-age")
         crop = rgb[max(0, y1) : min(h, y2), max(0, x1) : min(w, x2)]
+        attrs = attributes.attributes(Image.fromarray(crop)) if attributes is not None and crop.size else None
+        if attrs is not None and attrs.minor_prob >= args.max_minor_prob:
+            return Decision(record, False, "looks-under-age")
         blur = laplacian_variance(crop) if crop.size else 0.0
         curation.update(
             bbox=[int(x1), int(y1), int(x2), int(y2)],
             det_score=round(face.score, 3),
             blur=round(blur, 1),
         )
-        if face.age is not None:
-            curation["age_bucket"] = age_bucket(face.age)
-        if face.presentation:
-            curation["presentation"] = face.presentation
+        if attrs is not None:
+            curation["age_bucket"] = attrs.age_bucket
+            curation["presentation"] = attrs.presentation
         embedding = face.embedding if face.embedding is not None else embedder.embed(image)
         curation["embedding_source"] = "face" if face.embedding is not None else embedder.name
     else:
@@ -320,7 +414,7 @@ def write_report(path: Path, decisions: list[Decision], nearest: dict[str, list[
         lines.append(f"- {k}: {v}")
     lines.append(
         f"- thresholds: blur < {args.blur_threshold}, face dup >= {args.face_dup}, other dup >= {args.other_dup}, "
-        f"nsfw >= {args.nsfw_threshold}, min age {args.min_age}, face width {args.min_face_ratio:.2f}..{args.max_face_ratio:.2f} of image"
+        f"nsfw >= {args.nsfw_threshold}, minor prob >= {args.max_minor_prob}, face width {args.min_face_ratio:.2f}..{args.max_face_ratio:.2f} of image"
     )
     if args.max_per_cell:
         lines.append(f"- balance cap: {args.max_per_cell} faces per (age bucket x presentation) cell")
@@ -342,7 +436,7 @@ def write_report(path: Path, decisions: list[Decision], nearest: dict[str, list[
     lines.append("")
 
     faces = [d for d in decisions if d.accepted and d.record["category"] == "face"]
-    lines.append("## Faces: detected spread (age bucket x presentation)")
+    lines.append("## Faces: approximate spread (CLIP zero-shot age bucket x presentation, for balancing only)")
     lines.append("")
     if faces and any("age_bucket" in d.curation for d in faces):
         lines.append("| age bucket | " + " | ".join(PRESENTATIONS + ["unknown"]) + " | total |")
@@ -353,7 +447,7 @@ def write_report(path: Path, decisions: list[Decision], nearest: dict[str, list[
                 continue
             lines.append(f"| {bucket} | " + " | ".join(str(n) for n in row) + f" | {sum(row)} |")
     else:
-        lines.append("Not available: the detector in use reports no age/gender (use `--detector insightface`).")
+        lines.append("Not available: needs `--embed clip` (CLIP zero-shot labels) and a face category.")
     lines.append("")
 
     lines.append("## Faces: prompted spread of accepted images (from the raw manifest)")
@@ -364,7 +458,7 @@ def write_report(path: Path, decisions: list[Decision], nearest: dict[str, list[
             lines.append(f"- {key}: " + ", ".join(f"{k} {n}" for k, n in sorted(counts.items(), key=lambda kv: -kv[1])))
     if faces and all("age_bucket" in d.curation for d in faces):
         agree = sum(1 for d in faces if d.curation.get("age_bucket") == d.record.get("meta", {}).get("age_bucket"))
-        lines.append(f"- prompted vs detected age bucket agreement: {agree}/{len(faces)}")
+        lines.append(f"- prompted vs approximate age bucket agreement: {agree}/{len(faces)}")
     lines.append("")
 
     lines.append("## Dedupe: nearest accepted neighbour similarity")
@@ -408,16 +502,17 @@ def run(args: argparse.Namespace) -> int:
         except ImportError:
             device = "cpu"
 
+    models_dir = Path(args.models_dir)
     detector_name = args.detector
     if detector_name == "auto":
         try:
-            import insightface  # noqa: F401
-
-            detector_name = "insightface"
+            ok = yunet_models_present(models_dir)
         except ImportError:
-            detector_name = "haar"
-            log("insightface not installed, falling back to the Haar cascade (no embeddings or attributes)")
-    detector = {"insightface": lambda: InsightFaceDetector(device), "haar": HaarDetector, "none": NoDetector}[detector_name]()
+            ok = False
+        detector_name = "yunet" if ok else "haar"
+        if not ok:
+            log("YuNet/SFace unavailable (run scripts/fetch-models.py), falling back to the Haar cascade (no face embeddings)")
+    detector = {"yunet": lambda: YuNetSFaceDetector(models_dir), "haar": HaarDetector, "none": NoDetector}[detector_name]()
 
     embed_name = args.embed
     if embed_name == "auto":
@@ -429,6 +524,9 @@ def run(args: argparse.Namespace) -> int:
             embed_name = "pixels"
             log("transformers not installed, falling back to pixel thumbnails for dedupe")
     embedder = ClipEmbedder(device) if embed_name == "clip" else PixelEmbedder()
+    attributes = ClipAttributes(embedder) if isinstance(embedder, ClipEmbedder) and not args.no_attributes else None
+    if attributes is None:
+        log("no age/presentation labels (needs --embed clip): minors are NOT screened automatically, do the visual pass strictly")
     other_dup = args.other_dup if args.other_dup is not None else embedder.threshold
 
     nsfw: NsfwClassifier | None = None
@@ -441,6 +539,7 @@ def run(args: argparse.Namespace) -> int:
     backends = {
         "detector": detector.name,
         "embedding": embedder.name,
+        "attributes": attributes.name if attributes else "off",
         "nsfw": nsfw.name if nsfw else "off",
         "device": device,
         "images": str(len(records)),
@@ -449,7 +548,7 @@ def run(args: argparse.Namespace) -> int:
 
     decisions: list[Decision] = []
     for i, record in enumerate(records, 1):
-        decisions.append(analyse(record, raw_dir, detector, embedder, nsfw, args))
+        decisions.append(analyse(record, raw_dir, detector, embedder, nsfw, attributes, args))
         if i % 100 == 0 or i == len(records):
             acc = sum(d.accepted for d in decisions)
             log(f"{i}/{len(records)} analysed, {acc} accepted so far")
@@ -490,26 +589,32 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--target", type=int, default=3000, help="pool size used to report shortfalls")
     ap.add_argument("--categories", nargs="*", choices=GENERATED_CATEGORIES)
     ap.add_argument("--limit", type=int, default=0, help="only the first N raw images per category")
-    ap.add_argument("--detector", choices=["auto", "insightface", "haar", "none"], default="auto")
+    ap.add_argument("--detector", choices=["auto", "yunet", "haar", "none"], default="auto")
+    ap.add_argument("--models-dir", default=str(MODELS_DIR), help="where scripts/fetch-models.py put the YuNet and SFace ONNX files")
     ap.add_argument("--embed", choices=["auto", "clip", "pixels"], default="auto")
     ap.add_argument("--nsfw", choices=["auto", "on", "off"], default="auto")
     ap.add_argument("--nsfw-threshold", type=float, default=0.5)
     ap.add_argument("--blur-threshold", type=float, default=40.0, help="Laplacian variance below this is rejected")
-    ap.add_argument("--face-dup", type=float, default=0.5, help="face embedding cosine at or above this is a duplicate")
+    ap.add_argument(
+        "--face-dup",
+        type=float,
+        default=SFACE_COSINE_SAME_IDENTITY,
+        help="SFace face embedding cosine at or above this is a duplicate; default is the SFace same-identity threshold 0.363 (OpenCV Zoo model card)",
+    )
     ap.add_argument("--other-dup", type=float, default=None, help="non-face cosine threshold (default per embedder)")
     ap.add_argument("--min-det-score", type=float, default=0.6)
     ap.add_argument("--min-face-ratio", type=float, default=0.15, help="face width / image width minimum")
     ap.add_argument("--max-face-ratio", type=float, default=0.95)
-    ap.add_argument("--min-age", type=float, default=20.0, help="reject faces the estimator puts under this age")
+    ap.add_argument("--max-minor-prob", type=float, default=0.2, help="reject faces whose CLIP child+teenager probability is at or above this")
+    ap.add_argument("--no-attributes", action="store_true", help="skip the CLIP age/presentation labels (also disables the minor screen)")
     ap.add_argument("--max-per-cell", type=int, default=0, help="cap faces per (age bucket x presentation) cell")
     ap.add_argument("--no-reject-faces-in-non-face", dest="reject_faces_in_non_face", action="store_false")
     ap.add_argument("--no-keep-rejected", dest="keep_rejected", action="store_false", help="do not copy rejects into _rejected/")
     ap.add_argument("--device", default=None)
-    ap.add_argument("--dry-run", action="store_true", help="CPU, Haar detector, pixel dedupe, no NSFW model")
+    ap.add_argument("--dry-run", action="store_true", help="CPU, pixel dedupe, no NSFW model; YuNet/SFace if fetched, else the Haar cascade")
     args = ap.parse_args(argv)
     if args.dry_run:
         args.device = args.device or "cpu"
-        args.detector = "haar" if args.detector == "auto" else args.detector
         args.embed = "pixels" if args.embed == "auto" else args.embed
         args.nsfw = "off" if args.nsfw == "auto" else args.nsfw
         if args.raw == str(RAW_DIR):

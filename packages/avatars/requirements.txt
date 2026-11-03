@@ -12,7 +12,5 @@ sentencepiece
 protobuf
 safetensors
 # curate.py
-insightface>=0.7.3
-onnxruntime-gpu>=1.18; sys_platform != "darwin"
-onnxruntime>=1.18; sys_platform == "darwin"
+# plus `python scripts/fetch-models.py` for the YuNet + SFace ONNX files (run by OpenCV, no extra package)
 # optional: bitsandbytes>=0.44 for `generate.py --model flux-schnell --quantize nf4`

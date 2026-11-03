@@ -6,7 +6,8 @@ requires-python = ">=3.11"
 dependencies = [
   "pillow>=10.1",
   "numpy>=1.26",
-  # <5: OpenCV 5 dropped cv2.CascadeClassifier, which the --dry-run detector uses.
+  # >=4.8: cv2.FaceDetectorYN / FaceRecognizerSF (YuNet, SFace). <5: OpenCV 5.0 has both of those
+  # but dropped cv2.CascadeClassifier, the offline Haar fallback.
   "opencv-python-headless>=4.9,<5",
 ]
 
@@ -23,13 +24,11 @@ generate = [
 ]
 # Optional, FLUX.1-schnell on 12 GB cards (`generate.py --quantize nf4`).
 nf4 = ["bitsandbytes>=0.44"]
-# Curation models (curate.py): face detection + embeddings + attributes, CLIP, NSFW classifier.
+# Curation models (curate.py): CLIP (dedupe, coarse age/presentation labels) and the NSFW classifier.
+# Face detection and embeddings are YuNet + SFace ONNX files run by OpenCV: `python scripts/fetch-models.py`.
 curate = [
   "torch>=2.4",
   "transformers>=4.46",
-  "insightface>=0.7.3",
-  "onnxruntime-gpu>=1.18; sys_platform != 'darwin'",
-  "onnxruntime>=1.18; sys_platform == 'darwin'",
 ]
 # Alternative detector with a permissive model licence (Apache-2.0); Python <= 3.12 only.
 mediapipe = ["mediapipe>=0.10.14"]
