@@ -35,6 +35,18 @@ describe("FakeHostAdapter", () => {
     expect(await host.insertOverlay(overlay, DEFAULT_INSERT_OPTIONS)).toMatchObject({ track: 1 });
   });
 
+  it("offsets a staggered insert from the playhead", async () => {
+    const host = new FakeHostAdapter({ playheadSeconds: 10 });
+    await host.insertOverlay(overlay, DEFAULT_INSERT_OPTIONS);
+    expect(
+      await host.insertOverlay(overlay, { ...DEFAULT_INSERT_OPTIONS, offsetSeconds: 5 }),
+    ).toEqual({
+      status: "inserted",
+      track: 1,
+      startSeconds: 15,
+    });
+  });
+
   it("downloads when the host cannot insert", async () => {
     const host = new FakeHostAdapter({ canInsert: false, sequence: null });
     expect(await host.insertOverlay(overlay, DEFAULT_INSERT_OPTIONS)).toEqual({

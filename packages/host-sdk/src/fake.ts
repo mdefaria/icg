@@ -49,9 +49,10 @@ export class FakeHostAdapter implements HostAdapter {
       return Promise.resolve({ status: "downloaded", fileName: `${options.label}.png` });
     }
     if (!this.sequence) return Promise.resolve({ status: "no-sequence" });
-    const track = this.inserts.filter((i) => overlaps(i, this.playheadSeconds, options)).length + 1;
-    this.inserts.push({ overlay, options, track, startSeconds: this.playheadSeconds });
-    return Promise.resolve({ status: "inserted", track, startSeconds: this.playheadSeconds });
+    const startSeconds = this.playheadSeconds + (options.offsetSeconds ?? 0);
+    const track = this.inserts.filter((i) => overlaps(i, startSeconds, options)).length + 1;
+    this.inserts.push({ overlay, options, track, startSeconds });
+    return Promise.resolve({ status: "inserted", track, startSeconds });
   }
 
   getTheme(): Theme {

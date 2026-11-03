@@ -3,6 +3,7 @@ import type { HostInfo, Overlay, SequenceInfo, Theme } from "@icg/shared";
 export type InsertOptions = {
   durationSeconds: number;
   label: string;
+  offsetSeconds?: number;
 };
 
 export type InsertResult =
