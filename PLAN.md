@@ -13,9 +13,9 @@ Positioning: a storytelling, skit and mockup tool. Terms make the user responsib
 | Area | Decision |
 |---|---|
 | Generation | No AI at runtime. Curated Bank + procedural usernames, likes, timestamps. Build-time AI allowed for drafting the Bank and producing Avatars. (ADR 0001) |
-| Hosts at launch | Premiere Pro (UXP, min 26.2), DaVinci Resolve Studio (Workflow Integration plugin, min 19), web app. All at once. macOS and Windows. Resolve Free is not supported (no plugin loading since 21.1); landing page says so and points to the web app. |
+| Hosts at launch | Premiere Pro (CEP panel, min Premiere 23; UXP port before Dec 2028, ADR 0005), DaVinci Resolve Studio (Workflow Integration plugin, min 19), web app. All at once. macOS and Windows. Resolve Free is not supported (no plugin loading since 21.1); landing page says so and points to the web app. |
 | UI | One shared React + TypeScript UI in all three Hosts. (ADR 0002) |
-| Rendering | SVG Templates rendered by resvg, packaged as WASM (web), native Node module (Resolve/Electron) and hybrid C++ addon (Premiere). One-day WASM-in-UXP probe first; if it works, the addon is dropped. (ADR 0003) |
+| Rendering | SVG Templates rendered by resvg-wasm, the same module in the web app, the CEP panel and the Resolve plugin. Native resvg only if 4K profiling demands it in Resolve. (ADR 0003) |
 | Output | Static full-Frame transparent PNG at the sequence's frame size (Frame presets + 1080p/4K only in the web app). One Comment per Overlay; batch = N Overlays staggered in time and Placement. Animation is a future feature. |
 | Insert | Lowest empty video track above the playhead for the whole duration, new track if none. Default 3 s, configurable. Overwrite into empty space only, never ripple. |
 | Placement | Drag on a Frame preview, 9-point snap, scale slider, per-Platform safe-zone guides. Last Placement remembered globally per Platform. |
@@ -28,7 +28,7 @@ Positioning: a storytelling, skit and mockup tool. Terms make the user responsib
 | Commerce | Stripe Checkout + Stripe Tax, UK business, EU OSS handled by the owner. One-time price around £10 (to be reviewed). 14-day refund. Quantity field; one Key per Seat; 3 Devices per Key, web app counts as a Device. Keyless: Key by email, resend-Key form, Key-gated downloads, self-service Device management page. (ADR 0004) |
 | Backend | One Cloudflare Worker (TypeScript), D1, R2, transactional email. |
 | Landing | Astro static site on Cloudflare Pages: demo video, features, pricing, FAQ/docs, changelog, Terms/Privacy/Refund, testimonials from a two-week beta (15 to 20 editors, free Key). Cloudflare Web Analytics. Brand: "ICG" / "somethingicg", never spelled out. |
-| Distribution | Premiere: `.ccx` double-click via Creative Cloud. Resolve: signed `.pkg` (notarised) and signed `.exe`. Web app: nothing. |
+| Distribution | Premiere and Resolve: one signed `.pkg` (notarised) and one signed `.exe` each, standard wizard, uninstaller included. Web app: nothing. The UXP port will add a `.ccx`. |
 | Future | Pop-in animation, runtime AI as an optional online feature, local MCP server (engine exposes an internal API from day one), more Platforms and languages, content packs. |
 | Telemetry | Opt-in crash reports only, off by default. |
 | Support | Email + FAQ. |
@@ -39,34 +39,34 @@ Positioning: a storytelling, skit and mockup tool. Terms make the user responsib
 apps/
   landing/          Astro static site (Cloudflare Pages)
   web/              web app shell: React UI + resvg WASM + service worker
-  premiere/         UXP plugin: React UI + hybrid addon (or WASM) + Premiere adapter -> .ccx
-  resolve/          Workflow Integration plugin (Electron): React UI + resvg native + Resolve adapter
+  premiere/         CEP panel: React UI + resvg-wasm + ExtendScript adapter (import, overwrite at playhead)
+  resolve/          Workflow Integration plugin (Electron): React UI + resvg-wasm + Resolve adapter
   api/              Cloudflare Worker: Stripe webhook, Keys, Activation, Devices, version, downloads
 packages/
   ui/               shared React generator UI (UXP CSS subset)
   engine/           generation: Bank lookup, username/likes/time generators, internal API (future MCP)
-  renderer/         SVG Templates, font/emoji embedding, resvg wrappers for wasm/node/addon
+  renderer/         SVG Templates, text/emoji layout, font embedding, resvg-wasm wrapper
   bank/             Bank data files per Platform and language + preview script
   avatars/          Avatar pool build pipeline (generate, curate, pack)
   host-sdk/         Host adapter interface: getSequenceInfo, writeFile, importAndInsert, getPlayhead
   licensing/        Key format, signature verification, Activation client
-native/
-  premiere-addon/   C++ shim over resvg C API, CI builds for mac arm64/x64, win x64
 installers/
-  macos/ windows/   Resolve installer scripts, signing and notarisation
+  macos/ windows/   Premiere (CEP) and Resolve installers, signing and notarisation
 docs/adr/
 ```
 
 Host adapter facts (verified against Adobe typings and samples):
-- Premiere: `project.importFiles`, `SequenceEditor.createOverwriteItemAction` at `sequence.getPlayerPosition()` inside `project.lockedAccess` + `executeTransaction`; out point via `createSetOutPointAction`; `sequence.getFrameSize()` / `getSettings().getVideoFrameRate()`; files written with `fs.writeFile` to `plugin-temp:/`.
+- Premiere (CEP/ExtendScript): `app.project.importFiles`, `track.overwriteClip(projectItem, time)` at `sequence.getPlayerPosition()`, clip `end` for duration, `sequence.frameSizeHorizontal/Vertical` and `timebase`; track creation via the QE DOM; files written from the panel's Node side.
+- Premiere (UXP, for the 2028 port): `project.importFiles`, `SequenceEditor.createOverwriteItemAction` inside `project.lockedAccess` + `executeTransaction`, `createSetOutPointAction`, `sequence.getFrameSize()`; rendering needs confirmed WASM or a hybrid addon.
 - Resolve: `MediaPool.ImportMedia`, `AppendToTimeline` with `recordFrame` and `trackIndex`, `Timeline.AddTrack` when needed.
 
 ## 4. Phases
 
 **Phase 0 - Spikes (2 weeks)**
-1. WASM resvg inside Premiere UXP, mac + win, one day hard stop.
-2. Hybrid addon hello-world: SVG in, PNG out, loaded by the UXP panel, mac + win (skipped if 1 passes).
-3. Premiere adapter: import, overwrite at playhead on chosen track, set duration, read frame size.
+1. CEP panel: React UI + resvg-wasm rendering a Template to PNG in-panel, mac + win, Premiere 23 and 26.
+2. Premiere adapter (ExtendScript): import, overwrite at playhead on chosen track, create track, set duration, read frame size.
+3. Installer: signed extension folder installed by `.pkg`/`.exe`, loads without PlayerDebugMode on both OSes.
+8. Informational, one day hard stop: resvg-WASM inside Premiere UXP, to scope the 2028 port.
 4. Resolve adapter: same via Workflow Integration plugin on Studio 19/20.
 5. Renderer fidelity: all four Platforms, dark/light, against real screenshots; colour emoji path confirmed.
 6. Avatar pipeline: 200-image sample from the local GPU, curation script.
@@ -74,7 +74,7 @@ Host adapter facts (verified against Adobe typings and samples):
 
 **Phase 1 - Core**: engine, renderer, Templates, Bank v1 (EN/ES), Avatar pool, shared UI (generate, edit, Manual Comment, Placement), licensing client. Web app shipping first as the integration target.
 
-**Phase 2 - Hosts**: Premiere plugin + `.ccx`; Resolve plugin + installers, signing, notarisation.
+**Phase 2 - Hosts**: Premiere CEP panel and Resolve plugin, installers, signing, notarisation.
 
 **Phase 3 - Commerce**: Worker endpoints, Device page, downloads, landing page, legal pages, update banner, crash reporting opt-in.
 
@@ -84,7 +84,7 @@ Host adapter facts (verified against Adobe typings and samples):
 
 ## 5. Risks
 
-- Hybrid addon API is young; re-test on every Premiere release. Addon stays one function to limit blast radius.
+- CEP sunset: disabled by default in Premiere from December 2028. The UXP port is a dated roadmap item; its rendering path (WASM in UXP or hybrid addon) is still unproven.
 - Platform UI drift: Templates need refreshing a few times a year; each refresh is a version.
 - Bank repetition at agency volumes; track Bank size as a KPI.
 - Price around £10 leaves thin margin per sale after Stripe fees; support must be self-service.
