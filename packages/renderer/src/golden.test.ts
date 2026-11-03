@@ -36,7 +36,12 @@ function compare(
   return { ratio, width: got.width, height: got.height };
 }
 
-const CARDS: Array<{ template: Template; language: "en" | "es"; index: number }> = [
+const CARDS: Array<{
+  template: Template;
+  language: "en" | "es";
+  index: number;
+  card?: "sheet" | "transparent";
+}> = [
   {
     template: { platform: "tiktok", theme: "dark", variant: "creator-reply" },
     language: "en",
@@ -53,6 +58,12 @@ const CARDS: Array<{ template: Template; language: "en" | "es"; index: number }>
     language: "es",
     index: 2,
   },
+  {
+    template: { platform: "tiktok", theme: "light", variant: "single" },
+    language: "es",
+    index: 1,
+    card: "transparent",
+  },
 ];
 
 describe("golden renders", () => {
@@ -60,15 +71,15 @@ describe("golden renders", () => {
     await initRenderer();
   });
 
-  for (const { template, language, index } of CARDS) {
-    const name = `${template.platform}-${template.theme}-${template.variant}-${language}`;
+  for (const { template, language, index, card = "sheet" } of CARDS) {
+    const name = `${template.platform}-${template.theme}-${template.variant}-${language}${card === "sheet" ? "" : `-${card}`}`;
     it(`matches ${name}`, async () => {
-      const assets = { ...loadNodeAssets(), locale: language };
       const png = await renderCommentPng(
         sampleComment(template.platform, language, index),
         template,
         1,
-        assets,
+        loadNodeAssets(),
+        { language, card },
       );
       const { ratio } = compare(name, png);
       expect(ratio).toBeLessThanOrEqual(MAX_DIFF_RATIO);

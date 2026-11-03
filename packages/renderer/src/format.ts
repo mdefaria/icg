@@ -2,38 +2,61 @@ import type { Language, Platform } from "@icg/shared";
 
 export type CountStyle = { platform: Platform; language: Language };
 
-const SUFFIX: Record<
-  Language,
-  { thousand: string; million: string; decimal: string; group: string }
-> = {
-  en: { thousand: "K", million: "M", decimal: ".", group: "," },
-  es: { thousand: " mil", million: " M", decimal: ",", group: "." },
+type Symbols = {
+  thousand: string;
+  million: string;
+  billion: string;
+  decimal: string;
+  group: string;
 };
 
-const GROUPS_FULL_BELOW_10K: ReadonlySet<Platform> = new Set(["x", "instagram"]);
+const SYMBOLS: Record<Language, Symbols> = {
+  en: { thousand: "K", million: "M", billion: "B", decimal: ".", group: "," },
+  es: { thousand: " mil", million: " M", billion: " mil M", decimal: ",", group: "." },
+};
 
-function oneDecimal(value: number, decimal: string): string {
-  const fixed = Math.floor(value * 10) / 10;
-  const text = fixed.toFixed(1);
-  return (text.endsWith(".0") ? text.slice(0, -2) : text).replace(".", decimal);
+type Rule = {
+  belowTenThousand: "plain" | "grouped" | "compact";
+  compact: "one-decimal" | "youtube";
+};
+
+const RULES: Record<Platform, Rule> = {
+  tiktok: { belowTenThousand: "plain", compact: "one-decimal" },
+  instagram: { belowTenThousand: "grouped", compact: "one-decimal" },
+  x: { belowTenThousand: "grouped", compact: "one-decimal" },
+  youtube: { belowTenThousand: "compact", compact: "youtube" },
+};
+
+function floorTo(value: number, decimals: number): number {
+  const k = 10 ** decimals;
+  return Math.floor(value * k + 1e-9) / k;
+}
+
+function decimalText(value: number, decimals: number, decimal: string): string {
+  const text = floorTo(value, decimals).toFixed(decimals);
+  const trimmed = decimals > 0 ? text.replace(/\.?0+$/, "") : text;
+  return trimmed.replace(".", decimal);
 }
 
 function grouped(n: number, group: string): string {
   return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, group);
 }
 
-export function formatCount(n: number, style: CountStyle): string {
-  const { thousand, million, decimal, group } = SUFFIX[style.language];
-  if (n < 1000) return n.toString();
-  if (n < 10_000) {
-    if (style.platform === "tiktok") return n.toString();
-    if (GROUPS_FULL_BELOW_10K.has(style.platform)) return grouped(n, group);
-    return `${oneDecimal(n / 1000, decimal)}${thousand}`;
-  }
-  if (n < 1_000_000) return `${oneDecimal(n / 1000, decimal)}${thousand}`;
-  return `${oneDecimal(n / 1_000_000, decimal)}${million}`;
+function compact(n: number, rule: Rule, s: Symbols): string {
+  const [value, suffix] =
+    n >= 1e9 ? [n / 1e9, s.billion] : n >= 1e6 ? [n / 1e6, s.million] : [n / 1e3, s.thousand];
+  const decimals = rule.compact === "youtube" && value >= 10 ? 0 : 1;
+  return `${decimalText(value, decimals, s.decimal)}${suffix}`;
 }
 
-export function formatLikes(n: number, style: CountStyle): string {
-  return formatCount(n, style);
+export function formatCount(n: number, style: CountStyle): string {
+  const s = SYMBOLS[style.language];
+  const rule = RULES[style.platform];
+  const value = Math.max(0, Math.floor(n));
+  if (value < 1000) return value.toString();
+  if (value < 10_000) {
+    if (rule.belowTenThousand === "plain") return value.toString();
+    if (rule.belowTenThousand === "grouped") return grouped(value, s.group);
+  }
+  return compact(value, rule, s);
 }

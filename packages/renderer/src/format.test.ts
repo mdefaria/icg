@@ -18,6 +18,11 @@ describe("formatCount (en)", () => {
 
   it("abbreviates from 1,000 on YouTube and from 10,000 everywhere", () => {
     expect(formatCount(1234, en("youtube"))).toBe("1.2K");
+    expect(formatCount(12_400, en("youtube"))).toBe("12K");
+    expect(formatCount(123_456, en("youtube"))).toBe("123K");
+    expect(formatCount(1_234_567, en("youtube"))).toBe("1.2M");
+    expect(formatCount(12_345_678, en("youtube"))).toBe("12M");
+    expect(formatCount(2_500_000_000, en("x"))).toBe("2.5B");
     expect(formatCount(12_400, en("tiktok"))).toBe("12.4K");
     expect(formatCount(12_400, en("instagram"))).toBe("12.4K");
     expect(formatCount(1_200_000, en("x"))).toBe("1.2M");
@@ -42,5 +47,8 @@ describe("formatCount (es)", () => {
     expect(formatCount(1234, es("youtube"))).toBe("1,2 mil");
     expect(formatCount(12_400, es("tiktok"))).toBe("12,4 mil");
     expect(formatCount(1_200_000, es("instagram"))).toBe("1,2 M");
+    expect(formatCount(12_400, es("youtube"))).toBe("12 mil");
+    expect(formatCount(4_200_000, es("x"))).toBe("4,2 M");
+    expect(formatCount(1234, es("tiktok"))).toBe("1234");
   });
 });

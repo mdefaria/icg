@@ -64,4 +64,29 @@ describe("wrapText", () => {
   it("returns one empty line for empty text", () => {
     expect(wrapText("", { ...opts, maxWidth: 100 })).toEqual([{ runs: [], width: 0 }]);
   });
+
+  it("breaks between ideographs and keeps Latin runs whole", () => {
+    const lines = wrapText("我们今天去看电影吧 ok", { ...opts, maxWidth: 40 });
+    expect(lines.map(lineText)).toEqual(["我们今天", "去看电影", "吧 ok"]);
+  });
+
+  it("wraps Arabic at spaces without crashing", () => {
+    const lines = wrapText("مرحبا بالعالم هذا رائع", { ...opts, maxWidth: 80 });
+    expect(lines.map(lineText)).toEqual(["مرحبا", "بالعالم", "هذا رائع"]);
+  });
+
+  it("breaks a very long token, an emoji run and a URL inside a line", () => {
+    const lines = wrapText("see https://example.com/a/very/long/path 😂😂😂", {
+      ...opts,
+      maxWidth: 100,
+    });
+    expect(lines.every((l) => l.width <= 100)).toBe(true);
+    expect(lines.map(lineText).join("")).toBe("seehttps://example.com/a/very/long/path 😂😂😂");
+  });
+
+  it("does not split grapheme clusters when breaking a long word", () => {
+    const word = "e\u0301".repeat(12);
+    const lines = wrapText(word, { ...opts, maxWidth: 60 });
+    expect(lines.every((l) => !lineText(l).startsWith("\u0301"))).toBe(true);
+  });
 });

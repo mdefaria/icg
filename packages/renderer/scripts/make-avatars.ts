@@ -1,17 +1,18 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { Resvg } from "@resvg/resvg-wasm";
+import sharp from "sharp";
 import { loadBundledFonts, PACKAGE_PATHS } from "../src/node-assets";
 import { initRenderer } from "../src/wasm";
 
 const AVATARS = [
-  { id: "a-01", initials: "LM", from: "#F97316", to: "#DB2777" },
-  { id: "a-02", initials: "JR", from: "#0EA5E9", to: "#6366F1" },
-  { id: "a-03", initials: "SO", from: "#22C55E", to: "#0D9488" },
-  { id: "a-04", initials: "KT", from: "#A855F7", to: "#3B82F6" },
-  { id: "a-05", initials: "NV", from: "#EF4444", to: "#F59E0B" },
-  { id: "a-06", initials: "DC", from: "#64748B", to: "#1E293B" },
-];
+  { id: "a-01", initials: "LM", from: "#F97316", to: "#DB2777", format: "png" },
+  { id: "a-02", initials: "JR", from: "#0EA5E9", to: "#6366F1", format: "png" },
+  { id: "a-03", initials: "SO", from: "#22C55E", to: "#0D9488", format: "png" },
+  { id: "a-04", initials: "KT", from: "#A855F7", to: "#3B82F6", format: "png" },
+  { id: "a-05", initials: "NV", from: "#EF4444", to: "#F59E0B", format: "jpg" },
+  { id: "a-06", initials: "DC", from: "#64748B", to: "#1E293B", format: "webp" },
+] as const;
 
 function svg(a: (typeof AVATARS)[number]): string {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
@@ -25,9 +26,22 @@ function svg(a: (typeof AVATARS)[number]): string {
 await initRenderer();
 const fonts = loadBundledFonts();
 mkdirSync(PACKAGE_PATHS.avatars, { recursive: true });
+const entries = [];
 for (const a of AVATARS) {
   const r = new Resvg(svg(a), { font: { fontBuffers: fonts.buffers(), loadSystemFonts: false } });
   const png = r.render().asPng();
-  writeFileSync(join(PACKAGE_PATHS.avatars, `${a.id}.png`), png);
-  console.log(a.id, png.length, "bytes");
+  const bytes =
+    a.format === "png"
+      ? png
+      : a.format === "jpg"
+        ? await sharp(png).jpeg({ quality: 85 }).toBuffer()
+        : await sharp(png).webp({ quality: 80 }).toBuffer();
+  const file = `${a.id}.${a.format}`;
+  writeFileSync(join(PACKAGE_PATHS.avatars, file), bytes);
+  entries.push({ id: a.id, file, category: "face", tags: ["placeholder"], bytes: bytes.length });
+  console.log(file, bytes.length, "bytes");
 }
+writeFileSync(
+  join(PACKAGE_PATHS.avatars, "index.json"),
+  JSON.stringify({ version: 1, size: 256, format: "mixed", entries }, null, 2) + "\n",
+);

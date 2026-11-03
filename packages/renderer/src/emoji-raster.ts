@@ -1,12 +1,13 @@
 import { Resvg } from "@resvg/resvg-wasm";
-import { bytesToDataUrl } from "./assets";
+import { bytesToDataUrl } from "./bytes";
 import { emojiDataUrl } from "./emoji";
 import { isRendererReady } from "./wasm";
 
 const MIN_PX = 64;
 const MAX_PX = 512;
+const MAX_ENTRIES = 2048;
 
-const cache = new Map<string, string>();
+const cache = new Map<string, string | null>();
 
 export function rasterBucket(px: number): number {
   let size = MIN_PX;
@@ -14,29 +15,42 @@ export function rasterBucket(px: number): number {
   return size;
 }
 
-export function emojiHref(key: string, svg: string, px: number): string {
-  if (!isRendererReady()) return emojiDataUrl(svg);
-  const bucket = rasterBucket(px);
-  const cacheKey = `${key}@${bucket}`;
-  let href = cache.get(cacheKey);
-  if (!href) {
-    const resvg = new Resvg(svg, {
+function rasterise(svg: string, bucket: number): string | null {
+  let resvg: InstanceType<typeof Resvg> | undefined;
+  try {
+    resvg = new Resvg(svg, {
       fitTo: { mode: "width", value: bucket },
       font: { loadSystemFonts: false },
     });
-    try {
-      const image = resvg.render();
-      try {
-        href = bytesToDataUrl("image/png", image.asPng());
-      } finally {
-        image.free();
-      }
-    } finally {
-      resvg.free();
-    }
-    cache.set(cacheKey, href);
+    const image = resvg.render();
+    const href = bytesToDataUrl("image/png", image.asPng());
+    image.free();
+    resvg.free();
+    return href;
+  } catch {
+    return null;
   }
-  return href;
+}
+
+export function emojiHref(key: string, svg: string, px: number): string | undefined {
+  if (!isRendererReady()) return emojiDataUrl(svg);
+  const cacheKey = `${key}@${rasterBucket(px)}`;
+  let href = cache.get(cacheKey);
+  if (href !== undefined) {
+    cache.delete(cacheKey);
+  } else {
+    href = rasterise(svg, rasterBucket(px));
+    if (cache.size >= MAX_ENTRIES) cache.delete(cache.keys().next().value!);
+  }
+  cache.set(cacheKey, href);
+  return href ?? undefined;
+}
+
+export function emojiRenderable(key: string, svg: string): boolean {
+  if (!isRendererReady()) return true;
+  return emojiHref(key, svg, MIN_PX / 1.5) !== undefined;
 }
 
 export const emojiRasterCacheSize = (): number => cache.size;
+
+export const clearEmojiRasterCache = (): void => cache.clear();
