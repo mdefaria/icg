@@ -1,0 +1,885 @@
+[
+  { "id": "en-request-0001", "language": "en", "tone": "request", "text": "part 2 please" },
+  { "id": "en-request-0002", "language": "en", "tone": "request", "text": "PART 2 PLEASE 🙏" },
+  { "id": "en-request-0003", "language": "en", "tone": "request", "text": "part 2 or i riot" },
+  { "id": "en-request-0004", "language": "en", "tone": "request", "text": "we need a part 2 asap" },
+  { "id": "en-request-0005", "language": "en", "tone": "request", "text": "part 2??? i'm begging" },
+  { "id": "en-request-0006", "language": "en", "tone": "request", "text": "pls part 2 😭" },
+  { "id": "en-request-0007", "language": "en", "tone": "request", "text": "part two when" },
+  {
+    "id": "en-request-0008",
+    "language": "en",
+    "tone": "request",
+    "text": "i need part 2 like i need air"
+  },
+  {
+    "id": "en-request-0009",
+    "language": "en",
+    "tone": "request",
+    "text": "not leaving until there's a part 2"
+  },
+  {
+    "id": "en-request-0010",
+    "language": "en",
+    "tone": "request",
+    "text": "commenting until you post part 2"
+  },
+  {
+    "id": "en-request-0011",
+    "language": "en",
+    "tone": "request",
+    "text": "day 3 of asking for part 2"
+  },
+  {
+    "id": "en-request-0012",
+    "language": "en",
+    "tone": "request",
+    "text": "day 12 of asking for part 2 🙏"
+  },
+  {
+    "id": "en-request-0013",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} i will literally pay for a part 2"
+  },
+  { "id": "en-request-0014", "language": "en", "tone": "request", "text": "{creator} PART 2 NOW" },
+  {
+    "id": "en-request-0015",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} don't leave us hanging, part 2!!"
+  },
+  {
+    "id": "en-request-0016",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} we need the full story"
+  },
+  {
+    "id": "en-request-0017",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} please make this a series"
+  },
+  {
+    "id": "en-request-0018",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} make a whole series out of this"
+  },
+  {
+    "id": "en-request-0019",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} do a behind the scenes video please"
+  },
+  {
+    "id": "en-request-0020",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} show us the bloopers"
+  },
+  {
+    "id": "en-request-0021",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} drop the full version"
+  },
+  {
+    "id": "en-request-0022",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} please post the full song"
+  },
+  {
+    "id": "en-request-0023",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} please do a tutorial on this"
+  },
+  {
+    "id": "en-request-0024",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} teach us how you did that transition"
+  },
+  { "id": "en-request-0025", "language": "en", "tone": "request", "text": "{creator} do a q&a!!" },
+  {
+    "id": "en-request-0026",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} collab with someone next please"
+  },
+  {
+    "id": "en-request-0027",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} do a gear video pls"
+  },
+  {
+    "id": "en-request-0028",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} show us your editing setup"
+  },
+  {
+    "id": "en-request-0029",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} react to your old videos"
+  },
+  {
+    "id": "en-request-0030",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} do a day in the life next"
+  },
+  {
+    "id": "en-request-0031",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} do a room tour pls"
+  },
+  {
+    "id": "en-request-0032",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} more of the dog please 🐶"
+  },
+  {
+    "id": "en-request-0033",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} more videos with your mom"
+  },
+  {
+    "id": "en-request-0034",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} bring back the old intro"
+  },
+  {
+    "id": "en-request-0035",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} go live soon pls"
+  },
+  {
+    "id": "en-request-0036",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} post more often 😭"
+  },
+  {
+    "id": "en-request-0037",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} upload the extended cut"
+  },
+  {
+    "id": "en-request-0038",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} reply to me pls 🥺"
+  },
+  {
+    "id": "en-request-0039",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} notice me 🥺"
+  },
+  {
+    "id": "en-request-0040",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} can you say hi to my sister, she's a huge fan"
+  },
+  {
+    "id": "en-request-0041",
+    "language": "en",
+    "tone": "request",
+    "text": "this could be a whole series honestly, do it"
+  },
+  {
+    "id": "en-request-0042",
+    "language": "en",
+    "tone": "request",
+    "text": "this needs to be a series"
+  },
+  {
+    "id": "en-request-0043",
+    "language": "en",
+    "tone": "request",
+    "text": "please make more of these"
+  },
+  { "id": "en-request-0044", "language": "en", "tone": "request", "text": "more of this please" },
+  { "id": "en-request-0045", "language": "en", "tone": "request", "text": "MORE" },
+  { "id": "en-request-0046", "language": "en", "tone": "request", "text": "more more more" },
+  {
+    "id": "en-request-0047",
+    "language": "en",
+    "tone": "request",
+    "text": "we need more content like this"
+  },
+  {
+    "id": "en-request-0048",
+    "language": "en",
+    "tone": "request",
+    "text": "keep posting these {creator}"
+  },
+  {
+    "id": "en-request-0049",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} never stop making these"
+  },
+  {
+    "id": "en-request-0050",
+    "language": "en",
+    "tone": "request",
+    "text": "do more videos like this"
+  },
+  {
+    "id": "en-request-0051",
+    "language": "en",
+    "tone": "request",
+    "text": "post more often please"
+  },
+  {
+    "id": "en-request-0052",
+    "language": "en",
+    "tone": "request",
+    "text": "upload the full thing please"
+  },
+  { "id": "en-request-0053", "language": "en", "tone": "request", "text": "full video please" },
+  { "id": "en-request-0054", "language": "en", "tone": "request", "text": "full version pleaseee" },
+  {
+    "id": "en-request-0055",
+    "language": "en",
+    "tone": "request",
+    "text": "where is the full video?? post it pls"
+  },
+  {
+    "id": "en-request-0056",
+    "language": "en",
+    "tone": "request",
+    "text": "extended version please"
+  },
+  {
+    "id": "en-request-0057",
+    "language": "en",
+    "tone": "request",
+    "text": "can you post a longer version"
+  },
+  {
+    "id": "en-request-0058",
+    "language": "en",
+    "tone": "request",
+    "text": "how was this made?? need a bts"
+  },
+  {
+    "id": "en-request-0059",
+    "language": "en",
+    "tone": "request",
+    "text": "behind the scenes pls 🙏"
+  },
+  { "id": "en-request-0060", "language": "en", "tone": "request", "text": "bloopers please 😭" },
+  { "id": "en-request-0061", "language": "en", "tone": "request", "text": "we need the bloopers" },
+  {
+    "id": "en-request-0062",
+    "language": "en",
+    "tone": "request",
+    "text": "show us how you made this"
+  },
+  {
+    "id": "en-request-0063",
+    "language": "en",
+    "tone": "request",
+    "text": "make a tutorial on this please"
+  },
+  { "id": "en-request-0064", "language": "en", "tone": "request", "text": "tutorial please 🙏" },
+  { "id": "en-request-0065", "language": "en", "tone": "request", "text": "TUTORIAL NOW" },
+  {
+    "id": "en-request-0066",
+    "language": "en",
+    "tone": "request",
+    "text": "tutorial for the transition at 0:15 please"
+  },
+  {
+    "id": "en-request-0067",
+    "language": "en",
+    "tone": "request",
+    "text": "can you do a tutorial for beginners?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0068",
+    "language": "en",
+    "tone": "request",
+    "text": "can you do a slower version of this tutorial?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0069",
+    "language": "en",
+    "tone": "request",
+    "text": "please do one for mac users",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0070",
+    "language": "en",
+    "tone": "request",
+    "text": "can you make one for the phone version?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0071",
+    "language": "en",
+    "tone": "request",
+    "text": "can you do a part 2 with more advanced stuff?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0072",
+    "language": "en",
+    "tone": "request",
+    "text": "please do a full course on this",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0073",
+    "language": "en",
+    "tone": "request",
+    "text": "do one on color grading next please",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0074",
+    "language": "en",
+    "tone": "request",
+    "text": "do one on audio next please",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0075",
+    "language": "en",
+    "tone": "request",
+    "text": "can you share the project file?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0076",
+    "language": "en",
+    "tone": "request",
+    "text": "please share the preset 🙏",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0077",
+    "language": "en",
+    "tone": "request",
+    "text": "could you put the steps in the description?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0078",
+    "language": "en",
+    "tone": "request",
+    "text": "please make a video on keyboard shortcuts",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0079",
+    "language": "en",
+    "tone": "request",
+    "text": "can you explain step 4 again? i got lost",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0080",
+    "language": "en",
+    "tone": "request",
+    "text": "next tutorial: how to make it look cinematic pls",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "en-request-0081",
+    "language": "en",
+    "tone": "request",
+    "text": "can you post the full song?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0082",
+    "language": "en",
+    "tone": "request",
+    "text": "release this song please!!",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0083",
+    "language": "en",
+    "tone": "request",
+    "text": "put this on streaming please",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0084",
+    "language": "en",
+    "tone": "request",
+    "text": "we need the full version of this song",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0085",
+    "language": "en",
+    "tone": "request",
+    "text": "drop the song already 😭",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0086",
+    "language": "en",
+    "tone": "request",
+    "text": "please do an acoustic version",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0087",
+    "language": "en",
+    "tone": "request",
+    "text": "do a cover of an old classic next",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0088",
+    "language": "en",
+    "tone": "request",
+    "text": "can you post the chords?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0089",
+    "language": "en",
+    "tone": "request",
+    "text": "tabs please 🙏",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0090",
+    "language": "en",
+    "tone": "request",
+    "text": "please do a slowed version",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0091",
+    "language": "en",
+    "tone": "request",
+    "text": "do a live version please",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0092",
+    "language": "en",
+    "tone": "request",
+    "text": "please make a full album",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0093",
+    "language": "en",
+    "tone": "request",
+    "text": "sing the chorus again pleaseee",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0094",
+    "language": "en",
+    "tone": "request",
+    "text": "do a duet with someone",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0095",
+    "language": "en",
+    "tone": "request",
+    "text": "make a ringtone out of this pls",
+    "contexts": ["music"]
+  },
+  {
+    "id": "en-request-0096",
+    "language": "en",
+    "tone": "request",
+    "text": "more vlogs please",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0097",
+    "language": "en",
+    "tone": "request",
+    "text": "take us with you next time",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0098",
+    "language": "en",
+    "tone": "request",
+    "text": "do a q&a vlog please",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0099",
+    "language": "en",
+    "tone": "request",
+    "text": "more cooking vlogs please",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0100",
+    "language": "en",
+    "tone": "request",
+    "text": "do a night routine next",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0101",
+    "language": "en",
+    "tone": "request",
+    "text": "vlog the whole trip please",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0102",
+    "language": "en",
+    "tone": "request",
+    "text": "show us the new apartment",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0103",
+    "language": "en",
+    "tone": "request",
+    "text": "please do a what i eat in a day",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0104",
+    "language": "en",
+    "tone": "request",
+    "text": "take us grocery shopping with you",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0105",
+    "language": "en",
+    "tone": "request",
+    "text": "more morning routine videos pls",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0106",
+    "language": "en",
+    "tone": "request",
+    "text": "please do a weekly vlog",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-request-0107",
+    "language": "en",
+    "tone": "request",
+    "text": "release the full short film please",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0108",
+    "language": "en",
+    "tone": "request",
+    "text": "please submit this to festivals",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0109",
+    "language": "en",
+    "tone": "request",
+    "text": "make this a feature length film",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0110",
+    "language": "en",
+    "tone": "request",
+    "text": "please do a director's commentary",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0111",
+    "language": "en",
+    "tone": "request",
+    "text": "show us how you shot the opening scene",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0112",
+    "language": "en",
+    "tone": "request",
+    "text": "please make a sequel",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0113",
+    "language": "en",
+    "tone": "request",
+    "text": "we need a prequel about the brother",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0114",
+    "language": "en",
+    "tone": "request",
+    "text": "spin off for the side character please",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "en-request-0115",
+    "language": "en",
+    "tone": "request",
+    "text": "make a full series of this ad lol",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-request-0116",
+    "language": "en",
+    "tone": "request",
+    "text": "please make more ads like this",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-request-0117",
+    "language": "en",
+    "tone": "request",
+    "text": "show us how this ad was shot",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-request-0118",
+    "language": "en",
+    "tone": "request",
+    "text": "behind the scenes of the ad please",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-request-0119",
+    "language": "en",
+    "tone": "request",
+    "text": "do a duet with this",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-request-0120",
+    "language": "en",
+    "tone": "request",
+    "text": "someone stitch this",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-request-0121",
+    "language": "en",
+    "tone": "request",
+    "text": "someone duet this with the original",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-request-0122",
+    "language": "en",
+    "tone": "request",
+    "text": "make this a sound please",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-request-0123",
+    "language": "en",
+    "tone": "request",
+    "text": "can you go live tonight?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "en-request-0124",
+    "language": "en",
+    "tone": "request",
+    "text": "{creator} pin this comment 📌"
+  },
+  { "id": "en-request-0125", "language": "en", "tone": "request", "text": "pin me pls" },
+  { "id": "en-request-0126", "language": "en", "tone": "request", "text": "please pin this 🙏" },
+  {
+    "id": "en-request-0127",
+    "language": "en",
+    "tone": "request",
+    "text": "heart this comment pls ❤️"
+  },
+  { "id": "en-request-0128", "language": "en", "tone": "request", "text": "reply pls 🥺" },
+  {
+    "id": "en-request-0129",
+    "language": "en",
+    "tone": "request",
+    "text": "reply to my comment please"
+  },
+  { "id": "en-request-0130", "language": "en", "tone": "request", "text": "can i get a hi?" },
+  {
+    "id": "en-request-0131",
+    "language": "en",
+    "tone": "request",
+    "text": "say hi to me in your next video"
+  },
+  { "id": "en-request-0132", "language": "en", "tone": "request", "text": "shoutout please" },
+  {
+    "id": "en-request-0133",
+    "language": "en",
+    "tone": "request",
+    "text": "can you give me a shoutout"
+  },
+  {
+    "id": "en-request-0134",
+    "language": "en",
+    "tone": "request",
+    "text": "shout out my city next time"
+  },
+  {
+    "id": "en-request-0135",
+    "language": "en",
+    "tone": "request",
+    "text": "come to my city next!!"
+  },
+  {
+    "id": "en-request-0136",
+    "language": "en",
+    "tone": "request",
+    "text": "please come to my country"
+  },
+  { "id": "en-request-0137", "language": "en", "tone": "request", "text": "do a meet and greet!!" },
+  {
+    "id": "en-request-0138",
+    "language": "en",
+    "tone": "request",
+    "text": "can you make one about cats next"
+  },
+  {
+    "id": "en-request-0139",
+    "language": "en",
+    "tone": "request",
+    "text": "do one with your dog next"
+  },
+  {
+    "id": "en-request-0140",
+    "language": "en",
+    "tone": "request",
+    "text": "do one with your dad next 😂"
+  },
+  {
+    "id": "en-request-0141",
+    "language": "en",
+    "tone": "request",
+    "text": "do one where you switch roles"
+  },
+  {
+    "id": "en-request-0142",
+    "language": "en",
+    "tone": "request",
+    "text": "do the opposite version please"
+  },
+  {
+    "id": "en-request-0143",
+    "language": "en",
+    "tone": "request",
+    "text": "try it with your eyes closed next lol"
+  },
+  {
+    "id": "en-request-0144",
+    "language": "en",
+    "tone": "request",
+    "text": "do it again but faster"
+  },
+  { "id": "en-request-0145", "language": "en", "tone": "request", "text": "now do it backwards" },
+  {
+    "id": "en-request-0146",
+    "language": "en",
+    "tone": "request",
+    "text": "do it again but in slow motion"
+  },
+  {
+    "id": "en-request-0147",
+    "language": "en",
+    "tone": "request",
+    "text": "try this with your friends next"
+  },
+  { "id": "en-request-0148", "language": "en", "tone": "request", "text": "try this in public" },
+  {
+    "id": "en-request-0149",
+    "language": "en",
+    "tone": "request",
+    "text": "do this challenge with your sister"
+  },
+  { "id": "en-request-0150", "language": "en", "tone": "request", "text": "react to this please" },
+  {
+    "id": "en-request-0151",
+    "language": "en",
+    "tone": "request",
+    "text": "please react to the comments"
+  },
+  {
+    "id": "en-request-0152",
+    "language": "en",
+    "tone": "request",
+    "text": "reply to the comments in a video"
+  },
+  {
+    "id": "en-request-0153",
+    "language": "en",
+    "tone": "request",
+    "text": "read the comments in a video pls"
+  },
+  {
+    "id": "en-request-0154",
+    "language": "en",
+    "tone": "request",
+    "text": "do a video answering the comments"
+  },
+  {
+    "id": "en-request-0155",
+    "language": "en",
+    "tone": "request",
+    "text": "let's get this to the top so they see it"
+  },
+  {
+    "id": "en-request-0156",
+    "language": "en",
+    "tone": "request",
+    "text": "like this so they make a part 2"
+  },
+  {
+    "id": "en-request-0157",
+    "language": "en",
+    "tone": "request",
+    "text": "everybody like this so they see it 🙏"
+  },
+  {
+    "id": "en-request-0158",
+    "language": "en",
+    "tone": "request",
+    "text": "help me get this to the top"
+  },
+  { "id": "en-request-0159", "language": "en", "tone": "request", "text": "bump" },
+  {
+    "id": "en-request-0160",
+    "language": "en",
+    "tone": "request",
+    "text": "bumping this so they post part 2"
+  },
+  {
+    "id": "en-request-0161",
+    "language": "en",
+    "tone": "request",
+    "text": "👆 this, we need part 2"
+  }
+]

@@ -1,0 +1,1261 @@
+[
+  {
+    "id": "es-question-0001",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo se llama la canción?"
+  },
+  {
+    "id": "es-question-0002",
+    "language": "es",
+    "tone": "question",
+    "text": "nombre de la canción???"
+  },
+  {
+    "id": "es-question-0003",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien sabe qué canción es?"
+  },
+  { "id": "es-question-0004", "language": "es", "tone": "question", "text": "canción?" },
+  { "id": "es-question-0005", "language": "es", "tone": "question", "text": "¿cuál es el audio?" },
+  {
+    "id": "es-question-0006",
+    "language": "es",
+    "tone": "question",
+    "text": "cómo se llama este audio 🙏"
+  },
+  {
+    "id": "es-question-0007",
+    "language": "es",
+    "tone": "question",
+    "text": "¿con qué cámara grabas?"
+  },
+  { "id": "es-question-0008", "language": "es", "tone": "question", "text": "¿qué cámara es?" },
+  { "id": "es-question-0009", "language": "es", "tone": "question", "text": "¿qué lente usaste?" },
+  {
+    "id": "es-question-0010",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo grabaste esto?"
+  },
+  {
+    "id": "es-question-0011",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo conseguiste ese plano?"
+  },
+  {
+    "id": "es-question-0012",
+    "language": "es",
+    "tone": "question",
+    "text": "¿esto es con el móvil??"
+  },
+  {
+    "id": "es-question-0013",
+    "language": "es",
+    "tone": "question",
+    "text": "¿grabado con celular?? no lo puedo creer"
+  },
+  {
+    "id": "es-question-0014",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es real o está editado?"
+  },
+  {
+    "id": "es-question-0015",
+    "language": "es",
+    "tone": "question",
+    "text": "espera, ¿esto es real?"
+  },
+  { "id": "es-question-0016", "language": "es", "tone": "question", "text": "¿es IA o es real?" },
+  {
+    "id": "es-question-0017",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es fake? pregunto en serio"
+  },
+  {
+    "id": "es-question-0018",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo es posible esto?"
+  },
+  { "id": "es-question-0019", "language": "es", "tone": "question", "text": "¿cómo lo hiciste?" },
+  {
+    "id": "es-question-0020",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuánto tardaste en hacer esto?"
+  },
+  {
+    "id": "es-question-0021",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuánto te llevó editarlo?"
+  },
+  {
+    "id": "es-question-0022",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuántas tomas necesitaste? jaja"
+  },
+  {
+    "id": "es-question-0023",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuántos intentos fueron? 😭"
+  },
+  {
+    "id": "es-question-0024",
+    "language": "es",
+    "tone": "question",
+    "text": "¿con qué app editas?"
+  },
+  {
+    "id": "es-question-0025",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué programa usas para editar?"
+  },
+  { "id": "es-question-0026", "language": "es", "tone": "question", "text": "¿dónde es esto?" },
+  { "id": "es-question-0027", "language": "es", "tone": "question", "text": "¿dónde lo grabaste?" },
+  {
+    "id": "es-question-0028",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué lugar es este?? necesito ir"
+  },
+  { "id": "es-question-0029", "language": "es", "tone": "question", "text": "¿en qué ciudad es?" },
+  { "id": "es-question-0030", "language": "es", "tone": "question", "text": "¿qué país es?" },
+  { "id": "es-question-0031", "language": "es", "tone": "question", "text": "¿esto es en España?" },
+  { "id": "es-question-0032", "language": "es", "tone": "question", "text": "¿es en México?" },
+  {
+    "id": "es-question-0033",
+    "language": "es",
+    "tone": "question",
+    "text": "¿dónde puedo ver el video completo?"
+  },
+  {
+    "id": "es-question-0034",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hay versión completa?"
+  },
+  { "id": "es-question-0035", "language": "es", "tone": "question", "text": "¿y el video entero?" },
+  {
+    "id": "es-question-0036",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hay una versión más larga?"
+  },
+  {
+    "id": "es-question-0037",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo se llama esto?"
+  },
+  {
+    "id": "es-question-0038",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué acaba de pasar?"
+  },
+  {
+    "id": "es-question-0039",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué pasó al final??"
+  },
+  { "id": "es-question-0040", "language": "es", "tone": "question", "text": "¿me perdí de algo?" },
+  {
+    "id": "es-question-0041",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien me explica el final?"
+  },
+  {
+    "id": "es-question-0042",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien me explica qué está pasando?"
+  },
+  {
+    "id": "es-question-0043",
+    "language": "es",
+    "tone": "question",
+    "text": "¿soy la única que no lo entendió?"
+  },
+  {
+    "id": "es-question-0044",
+    "language": "es",
+    "tone": "question",
+    "text": "no lo entendí, ¿alguien me explica?"
+  },
+  { "id": "es-question-0045", "language": "es", "tone": "question", "text": "¿qué significa eso?" },
+  {
+    "id": "es-question-0046",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué dijo en el 0:12?"
+  },
+  {
+    "id": "es-question-0047",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué le susurra al final?"
+  },
+  {
+    "id": "es-question-0048",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué hace el señor del fondo?"
+  },
+  {
+    "id": "es-question-0049",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién es el chico del final?"
+  },
+  {
+    "id": "es-question-0050",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién es la chica de la chaqueta roja?"
+  },
+  { "id": "es-question-0051", "language": "es", "tone": "question", "text": "¿es tu perro?" },
+  {
+    "id": "es-question-0052",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo se llama tu perrito??"
+  },
+  {
+    "id": "es-question-0053",
+    "language": "es",
+    "tone": "question",
+    "text": "¿de qué raza es el perro?"
+  },
+  {
+    "id": "es-question-0054",
+    "language": "es",
+    "tone": "question",
+    "text": "¿el gato está bien? jaja"
+  },
+  {
+    "id": "es-question-0055",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuántos años tiene tu gato?"
+  },
+  { "id": "es-question-0056", "language": "es", "tone": "question", "text": "¿cuánto mides?" },
+  {
+    "id": "es-question-0057",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuántos años tienes si se puede saber?"
+  },
+  {
+    "id": "es-question-0058",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿eres profesional?"
+  },
+  { "id": "es-question-0059", "language": "es", "tone": "question", "text": "¿te dedicas a esto?" },
+  {
+    "id": "es-question-0060",
+    "language": "es",
+    "tone": "question",
+    "text": "¿esto es tu trabajo?"
+  },
+  {
+    "id": "es-question-0061",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo aprendiste a hacer esto?"
+  },
+  {
+    "id": "es-question-0062",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hace cuánto haces esto?"
+  },
+  { "id": "es-question-0063", "language": "es", "tone": "question", "text": "¿dónde aprendiste?" },
+  {
+    "id": "es-question-0064",
+    "language": "es",
+    "tone": "question",
+    "text": "¿autodidacta o estudiaste?"
+  },
+  {
+    "id": "es-question-0065",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿estudiaste cine?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0066",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién escribió el guion?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0067",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuántos días duró el rodaje?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0068",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuánto costó hacer esto?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0069",
+    "language": "es",
+    "tone": "question",
+    "text": "¿esto es un plano secuencia??",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0070",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es parte de un proyecto más grande?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0071",
+    "language": "es",
+    "tone": "question",
+    "text": "¿está basado en una historia real?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0072",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién hizo la banda sonora?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0073",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo se llama el actor? qué bueno es",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0074",
+    "language": "es",
+    "tone": "question",
+    "text": "¿a qué festival lo van a mandar?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0075",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo iluminaste la escena de noche?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0076",
+    "language": "es",
+    "tone": "question",
+    "text": "¿el inicio es con gimbal?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0077",
+    "language": "es",
+    "tone": "question",
+    "text": "¿el corto completo está en algún lado?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0078",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué LUT usaste?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0079",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo hiciste la corrección de color?",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-question-0080",
+    "language": "es",
+    "tone": "question",
+    "text": "¿funciona en mac?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0081",
+    "language": "es",
+    "tone": "question",
+    "text": "¿sirve para windows?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0082",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué versión estás usando?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0083",
+    "language": "es",
+    "tone": "question",
+    "text": "¿funciona en versiones viejas?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0084",
+    "language": "es",
+    "tone": "question",
+    "text": "¿y si no me aparece esa opción en el menú?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0085",
+    "language": "es",
+    "tone": "question",
+    "text": "a mí no me sale ese botón, ¿qué hago?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0086",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué atajo usaste en el 0:23?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0087",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo hiciste que saliera ese menú?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0088",
+    "language": "es",
+    "tone": "question",
+    "text": "¿se puede hacer sin el plugin?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0089",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hay alguna forma gratis de hacerlo?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0090",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué ajuste es el del paso 2?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0091",
+    "language": "es",
+    "tone": "question",
+    "text": "¿se puede hacer desde el móvil?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0092",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuánto tarda alguien que empieza de cero?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0093",
+    "language": "es",
+    "tone": "question",
+    "text": "espera, ¿cómo pasaste del paso 3 al 4??",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0094",
+    "language": "es",
+    "tone": "question",
+    "text": "¿y si después de eso sigue sin funcionar?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0095",
+    "language": "es",
+    "tone": "question",
+    "text": "¿sirve para principiantes?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0096",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuál es el atajo en windows?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0097",
+    "language": "es",
+    "tone": "question",
+    "text": "¿esto sigue funcionando con la última actualización?",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-question-0098",
+    "language": "es",
+    "tone": "question",
+    "text": "¿dónde estás ahora??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0099",
+    "language": "es",
+    "tone": "question",
+    "text": "¿en qué ciudad vives?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0100",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿cuál es tu rutina de mañana?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0101",
+    "language": "es",
+    "tone": "question",
+    "text": "¿de dónde sacas tanta energía por la mañana?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0102",
+    "language": "es",
+    "tone": "question",
+    "text": "¿dónde está esa cafetería??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0103",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es un piso nuevo?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0104",
+    "language": "es",
+    "tone": "question",
+    "text": "¿te mudaste??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0105",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué estás comiendo?? se ve buenísimo",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0106",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo se llama el restaurante?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0107",
+    "language": "es",
+    "tone": "question",
+    "text": "¿a qué hora te levantas??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0108",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo te organizas tan bien?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0109",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué hay en la taza?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0110",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo te grabas tan estable?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-question-0111",
+    "language": "es",
+    "tone": "question",
+    "text": "¿en qué tono está?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0112",
+    "language": "es",
+    "tone": "question",
+    "text": "¿están los acordes en algún lado?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0113",
+    "language": "es",
+    "tone": "question",
+    "text": "¿está en plataformas?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0114",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuándo sale la canción completa??",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0115",
+    "language": "es",
+    "tone": "question",
+    "text": "¿la escribiste tú?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0116",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué guitarra es esa?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0117",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es piano de verdad o teclado?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0118",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién canta?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0119",
+    "language": "es",
+    "tone": "question",
+    "text": "¿a cuántos bpm va?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0120",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es original?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0121",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo lograste ese efecto en la voz?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0122",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué micro usas?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0123",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hay versión instrumental?",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-question-0124",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién dirigió este anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0125",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién hizo este anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0126",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué música suena en el anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0127",
+    "language": "es",
+    "tone": "question",
+    "text": "¿dónde grabaron este anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0128",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo hicieron esa transición del anuncio?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0129",
+    "language": "es",
+    "tone": "question",
+    "text": "¿esto es un anuncio? de verdad no sé",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0130",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es un anuncio o un cortometraje?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-question-0131",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} pasa tu setup de cámara porfa"
+  },
+  {
+    "id": "es-question-0132",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿cuántas horas le metiste a esto?"
+  },
+  {
+    "id": "es-question-0133",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿qué canción es??"
+  },
+  {
+    "id": "es-question-0134",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿dónde queda eso??"
+  },
+  {
+    "id": "es-question-0135",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿vas a subir la versión completa?"
+  },
+  {
+    "id": "es-question-0136",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿tú mismo editas tus videos?"
+  },
+  {
+    "id": "es-question-0137",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿de dónde sacaste la idea?"
+  },
+  {
+    "id": "es-question-0138",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿cuándo sale el próximo?"
+  },
+  {
+    "id": "es-question-0139",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿es real??"
+  },
+  {
+    "id": "es-question-0140",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿qué app es esa?"
+  },
+  {
+    "id": "es-question-0141",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿de dónde sacas tantas ideas?"
+  },
+  {
+    "id": "es-question-0142",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿cómo sos tan bueno en esto?"
+  },
+  {
+    "id": "es-question-0143",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿cuánto llevas haciendo esto?"
+  },
+  {
+    "id": "es-question-0144",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿qué consejo le das a alguien que empieza?"
+  },
+  {
+    "id": "es-question-0145",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿estudiaste algo de esto o sos autodidacta?"
+  },
+  {
+    "id": "es-question-0146",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} parce ¿usted con qué graba?"
+  },
+  {
+    "id": "es-question-0147",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} wey ¿cómo le hiciste?"
+  },
+  {
+    "id": "es-question-0148",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} tío ¿cómo lo has hecho?"
+  },
+  { "id": "es-question-0149", "language": "es", "tone": "question", "text": "¿cómo??" },
+  { "id": "es-question-0150", "language": "es", "tone": "question", "text": "¿por qué?" },
+  { "id": "es-question-0151", "language": "es", "tone": "question", "text": "pero ¿por qué?" },
+  { "id": "es-question-0152", "language": "es", "tone": "question", "text": "¿y eso por qué?" },
+  { "id": "es-question-0153", "language": "es", "tone": "question", "text": "¿qué?? 😳" },
+  { "id": "es-question-0154", "language": "es", "tone": "question", "text": "¿eh?" },
+  { "id": "es-question-0155", "language": "es", "tone": "question", "text": "¿perdón?" },
+  { "id": "es-question-0156", "language": "es", "tone": "question", "text": "¿perdón, qué?" },
+  {
+    "id": "es-question-0157",
+    "language": "es",
+    "tone": "question",
+    "text": "¿estoy soñando o qué?"
+  },
+  {
+    "id": "es-question-0158",
+    "language": "es",
+    "tone": "question",
+    "text": "¿podemos hablar del final??"
+  },
+  {
+    "id": "es-question-0159",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien más lo está viendo en bucle?"
+  },
+  {
+    "id": "es-question-0160",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien más escucha ese ruido de fondo?"
+  },
+  {
+    "id": "es-question-0161",
+    "language": "es",
+    "tone": "question",
+    "text": "¿en serio esto solo tiene {n}k vistas??"
+  },
+  {
+    "id": "es-question-0162",
+    "language": "es",
+    "tone": "question",
+    "text": "¿por qué nadie habla de esto?"
+  },
+  {
+    "id": "es-question-0163",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo no es tendencia esto?"
+  },
+  {
+    "id": "es-question-0164",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién lo sigue viendo años después?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-question-0165",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien aquí por la tendencia?"
+  },
+  {
+    "id": "es-question-0166",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién viene del otro video?"
+  },
+  {
+    "id": "es-question-0167",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién viene del dúo?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-question-0168",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién llegó por el stitch?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-question-0169",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo se llama el filtro?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-question-0170",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien sabe qué efecto es?",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-question-0171",
+    "language": "es",
+    "tone": "question",
+    "text": "¿quién lo está viendo a las 3am?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-question-0172",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien más llegó por recomendados?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-question-0173",
+    "language": "es",
+    "tone": "question",
+    "text": "¿el algoritmo los trajo aquí también?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-question-0174",
+    "language": "es",
+    "tone": "question",
+    "text": "¿en qué minuto está lo mejor?",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-question-0175",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es el original o un repost?",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-question-0176",
+    "language": "es",
+    "tone": "question",
+    "text": "espera ¿esto es de hoy??",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-question-0177",
+    "language": "es",
+    "tone": "question",
+    "text": "¿fuente?",
+    "platforms": ["x"]
+  },
+  { "id": "es-question-0178", "language": "es", "tone": "question", "text": "¿es tendencia?" },
+  { "id": "es-question-0179", "language": "es", "tone": "question", "text": "¿qué trend es este?" },
+  { "id": "es-question-0180", "language": "es", "tone": "question", "text": "¿hay parte 2?" },
+  { "id": "es-question-0181", "language": "es", "tone": "question", "text": "¿y la parte 2?" },
+  {
+    "id": "es-question-0182",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuándo sale el próximo video?"
+  },
+  {
+    "id": "es-question-0183",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuándo vuelves a subir?"
+  },
+  {
+    "id": "es-question-0184",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cada cuánto subes videos?"
+  },
+  {
+    "id": "es-question-0185",
+    "language": "es",
+    "tone": "question",
+    "text": "¿tienes otra cuenta?"
+  },
+  {
+    "id": "es-question-0186",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hay detrás de cámaras?"
+  },
+  { "id": "es-question-0187", "language": "es", "tone": "question", "text": "¿hay tomas falsas?" },
+  {
+    "id": "es-question-0188",
+    "language": "es",
+    "tone": "question",
+    "text": "¿se puede ver el antes y el después?"
+  },
+  {
+    "id": "es-question-0189",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuánto costó hacerlo?"
+  },
+  {
+    "id": "es-question-0190",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué fue lo más difícil?"
+  },
+  {
+    "id": "es-question-0191",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué harías distinto la próxima vez?"
+  },
+  {
+    "id": "es-question-0192",
+    "language": "es",
+    "tone": "question",
+    "text": "¿algún consejo para principiantes?"
+  },
+  {
+    "id": "es-question-0193",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo empiezo con esto?"
+  },
+  {
+    "id": "es-question-0194",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es difícil de aprender?"
+  },
+  {
+    "id": "es-question-0195",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es tarde para empezar a los 30?"
+  },
+  {
+    "id": "es-question-0196",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hace falta equipo caro?"
+  },
+  {
+    "id": "es-question-0197",
+    "language": "es",
+    "tone": "question",
+    "text": "¿lleva mucha práctica?"
+  },
+  {
+    "id": "es-question-0198",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuántas horas al día practicas?"
+  },
+  {
+    "id": "es-question-0199",
+    "language": "es",
+    "tone": "question",
+    "text": "{creator} ¿cuál es el secreto?"
+  },
+  { "id": "es-question-0200", "language": "es", "tone": "question", "text": "¿cuál es el truco?" },
+  {
+    "id": "es-question-0201",
+    "language": "es",
+    "tone": "question",
+    "text": "¿hay truco o es puro talento?"
+  },
+  { "id": "es-question-0202", "language": "es", "tone": "question", "text": "¿eres zurdo?" },
+  { "id": "es-question-0203", "language": "es", "tone": "question", "text": "¿usas trípode?" },
+  {
+    "id": "es-question-0204",
+    "language": "es",
+    "tone": "question",
+    "text": "¿está acelerado o es tiempo real?"
+  },
+  {
+    "id": "es-question-0205",
+    "language": "es",
+    "tone": "question",
+    "text": "¿está en cámara lenta?"
+  },
+  {
+    "id": "es-question-0206",
+    "language": "es",
+    "tone": "question",
+    "text": "espera, ¿es la misma persona?"
+  },
+  { "id": "es-question-0207", "language": "es", "tone": "question", "text": "¿esa es tu mamá??" },
+  { "id": "es-question-0208", "language": "es", "tone": "question", "text": "¿es tu hermano?" },
+  {
+    "id": "es-question-0209",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es tu pareja? qué lindos"
+  },
+  { "id": "es-question-0210", "language": "es", "tone": "question", "text": "¿son gemelos??" },
+  {
+    "id": "es-question-0211",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cuánta gente trabajó en esto?"
+  },
+  {
+    "id": "es-question-0212",
+    "language": "es",
+    "tone": "question",
+    "text": "¿estaba planeado o improvisado?"
+  },
+  { "id": "es-question-0213", "language": "es", "tone": "question", "text": "¿estaba guionizado?" },
+  {
+    "id": "es-question-0214",
+    "language": "es",
+    "tone": "question",
+    "text": "¿eso pasó de verdad?"
+  },
+  { "id": "es-question-0215", "language": "es", "tone": "question", "text": "¿eso dolió?? 😬" },
+  { "id": "es-question-0216", "language": "es", "tone": "question", "text": "¿estás bien??" },
+  {
+    "id": "es-question-0217",
+    "language": "es",
+    "tone": "question",
+    "text": "¿él está bien? jajaja"
+  },
+  {
+    "id": "es-question-0218",
+    "language": "es",
+    "tone": "question",
+    "text": "¿a qué hora grabaste esto?"
+  },
+  {
+    "id": "es-question-0219",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es el atardecer o un filtro?"
+  },
+  {
+    "id": "es-question-0220",
+    "language": "es",
+    "tone": "question",
+    "text": "¿qué tiempo hace allí?"
+  },
+  {
+    "id": "es-question-0221",
+    "language": "es",
+    "tone": "question",
+    "text": "¿siempre hace tanto sol ahí?"
+  },
+  { "id": "es-question-0222", "language": "es", "tone": "question", "text": "che ¿dónde es esto?" },
+  {
+    "id": "es-question-0223",
+    "language": "es",
+    "tone": "question",
+    "text": "che ¿cómo hiciste eso?"
+  },
+  { "id": "es-question-0224", "language": "es", "tone": "question", "text": "¿vos lo editaste?" },
+  {
+    "id": "es-question-0225",
+    "language": "es",
+    "tone": "question",
+    "text": "¿lo grabaste vos solo?"
+  },
+  { "id": "es-question-0226", "language": "es", "tone": "question", "text": "wey ¿dónde es eso?" },
+  { "id": "es-question-0227", "language": "es", "tone": "question", "text": "¿neta es real?" },
+  { "id": "es-question-0228", "language": "es", "tone": "question", "text": "¿a poco es real?" },
+  {
+    "id": "es-question-0229",
+    "language": "es",
+    "tone": "question",
+    "text": "oye ¿y esto dónde es?"
+  },
+  {
+    "id": "es-question-0230",
+    "language": "es",
+    "tone": "question",
+    "text": "parce ¿eso dónde queda?"
+  },
+  {
+    "id": "es-question-0231",
+    "language": "es",
+    "tone": "question",
+    "text": "¿eso queda en Medellín?"
+  },
+  { "id": "es-question-0232", "language": "es", "tone": "question", "text": "tío ¿esto dónde es?" },
+  {
+    "id": "es-question-0233",
+    "language": "es",
+    "tone": "question",
+    "text": "¿esto es en Madrid o en Barcelona?"
+  },
+  {
+    "id": "es-question-0234",
+    "language": "es",
+    "tone": "question",
+    "text": "¿es en Buenos Aires?"
+  },
+  {
+    "id": "es-question-0235",
+    "language": "es",
+    "tone": "question",
+    "text": "¿cómo que no hay parte 2?"
+  },
+  {
+    "id": "es-question-0236",
+    "language": "es",
+    "tone": "question",
+    "text": "¿alguien tiene el link del original?"
+  }
+]

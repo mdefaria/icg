@@ -1,0 +1,1032 @@
+[
+  {
+    "id": "es-critical-0001",
+    "language": "es",
+    "tone": "critical",
+    "text": "el audio está muy bajo"
+  },
+  {
+    "id": "es-critical-0002",
+    "language": "es",
+    "tone": "critical",
+    "text": "casi no se te escucha con la música"
+  },
+  {
+    "id": "es-critical-0003",
+    "language": "es",
+    "tone": "critical",
+    "text": "la música está demasiado alta, no se oye lo que dicen"
+  },
+  {
+    "id": "es-critical-0004",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} baja un poco la música la próxima"
+  },
+  {
+    "id": "es-critical-0005",
+    "language": "es",
+    "tone": "critical",
+    "text": "el audio está desincronizado"
+  },
+  {
+    "id": "es-critical-0006",
+    "language": "es",
+    "tone": "critical",
+    "text": "¿soy yo o el audio va desfasado?"
+  },
+  {
+    "id": "es-critical-0007",
+    "language": "es",
+    "tone": "critical",
+    "text": "el volumen sube y baja todo el rato"
+  },
+  {
+    "id": "es-critical-0008",
+    "language": "es",
+    "tone": "critical",
+    "text": "el micro satura en el 0:20"
+  },
+  {
+    "id": "es-critical-0009",
+    "language": "es",
+    "tone": "critical",
+    "text": "se escucha mucho ruido de fondo"
+  },
+  {
+    "id": "es-critical-0010",
+    "language": "es",
+    "tone": "critical",
+    "text": "los colores se ven un poco lavados"
+  },
+  {
+    "id": "es-critical-0011",
+    "language": "es",
+    "tone": "critical",
+    "text": "está muy oscuro, no se ve casi nada"
+  },
+  {
+    "id": "es-critical-0012",
+    "language": "es",
+    "tone": "critical",
+    "text": "la luz en la cara es muy dura"
+  },
+  {
+    "id": "es-critical-0013",
+    "language": "es",
+    "tone": "critical",
+    "text": "demasiado contraste para mi gusto"
+  },
+  {
+    "id": "es-critical-0014",
+    "language": "es",
+    "tone": "critical",
+    "text": "el color está muy naranja para mí"
+  },
+  {
+    "id": "es-critical-0015",
+    "language": "es",
+    "tone": "critical",
+    "text": "se ve un poco borroso"
+  },
+  { "id": "es-critical-0016", "language": "es", "tone": "critical", "text": "el foco va y viene" },
+  {
+    "id": "es-critical-0017",
+    "language": "es",
+    "tone": "critical",
+    "text": "la cámara se mueve tanto que me mareé"
+  },
+  {
+    "id": "es-critical-0018",
+    "language": "es",
+    "tone": "critical",
+    "text": "demasiado movido para mí"
+  },
+  {
+    "id": "es-critical-0019",
+    "language": "es",
+    "tone": "critical",
+    "text": "los cortes son muy rápidos, no se entiende"
+  },
+  {
+    "id": "es-critical-0020",
+    "language": "es",
+    "tone": "critical",
+    "text": "demasiados jump cuts"
+  },
+  {
+    "id": "es-critical-0021",
+    "language": "es",
+    "tone": "critical",
+    "text": "a la mitad se hace lento"
+  },
+  {
+    "id": "es-critical-0022",
+    "language": "es",
+    "tone": "critical",
+    "text": "la parte del medio sobra un poco"
+  },
+  {
+    "id": "es-critical-0023",
+    "language": "es",
+    "tone": "critical",
+    "text": "podría durar 30 segundos menos"
+  },
+  {
+    "id": "es-critical-0024",
+    "language": "es",
+    "tone": "critical",
+    "text": "se hizo un poco largo la verdad"
+  },
+  { "id": "es-critical-0025", "language": "es", "tone": "critical", "text": "la intro es eterna" },
+  {
+    "id": "es-critical-0026",
+    "language": "es",
+    "tone": "critical",
+    "text": "adelanten al 0:45, de nada"
+  },
+  {
+    "id": "es-critical-0027",
+    "language": "es",
+    "tone": "critical",
+    "text": "el final se sintió apurado"
+  },
+  {
+    "id": "es-critical-0028",
+    "language": "es",
+    "tone": "critical",
+    "text": "el final llegó de la nada"
+  },
+  {
+    "id": "es-critical-0029",
+    "language": "es",
+    "tone": "critical",
+    "text": "se terminó demasiado pronto"
+  },
+  {
+    "id": "es-critical-0030",
+    "language": "es",
+    "tone": "critical",
+    "text": "el final no me convenció"
+  },
+  {
+    "id": "es-critical-0031",
+    "language": "es",
+    "tone": "critical",
+    "text": "el giro se veía venir"
+  },
+  {
+    "id": "es-critical-0032",
+    "language": "es",
+    "tone": "critical",
+    "text": "el giro se veía desde lejos"
+  },
+  {
+    "id": "es-critical-0033",
+    "language": "es",
+    "tone": "critical",
+    "text": "no entiendo tanto hype la verdad"
+  },
+  {
+    "id": "es-critical-0034",
+    "language": "es",
+    "tone": "critical",
+    "text": "no es tu mejor video"
+  },
+  {
+    "id": "es-critical-0035",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} el anterior estaba mejor"
+  },
+  {
+    "id": "es-critical-0036",
+    "language": "es",
+    "tone": "critical",
+    "text": "me gustaban más los videos de antes"
+  },
+  {
+    "id": "es-critical-0037",
+    "language": "es",
+    "tone": "critical",
+    "text": "no sé, con este no conecté"
+  },
+  { "id": "es-critical-0038", "language": "es", "tone": "critical", "text": "está bien, supongo" },
+  {
+    "id": "es-critical-0039",
+    "language": "es",
+    "tone": "critical",
+    "text": "está bien pero nada del otro mundo"
+  },
+  { "id": "es-critical-0040", "language": "es", "tone": "critical", "text": "meh, normalito" },
+  { "id": "es-critical-0041", "language": "es", "tone": "critical", "text": "normalito la verdad" },
+  { "id": "es-critical-0042", "language": "es", "tone": "critical", "text": "del montón" },
+  {
+    "id": "es-critical-0043",
+    "language": "es",
+    "tone": "critical",
+    "text": "un poco sobrevalorado"
+  },
+  { "id": "es-critical-0044", "language": "es", "tone": "critical", "text": "sobrevalorado" },
+  {
+    "id": "es-critical-0045",
+    "language": "es",
+    "tone": "critical",
+    "text": "un poco cringe no voy a mentir"
+  },
+  {
+    "id": "es-critical-0046",
+    "language": "es",
+    "tone": "critical",
+    "text": "da un poco de cringe"
+  },
+  {
+    "id": "es-critical-0047",
+    "language": "es",
+    "tone": "critical",
+    "text": "la actuación está un poco rígida",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0048",
+    "language": "es",
+    "tone": "critical",
+    "text": "los diálogos suenan forzados",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0049",
+    "language": "es",
+    "tone": "critical",
+    "text": "la historia cuesta seguirla",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0050",
+    "language": "es",
+    "tone": "critical",
+    "text": "visualmente bonito pero la historia no va a ningún lado",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0051",
+    "language": "es",
+    "tone": "critical",
+    "text": "la música está haciendo todo el trabajo aquí",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0052",
+    "language": "es",
+    "tone": "critical",
+    "text": "planos preciosos pero no sentí nada",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0053",
+    "language": "es",
+    "tone": "critical",
+    "text": "la mezcla de sonido necesita trabajo, el diálogo se pierde",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0054",
+    "language": "es",
+    "tone": "critical",
+    "text": "la banda sonora tapa la escena del 1:10",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0055",
+    "language": "es",
+    "tone": "critical",
+    "text": "las escenas nocturnas están tan oscuras que no se ve nada",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0056",
+    "language": "es",
+    "tone": "critical",
+    "text": "me faltó más tiempo con la protagonista",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0057",
+    "language": "es",
+    "tone": "critical",
+    "text": "la voz en off sobraba",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0058",
+    "language": "es",
+    "tone": "critical",
+    "text": "los actores son buenos pero el guion no los ayuda",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-critical-0059",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} te saltaste un paso",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0060",
+    "language": "es",
+    "tone": "critical",
+    "text": "fuiste muy rápido en la mitad",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0061",
+    "language": "es",
+    "tone": "critical",
+    "text": "no me funcionó, el menú ahora es distinto",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0062",
+    "language": "es",
+    "tone": "critical",
+    "text": "esto ya está desactualizado, la opción cambió de sitio",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0063",
+    "language": "es",
+    "tone": "critical",
+    "text": "no explicaste el segundo paso",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0064",
+    "language": "es",
+    "tone": "critical",
+    "text": "más despacio por favor, tuve que pausar como 20 veces",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0065",
+    "language": "es",
+    "tone": "critical",
+    "text": "un poco confuso para principiantes",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0066",
+    "language": "es",
+    "tone": "critical",
+    "text": "estaría mejor con los pasos escritos en pantalla",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0067",
+    "language": "es",
+    "tone": "critical",
+    "text": "el título dice fácil y no fue fácil",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0068",
+    "language": "es",
+    "tone": "critical",
+    "text": "ojo que esto solo funciona en la versión de pago",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0069",
+    "language": "es",
+    "tone": "critical",
+    "text": "es más rápido con el atajo, la verdad",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-critical-0070",
+    "language": "es",
+    "tone": "critical",
+    "text": "la voz desafina un poco en el estribillo",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0071",
+    "language": "es",
+    "tone": "critical",
+    "text": "demasiado autotune",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0072",
+    "language": "es",
+    "tone": "critical",
+    "text": "la mezcla suena muy sucia",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0073",
+    "language": "es",
+    "tone": "critical",
+    "text": "el beat está bien pero la letra meh",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0074",
+    "language": "es",
+    "tone": "critical",
+    "text": "el puente se siente sin terminar",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0075",
+    "language": "es",
+    "tone": "critical",
+    "text": "la original era mejor",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0076",
+    "language": "es",
+    "tone": "critical",
+    "text": "suena como todas las canciones de este año",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0077",
+    "language": "es",
+    "tone": "critical",
+    "text": "los bajos están altísimos con auriculares",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-critical-0078",
+    "language": "es",
+    "tone": "critical",
+    "text": "este anuncio es larguísimo",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0079",
+    "language": "es",
+    "tone": "critical",
+    "text": "demasiados anuncios últimamente",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0080",
+    "language": "es",
+    "tone": "critical",
+    "text": "he visto este anuncio 40 veces hoy",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0081",
+    "language": "es",
+    "tone": "critical",
+    "text": "el anuncio está bien pero ¿por qué suena tan alto?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0082",
+    "language": "es",
+    "tone": "critical",
+    "text": "buen anuncio pero sigo sin saber de qué es",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0083",
+    "language": "es",
+    "tone": "critical",
+    "text": "vi el anuncio entero y no entendí nada",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0084",
+    "language": "es",
+    "tone": "critical",
+    "text": "bien editado, pero es la tercera vez que me sale en una hora",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "es-critical-0085",
+    "language": "es",
+    "tone": "critical",
+    "text": "los vlogs antes eran más tranquis",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-critical-0086",
+    "language": "es",
+    "tone": "critical",
+    "text": "mucha charla y poco viaje",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-critical-0087",
+    "language": "es",
+    "tone": "critical",
+    "text": "ni siquiera enseñaste el sitio 😭",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-critical-0088",
+    "language": "es",
+    "tone": "critical",
+    "text": "este vlog se sintió un poco apurado",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-critical-0089",
+    "language": "es",
+    "tone": "critical",
+    "text": "extraño los vlogs largos",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-critical-0090",
+    "language": "es",
+    "tone": "critical",
+    "text": "título clickbait",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-critical-0091",
+    "language": "es",
+    "tone": "critical",
+    "text": "la miniatura engaña",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-critical-0092",
+    "language": "es",
+    "tone": "critical",
+    "text": "mucho patrocinio para un video de 5 minutos",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-critical-0093",
+    "language": "es",
+    "tone": "critical",
+    "text": "los primeros 2 minutos sobran",
+    "platforms": ["youtube"]
+  },
+  {
+    "id": "es-critical-0094",
+    "language": "es",
+    "tone": "critical",
+    "text": "esto es un resubido",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-critical-0095",
+    "language": "es",
+    "tone": "critical",
+    "text": "los subtítulos tapan todo el video",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-critical-0096",
+    "language": "es",
+    "tone": "critical",
+    "text": "el texto desaparece antes de que lo pueda leer",
+    "platforms": ["tiktok"]
+  },
+  {
+    "id": "es-critical-0097",
+    "language": "es",
+    "tone": "critical",
+    "text": "vale pero ¿para quién es esto?",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-critical-0098",
+    "language": "es",
+    "tone": "critical",
+    "text": "no es la opinión que crees que es",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-critical-0099",
+    "language": "es",
+    "tone": "critical",
+    "text": "esto no es tan profundo como cree el texto",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-critical-0100",
+    "language": "es",
+    "tone": "critical",
+    "text": "todos en las respuestas actuando como si fuera revolucionario, increíble",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-critical-0101",
+    "language": "es",
+    "tone": "critical",
+    "text": "hemos visto este mismo video 100 veces",
+    "platforms": ["x"]
+  },
+  {
+    "id": "es-critical-0102",
+    "language": "es",
+    "tone": "critical",
+    "text": "con todo respeto, no",
+    "platforms": ["x"]
+  },
+  { "id": "es-critical-0103", "language": "es", "tone": "critical", "text": "no estoy de acuerdo" },
+  {
+    "id": "es-critical-0104",
+    "language": "es",
+    "tone": "critical",
+    "text": "para nada de acuerdo"
+  },
+  {
+    "id": "es-critical-0105",
+    "language": "es",
+    "tone": "critical",
+    "text": "eso no es del todo cierto"
+  },
+  {
+    "id": "es-critical-0106",
+    "language": "es",
+    "tone": "critical",
+    "text": "así no funciona jaja"
+  },
+  { "id": "es-critical-0107", "language": "es", "tone": "critical", "text": "eso no es correcto" },
+  {
+    "id": "es-critical-0108",
+    "language": "es",
+    "tone": "critical",
+    "text": "esto es un poco engañoso"
+  },
+  {
+    "id": "es-critical-0109",
+    "language": "es",
+    "tone": "critical",
+    "text": "seguro que está preparado"
+  },
+  {
+    "id": "es-critical-0110",
+    "language": "es",
+    "tone": "critical",
+    "text": "se nota a leguas que está actuado"
+  },
+  {
+    "id": "es-critical-0111",
+    "language": "es",
+    "tone": "critical",
+    "text": "la reacción falsa 😐"
+  },
+  {
+    "id": "es-critical-0112",
+    "language": "es",
+    "tone": "critical",
+    "text": "esto parece guionizado"
+  },
+  {
+    "id": "es-critical-0113",
+    "language": "es",
+    "tone": "critical",
+    "text": "se esfuerza demasiado"
+  },
+  {
+    "id": "es-critical-0114",
+    "language": "es",
+    "tone": "critical",
+    "text": "la tendencia ya pasó"
+  },
+  {
+    "id": "es-critical-0115",
+    "language": "es",
+    "tone": "critical",
+    "text": "esta tendencia ya cansa"
+  },
+  {
+    "id": "es-critical-0116",
+    "language": "es",
+    "tone": "critical",
+    "text": "lo hemos visto mil veces"
+  },
+  {
+    "id": "es-critical-0117",
+    "language": "es",
+    "tone": "critical",
+    "text": "mucha gente ya hizo esto"
+  },
+  {
+    "id": "es-critical-0118",
+    "language": "es",
+    "tone": "critical",
+    "text": "nada nuevo la verdad"
+  },
+  {
+    "id": "es-critical-0119",
+    "language": "es",
+    "tone": "critical",
+    "text": "¿el mismo video que la semana pasada?"
+  },
+  {
+    "id": "es-critical-0120",
+    "language": "es",
+    "tone": "critical",
+    "text": "¿no subiste esto ya?"
+  },
+  {
+    "id": "es-critical-0121",
+    "language": "es",
+    "tone": "critical",
+    "text": "¿por qué todo el mundo sube lo mismo?"
+  },
+  {
+    "id": "es-critical-0122",
+    "language": "es",
+    "tone": "critical",
+    "text": "la descripción exagera un montón"
+  },
+  {
+    "id": "es-critical-0123",
+    "language": "es",
+    "tone": "critical",
+    "text": "el filtro es demasiado fuerte"
+  },
+  {
+    "id": "es-critical-0124",
+    "language": "es",
+    "tone": "critical",
+    "text": "demasiado filtro, no se ve nada"
+  },
+  {
+    "id": "es-critical-0125",
+    "language": "es",
+    "tone": "critical",
+    "text": "los subtítulos están llenos de faltas"
+  },
+  {
+    "id": "es-critical-0126",
+    "language": "es",
+    "tone": "critical",
+    "text": "los subtítulos van un segundo atrasados"
+  },
+  {
+    "id": "es-critical-0127",
+    "language": "es",
+    "tone": "critical",
+    "text": "la letra es muy pequeña para leerla en el móvil"
+  },
+  {
+    "id": "es-critical-0128",
+    "language": "es",
+    "tone": "critical",
+    "text": "la tipografía no se lee"
+  },
+  {
+    "id": "es-critical-0129",
+    "language": "es",
+    "tone": "critical",
+    "text": "las transiciones son un poco excesivas"
+  },
+  {
+    "id": "es-critical-0130",
+    "language": "es",
+    "tone": "critical",
+    "text": "los efectos de sonido molestan un poco"
+  },
+  {
+    "id": "es-critical-0131",
+    "language": "es",
+    "tone": "critical",
+    "text": "la canción no pega con el video"
+  },
+  {
+    "id": "es-critical-0132",
+    "language": "es",
+    "tone": "critical",
+    "text": "canción equivocada para esto"
+  },
+  { "id": "es-critical-0133", "language": "es", "tone": "critical", "text": "el zoom sobraba" },
+  {
+    "id": "es-critical-0134",
+    "language": "es",
+    "tone": "critical",
+    "text": "el formato está mal, se ve cortado en el celu"
+  },
+  {
+    "id": "es-critical-0135",
+    "language": "es",
+    "tone": "critical",
+    "text": "la marca de agua distrae muchísimo"
+  },
+  {
+    "id": "es-critical-0136",
+    "language": "es",
+    "tone": "critical",
+    "text": "la calidad bajó bastante comparado con antes"
+  },
+  {
+    "id": "es-critical-0137",
+    "language": "es",
+    "tone": "critical",
+    "text": "se ve un poco de bajo presupuesto"
+  },
+  {
+    "id": "es-critical-0138",
+    "language": "es",
+    "tone": "critical",
+    "text": "se nota el esfuerzo, falta pulir la ejecución"
+  },
+  {
+    "id": "es-critical-0139",
+    "language": "es",
+    "tone": "critical",
+    "text": "buena idea, falta pulir"
+  },
+  {
+    "id": "es-critical-0140",
+    "language": "es",
+    "tone": "critical",
+    "text": "gran concepto, ejecución regular"
+  },
+  {
+    "id": "es-critical-0141",
+    "language": "es",
+    "tone": "critical",
+    "text": "me gusta la idea pero le falta trabajo"
+  },
+  {
+    "id": "es-critical-0142",
+    "language": "es",
+    "tone": "critical",
+    "text": "no está mal, solo falta mejorar el audio"
+  },
+  {
+    "id": "es-critical-0143",
+    "language": "es",
+    "tone": "critical",
+    "text": "buen comienzo pero la edición necesita trabajo"
+  },
+  {
+    "id": "es-critical-0144",
+    "language": "es",
+    "tone": "critical",
+    "text": "tienes potencial {creator}, sigue así"
+  },
+  {
+    "id": "es-critical-0145",
+    "language": "es",
+    "tone": "critical",
+    "text": "casi, el sonido es lo que falla"
+  },
+  {
+    "id": "es-critical-0146",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} te quiero pero este no fue"
+  },
+  {
+    "id": "es-critical-0147",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} el audio estuvo flojo en este"
+  },
+  {
+    "id": "es-critical-0148",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} ¿por qué está tan alta la música?"
+  },
+  {
+    "id": "es-critical-0149",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} ibas un poco con prisa aquí"
+  },
+  {
+    "id": "es-critical-0150",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} no es tu mejor video pero aquí sigo"
+  },
+  {
+    "id": "es-critical-0151",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} arregla el sonido la próxima porfa 🙏"
+  },
+  {
+    "id": "es-critical-0152",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} antes subías cosas mejores no voy a mentir"
+  },
+  {
+    "id": "es-critical-0153",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} sé sincero, ¿esto es patrocinado?"
+  },
+  {
+    "id": "es-critical-0154",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} este se sintió un poco flojo"
+  },
+  {
+    "id": "es-critical-0155",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} che, este no me cerró"
+  },
+  {
+    "id": "es-critical-0156",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} wey este no estuvo tan chido"
+  },
+  {
+    "id": "es-critical-0157",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} tío este no me ha molado tanto"
+  },
+  {
+    "id": "es-critical-0158",
+    "language": "es",
+    "tone": "critical",
+    "text": "{creator} parce este no le quedó tan bien"
+  },
+  { "id": "es-critical-0159", "language": "es", "tone": "critical", "text": "mmm" },
+  { "id": "es-critical-0160", "language": "es", "tone": "critical", "text": "meh" },
+  { "id": "es-critical-0161", "language": "es", "tone": "critical", "text": "nah" },
+  { "id": "es-critical-0162", "language": "es", "tone": "critical", "text": "nah no es para mí" },
+  {
+    "id": "es-critical-0163",
+    "language": "es",
+    "tone": "critical",
+    "text": "no es para mí pero entiendo que guste"
+  },
+  { "id": "es-critical-0164", "language": "es", "tone": "critical", "text": "no lo entiendo" },
+  {
+    "id": "es-critical-0165",
+    "language": "es",
+    "tone": "critical",
+    "text": "de verdad no entiendo el punto de esto"
+  },
+  {
+    "id": "es-critical-0166",
+    "language": "es",
+    "tone": "critical",
+    "text": "¿cuál era el punto de esto?"
+  },
+  { "id": "es-critical-0167", "language": "es", "tone": "critical", "text": "¿y qué pasó? ¿nada?" },
+  {
+    "id": "es-critical-0168",
+    "language": "es",
+    "tone": "critical",
+    "text": "esperé todo el video para nada"
+  },
+  { "id": "es-critical-0169", "language": "es", "tone": "critical", "text": "esperaba más" },
+  {
+    "id": "es-critical-0170",
+    "language": "es",
+    "tone": "critical",
+    "text": "me esperaba más la verdad"
+  },
+  {
+    "id": "es-critical-0171",
+    "language": "es",
+    "tone": "critical",
+    "text": "decepcionado la verdad"
+  },
+  {
+    "id": "es-critical-0172",
+    "language": "es",
+    "tone": "critical",
+    "text": "un poco decepcionada"
+  },
+  {
+    "id": "es-critical-0173",
+    "language": "es",
+    "tone": "critical",
+    "text": "tanto hype para esto"
+  },
+  { "id": "es-critical-0174", "language": "es", "tone": "critical", "text": "qué flojo" },
+  { "id": "es-critical-0175", "language": "es", "tone": "critical", "text": "bastante flojito" },
+  {
+    "id": "es-critical-0176",
+    "language": "es",
+    "tone": "critical",
+    "text": "no me cerró del todo"
+  },
+  { "id": "es-critical-0177", "language": "es", "tone": "critical", "text": "ni fu ni fa" },
+  {
+    "id": "es-critical-0178",
+    "language": "es",
+    "tone": "critical",
+    "text": "pues no me ha gustado mucho"
+  },
+  {
+    "id": "es-critical-0179",
+    "language": "es",
+    "tone": "critical",
+    "text": "no está tan chido como el anterior"
+  }
+]

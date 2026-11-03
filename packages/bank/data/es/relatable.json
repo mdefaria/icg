@@ -1,0 +1,1293 @@
+[
+  { "id": "es-relatable-0001", "language": "es", "tone": "relatable", "text": "literal yo" },
+  {
+    "id": "es-relatable-0002",
+    "language": "es",
+    "tone": "relatable",
+    "text": "literalmente yo 😭"
+  },
+  { "id": "es-relatable-0003", "language": "es", "tone": "relatable", "text": "soy yo" },
+  {
+    "id": "es-relatable-0004",
+    "language": "es",
+    "tone": "relatable",
+    "text": "soy yo en todos los sentidos"
+  },
+  { "id": "es-relatable-0005", "language": "es", "tone": "relatable", "text": "este soy yo" },
+  {
+    "id": "es-relatable-0006",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esta soy yo jajaja"
+  },
+  {
+    "id": "es-relatable-0007",
+    "language": "es",
+    "tone": "relatable",
+    "text": "por qué es tan real"
+  },
+  { "id": "es-relatable-0008", "language": "es", "tone": "relatable", "text": "demasiado real" },
+  { "id": "es-relatable-0009", "language": "es", "tone": "relatable", "text": "real" },
+  { "id": "es-relatable-0010", "language": "es", "tone": "relatable", "text": "REAL 😭" },
+  { "id": "es-relatable-0011", "language": "es", "tone": "relatable", "text": "muy real" },
+  { "id": "es-relatable-0012", "language": "es", "tone": "relatable", "text": "re real esto" },
+  {
+    "id": "es-relatable-0013",
+    "language": "es",
+    "tone": "relatable",
+    "text": "tan real que duele"
+  },
+  { "id": "es-relatable-0014", "language": "es", "tone": "relatable", "text": "es que es así" },
+  {
+    "id": "es-relatable-0015",
+    "language": "es",
+    "tone": "relatable",
+    "text": "es que es TAL CUAL"
+  },
+  { "id": "es-relatable-0016", "language": "es", "tone": "relatable", "text": "tal cual" },
+  { "id": "es-relatable-0017", "language": "es", "tone": "relatable", "text": "tal cual jajaja" },
+  { "id": "es-relatable-0018", "language": "es", "tone": "relatable", "text": "EXACTO" },
+  { "id": "es-relatable-0019", "language": "es", "tone": "relatable", "text": "exactamente esto" },
+  { "id": "es-relatable-0020", "language": "es", "tone": "relatable", "text": "esto. solo esto." },
+  { "id": "es-relatable-0021", "language": "es", "tone": "relatable", "text": "ESTO" },
+  { "id": "es-relatable-0022", "language": "es", "tone": "relatable", "text": "esto 👆" },
+  { "id": "es-relatable-0023", "language": "es", "tone": "relatable", "text": "literal" },
+  { "id": "es-relatable-0024", "language": "es", "tone": "relatable", "text": "literal todo" },
+  { "id": "es-relatable-0025", "language": "es", "tone": "relatable", "text": "facts" },
+  { "id": "es-relatable-0026", "language": "es", "tone": "relatable", "text": "verdad" },
+  { "id": "es-relatable-0027", "language": "es", "tone": "relatable", "text": "verdades" },
+  { "id": "es-relatable-0028", "language": "es", "tone": "relatable", "text": "cuánta verdad" },
+  { "id": "es-relatable-0029", "language": "es", "tone": "relatable", "text": "cuánta razón" },
+  { "id": "es-relatable-0030", "language": "es", "tone": "relatable", "text": "toda la razón" },
+  {
+    "id": "es-relatable-0031",
+    "language": "es",
+    "tone": "relatable",
+    "text": "tienes toda la razón"
+  },
+  {
+    "id": "es-relatable-0032",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} tenés toda la razón"
+  },
+  { "id": "es-relatable-0033", "language": "es", "tone": "relatable", "text": "la pura verdad" },
+  { "id": "es-relatable-0034", "language": "es", "tone": "relatable", "text": "la neta sí" },
+  {
+    "id": "es-relatable-0035",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la neta es así wey"
+  },
+  {
+    "id": "es-relatable-0036",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la neta me sentí identificado"
+  },
+  {
+    "id": "es-relatable-0037",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me siento muy identificada"
+  },
+  {
+    "id": "es-relatable-0038",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me sentí súper identificado"
+  },
+  { "id": "es-relatable-0039", "language": "es", "tone": "relatable", "text": "identificadísima" },
+  {
+    "id": "es-relatable-0040",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me identifico demasiado"
+  },
+  { "id": "es-relatable-0041", "language": "es", "tone": "relatable", "text": "100% identificado" },
+  { "id": "es-relatable-0042", "language": "es", "tone": "relatable", "text": "me sentí atacada" },
+  {
+    "id": "es-relatable-0043",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me sentí atacado personalmente"
+  },
+  {
+    "id": "es-relatable-0044",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me siento expuesta"
+  },
+  {
+    "id": "es-relatable-0045",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me sentí descubierto"
+  },
+  {
+    "id": "es-relatable-0046",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me hablaste directo al alma"
+  },
+  {
+    "id": "es-relatable-0047",
+    "language": "es",
+    "tone": "relatable",
+    "text": "lo sentí en el alma"
+  },
+  {
+    "id": "es-relatable-0048",
+    "language": "es",
+    "tone": "relatable",
+    "text": "lo sentí profundamente"
+  },
+  {
+    "id": "es-relatable-0049",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me tocó el corazón esto"
+  },
+  { "id": "es-relatable-0050", "language": "es", "tone": "relatable", "text": "esto me tocó" },
+  {
+    "id": "es-relatable-0051",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me pegó fuerte esto"
+  },
+  {
+    "id": "es-relatable-0052",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me dolió de lo real que es"
+  },
+  {
+    "id": "es-relatable-0053",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esto a las 3am pega distinto"
+  },
+  {
+    "id": "es-relatable-0054",
+    "language": "es",
+    "tone": "relatable",
+    "text": "por qué me puse sentimental con esto"
+  },
+  {
+    "id": "es-relatable-0055",
+    "language": "es",
+    "tone": "relatable",
+    "text": "no estoy llorando, tú estás llorando"
+  },
+  {
+    "id": "es-relatable-0056",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pensé que era la única"
+  },
+  {
+    "id": "es-relatable-0057",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pensé que solo me pasaba a mí"
+  },
+  {
+    "id": "es-relatable-0058",
+    "language": "es",
+    "tone": "relatable",
+    "text": "menos mal que no soy el único"
+  },
+  {
+    "id": "es-relatable-0059",
+    "language": "es",
+    "tone": "relatable",
+    "text": "¿todos hacen esto? pensé que era cosa mía"
+  },
+  {
+    "id": "es-relatable-0060",
+    "language": "es",
+    "tone": "relatable",
+    "text": "o sea que no soy solo yo 😭"
+  },
+  {
+    "id": "es-relatable-0061",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} ¿me estás espiando?"
+  },
+  {
+    "id": "es-relatable-0062",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} ¿estás en mi casa o qué?"
+  },
+  {
+    "id": "es-relatable-0063",
+    "language": "es",
+    "tone": "relatable",
+    "text": "¿quién le contó mi vida?"
+  },
+  {
+    "id": "es-relatable-0064",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} ¿tienes cámaras en mi cuarto?"
+  },
+  {
+    "id": "es-relatable-0065",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} me leíste la mente"
+  },
+  { "id": "es-relatable-0066", "language": "es", "tone": "relatable", "text": "me describiste" },
+  {
+    "id": "es-relatable-0067",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me describiste perfecto"
+  },
+  {
+    "id": "es-relatable-0068",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esto es mi vida resumida"
+  },
+  {
+    "id": "es-relatable-0069",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi vida en 30 segundos"
+  },
+  {
+    "id": "es-relatable-0070",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la historia de mi vida"
+  },
+  {
+    "id": "es-relatable-0071",
+    "language": "es",
+    "tone": "relatable",
+    "text": "bienvenidos a mi vida"
+  },
+  { "id": "es-relatable-0072", "language": "es", "tone": "relatable", "text": "así es la vida" },
+  { "id": "es-relatable-0073", "language": "es", "tone": "relatable", "text": "así es esto" },
+  { "id": "es-relatable-0074", "language": "es", "tone": "relatable", "text": "siempre pasa" },
+  { "id": "es-relatable-0075", "language": "es", "tone": "relatable", "text": "siempre me pasa" },
+  {
+    "id": "es-relatable-0076",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todos los días igual"
+  },
+  {
+    "id": "es-relatable-0077",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todos los putos días"
+  },
+  {
+    "id": "es-relatable-0078",
+    "language": "es",
+    "tone": "relatable",
+    "text": "cada. maldito. día."
+  },
+  {
+    "id": "es-relatable-0079",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo todos los lunes"
+  },
+  {
+    "id": "es-relatable-0080",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo todos los días a las 7am"
+  },
+  {
+    "id": "es-relatable-0081",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo cuando suena la alarma"
+  },
+  {
+    "id": "es-relatable-0082",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo posponiendo la alarma por sexta vez"
+  },
+  {
+    "id": "es-relatable-0083",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo a las 3am en vez de dormir"
+  },
+  {
+    "id": "es-relatable-0084",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi horario de sueño está destruido y esto lo demuestra"
+  },
+  {
+    "id": "es-relatable-0085",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo diciendo \"solo un capítulo\""
+  },
+  {
+    "id": "es-relatable-0086",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"un capítulo más\" y son las 4am"
+  },
+  {
+    "id": "es-relatable-0087",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"empiezo el lunes\" por semana número 47"
+  },
+  {
+    "id": "es-relatable-0088",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"ahorita lo hago\" (no lo hago)"
+  },
+  {
+    "id": "es-relatable-0089",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"ahorita\" nunca es ahorita jajaja"
+  },
+  {
+    "id": "es-relatable-0090",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"ya voy\" mientras sigo acostada"
+  },
+  {
+    "id": "es-relatable-0091",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"no tengo hambre\" — yo 10 minutos después comiéndome todo"
+  },
+  {
+    "id": "es-relatable-0092",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"estoy bien\" — yo, no estando bien"
+  },
+  {
+    "id": "es-relatable-0093",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"tenemos que quedar\" sabiendo que no vamos a quedar"
+  },
+  {
+    "id": "es-relatable-0094",
+    "language": "es",
+    "tone": "relatable",
+    "text": "\"hay que juntarnos\" y nunca nos juntamos jaja"
+  },
+  {
+    "id": "es-relatable-0095",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo diciéndome que hoy me acuesto temprano"
+  },
+  {
+    "id": "es-relatable-0096",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi lista de tareas viéndome scrollear"
+  },
+  {
+    "id": "es-relatable-0097",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi cuenta bancaria viéndome pedir comida otra vez"
+  },
+  {
+    "id": "es-relatable-0098",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi madre dice esto EXACTO"
+  },
+  {
+    "id": "es-relatable-0099",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi mamá palabra por palabra"
+  },
+  {
+    "id": "es-relatable-0100",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi papá revisando que la puerta está cerrada 4 veces"
+  },
+  {
+    "id": "es-relatable-0101",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi viejo es así igualito"
+  },
+  {
+    "id": "es-relatable-0102",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi vieja diciendo \"¿y eso cuándo lo compraste?\""
+  },
+  {
+    "id": "es-relatable-0103",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi abuela diciendo que estoy flaca aunque haya comido tres platos"
+  },
+  {
+    "id": "es-relatable-0104",
+    "language": "es",
+    "tone": "relatable",
+    "text": "toda comida familiar"
+  },
+  {
+    "id": "es-relatable-0105",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todas las reuniones familiares son así"
+  },
+  {
+    "id": "es-relatable-0106",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todo grupo de whatsapp familiar"
+  },
+  {
+    "id": "es-relatable-0107",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todos los trabajos en grupo de mi vida"
+  },
+  {
+    "id": "es-relatable-0108",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todo grupo de amigos tiene uno así"
+  },
+  {
+    "id": "es-relatable-0109",
+    "language": "es",
+    "tone": "relatable",
+    "text": "en toda oficina hay alguien así"
+  },
+  {
+    "id": "es-relatable-0110",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todos tenemos ese amigo"
+  },
+  {
+    "id": "es-relatable-0111",
+    "language": "es",
+    "tone": "relatable",
+    "text": "etiqueta al amigo que hace esto"
+  },
+  {
+    "id": "es-relatable-0112",
+    "language": "es",
+    "tone": "relatable",
+    "text": "se lo mando a mi hermana, ella sabe lo que hizo"
+  },
+  {
+    "id": "es-relatable-0113",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi mejor amiga es así"
+  },
+  {
+    "id": "es-relatable-0114",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi novio cada vez que salimos a comer"
+  },
+  {
+    "id": "es-relatable-0115",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi novia eligiendo restaurante 😭"
+  },
+  {
+    "id": "es-relatable-0116",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi pareja hace esto y me saca de quicio"
+  },
+  {
+    "id": "es-relatable-0117",
+    "language": "es",
+    "tone": "relatable",
+    "text": "leer un mensaje cinco veces antes de mandarlo"
+  },
+  {
+    "id": "es-relatable-0118",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esperar a que te contesten un mensaje como"
+  },
+  {
+    "id": "es-relatable-0119",
+    "language": "es",
+    "tone": "relatable",
+    "text": "ensayar una llamada 10 veces y aun así trabarme"
+  },
+  {
+    "id": "es-relatable-0120",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pedir comida por teléfono es mi peor pesadilla"
+  },
+  {
+    "id": "es-relatable-0121",
+    "language": "es",
+    "tone": "relatable",
+    "text": "cuando se cancelan los planes y en el fondo te alegras"
+  },
+  {
+    "id": "es-relatable-0122",
+    "language": "es",
+    "tone": "relatable",
+    "text": "los planes cancelados son lo mejor que hay"
+  },
+  {
+    "id": "es-relatable-0123",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el introvertido que llevo dentro sintió esto"
+  },
+  {
+    "id": "es-relatable-0124",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi batería social al 0% después de 20 minutos"
+  },
+  {
+    "id": "es-relatable-0125",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo después de una interacción social: necesito dormir 3 días"
+  },
+  {
+    "id": "es-relatable-0126",
+    "language": "es",
+    "tone": "relatable",
+    "text": "cuando el camarero dice \"que aproveche\" y respondes \"igualmente\""
+  },
+  {
+    "id": "es-relatable-0127",
+    "language": "es",
+    "tone": "relatable",
+    "text": "decir \"igualmente\" cuando te desean feliz cumpleaños"
+  },
+  {
+    "id": "es-relatable-0128",
+    "language": "es",
+    "tone": "relatable",
+    "text": "saludar de vuelta a alguien que no me saludaba a mí"
+  },
+  {
+    "id": "es-relatable-0129",
+    "language": "es",
+    "tone": "relatable",
+    "text": "entrar a una habitación y olvidar a qué ibas"
+  },
+  {
+    "id": "es-relatable-0130",
+    "language": "es",
+    "tone": "relatable",
+    "text": "abrir la nevera 10 veces esperando que aparezca algo nuevo"
+  },
+  {
+    "id": "es-relatable-0131",
+    "language": "es",
+    "tone": "relatable",
+    "text": "abrir el refri cada 5 minutos como si fuera a cambiar algo"
+  },
+  {
+    "id": "es-relatable-0132",
+    "language": "es",
+    "tone": "relatable",
+    "text": "los lunes deberían ser ilegales"
+  },
+  {
+    "id": "es-relatable-0133",
+    "language": "es",
+    "tone": "relatable",
+    "text": "los viernes pegan distinto"
+  },
+  {
+    "id": "es-relatable-0134",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el bajón del domingo por la noche"
+  },
+  {
+    "id": "es-relatable-0135",
+    "language": "es",
+    "tone": "relatable",
+    "text": "es martes y ya estoy cansada"
+  },
+  {
+    "id": "es-relatable-0136",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esta semana duró 400 años"
+  },
+  {
+    "id": "es-relatable-0137",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo en el trabajo contando los minutos para salir"
+  },
+  {
+    "id": "es-relatable-0138",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la reunión que pudo ser un correo"
+  },
+  {
+    "id": "es-relatable-0139",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi cara cuando alguien dice \"¿una llamadita rápida?\""
+  },
+  {
+    "id": "es-relatable-0140",
+    "language": "es",
+    "tone": "relatable",
+    "text": "fingir que estás ocupado cuando pasa el jefe"
+  },
+  {
+    "id": "es-relatable-0141",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el bajón de las 3 de la tarde es real"
+  },
+  {
+    "id": "es-relatable-0142",
+    "language": "es",
+    "tone": "relatable",
+    "text": "sin café no soy persona"
+  },
+  {
+    "id": "es-relatable-0143",
+    "language": "es",
+    "tone": "relatable",
+    "text": "primero café, luego personalidad"
+  },
+  {
+    "id": "es-relatable-0144",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mis plantas se están muriendo y yo también"
+  },
+  {
+    "id": "es-relatable-0145",
+    "language": "es",
+    "tone": "relatable",
+    "text": "ser adulto es una estafa"
+  },
+  {
+    "id": "es-relatable-0146",
+    "language": "es",
+    "tone": "relatable",
+    "text": "nadie me avisó que ser adulta era tan difícil"
+  },
+  {
+    "id": "es-relatable-0147",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pagar facturas es lo más aburrido del mundo"
+  },
+  {
+    "id": "es-relatable-0148",
+    "language": "es",
+    "tone": "relatable",
+    "text": "cuando era chica pensaba que a los 25 tenía todo resuelto"
+  },
+  {
+    "id": "es-relatable-0149",
+    "language": "es",
+    "tone": "relatable",
+    "text": "de chico pensaba que los adultos lo sabían todo"
+  },
+  {
+    "id": "es-relatable-0150",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la nostalgia me pegó durísimo"
+  },
+  {
+    "id": "es-relatable-0151",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esto me desbloqueó un recuerdo"
+  },
+  {
+    "id": "es-relatable-0152",
+    "language": "es",
+    "tone": "relatable",
+    "text": "recuerdo desbloqueado"
+  },
+  {
+    "id": "es-relatable-0153",
+    "language": "es",
+    "tone": "relatable",
+    "text": "recuerdo de la infancia desbloqueado 🥹"
+  },
+  {
+    "id": "es-relatable-0154",
+    "language": "es",
+    "tone": "relatable",
+    "text": "¿alguien más se acuerda de esto?? 😭"
+  },
+  {
+    "id": "es-relatable-0155",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esto me llevó a cuando tenía 10 años"
+  },
+  {
+    "id": "es-relatable-0156",
+    "language": "es",
+    "tone": "relatable",
+    "text": "los que crecimos en los 2000 entendemos"
+  },
+  {
+    "id": "es-relatable-0157",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como profe, esto es demasiado real"
+  },
+  {
+    "id": "es-relatable-0158",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como enfermera lo sentí en el alma"
+  },
+  {
+    "id": "es-relatable-0159",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como camarero esto es mi vida"
+  },
+  {
+    "id": "es-relatable-0160",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como hermana mayor, sí, así es"
+  },
+  {
+    "id": "es-relatable-0161",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como hermano menor me siento muy visto"
+  },
+  {
+    "id": "es-relatable-0162",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como el del medio nadie me pregunta cómo estoy"
+  },
+  {
+    "id": "es-relatable-0163",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como madre de tres me reí y luego lloré"
+  },
+  {
+    "id": "es-relatable-0164",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como padre, sí. así es exactamente"
+  },
+  {
+    "id": "es-relatable-0165",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como estudiante esto es demasiado real"
+  },
+  {
+    "id": "es-relatable-0166",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como editor esto me duele"
+  },
+  {
+    "id": "es-relatable-0167",
+    "language": "es",
+    "tone": "relatable",
+    "text": "como freelance lo siento en el alma"
+  },
+  {
+    "id": "es-relatable-0168",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la hija mayor que hay en mí está gritando"
+  },
+  {
+    "id": "es-relatable-0169",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo con 47 pestañas abiertas"
+  },
+  {
+    "id": "es-relatable-0170",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi galería es 90% capturas de pantalla"
+  },
+  {
+    "id": "es-relatable-0171",
+    "language": "es",
+    "tone": "relatable",
+    "text": "mi tiempo de pantalla después de esto 😬"
+  },
+  {
+    "id": "es-relatable-0172",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el móvil al 1% y yo sigo scrolleando"
+  },
+  {
+    "id": "es-relatable-0173",
+    "language": "es",
+    "tone": "relatable",
+    "text": "dormirme con el celular en la cara"
+  },
+  {
+    "id": "es-relatable-0174",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo viendo tutoriales en vez de hacer las cosas",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-relatable-0175",
+    "language": "es",
+    "tone": "relatable",
+    "text": "guardo tutoriales que nunca vuelvo a ver",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-relatable-0176",
+    "language": "es",
+    "tone": "relatable",
+    "text": "lo veo a 2x y aun así me pierdo",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-relatable-0177",
+    "language": "es",
+    "tone": "relatable",
+    "text": "300 tutoriales guardados y 0 proyectos terminados",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-relatable-0178",
+    "language": "es",
+    "tone": "relatable",
+    "text": "así me sentí la primera vez que aprendí esto",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-relatable-0179",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pausando cada 3 segundos para seguirte el ritmo",
+    "contexts": ["tutorial"]
+  },
+  {
+    "id": "es-relatable-0180",
+    "language": "es",
+    "tone": "relatable",
+    "text": "tu vlog es mi vida pero más bonita",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-relatable-0181",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} tus mañanas son igualitas a las mías",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-relatable-0182",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la montaña de ropa al fondo es muy real",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-relatable-0183",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo también le hablo a mis plantas, qué alivio",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-relatable-0184",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el \"recado rápido\" que te lleva todo el día",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "es-relatable-0185",
+    "language": "es",
+    "tone": "relatable",
+    "text": "yo cantando esto en el coche como si fuera mi concierto",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-relatable-0186",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esta canción son mis pensamientos de las 3am",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-relatable-0187",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la letra es literalmente mi vida",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-relatable-0188",
+    "language": "es",
+    "tone": "relatable",
+    "text": "escuchar esto un día de lluvia pega distinto",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-relatable-0189",
+    "language": "es",
+    "tone": "relatable",
+    "text": "llorando con esta canción en el bus otra vez",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-relatable-0190",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esta canción me sacó de cada ruptura",
+    "contexts": ["music"]
+  },
+  {
+    "id": "es-relatable-0191",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esta escena es exactamente cómo se sintió mi última relación",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-relatable-0192",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la escena de la cena es toda cena familiar que he tenido",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-relatable-0193",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el silencio incómodo de esa escena demasiado real",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-relatable-0194",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el final es como terminan todos los casi algo",
+    "contexts": ["short-film"]
+  },
+  {
+    "id": "es-relatable-0195",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} ¿cómo conoces tan bien mi vida?"
+  },
+  {
+    "id": "es-relatable-0196",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} deja de leer mi diario"
+  },
+  {
+    "id": "es-relatable-0197",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} dime la verdad, ¿me estás siguiendo?"
+  },
+  {
+    "id": "es-relatable-0198",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} acabas de describir mi semana entera"
+  },
+  {
+    "id": "es-relatable-0199",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} me sentí súper identificada contigo"
+  },
+  {
+    "id": "es-relatable-0200",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} gracias por hacerme sentir normal"
+  },
+  {
+    "id": "es-relatable-0201",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} somos la misma persona"
+  },
+  {
+    "id": "es-relatable-0202",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} me pasa igualito"
+  },
+  {
+    "id": "es-relatable-0203",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} esto es lo más real que has subido"
+  },
+  {
+    "id": "es-relatable-0204",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} me expusiste y ni me enojé"
+  },
+  {
+    "id": "es-relatable-0205",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} sos yo pero con cámara"
+  },
+  {
+    "id": "es-relatable-0206",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} uff parce, esto me pasa a diario"
+  },
+  { "id": "es-relatable-0207", "language": "es", "tone": "relatable", "text": "igual" },
+  { "id": "es-relatable-0208", "language": "es", "tone": "relatable", "text": "igualito" },
+  { "id": "es-relatable-0209", "language": "es", "tone": "relatable", "text": "igual igual igual" },
+  { "id": "es-relatable-0210", "language": "es", "tone": "relatable", "text": "igual tbh" },
+  { "id": "es-relatable-0211", "language": "es", "tone": "relatable", "text": "mood" },
+  { "id": "es-relatable-0212", "language": "es", "tone": "relatable", "text": "mood total" },
+  { "id": "es-relatable-0213", "language": "es", "tone": "relatable", "text": "mi mood eterno" },
+  { "id": "es-relatable-0214", "language": "es", "tone": "relatable", "text": "así ando" },
+  {
+    "id": "es-relatable-0215",
+    "language": "es",
+    "tone": "relatable",
+    "text": "así ando yo jajaja"
+  },
+  { "id": "es-relatable-0216", "language": "es", "tone": "relatable", "text": "así mero" },
+  { "id": "es-relatable-0217", "language": "es", "tone": "relatable", "text": "así mismo es" },
+  { "id": "es-relatable-0218", "language": "es", "tone": "relatable", "text": "así es parce" },
+  {
+    "id": "es-relatable-0219",
+    "language": "es",
+    "tone": "relatable",
+    "text": "eso es así y punto"
+  },
+  {
+    "id": "es-relatable-0220",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pasa todo el tiempo"
+  },
+  { "id": "es-relatable-0221", "language": "es", "tone": "relatable", "text": "uff sí" },
+  { "id": "es-relatable-0222", "language": "es", "tone": "relatable", "text": "sí. siempre." },
+  { "id": "es-relatable-0223", "language": "es", "tone": "relatable", "text": "siempre es así" },
+  {
+    "id": "es-relatable-0224",
+    "language": "es",
+    "tone": "relatable",
+    "text": "por qué siempre es así"
+  },
+  {
+    "id": "es-relatable-0225",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me pasó ayer jajaja"
+  },
+  {
+    "id": "es-relatable-0226",
+    "language": "es",
+    "tone": "relatable",
+    "text": "esto me pasó hoy, no miento"
+  },
+  {
+    "id": "es-relatable-0227",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me pasó esta mañana literal"
+  },
+  {
+    "id": "es-relatable-0228",
+    "language": "es",
+    "tone": "relatable",
+    "text": "te juro que me pasó lo mismo"
+  },
+  {
+    "id": "es-relatable-0229",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me pasa cada semana"
+  },
+  {
+    "id": "es-relatable-0230",
+    "language": "es",
+    "tone": "relatable",
+    "text": "lo hago todos los días y nunca me di cuenta"
+  },
+  {
+    "id": "es-relatable-0231",
+    "language": "es",
+    "tone": "relatable",
+    "text": "me he visto en esta foto y no me gusta"
+  },
+  {
+    "id": "es-relatable-0232",
+    "language": "es",
+    "tone": "relatable",
+    "text": "soy yo. yo soy el problema"
+  },
+  {
+    "id": "es-relatable-0233",
+    "language": "es",
+    "tone": "relatable",
+    "text": "soy la amiga que hace esto 😅"
+  },
+  {
+    "id": "es-relatable-0234",
+    "language": "es",
+    "tone": "relatable",
+    "text": "a ver, ¿quién de ustedes le contó de mí?"
+  },
+  { "id": "es-relatable-0235", "language": "es", "tone": "relatable", "text": "lowkey soy yo" },
+  {
+    "id": "es-relatable-0236",
+    "language": "es",
+    "tone": "relatable",
+    "text": "no yo haciendo esto ahora mismo"
+  },
+  {
+    "id": "es-relatable-0237",
+    "language": "es",
+    "tone": "relatable",
+    "text": "no yo leyendo esto mientras hago exactamente lo mismo"
+  },
+  {
+    "id": "es-relatable-0238",
+    "language": "es",
+    "tone": "relatable",
+    "text": "haciéndome la loca porque hago esto 👀"
+  },
+  {
+    "id": "es-relatable-0239",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pillado haciendo esto ahora mismo"
+  },
+  {
+    "id": "es-relatable-0240",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el que diga que no lo hace miente"
+  },
+  {
+    "id": "es-relatable-0241",
+    "language": "es",
+    "tone": "relatable",
+    "text": "quien no ha hecho esto, que tire la primera piedra"
+  },
+  {
+    "id": "es-relatable-0242",
+    "language": "es",
+    "tone": "relatable",
+    "text": "todos lo hemos hecho, no mientan"
+  },
+  {
+    "id": "es-relatable-0243",
+    "language": "es",
+    "tone": "relatable",
+    "text": "admitámoslo, todos somos así"
+  },
+  {
+    "id": "es-relatable-0244",
+    "language": "es",
+    "tone": "relatable",
+    "text": "nadie habla de esto lo suficiente"
+  },
+  {
+    "id": "es-relatable-0245",
+    "language": "es",
+    "tone": "relatable",
+    "text": "por fin alguien lo dice"
+  },
+  {
+    "id": "es-relatable-0246",
+    "language": "es",
+    "tone": "relatable",
+    "text": "gracias {creator} por decirlo en voz alta"
+  },
+  {
+    "id": "es-relatable-0247",
+    "language": "es",
+    "tone": "relatable",
+    "text": "{creator} necesitaba escuchar esto"
+  },
+  {
+    "id": "es-relatable-0248",
+    "language": "es",
+    "tone": "relatable",
+    "text": "necesitaba esto hoy"
+  },
+  {
+    "id": "es-relatable-0249",
+    "language": "es",
+    "tone": "relatable",
+    "text": "no sabía que necesitaba esto hoy"
+  },
+  {
+    "id": "es-relatable-0250",
+    "language": "es",
+    "tone": "relatable",
+    "text": "guardo esto para cuando lo necesite"
+  },
+  {
+    "id": "es-relatable-0251",
+    "language": "es",
+    "tone": "relatable",
+    "text": "el overthinking es real"
+  },
+  {
+    "id": "es-relatable-0252",
+    "language": "es",
+    "tone": "relatable",
+    "text": "pensar demasiado cada mensaje que mando"
+  },
+  { "id": "es-relatable-0253", "language": "es", "tone": "relatable", "text": "la lucha es real" },
+  { "id": "es-relatable-0254", "language": "es", "tone": "relatable", "text": "qué lucha jajaja" },
+  {
+    "id": "es-relatable-0255",
+    "language": "es",
+    "tone": "relatable",
+    "text": "la vida adulta en un video"
+  }
+]

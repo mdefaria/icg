@@ -1,0 +1,607 @@
+[
+  { "id": "en-product-0001", "language": "en", "tone": "product", "text": "where is this from?" },
+  { "id": "en-product-0002", "language": "en", "tone": "product", "text": "where's this from??" },
+  { "id": "en-product-0003", "language": "en", "tone": "product", "text": "price?" },
+  { "id": "en-product-0004", "language": "en", "tone": "product", "text": "how much?" },
+  { "id": "en-product-0005", "language": "en", "tone": "product", "text": "how much is it" },
+  { "id": "en-product-0006", "language": "en", "tone": "product", "text": "how much is this??" },
+  {
+    "id": "en-product-0007",
+    "language": "en",
+    "tone": "product",
+    "text": "what's the price on this"
+  },
+  { "id": "en-product-0008", "language": "en", "tone": "product", "text": "is it expensive?" },
+  {
+    "id": "en-product-0009",
+    "language": "en",
+    "tone": "product",
+    "text": "is it under a hundred?"
+  },
+  {
+    "id": "en-product-0010",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in black?"
+  },
+  {
+    "id": "en-product-0011",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in other colors?"
+  },
+  {
+    "id": "en-product-0012",
+    "language": "en",
+    "tone": "product",
+    "text": "what colors does it come in"
+  },
+  {
+    "id": "en-product-0013",
+    "language": "en",
+    "tone": "product",
+    "text": "is there a white version?"
+  },
+  {
+    "id": "en-product-0014",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in a bigger size?"
+  },
+  { "id": "en-product-0015", "language": "en", "tone": "product", "text": "what size is that?" },
+  {
+    "id": "en-product-0016",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in a smaller size"
+  },
+  { "id": "en-product-0017", "language": "en", "tone": "product", "text": "what's it made of?" },
+  { "id": "en-product-0018", "language": "en", "tone": "product", "text": "is it waterproof?" },
+  { "id": "en-product-0019", "language": "en", "tone": "product", "text": "is it heavy?" },
+  {
+    "id": "en-product-0020",
+    "language": "en",
+    "tone": "product",
+    "text": "how big is it actually?"
+  },
+  {
+    "id": "en-product-0021",
+    "language": "en",
+    "tone": "product",
+    "text": "is it as big as it looks?"
+  },
+  {
+    "id": "en-product-0022",
+    "language": "en",
+    "tone": "product",
+    "text": "is it really that small?"
+  },
+  { "id": "en-product-0023", "language": "en", "tone": "product", "text": "does it fold up?" },
+  {
+    "id": "en-product-0024",
+    "language": "en",
+    "tone": "product",
+    "text": "how long does the battery last?"
+  },
+  {
+    "id": "en-product-0025",
+    "language": "en",
+    "tone": "product",
+    "text": "does it need batteries?"
+  },
+  {
+    "id": "en-product-0026",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come with a charger?"
+  },
+  { "id": "en-product-0027", "language": "en", "tone": "product", "text": "is it wireless?" },
+  { "id": "en-product-0028", "language": "en", "tone": "product", "text": "is it loud?" },
+  { "id": "en-product-0029", "language": "en", "tone": "product", "text": "is it easy to clean?" },
+  {
+    "id": "en-product-0030",
+    "language": "en",
+    "tone": "product",
+    "text": "can you put it in the dishwasher?"
+  },
+  {
+    "id": "en-product-0031",
+    "language": "en",
+    "tone": "product",
+    "text": "is it dishwasher safe?"
+  },
+  { "id": "en-product-0032", "language": "en", "tone": "product", "text": "is it vegan?" },
+  {
+    "id": "en-product-0033",
+    "language": "en",
+    "tone": "product",
+    "text": "what does it smell like?"
+  },
+  { "id": "en-product-0034", "language": "en", "tone": "product", "text": "what flavor is that?" },
+  {
+    "id": "en-product-0035",
+    "language": "en",
+    "tone": "product",
+    "text": "what does it taste like"
+  },
+  { "id": "en-product-0036", "language": "en", "tone": "product", "text": "is it spicy?" },
+  {
+    "id": "en-product-0037",
+    "language": "en",
+    "tone": "product",
+    "text": "is it sweet or savory?"
+  },
+  { "id": "en-product-0038", "language": "en", "tone": "product", "text": "what's in it?" },
+  {
+    "id": "en-product-0039",
+    "language": "en",
+    "tone": "product",
+    "text": "does it ship internationally?"
+  },
+  {
+    "id": "en-product-0040",
+    "language": "en",
+    "tone": "product",
+    "text": "do they ship to the uk?"
+  },
+  {
+    "id": "en-product-0041",
+    "language": "en",
+    "tone": "product",
+    "text": "do they ship to canada?"
+  },
+  {
+    "id": "en-product-0042",
+    "language": "en",
+    "tone": "product",
+    "text": "is this available in europe?"
+  },
+  {
+    "id": "en-product-0043",
+    "language": "en",
+    "tone": "product",
+    "text": "is it sold in stores or only online?"
+  },
+  {
+    "id": "en-product-0044",
+    "language": "en",
+    "tone": "product",
+    "text": "can i find this in stores?"
+  },
+  {
+    "id": "en-product-0045",
+    "language": "en",
+    "tone": "product",
+    "text": "where can i find this?"
+  },
+  { "id": "en-product-0046", "language": "en", "tone": "product", "text": "is this new?" },
+  {
+    "id": "en-product-0047",
+    "language": "en",
+    "tone": "product",
+    "text": "when did this come out?"
+  },
+  {
+    "id": "en-product-0048",
+    "language": "en",
+    "tone": "product",
+    "text": "is this a limited edition?"
+  },
+  {
+    "id": "en-product-0049",
+    "language": "en",
+    "tone": "product",
+    "text": "is it still available?"
+  },
+  {
+    "id": "en-product-0050",
+    "language": "en",
+    "tone": "product",
+    "text": "is it sold out already?"
+  },
+  {
+    "id": "en-product-0051",
+    "language": "en",
+    "tone": "product",
+    "text": "what's the name of this?"
+  },
+  {
+    "id": "en-product-0052",
+    "language": "en",
+    "tone": "product",
+    "text": "what is this thing called"
+  },
+  { "id": "en-product-0053", "language": "en", "tone": "product", "text": "what even is this lol" },
+  {
+    "id": "en-product-0054",
+    "language": "en",
+    "tone": "product",
+    "text": "what does it do exactly?"
+  },
+  {
+    "id": "en-product-0055",
+    "language": "en",
+    "tone": "product",
+    "text": "wait what does it actually do"
+  },
+  {
+    "id": "en-product-0056",
+    "language": "en",
+    "tone": "product",
+    "text": "i still don't know what it does but i'm intrigued"
+  },
+  { "id": "en-product-0057", "language": "en", "tone": "product", "text": "how does it work?" },
+  { "id": "en-product-0058", "language": "en", "tone": "product", "text": "how do you use it?" },
+  {
+    "id": "en-product-0059",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come with instructions?"
+  },
+  { "id": "en-product-0060", "language": "en", "tone": "product", "text": "is it hard to set up?" },
+  {
+    "id": "en-product-0061",
+    "language": "en",
+    "tone": "product",
+    "text": "is there an app for it?"
+  },
+  {
+    "id": "en-product-0062",
+    "language": "en",
+    "tone": "product",
+    "text": "what's the difference between this and the old one?"
+  },
+  {
+    "id": "en-product-0063",
+    "language": "en",
+    "tone": "product",
+    "text": "what's the difference between the two versions?"
+  },
+  {
+    "id": "en-product-0064",
+    "language": "en",
+    "tone": "product",
+    "text": "which color is the one in the video?"
+  },
+  {
+    "id": "en-product-0065",
+    "language": "en",
+    "tone": "product",
+    "text": "is the one in the video the large or the small?"
+  },
+  {
+    "id": "en-product-0066",
+    "language": "en",
+    "tone": "product",
+    "text": "is that the real color or a filter?"
+  },
+  {
+    "id": "en-product-0067",
+    "language": "en",
+    "tone": "product",
+    "text": "is the color accurate in the video?"
+  },
+  {
+    "id": "en-product-0068",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in pink 👀"
+  },
+  {
+    "id": "en-product-0069",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in green? asking for a friend"
+  },
+  {
+    "id": "en-product-0070",
+    "language": "en",
+    "tone": "product",
+    "text": "asking for a friend: how much"
+  },
+  {
+    "id": "en-product-0071",
+    "language": "en",
+    "tone": "product",
+    "text": "asking for my mom, where is this from"
+  },
+  {
+    "id": "en-product-0072",
+    "language": "en",
+    "tone": "product",
+    "text": "my wallet is scared. how much?"
+  },
+  {
+    "id": "en-product-0073",
+    "language": "en",
+    "tone": "product",
+    "text": "my wallet just flinched. price?"
+  },
+  {
+    "id": "en-product-0074",
+    "language": "en",
+    "tone": "product",
+    "text": "i don't need this but what's the price"
+  },
+  {
+    "id": "en-product-0075",
+    "language": "en",
+    "tone": "product",
+    "text": "i don't even know what this is but where's it from"
+  },
+  {
+    "id": "en-product-0076",
+    "language": "en",
+    "tone": "product",
+    "text": "the editing on this ad is better than the product lol",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0077",
+    "language": "en",
+    "tone": "product",
+    "text": "ok but what is the ad actually selling",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0078",
+    "language": "en",
+    "tone": "product",
+    "text": "i watched this 3 times and still don't know what it is",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0079",
+    "language": "en",
+    "tone": "product",
+    "text": "cool ad, what's the product called?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0080",
+    "language": "en",
+    "tone": "product",
+    "text": "is the product as cool as the ad?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0081",
+    "language": "en",
+    "tone": "product",
+    "text": "does it really look like that or is it the lighting",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0082",
+    "language": "en",
+    "tone": "product",
+    "text": "who did the music for this ad?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0083",
+    "language": "en",
+    "tone": "product",
+    "text": "the jingle is stuck in my head now",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0084",
+    "language": "en",
+    "tone": "product",
+    "text": "this ad is so calming, what's it for again?",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0085",
+    "language": "en",
+    "tone": "product",
+    "text": "the model's outfit is distracting me from the product lol",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0086",
+    "language": "en",
+    "tone": "product",
+    "text": "the product is fine but the dog in this ad is the star",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0087",
+    "language": "en",
+    "tone": "product",
+    "text": "is the dog included? asking seriously",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0088",
+    "language": "en",
+    "tone": "product",
+    "text": "the slow motion pour shot is doing a lot here",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0089",
+    "language": "en",
+    "tone": "product",
+    "text": "nobody opens a box that gracefully",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0090",
+    "language": "en",
+    "tone": "product",
+    "text": "the unboxing music is so dramatic for a box",
+    "contexts": ["ad"]
+  },
+  {
+    "id": "en-product-0091",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} okay where do i find this"
+  },
+  {
+    "id": "en-product-0092",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} how much was it?"
+  },
+  {
+    "id": "en-product-0093",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} is there a black one or nah"
+  },
+  {
+    "id": "en-product-0094",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} what's it called?"
+  },
+  {
+    "id": "en-product-0095",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} is that the same one from your last video?"
+  },
+  {
+    "id": "en-product-0096",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} where did you get the mug?"
+  },
+  {
+    "id": "en-product-0097",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} what's the jacket from?"
+  },
+  {
+    "id": "en-product-0098",
+    "language": "en",
+    "tone": "product",
+    "text": "{creator} where's your sweater from?"
+  },
+  {
+    "id": "en-product-0099",
+    "language": "en",
+    "tone": "product",
+    "text": "where's the jacket from?"
+  },
+  {
+    "id": "en-product-0100",
+    "language": "en",
+    "tone": "product",
+    "text": "where are those shoes from?"
+  },
+  {
+    "id": "en-product-0101",
+    "language": "en",
+    "tone": "product",
+    "text": "what brand is the shirt?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-product-0102",
+    "language": "en",
+    "tone": "product",
+    "text": "where's the lamp from?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-product-0103",
+    "language": "en",
+    "tone": "product",
+    "text": "where's your desk from?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-product-0104",
+    "language": "en",
+    "tone": "product",
+    "text": "where did you get the rug??",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-product-0105",
+    "language": "en",
+    "tone": "product",
+    "text": "what's the blender you're using?",
+    "contexts": ["vlog"]
+  },
+  {
+    "id": "en-product-0106",
+    "language": "en",
+    "tone": "product",
+    "text": "what's that mug from? it's so cute",
+    "contexts": ["vlog"]
+  },
+  { "id": "en-product-0107", "language": "en", "tone": "product", "text": "link?" },
+  { "id": "en-product-0108", "language": "en", "tone": "product", "text": "is there a link?" },
+  { "id": "en-product-0109", "language": "en", "tone": "product", "text": "is there a website?" },
+  { "id": "en-product-0110", "language": "en", "tone": "product", "text": "what's the website?" },
+  {
+    "id": "en-product-0111",
+    "language": "en",
+    "tone": "product",
+    "text": "does it have a warranty?"
+  },
+  {
+    "id": "en-product-0112",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come with a case?"
+  },
+  {
+    "id": "en-product-0113",
+    "language": "en",
+    "tone": "product",
+    "text": "is it the same as the one from last year?"
+  },
+  {
+    "id": "en-product-0114",
+    "language": "en",
+    "tone": "product",
+    "text": "does it come in a set?"
+  },
+  {
+    "id": "en-product-0115",
+    "language": "en",
+    "tone": "product",
+    "text": "is it one size fits all?"
+  },
+  {
+    "id": "en-product-0116",
+    "language": "en",
+    "tone": "product",
+    "text": "is it for kids or adults?"
+  },
+  {
+    "id": "en-product-0117",
+    "language": "en",
+    "tone": "product",
+    "text": "how long does it take to arrive?"
+  },
+  { "id": "en-product-0118", "language": "en", "tone": "product", "text": "is it handmade?" },
+  { "id": "en-product-0119", "language": "en", "tone": "product", "text": "is that real wood?" },
+  {
+    "id": "en-product-0120",
+    "language": "en",
+    "tone": "product",
+    "text": "is it plastic or metal?"
+  },
+  { "id": "en-product-0121", "language": "en", "tone": "product", "text": "is it sturdy?" },
+  {
+    "id": "en-product-0122",
+    "language": "en",
+    "tone": "product",
+    "text": "does it scratch easily?"
+  },
+  {
+    "id": "en-product-0123",
+    "language": "en",
+    "tone": "product",
+    "text": "how many come in a pack?"
+  },
+  { "id": "en-product-0124", "language": "en", "tone": "product", "text": "is it refillable?" }
+]
