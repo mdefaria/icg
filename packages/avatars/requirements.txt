@@ -1,0 +1,18 @@
+# Same as pyproject.toml, for `pip install -r`. Install torch for your CUDA
+# build first (https://pytorch.org/get-started/locally/), then this file.
+pillow>=10.1
+numpy>=1.26
+opencv-python-headless>=4.9,<5
+# generate.py
+torch>=2.4
+diffusers>=0.36
+transformers>=4.46
+accelerate>=1.0
+sentencepiece
+protobuf
+safetensors
+# curate.py
+insightface>=0.7.3
+onnxruntime-gpu>=1.18; sys_platform != "darwin"
+onnxruntime>=1.18; sys_platform == "darwin"
+# optional: bitsandbytes>=0.44 for `generate.py --model flux-schnell --quantize nf4`

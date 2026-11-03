@@ -1,0 +1,39 @@
+[project]
+name = "icg-avatars"
+version = "0.0.0"
+description = "Build-time pipeline for the ICG Avatar pool: generate, curate, pack. Never runs inside a Host."
+requires-python = ">=3.11"
+dependencies = [
+  "pillow>=10.1",
+  "numpy>=1.26",
+  # <5: OpenCV 5 dropped cv2.CascadeClassifier, which the --dry-run detector uses.
+  "opencv-python-headless>=4.9,<5",
+]
+
+[project.optional-dependencies]
+# Image generation (generate.py). Install torch for your CUDA first, see SPIKE.md.
+generate = [
+  "torch>=2.4",
+  "diffusers>=0.36",
+  "transformers>=4.46",
+  "accelerate>=1.0",
+  "sentencepiece",
+  "protobuf",
+  "safetensors",
+]
+# Optional, FLUX.1-schnell on 12 GB cards (`generate.py --quantize nf4`).
+nf4 = ["bitsandbytes>=0.44"]
+# Curation models (curate.py): face detection + embeddings + attributes, CLIP, NSFW classifier.
+curate = [
+  "torch>=2.4",
+  "transformers>=4.46",
+  "insightface>=0.7.3",
+  "onnxruntime-gpu>=1.18; sys_platform != 'darwin'",
+  "onnxruntime>=1.18; sys_platform == 'darwin'",
+]
+# Alternative detector with a permissive model licence (Apache-2.0); Python <= 3.12 only.
+mediapipe = ["mediapipe>=0.10.14"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py311"
